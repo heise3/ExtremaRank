@@ -1,0 +1,259 @@
+{
+  "accession": "GSE87290",
+  "validation_status": "passed",
+  "biological_unit": "independent human donor/patient",
+  "pairing_evidence": "Repeated donor identifier in original GEO sample title; series confirms independent subjects",
+  "contrast": "intravenous LPS minus baseline",
+  "n_metadata_samples": 30,
+  "n_metadata_donors": 15,
+  "n_count_samples": 29,
+  "n_complete_pairs": 14,
+  "pairs": [
+    {
+      "donor_id": "PBMC_replicate_1",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326887",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326902",
+      "reference_title": "PBMC_replicate_1 baseline high inflammation",
+      "target_title": "PBMC_replicate_1 intravenous LPS high inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_3",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326889",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326904",
+      "reference_title": "PBMC_replicate_3 baseline high inflammation",
+      "target_title": "PBMC_replicate_3 intravenous LPS high inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_4",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326890",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326905",
+      "reference_title": "PBMC_replicate_4 baseline high inflammation",
+      "target_title": "PBMC_replicate_4 intravenous LPS high inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_5",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326891",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326906",
+      "reference_title": "PBMC_replicate_5 baseline high inflammation",
+      "target_title": "PBMC_replicate_5 intravenous LPS high inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_6",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326892",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326907",
+      "reference_title": "PBMC_replicate_6 baseline high inflammation",
+      "target_title": "PBMC_replicate_6 intravenous LPS high inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_7",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326893",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326908",
+      "reference_title": "PBMC_replicate_7 baseline low inflammation",
+      "target_title": "PBMC_replicate_7 intravenous LPS low inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_8",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326894",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326909",
+      "reference_title": "PBMC_replicate_8 baseline low inflammation",
+      "target_title": "PBMC_replicate_8 intravenous LPS low inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_9",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326895",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326910",
+      "reference_title": "PBMC_replicate_9 baseline low inflammation",
+      "target_title": "PBMC_replicate_9 intravenous LPS low inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_10",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326896",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326911",
+      "reference_title": "PBMC_replicate_10 baseline high inflammation",
+      "target_title": "PBMC_replicate_10 intravenous LPS high inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_11",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326897",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326912",
+      "reference_title": "PBMC_replicate_11 baseline high inflammation",
+      "target_title": "PBMC_replicate_11 intravenous LPS high inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_12",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326898",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326913",
+      "reference_title": "PBMC_replicate_12 baseline low inflammation",
+      "target_title": "PBMC_replicate_12 intravenous LPS low inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_13",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326899",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326914",
+      "reference_title": "PBMC_replicate_13 baseline low inflammation",
+      "target_title": "PBMC_replicate_13 intravenous LPS low inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_14",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326900",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326915",
+      "reference_title": "PBMC_replicate_14 baseline low inflammation",
+      "target_title": "PBMC_replicate_14 intravenous LPS low inflammation"
+    },
+    {
+      "donor_id": "PBMC_replicate_15",
+      "reference_condition": "baseline",
+      "reference_sample_id": "GSM2326901",
+      "target_condition": "intravenous LPS",
+      "target_sample_id": "GSM2326916",
+      "reference_title": "PBMC_replicate_15 baseline low inflammation",
+      "target_title": "PBMC_replicate_15 intravenous LPS low inflammation"
+    }
+  ],
+  "metadata_samples_absent_from_counts": [
+    "GSM2326903"
+  ],
+  "incomplete_donors_excluded": [
+    {
+      "donor_id": "PBMC_replicate_2",
+      "reference_sample_id": "GSM2326888",
+      "target_sample_id": "GSM2326903",
+      "missing_count_samples": [
+        "GSM2326903"
+      ]
+    }
+  ],
+  "available_count_samples_outside_contrast": [
+    {
+      "sample_id": "GSM2326888",
+      "reason": "partner absent from NCBI count matrix"
+    }
+  ],
+  "matrix": {
+    "n_genes": 39376,
+    "gene_id_type": "NCBI GeneID",
+    "gene_universe_ordered_sha256": "454511bd3fda79fc846d197e654ff94946ab45d2bdce6bf6ea07d550558e2299",
+    "sample_ids_in_column_order": [
+      "GSM2326887",
+      "GSM2326888",
+      "GSM2326889",
+      "GSM2326890",
+      "GSM2326891",
+      "GSM2326892",
+      "GSM2326893",
+      "GSM2326894",
+      "GSM2326895",
+      "GSM2326896",
+      "GSM2326897",
+      "GSM2326898",
+      "GSM2326899",
+      "GSM2326900",
+      "GSM2326901",
+      "GSM2326902",
+      "GSM2326904",
+      "GSM2326905",
+      "GSM2326906",
+      "GSM2326907",
+      "GSM2326908",
+      "GSM2326909",
+      "GSM2326910",
+      "GSM2326911",
+      "GSM2326912",
+      "GSM2326913",
+      "GSM2326914",
+      "GSM2326915",
+      "GSM2326916"
+    ],
+    "library_raw_count_sums": {
+      "GSM2326887": 197977467,
+      "GSM2326888": 199518699,
+      "GSM2326889": 167007939,
+      "GSM2326890": 130183976,
+      "GSM2326891": 109234740,
+      "GSM2326892": 120479737,
+      "GSM2326893": 129021499,
+      "GSM2326894": 153695981,
+      "GSM2326895": 117455953,
+      "GSM2326896": 54626852,
+      "GSM2326897": 48733634,
+      "GSM2326898": 23450612,
+      "GSM2326899": 48029047,
+      "GSM2326900": 40177757,
+      "GSM2326901": 34279252,
+      "GSM2326902": 221920280,
+      "GSM2326904": 196738691,
+      "GSM2326905": 196202540,
+      "GSM2326906": 111024441,
+      "GSM2326907": 123776514,
+      "GSM2326908": 76449684,
+      "GSM2326909": 110447579,
+      "GSM2326910": 118230259,
+      "GSM2326911": 40171084,
+      "GSM2326912": 27818540,
+      "GSM2326913": 42273902,
+      "GSM2326914": 35201134,
+      "GSM2326915": 50529285,
+      "GSM2326916": 29164574
+    },
+    "nonzero_gene_counts": {
+      "GSM2326887": 23700,
+      "GSM2326888": 23124,
+      "GSM2326889": 21344,
+      "GSM2326890": 23180,
+      "GSM2326891": 24400,
+      "GSM2326892": 23602,
+      "GSM2326893": 23925,
+      "GSM2326894": 24608,
+      "GSM2326895": 23696,
+      "GSM2326896": 22771,
+      "GSM2326897": 22614,
+      "GSM2326898": 21482,
+      "GSM2326899": 22688,
+      "GSM2326900": 22218,
+      "GSM2326901": 22208,
+      "GSM2326902": 21020,
+      "GSM2326904": 20452,
+      "GSM2326905": 21452,
+      "GSM2326906": 23714,
+      "GSM2326907": 23248,
+      "GSM2326908": 22540,
+      "GSM2326909": 23811,
+      "GSM2326910": 23674,
+      "GSM2326911": 22131,
+      "GSM2326912": 20315,
+      "GSM2326913": 21960,
+      "GSM2326914": 21328,
+      "GSM2326915": 21958,
+      "GSM2326916": 21673
+    },
+    "nonnegative_integer_count_validation": "passed"
+  },
+  "interpretation_limit": "Computational rank-robustness benchmark only; no causal, clinical, biomarker, or differential-expression truth claim.",
+  "input_contract": "Freeze selected complete pairs, gene universe and normalized paired log-count effects before deletion. Recompute mean and variance of the effects after each whole-donor deletion."
+}

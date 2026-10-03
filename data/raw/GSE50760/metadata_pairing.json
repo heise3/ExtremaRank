@@ -1,0 +1,427 @@
+{
+  "accession": "GSE50760",
+  "validation_status": "passed",
+  "biological_unit": "independent human donor/patient",
+  "pairing_evidence": "Repeated donor identifier in original GEO sample title; series confirms independent subjects",
+  "contrast": "primary colorectal cancer minus normal colon",
+  "n_metadata_samples": 54,
+  "n_metadata_donors": 18,
+  "n_count_samples": 54,
+  "n_complete_pairs": 18,
+  "pairs": [
+    {
+      "donor_id": "AMC_2",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228202",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228184",
+      "reference_title": "normal colon AMC_2-2",
+      "target_title": "primary colorectal cancer AMC_2-1"
+    },
+    {
+      "donor_id": "AMC_3",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228203",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228185",
+      "reference_title": "normal colon AMC_3-2",
+      "target_title": "primary colorectal cancer AMC_3-1"
+    },
+    {
+      "donor_id": "AMC_5",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228204",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228186",
+      "reference_title": "normal colon AMC_5-2",
+      "target_title": "primary colorectal cancer AMC_5-1"
+    },
+    {
+      "donor_id": "AMC_6",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228205",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228187",
+      "reference_title": "normal colon AMC_6-2",
+      "target_title": "primary colorectal cancer AMC_6-1"
+    },
+    {
+      "donor_id": "AMC_7",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228206",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228188",
+      "reference_title": "normal colon AMC_7-2",
+      "target_title": "primary colorectal cancer AMC_7-1"
+    },
+    {
+      "donor_id": "AMC_8",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228207",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228189",
+      "reference_title": "normal colon AMC_8-2",
+      "target_title": "primary colorectal cancer AMC_8-1"
+    },
+    {
+      "donor_id": "AMC_9",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228208",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228190",
+      "reference_title": "normal colon AMC_9-2",
+      "target_title": "primary colorectal cancer AMC_9-1"
+    },
+    {
+      "donor_id": "AMC_10",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228209",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228191",
+      "reference_title": "normal colon AMC_10-2",
+      "target_title": "primary colorectal cancer AMC_10-1"
+    },
+    {
+      "donor_id": "AMC_12",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228210",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228192",
+      "reference_title": "normal colon AMC_12-2",
+      "target_title": "primary colorectal cancer AMC_12-1"
+    },
+    {
+      "donor_id": "AMC_13",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228211",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228193",
+      "reference_title": "normal colon AMC_13-2",
+      "target_title": "primary colorectal cancer AMC_13-1"
+    },
+    {
+      "donor_id": "AMC_17",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228212",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228194",
+      "reference_title": "normal colon AMC_17-2",
+      "target_title": "primary colorectal cancer AMC_17-1"
+    },
+    {
+      "donor_id": "AMC_18",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228213",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228195",
+      "reference_title": "normal colon AMC_18-2",
+      "target_title": "primary colorectal cancer AMC_18-1"
+    },
+    {
+      "donor_id": "AMC_19",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228214",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228196",
+      "reference_title": "normal colon AMC_19-2",
+      "target_title": "primary colorectal cancer AMC_19-1"
+    },
+    {
+      "donor_id": "AMC_20",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228215",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228197",
+      "reference_title": "normal colon AMC_20-2",
+      "target_title": "primary colorectal cancer AMC_20-1"
+    },
+    {
+      "donor_id": "AMC_21",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228216",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228198",
+      "reference_title": "normal colon AMC_21-2",
+      "target_title": "primary colorectal cancer AMC_21-1"
+    },
+    {
+      "donor_id": "AMC_22",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228217",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228199",
+      "reference_title": "normal colon AMC_22-2",
+      "target_title": "primary colorectal cancer AMC_22-1"
+    },
+    {
+      "donor_id": "AMC_23",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228218",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228200",
+      "reference_title": "normal colon AMC_23-2",
+      "target_title": "primary colorectal cancer AMC_23-1"
+    },
+    {
+      "donor_id": "AMC_24",
+      "reference_condition": "normal colon",
+      "reference_sample_id": "GSM1228219",
+      "target_condition": "primary colorectal cancer",
+      "target_sample_id": "GSM1228201",
+      "reference_title": "normal colon AMC_24-2",
+      "target_title": "primary colorectal cancer AMC_24-1"
+    }
+  ],
+  "metadata_samples_absent_from_counts": [],
+  "incomplete_donors_excluded": [],
+  "available_count_samples_outside_contrast": [
+    {
+      "sample_id": "GSM1228220",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228221",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228222",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228223",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228224",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228225",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228226",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228227",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228228",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228229",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228230",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228231",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228232",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228233",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228234",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228235",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228236",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    },
+    {
+      "sample_id": "GSM1228237",
+      "reason": "third tissue outside predeclared normal-vs-primary contrast"
+    }
+  ],
+  "matrix": {
+    "n_genes": 39376,
+    "gene_id_type": "NCBI GeneID",
+    "gene_universe_ordered_sha256": "454511bd3fda79fc846d197e654ff94946ab45d2bdce6bf6ea07d550558e2299",
+    "sample_ids_in_column_order": [
+      "GSM1228184",
+      "GSM1228185",
+      "GSM1228186",
+      "GSM1228187",
+      "GSM1228188",
+      "GSM1228189",
+      "GSM1228190",
+      "GSM1228191",
+      "GSM1228192",
+      "GSM1228193",
+      "GSM1228194",
+      "GSM1228195",
+      "GSM1228196",
+      "GSM1228197",
+      "GSM1228198",
+      "GSM1228199",
+      "GSM1228200",
+      "GSM1228201",
+      "GSM1228202",
+      "GSM1228203",
+      "GSM1228204",
+      "GSM1228205",
+      "GSM1228206",
+      "GSM1228207",
+      "GSM1228208",
+      "GSM1228209",
+      "GSM1228210",
+      "GSM1228211",
+      "GSM1228212",
+      "GSM1228213",
+      "GSM1228214",
+      "GSM1228215",
+      "GSM1228216",
+      "GSM1228217",
+      "GSM1228218",
+      "GSM1228219",
+      "GSM1228220",
+      "GSM1228221",
+      "GSM1228222",
+      "GSM1228223",
+      "GSM1228224",
+      "GSM1228225",
+      "GSM1228226",
+      "GSM1228227",
+      "GSM1228228",
+      "GSM1228229",
+      "GSM1228230",
+      "GSM1228231",
+      "GSM1228232",
+      "GSM1228233",
+      "GSM1228234",
+      "GSM1228235",
+      "GSM1228236",
+      "GSM1228237"
+    ],
+    "library_raw_count_sums": {
+      "GSM1228184": 33963598,
+      "GSM1228185": 28809611,
+      "GSM1228186": 22922528,
+      "GSM1228187": 29502964,
+      "GSM1228188": 30413898,
+      "GSM1228189": 26358732,
+      "GSM1228190": 23243043,
+      "GSM1228191": 30063492,
+      "GSM1228192": 25107958,
+      "GSM1228193": 28183208,
+      "GSM1228194": 20468067,
+      "GSM1228195": 25325692,
+      "GSM1228196": 36527531,
+      "GSM1228197": 28372264,
+      "GSM1228198": 21803317,
+      "GSM1228199": 20752896,
+      "GSM1228200": 26321799,
+      "GSM1228201": 23629691,
+      "GSM1228202": 29481002,
+      "GSM1228203": 12585904,
+      "GSM1228204": 35192881,
+      "GSM1228205": 26827937,
+      "GSM1228206": 20652718,
+      "GSM1228207": 27430440,
+      "GSM1228208": 31271131,
+      "GSM1228209": 28878314,
+      "GSM1228210": 28354227,
+      "GSM1228211": 19444712,
+      "GSM1228212": 16590779,
+      "GSM1228213": 28699805,
+      "GSM1228214": 20209590,
+      "GSM1228215": 27667622,
+      "GSM1228216": 21367373,
+      "GSM1228217": 19997785,
+      "GSM1228218": 29115249,
+      "GSM1228219": 26978457,
+      "GSM1228220": 29458154,
+      "GSM1228221": 31872156,
+      "GSM1228222": 30729659,
+      "GSM1228223": 22843199,
+      "GSM1228224": 28983728,
+      "GSM1228225": 20539137,
+      "GSM1228226": 33358186,
+      "GSM1228227": 21532699,
+      "GSM1228228": 21143038,
+      "GSM1228229": 24089656,
+      "GSM1228230": 22391051,
+      "GSM1228231": 24764815,
+      "GSM1228232": 26118693,
+      "GSM1228233": 24245284,
+      "GSM1228234": 26644240,
+      "GSM1228235": 22639319,
+      "GSM1228236": 36867919,
+      "GSM1228237": 34863543
+    },
+    "nonzero_gene_counts": {
+      "GSM1228184": 26774,
+      "GSM1228185": 26458,
+      "GSM1228186": 26094,
+      "GSM1228187": 26912,
+      "GSM1228188": 26204,
+      "GSM1228189": 25936,
+      "GSM1228190": 26585,
+      "GSM1228191": 27474,
+      "GSM1228192": 26570,
+      "GSM1228193": 26658,
+      "GSM1228194": 25852,
+      "GSM1228195": 25450,
+      "GSM1228196": 27335,
+      "GSM1228197": 25272,
+      "GSM1228198": 26124,
+      "GSM1228199": 25366,
+      "GSM1228200": 26944,
+      "GSM1228201": 25695,
+      "GSM1228202": 26995,
+      "GSM1228203": 24670,
+      "GSM1228204": 27664,
+      "GSM1228205": 27032,
+      "GSM1228206": 26227,
+      "GSM1228207": 26379,
+      "GSM1228208": 27149,
+      "GSM1228209": 26828,
+      "GSM1228210": 26487,
+      "GSM1228211": 25120,
+      "GSM1228212": 25458,
+      "GSM1228213": 26617,
+      "GSM1228214": 25916,
+      "GSM1228215": 26734,
+      "GSM1228216": 26004,
+      "GSM1228217": 26005,
+      "GSM1228218": 26442,
+      "GSM1228219": 26275,
+      "GSM1228220": 26900,
+      "GSM1228221": 26627,
+      "GSM1228222": 27047,
+      "GSM1228223": 26551,
+      "GSM1228224": 27086,
+      "GSM1228225": 25110,
+      "GSM1228226": 27349,
+      "GSM1228227": 24429,
+      "GSM1228228": 25744,
+      "GSM1228229": 25920,
+      "GSM1228230": 25645,
+      "GSM1228231": 25873,
+      "GSM1228232": 24862,
+      "GSM1228233": 25952,
+      "GSM1228234": 26418,
+      "GSM1228235": 24572,
+      "GSM1228236": 27306,
+      "GSM1228237": 26550
+    },
+    "nonnegative_integer_count_validation": "passed"
+  },
+  "interpretation_limit": "Computational rank-robustness benchmark only; no causal, clinical, biomarker, or differential-expression truth claim.",
+  "input_contract": "Freeze selected complete pairs, gene universe and normalized paired log-count effects before deletion. Recompute mean and variance of the effects after each whole-donor deletion."
+}

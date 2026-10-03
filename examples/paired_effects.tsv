@@ -1,0 +1,7 @@
+donor_id	stable_positive	constant_positive	one_donor_driven	two_donor_driven	stable_negative	all_zero
+D01	2	1	20	5	-2	0
+D02	2.2	1	0.2	5	-2.1	0
+D03	1.8	1	0.1	-1	-1.9	0
+D04	2.1	1	-0.1	-1	-2.2	0
+D05	1.9	1	0	-1	-1.8	0
+D06	2.05	1	-0.2	-1	-2.05	0

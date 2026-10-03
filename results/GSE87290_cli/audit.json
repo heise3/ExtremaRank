@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "software": {
+    "name": "ExtremaRank",
+    "version": "0.1.0"
+  },
+  "status": "REFUTED",
+  "input": {
+    "path": "/Users/feishuduobang/Documents/Codex/2026-10-03/new-chat/outputs/extremarank/data/prepared/GSE87290/effects.csv.gz",
+    "sha256": "efe14c67577f347086873b2b4ed8c865381a424f891d41ec24f00ccd364e113f",
+    "sha256_scope": "original input file bytes, before gzip decompression",
+    "delimiter": "comma",
+    "compression": "gzip",
+    "n_donors": 14,
+    "n_genes": 13328,
+    "donor_ids": [
+      "PBMC_replicate_1",
+      "PBMC_replicate_3",
+      "PBMC_replicate_4",
+      "PBMC_replicate_5",
+      "PBMC_replicate_6",
+      "PBMC_replicate_7",
+      "PBMC_replicate_8",
+      "PBMC_replicate_9",
+      "PBMC_replicate_10",
+      "PBMC_replicate_11",
+      "PBMC_replicate_12",
+      "PBMC_replicate_13",
+      "PBMC_replicate_14",
+      "PBMC_replicate_15"
+    ]
+  },
+  "parameters": {
+    "budget": 4,
+    "top_k_requested": 20,
+    "top_k": 20,
+    "top_k_default_reduced": false,
+    "direction": "up",
+    "max_nodes": 10000,
+    "skip_topk": false
+  },
+  "tie_policy": {
+    "gene_ranks": "exact ranking-score ties use ascending lexical gene ID",
+    "donor_value_ties": "equal effects are sorted by original input row index",
+    "within_cardinality_extrema": "first attaining two-family candidate in deterministic traversal order",
+    "across_cardinality_extrema": "equal extended paired-t scores keep the fewest deletions"
+  },
+  "target": "unordered baseline up paired-t top-K gene set under any shared deletion of <=budget donors",
+  "arithmetic": "exact moments and comparisons of parsed finite binary64 effects; decimal scores are display only",
+  "score_conventions": {
+    "all_zero": "descriptive t=0",
+    "nonzero_constant": "signed infinity",
+    "variance": "sample variance, denominator retained_count-1"
+  },
+  "baseline_topk_scores": [
+    {
+      "gene_id": "102465879",
+      "t": 9.542601711742249
+    },
+    {
+      "gene_id": "602",
+      "t": 9.317987337077575
+    },
+    {
+      "gene_id": "6351",
+      "t": 9.206852114236261
+    },
+    {
+      "gene_id": "80149",
+      "t": 9.08556300628339
+    },
+    {
+      "gene_id": "53831",
+      "t": 8.682709828837417
+    },
+    {
+      "gene_id": "3553",
+      "t": 8.448218373426071
+    },
+    {
+      "gene_id": "4616",
+      "t": 8.429415456667744
+    },
+    {
+      "gene_id": "83716",
+      "t": 8.353607065880018
+    },
+    {
+      "gene_id": "3759",
+      "t": 8.18012113886411
+    },
+    {
+      "gene_id": "6280",
+      "t": 8.061032811366958
+    },
+    {
+      "gene_id": "4792",
+      "t": 8.030179014889926
+    },
+    {
+      "gene_id": "64757",
+      "t": 7.914922103750987
+    },
+    {
+      "gene_id": "3383",
+      "t": 7.849156643964261
+    },
+    {
+      "gene_id": "9619",
+      "t": 7.805303488816812
+    },
+    {
+      "gene_id": "105379695",
+      "t": 7.796522438326113
+    },
+    {
+      "gene_id": "654817",
+      "t": 7.794749656851008
+    },
+    {
+      "gene_id": "100996732",
+      "t": 7.740811797658435
+    },
+    {
+      "gene_id": "8870",
+      "t": 7.734984909150648
+    },
+    {
+      "gene_id": "51099",
+      "t": 7.725362579209565
+    },
+    {
+      "gene_id": "7124",
+      "t": 7.705088860782327
+    }
+  ],
+  "topk_audit": {
+    "status": "REFUTED",
+    "baseline_topk": [
+      "102465879",
+      "602",
+      "6351",
+      "80149",
+      "53831",
+      "3553",
+      "4616",
+      "83716",
+      "3759",
+      "6280",
+      "4792",
+      "64757",
+      "3383",
+      "9619",
+      "105379695",
+      "654817",
+      "100996732",
+      "8870",
+      "51099",
+      "7124"
+    ],
+    "witness_topk": [
+      "102465879",
+      "602",
+      "6351",
+      "80149",
+      "53831",
+      "83716",
+      "3553",
+      "4616",
+      "3759",
+      "4792",
+      "100996732",
+      "6280",
+      "64757",
+      "3383",
+      "654817",
+      "9619",
+      "105379695",
+      "51099",
+      "8870",
+      "643802"
+    ],
+    "deleted_indices": [
+      3
+    ],
+    "max_deletions": 4,
+    "nodes": 1,
+    "bound_candidates": 186592,
+    "retained_counts_completed": [
+      14
+    ],
+    "bound_method": "two_family",
+    "direction": "up",
+    "target": "unordered paired-t top-K set; lexical gene-ID ties",
+    "arithmetic": "exact moments/comparisons of input binary64 values",
+    "deleted_donors": [
+      "PBMC_replicate_5"
+    ]
+  },
+  "outputs": {
+    "summary": "summary.tsv.gz",
+    "exact_cardinality_envelopes": "envelopes.tsv.gz"
+  },
+  "timing_seconds": {
+    "input_and_envelopes": 2.044977500103414,
+    "shared_topk": 0.48790324991568923,
+    "total_before_writing": 2.5328807500191033
+  },
+  "distribution_note": "Executed TSVs compressed losslessly after the run; reproduction writes ordinary TSV."
+}

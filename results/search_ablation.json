@@ -1,0 +1,1901 @@
+{
+  "run_at_utc": "2026-10-03T03:23:52.803462+00:00",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "python_executable": "/Users/feishuduobang/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+  },
+  "contract": {
+    "case_selection": "fixed deterministic source constructions; no biological data",
+    "max_nodes": 100000,
+    "witness_trials": 0,
+    "only_ablation_change": "bound_method",
+    "timing_repeats": 1,
+    "timing_limit": "single local run; illustrative, not a hardware-normalized performance claim"
+  },
+  "all_methods_match_exhaustive_truth": true,
+  "cases": [
+    {
+      "name": "stable_wide_moment_box_D12_G8",
+      "kind": "synthetic",
+      "construction": "two low-variance positive winners; cyclic powers-of-two outsiders",
+      "shape": [
+        12,
+        8
+      ],
+      "gene_ids": [
+        "g00",
+        "g01",
+        "g02",
+        "g03",
+        "g04",
+        "g05",
+        "g06",
+        "g07"
+      ],
+      "k": 2,
+      "max_deletions": 2,
+      "direction": "up",
+      "effects_sha256_json": "2f72460bd806744aa30321b294945c94be96f885366ab86f6fd0d847a4c5c4c3",
+      "effects": [
+        [
+          8.5,
+          6.75,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ],
+        [
+          9.0,
+          7.25,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ],
+        [
+          9.5,
+          6.75,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0
+        ],
+        [
+          8.5,
+          7.25,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0
+        ],
+        [
+          9.0,
+          6.75,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0
+        ],
+        [
+          9.5,
+          7.25,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0
+        ],
+        [
+          8.5,
+          6.75,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0
+        ],
+        [
+          9.0,
+          7.25,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0
+        ],
+        [
+          9.5,
+          6.75,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        [
+          8.5,
+          7.25,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        [
+          9.0,
+          6.75,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0
+        ],
+        [
+          9.5,
+          7.25,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0
+        ]
+      ],
+      "truth": {
+        "status": "CERTIFIED",
+        "baseline_topk": [
+          "g01",
+          "g00"
+        ],
+        "subsets_examined": 79,
+        "changed_topk_subsets": 0,
+        "first_witness": null,
+        "wall_seconds": 0.00893291737884283
+      },
+      "methods": {
+        "two_family": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 2,
+          "bound_candidates": 192,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "two_family",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0009068329818546772,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 30,
+          "bound_candidates": 800,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "moment_box",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0014682919718325138,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 154,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "none",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0008065830916166306,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 15.0,
+      "two_family_node_reduction_vs_none": 77.0
+    },
+    {
+      "name": "stable_wide_moment_box_D16_G12",
+      "kind": "synthetic",
+      "construction": "two low-variance positive winners; cyclic powers-of-two outsiders",
+      "shape": [
+        16,
+        12
+      ],
+      "gene_ids": [
+        "g00",
+        "g01",
+        "g02",
+        "g03",
+        "g04",
+        "g05",
+        "g06",
+        "g07",
+        "g08",
+        "g09",
+        "g10",
+        "g11"
+      ],
+      "k": 2,
+      "max_deletions": 3,
+      "direction": "up",
+      "effects_sha256_json": "ee7ff4433389320882a9a00f24fd3f70cbf1e91157f73d3fcf9e49359a9838df",
+      "effects": [
+        [
+          8.5,
+          6.75,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0
+        ],
+        [
+          9.0,
+          7.25,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0
+        ],
+        [
+          9.5,
+          6.75,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0
+        ],
+        [
+          8.5,
+          7.25,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0
+        ],
+        [
+          9.0,
+          6.75,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        [
+          9.5,
+          7.25,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        [
+          8.5,
+          6.75,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0
+        ],
+        [
+          9.0,
+          7.25,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0
+        ],
+        [
+          9.5,
+          6.75,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ],
+        [
+          8.5,
+          7.25,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ],
+        [
+          9.0,
+          6.75,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0
+        ],
+        [
+          9.5,
+          7.25,
+          32.0,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0
+        ],
+        [
+          8.5,
+          6.75,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0
+        ],
+        [
+          9.0,
+          7.25,
+          64.0,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0
+        ],
+        [
+          9.5,
+          6.75,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0
+        ],
+        [
+          8.5,
+          7.25,
+          128.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          64.0,
+          128.0,
+          1.0
+        ]
+      ],
+      "truth": {
+        "status": "CERTIFIED",
+        "baseline_topk": [
+          "g01",
+          "g00"
+        ],
+        "subsets_examined": 697,
+        "changed_topk_subsets": 0,
+        "first_witness": null,
+        "wall_seconds": 0.14596812520176172
+      },
+      "methods": {
+        "two_family": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 3,
+          "nodes": 3,
+          "bound_candidates": 576,
+          "retained_counts_completed": [
+            16,
+            15,
+            14,
+            13
+          ],
+          "bound_method": "two_family",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0009125000797212124,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 3,
+          "nodes": 261,
+          "bound_candidates": 11280,
+          "retained_counts_completed": [
+            16,
+            15,
+            14,
+            13
+          ],
+          "bound_method": "moment_box",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.020414500031620264,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 3,
+          "nodes": 1389,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            16,
+            15,
+            14,
+            13
+          ],
+          "bound_method": "none",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.009453082922846079,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 87.0,
+      "two_family_node_reduction_vs_none": 463.0
+    },
+    {
+      "name": "mixed_sign_D12_G8",
+      "kind": "synthetic",
+      "construction": "random.Random(1208), integers [-6,9]/4; no case selection",
+      "shape": [
+        12,
+        8
+      ],
+      "gene_ids": [
+        "m00",
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07"
+      ],
+      "k": 2,
+      "max_deletions": 2,
+      "direction": "up",
+      "effects_sha256_json": "4994b75b1a356a135f24ebf57f54c710d9009b0e55c58c3b1133e469615b6914",
+      "effects": [
+        [
+          -1.5,
+          -1.0,
+          1.5,
+          2.25,
+          1.5,
+          0.5,
+          2.25,
+          2.25
+        ],
+        [
+          -0.25,
+          1.75,
+          1.0,
+          -1.25,
+          1.25,
+          1.75,
+          0.25,
+          0.0
+        ],
+        [
+          2.25,
+          0.0,
+          1.0,
+          1.25,
+          0.5,
+          -1.5,
+          -1.5,
+          -1.25
+        ],
+        [
+          -1.5,
+          -0.75,
+          -1.5,
+          0.75,
+          2.25,
+          -0.25,
+          -0.5,
+          -1.25
+        ],
+        [
+          1.25,
+          2.0,
+          1.0,
+          -1.0,
+          0.0,
+          0.75,
+          -1.5,
+          1.5
+        ],
+        [
+          0.25,
+          -0.75,
+          0.0,
+          2.0,
+          0.5,
+          -1.0,
+          -0.5,
+          -0.5
+        ],
+        [
+          -0.25,
+          -1.5,
+          -0.25,
+          -1.5,
+          1.0,
+          1.5,
+          -0.5,
+          0.0
+        ],
+        [
+          -0.25,
+          -0.5,
+          0.5,
+          1.5,
+          0.0,
+          1.5,
+          1.25,
+          -0.75
+        ],
+        [
+          0.75,
+          -1.25,
+          0.5,
+          1.0,
+          -1.5,
+          0.0,
+          1.75,
+          -0.75
+        ],
+        [
+          -0.75,
+          -1.5,
+          0.5,
+          -1.0,
+          -0.25,
+          1.5,
+          0.0,
+          0.25
+        ],
+        [
+          0.5,
+          -1.25,
+          -0.5,
+          1.25,
+          -0.75,
+          2.0,
+          1.25,
+          -0.75
+        ],
+        [
+          0.75,
+          1.25,
+          1.5,
+          2.0,
+          2.25,
+          1.25,
+          -0.25,
+          1.25
+        ]
+      ],
+      "truth": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "m05",
+          "m02"
+        ],
+        "subsets_examined": 79,
+        "changed_topk_subsets": 61,
+        "first_witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "m05",
+            "m04"
+          ]
+        },
+        "wall_seconds": 0.009218999650329351
+      },
+      "methods": {
+        "two_family": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "m05",
+            "m02"
+          ],
+          "witness_topk": [
+            "m04",
+            "m02"
+          ],
+          "deleted_indices": [
+            10
+          ],
+          "max_deletions": 2,
+          "nodes": 13,
+          "bound_candidates": 616,
+          "retained_counts_completed": [
+            12
+          ],
+          "bound_method": "two_family",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.001230249647051096,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "m05",
+            "m02"
+          ],
+          "witness_topk": [
+            "m04",
+            "m02"
+          ],
+          "deleted_indices": [
+            10
+          ],
+          "max_deletions": 2,
+          "nodes": 13,
+          "bound_candidates": 352,
+          "retained_counts_completed": [
+            12
+          ],
+          "bound_method": "moment_box",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0007100002840161324,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "m05",
+            "m02"
+          ],
+          "witness_topk": [
+            "m04",
+            "m02"
+          ],
+          "deleted_indices": [
+            10
+          ],
+          "max_deletions": 2,
+          "nodes": 13,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            12
+          ],
+          "bound_method": "none",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.00010058283805847168,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 1.0,
+      "two_family_node_reduction_vs_none": 1.0
+    },
+    {
+      "name": "mixed_sign_D16_G12",
+      "kind": "synthetic",
+      "construction": "random.Random(1612), integers [-6,9]/4; no case selection",
+      "shape": [
+        16,
+        12
+      ],
+      "gene_ids": [
+        "m00",
+        "m01",
+        "m02",
+        "m03",
+        "m04",
+        "m05",
+        "m06",
+        "m07",
+        "m08",
+        "m09",
+        "m10",
+        "m11"
+      ],
+      "k": 2,
+      "max_deletions": 2,
+      "direction": "up",
+      "effects_sha256_json": "b5f8627f518d5ec6655dd60e317f07995d2248e1d836763ced95baa1d364c89d",
+      "effects": [
+        [
+          -0.5,
+          2.0,
+          -0.25,
+          1.75,
+          -1.5,
+          -1.25,
+          0.75,
+          -0.5,
+          -1.25,
+          2.25,
+          -0.75,
+          -1.25
+        ],
+        [
+          -0.5,
+          0.0,
+          -1.5,
+          2.0,
+          0.0,
+          1.75,
+          2.25,
+          0.0,
+          2.0,
+          0.75,
+          -1.0,
+          -1.25
+        ],
+        [
+          -0.25,
+          2.0,
+          -1.0,
+          1.25,
+          2.25,
+          2.25,
+          1.0,
+          -1.25,
+          -0.5,
+          2.0,
+          2.0,
+          -0.75
+        ],
+        [
+          0.75,
+          1.5,
+          1.5,
+          0.75,
+          0.5,
+          0.75,
+          0.0,
+          2.25,
+          -1.0,
+          -1.25,
+          2.0,
+          0.5
+        ],
+        [
+          2.25,
+          -0.25,
+          1.0,
+          0.25,
+          -1.0,
+          2.0,
+          -0.25,
+          0.5,
+          -1.25,
+          -1.25,
+          -0.5,
+          -1.5
+        ],
+        [
+          0.75,
+          -1.25,
+          0.75,
+          1.5,
+          1.5,
+          1.25,
+          1.5,
+          0.0,
+          0.0,
+          1.0,
+          1.5,
+          -1.0
+        ],
+        [
+          1.25,
+          0.75,
+          1.25,
+          1.25,
+          -0.75,
+          1.75,
+          1.5,
+          1.5,
+          1.75,
+          0.5,
+          1.75,
+          1.5
+        ],
+        [
+          -1.0,
+          1.75,
+          2.25,
+          1.75,
+          -1.25,
+          -0.75,
+          0.5,
+          1.75,
+          0.0,
+          2.25,
+          -0.75,
+          -0.5
+        ],
+        [
+          -0.75,
+          1.5,
+          2.25,
+          1.0,
+          -0.75,
+          0.25,
+          -0.25,
+          -0.75,
+          0.75,
+          1.0,
+          -0.5,
+          2.25
+        ],
+        [
+          0.5,
+          -0.75,
+          0.0,
+          -1.5,
+          1.75,
+          2.25,
+          0.75,
+          1.75,
+          2.25,
+          2.0,
+          2.25,
+          0.75
+        ],
+        [
+          1.75,
+          1.0,
+          0.75,
+          1.25,
+          0.25,
+          0.5,
+          -1.0,
+          0.5,
+          2.25,
+          1.75,
+          1.25,
+          -1.5
+        ],
+        [
+          2.0,
+          0.5,
+          -0.25,
+          1.0,
+          -0.75,
+          -1.0,
+          1.75,
+          -1.0,
+          1.5,
+          0.75,
+          -0.5,
+          2.25
+        ],
+        [
+          1.25,
+          -1.5,
+          2.0,
+          -0.75,
+          1.5,
+          1.25,
+          0.25,
+          1.5,
+          -0.25,
+          2.0,
+          1.25,
+          -0.25
+        ],
+        [
+          1.25,
+          0.25,
+          1.5,
+          0.5,
+          -0.75,
+          0.25,
+          -0.25,
+          -0.25,
+          -1.0,
+          0.25,
+          -1.5,
+          0.75
+        ],
+        [
+          -0.5,
+          0.0,
+          1.25,
+          -1.0,
+          1.75,
+          1.0,
+          0.25,
+          -0.75,
+          2.0,
+          0.25,
+          -1.0,
+          -1.0
+        ],
+        [
+          2.25,
+          2.0,
+          -0.25,
+          -0.25,
+          0.5,
+          2.25,
+          -0.25,
+          -1.25,
+          2.0,
+          0.25,
+          -1.5,
+          -1.5
+        ]
+      ],
+      "truth": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "m09",
+          "m05"
+        ],
+        "subsets_examined": 137,
+        "changed_topk_subsets": 79,
+        "first_witness": {
+          "deleted_indices": [
+            1
+          ],
+          "topk": [
+            "m02",
+            "m09"
+          ]
+        },
+        "wall_seconds": 0.031674291007220745
+      },
+      "methods": {
+        "two_family": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "m09",
+            "m05"
+          ],
+          "witness_topk": [
+            "m09",
+            "m03"
+          ],
+          "deleted_indices": [
+            14
+          ],
+          "max_deletions": 2,
+          "nodes": 17,
+          "bound_candidates": 1620,
+          "retained_counts_completed": [
+            16
+          ],
+          "bound_method": "two_family",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.002970708068460226,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "m09",
+            "m05"
+          ],
+          "witness_topk": [
+            "m09",
+            "m03"
+          ],
+          "deleted_indices": [
+            14
+          ],
+          "max_deletions": 2,
+          "nodes": 17,
+          "bound_candidates": 720,
+          "retained_counts_completed": [
+            16
+          ],
+          "bound_method": "moment_box",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0015838751569390297,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "m09",
+            "m05"
+          ],
+          "witness_topk": [
+            "m09",
+            "m03"
+          ],
+          "deleted_indices": [
+            14
+          ],
+          "max_deletions": 2,
+          "nodes": 17,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            16
+          ],
+          "bound_method": "none",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.00015445798635482788,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 1.0,
+      "two_family_node_reduction_vs_none": 1.0
+    },
+    {
+      "name": "variance_reversal_D4_G2",
+      "kind": "synthetic",
+      "construction": "a>h in every donor; deleting donor index 3 reverses signed paired-t ranking",
+      "shape": [
+        4,
+        2
+      ],
+      "gene_ids": [
+        "a",
+        "h"
+      ],
+      "k": 1,
+      "max_deletions": 1,
+      "direction": "up",
+      "effects_sha256_json": "a52a245854c546020a52705dde77c30633b0d5b6aa4f2485143b57d335f03514",
+      "effects": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          2.1,
+          1.1
+        ],
+        [
+          1.9,
+          0.9
+        ],
+        [
+          10.0,
+          2.0
+        ]
+      ],
+      "truth": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "h"
+        ],
+        "subsets_examined": 5,
+        "changed_topk_subsets": 1,
+        "first_witness": {
+          "deleted_indices": [
+            3
+          ],
+          "topk": [
+            "a"
+          ]
+        },
+        "wall_seconds": 9.375018998980522e-05
+      },
+      "methods": {
+        "two_family": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "h"
+          ],
+          "witness_topk": [
+            "a"
+          ],
+          "deleted_indices": [
+            3
+          ],
+          "max_deletions": 1,
+          "nodes": 4,
+          "bound_candidates": 18,
+          "retained_counts_completed": [
+            4
+          ],
+          "bound_method": "two_family",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 9.779119864106178e-05,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "h"
+          ],
+          "witness_topk": [
+            "a"
+          ],
+          "deleted_indices": [
+            3
+          ],
+          "max_deletions": 1,
+          "nodes": 4,
+          "bound_candidates": 24,
+          "retained_counts_completed": [
+            4
+          ],
+          "bound_method": "moment_box",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 5.9959013015031815e-05,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "REFUTED",
+          "baseline_topk": [
+            "h"
+          ],
+          "witness_topk": [
+            "a"
+          ],
+          "deleted_indices": [
+            3
+          ],
+          "max_deletions": 1,
+          "nodes": 4,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            4
+          ],
+          "bound_method": "none",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 2.1709129214286804e-05,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 1.0,
+      "two_family_node_reduction_vs_none": 1.0,
+      "explanation": {
+        "all_donors_a_greater_than_h": true,
+        "baseline_t": {
+          "a": 1.999583463496472,
+          "h": 4.934637712198268
+        },
+        "delete_index_3_t": {
+          "a": 34.641016151377514,
+          "h": 17.320508075688767
+        },
+        "all_delete_one_variances_positive": true
+      }
+    },
+    {
+      "name": "separate_adversaries_overlap_D4_G2",
+      "kind": "synthetic",
+      "construction": "proportional columns: every shared subset ties, lexical a always wins",
+      "shape": [
+        4,
+        2
+      ],
+      "gene_ids": [
+        "a",
+        "b"
+      ],
+      "k": 1,
+      "max_deletions": 2,
+      "direction": "up",
+      "effects_sha256_json": "2e6b755617287b0c1f28dc4b7fda2e628af24dc6f5b6d7f15e4863a56b1312b8",
+      "effects": [
+        [
+          2.0,
+          1.0
+        ],
+        [
+          4.0,
+          2.0
+        ],
+        [
+          6.0,
+          3.0
+        ],
+        [
+          8.0,
+          4.0
+        ]
+      ],
+      "truth": {
+        "status": "CERTIFIED",
+        "baseline_topk": [
+          "a"
+        ],
+        "subsets_examined": 11,
+        "changed_topk_subsets": 0,
+        "first_witness": null,
+        "wall_seconds": 0.00011012516915798187
+      },
+      "methods": {
+        "two_family": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "a"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 18,
+          "bound_candidates": 46,
+          "retained_counts_completed": [
+            4,
+            3,
+            2
+          ],
+          "bound_method": "two_family",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.00016916729509830475,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "a"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 18,
+          "bound_candidates": 64,
+          "retained_counts_completed": [
+            4,
+            3,
+            2
+          ],
+          "bound_method": "moment_box",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.00011283392086625099,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "a"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 18,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            4,
+            3,
+            2
+          ],
+          "bound_method": "none",
+          "direction": "up",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 3.954209387302399e-05,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 1.0,
+      "two_family_node_reduction_vs_none": 1.0
+    },
+    {
+      "name": "stable_down_D12_G8",
+      "kind": "synthetic",
+      "construction": "sign reversal of fixed stable D12 construction; down-ranking contract",
+      "shape": [
+        12,
+        8
+      ],
+      "gene_ids": [
+        "g00",
+        "g01",
+        "g02",
+        "g03",
+        "g04",
+        "g05",
+        "g06",
+        "g07"
+      ],
+      "k": 2,
+      "max_deletions": 2,
+      "direction": "down",
+      "effects_sha256_json": "48b3e9bf033e9f7a042cfc19764b2f036a5384befc39c48eb68a9b382304a06b",
+      "effects": [
+        [
+          -8.5,
+          -6.75,
+          -1.0,
+          -2.0,
+          -4.0,
+          -8.0,
+          -16.0,
+          -32.0
+        ],
+        [
+          -9.0,
+          -7.25,
+          -1.0,
+          -2.0,
+          -4.0,
+          -8.0,
+          -16.0,
+          -32.0
+        ],
+        [
+          -9.5,
+          -6.75,
+          -2.0,
+          -4.0,
+          -8.0,
+          -16.0,
+          -32.0,
+          -1.0
+        ],
+        [
+          -8.5,
+          -7.25,
+          -2.0,
+          -4.0,
+          -8.0,
+          -16.0,
+          -32.0,
+          -1.0
+        ],
+        [
+          -9.0,
+          -6.75,
+          -4.0,
+          -8.0,
+          -16.0,
+          -32.0,
+          -1.0,
+          -2.0
+        ],
+        [
+          -9.5,
+          -7.25,
+          -4.0,
+          -8.0,
+          -16.0,
+          -32.0,
+          -1.0,
+          -2.0
+        ],
+        [
+          -8.5,
+          -6.75,
+          -8.0,
+          -16.0,
+          -32.0,
+          -1.0,
+          -2.0,
+          -4.0
+        ],
+        [
+          -9.0,
+          -7.25,
+          -8.0,
+          -16.0,
+          -32.0,
+          -1.0,
+          -2.0,
+          -4.0
+        ],
+        [
+          -9.5,
+          -6.75,
+          -16.0,
+          -32.0,
+          -1.0,
+          -2.0,
+          -4.0,
+          -8.0
+        ],
+        [
+          -8.5,
+          -7.25,
+          -16.0,
+          -32.0,
+          -1.0,
+          -2.0,
+          -4.0,
+          -8.0
+        ],
+        [
+          -9.0,
+          -6.75,
+          -32.0,
+          -1.0,
+          -2.0,
+          -4.0,
+          -8.0,
+          -16.0
+        ],
+        [
+          -9.5,
+          -7.25,
+          -32.0,
+          -1.0,
+          -2.0,
+          -4.0,
+          -8.0,
+          -16.0
+        ]
+      ],
+      "truth": {
+        "status": "CERTIFIED",
+        "baseline_topk": [
+          "g01",
+          "g00"
+        ],
+        "subsets_examined": 79,
+        "changed_topk_subsets": 0,
+        "first_witness": null,
+        "wall_seconds": 0.009175749961286783
+      },
+      "methods": {
+        "two_family": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 2,
+          "bound_candidates": 192,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "two_family",
+          "direction": "down",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0003870408982038498,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 30,
+          "bound_candidates": 800,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "moment_box",
+          "direction": "down",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0016128327697515488,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 154,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "none",
+          "direction": "down",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0007924581877887249,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 15.0,
+      "two_family_node_reduction_vs_none": 77.0
+    },
+    {
+      "name": "stable_absolute_D12_G8",
+      "kind": "synthetic",
+      "construction": "negative near-constant winners and positive variable outsiders; absolute-ranking contract",
+      "shape": [
+        12,
+        8
+      ],
+      "gene_ids": [
+        "g00",
+        "g01",
+        "g02",
+        "g03",
+        "g04",
+        "g05",
+        "g06",
+        "g07"
+      ],
+      "k": 2,
+      "max_deletions": 2,
+      "direction": "absolute",
+      "effects_sha256_json": "c7e9f4c7e9b6fe1701267d808489630c2a0fc8c25a4ba79b35353ff50a3e26f0",
+      "effects": [
+        [
+          -8.5,
+          -6.75,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ],
+        [
+          -9.0,
+          -7.25,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0
+        ],
+        [
+          -9.5,
+          -6.75,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0
+        ],
+        [
+          -8.5,
+          -7.25,
+          2.0,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0
+        ],
+        [
+          -9.0,
+          -6.75,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0
+        ],
+        [
+          -9.5,
+          -7.25,
+          4.0,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0
+        ],
+        [
+          -8.5,
+          -6.75,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0
+        ],
+        [
+          -9.0,
+          -7.25,
+          8.0,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0
+        ],
+        [
+          -9.5,
+          -6.75,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        [
+          -8.5,
+          -7.25,
+          16.0,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0
+        ],
+        [
+          -9.0,
+          -6.75,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0
+        ],
+        [
+          -9.5,
+          -7.25,
+          32.0,
+          1.0,
+          2.0,
+          4.0,
+          8.0,
+          16.0
+        ]
+      ],
+      "truth": {
+        "status": "CERTIFIED",
+        "baseline_topk": [
+          "g01",
+          "g00"
+        ],
+        "subsets_examined": 79,
+        "changed_topk_subsets": 0,
+        "first_witness": null,
+        "wall_seconds": 0.00926616694778204
+      },
+      "methods": {
+        "two_family": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 2,
+          "bound_candidates": 192,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "two_family",
+          "direction": "absolute",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0003781667910516262,
+          "matches_exhaustive_truth": true
+        },
+        "moment_box": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 30,
+          "bound_candidates": 800,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "moment_box",
+          "direction": "absolute",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0015165000222623348,
+          "matches_exhaustive_truth": true
+        },
+        "none": {
+          "status": "CERTIFIED",
+          "baseline_topk": [
+            "g01",
+            "g00"
+          ],
+          "witness_topk": null,
+          "deleted_indices": null,
+          "max_deletions": 2,
+          "nodes": 154,
+          "bound_candidates": 0,
+          "retained_counts_completed": [
+            12,
+            11,
+            10
+          ],
+          "bound_method": "none",
+          "direction": "absolute",
+          "target": "unordered paired-t top-K set; lexical gene-ID ties",
+          "arithmetic": "exact moments/comparisons of input binary64 values",
+          "wall_seconds": 0.0007187500596046448,
+          "matches_exhaustive_truth": true
+        }
+      },
+      "two_family_node_reduction_vs_moment_box": 15.0,
+      "two_family_node_reduction_vs_none": 77.0
+    }
+  ]
+}

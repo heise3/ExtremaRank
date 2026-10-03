@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "benchmark_type": "full prepared matrices through public CLI, including gzip input and output writes",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "timing_note": "Single sequential invocation per matrix, local machine; not repeated performance estimates",
+  "records": [
+    {
+      "accession": "GSE87290",
+      "command": "PYTHONPATH=src python -m extremarank data/prepared/GSE87290/effects.csv.gz --budget 4 --top-k 20 --output results/GSE87290_cli",
+      "n_donors": 14,
+      "n_genes": 13328,
+      "budget": 4,
+      "top_k": 20,
+      "status": "REFUTED",
+      "input_sha256": "efe14c67577f347086873b2b4ed8c865381a424f891d41ec24f00ccd364e113f",
+      "summary_rows": 13328,
+      "envelope_rows": 66640,
+      "robust_positive_genes": 2616,
+      "robust_negative_genes": 8994,
+      "shared_witness_deleted_donors": [
+        "PBMC_replicate_5"
+      ],
+      "timing_seconds_before_writing": {
+        "input_and_envelopes": 2.044977500103414,
+        "shared_topk": 0.48790324991568923,
+        "total_before_writing": 2.5328807500191033
+      },
+      "external_wall_seconds_including_writing": 2.85,
+      "independent_exact_shared_witness_check": true,
+      "moment_oracle_imported_package": false,
+      "matching_preparation_sha256": true,
+      "output_bytes": {
+        "summary.tsv": 4183944,
+        "envelopes.tsv": 25926172,
+        "audit.json": 4654
+      }
+    },
+    {
+      "accession": "GSE50760",
+      "command": "PYTHONPATH=src python -m extremarank data/prepared/GSE50760/effects.csv.gz --budget 4 --top-k 20 --output results/GSE50760_cli",
+      "n_donors": 18,
+      "n_genes": 16597,
+      "budget": 4,
+      "top_k": 20,
+      "status": "REFUTED",
+      "input_sha256": "a29b6d6943a541492149e7913fabdb2ad43f59adf97ab5a29ceb7c9085539de7",
+      "summary_rows": 16597,
+      "envelope_rows": 82985,
+      "robust_positive_genes": 6538,
+      "robust_negative_genes": 4547,
+      "shared_witness_deleted_donors": [
+        "AMC_6"
+      ],
+      "timing_seconds_before_writing": {
+        "input_and_envelopes": 2.8467927500605583,
+        "shared_topk": 0.7403638330288231,
+        "total_before_writing": 3.5871565830893815
+      },
+      "external_wall_seconds_including_writing": 3.94,
+      "independent_exact_shared_witness_check": true,
+      "moment_oracle_imported_package": false,
+      "matching_preparation_sha256": true,
+      "output_bytes": {
+        "summary.tsv": 3766522,
+        "envelopes.tsv": 28532114,
+        "audit.json": 4546
+      }
+    }
+  ]
+}

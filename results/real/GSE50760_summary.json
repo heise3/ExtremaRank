@@ -1,0 +1,260 @@
+{
+  "accession": "GSE50760",
+  "n_donors": 18,
+  "n_eligible_genes": 16597,
+  "deletions_tested": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "matched_gene_ids": [
+    "653635",
+    "100996442",
+    "729737",
+    "102723897",
+    "100132287",
+    "113219467",
+    "100133331",
+    "107984841",
+    "107984847",
+    "100288069",
+    "79854",
+    "643837",
+    "100130417",
+    "107985728",
+    "148398",
+    "26155",
+    "339451",
+    "84069",
+    "57801",
+    "9636",
+    "375790",
+    "105378948",
+    "401934",
+    "54991",
+    "554210",
+    "8784",
+    "7293",
+    "51150",
+    "126792",
+    "388581",
+    "118424",
+    "6339",
+    "116983",
+    "126789",
+    "54973",
+    "80772",
+    "83756",
+    "1855",
+    "54587",
+    "54998",
+    "81669",
+    "148413",
+    "55052",
+    "441869",
+    "64856",
+    "219293",
+    "83858",
+    "55210",
+    "29101",
+    "643988",
+    "142678",
+    "8510",
+    "984",
+    "728661",
+    "8511",
+    "728642",
+    "9906",
+    "112268218",
+    "65220",
+    "2782",
+    "339456",
+    "5590",
+    "100506504",
+    "199990",
+    "112268219",
+    "6497",
+    "79906",
+    "100129534",
+    "11079",
+    "5192",
+    "9651",
+    "55229",
+    "115110",
+    "8764",
+    "100996583",
+    "127281",
+    "79258",
+    "63976",
+    "105378604",
+    "27237",
+    "1953",
+    "127262",
+    "49856",
+    "7161",
+    "57212",
+    "57470",
+    "9731",
+    "1677",
+    "339448",
+    "100133612",
+    "261734",
+    "8514",
+    "6146",
+    "107985733",
+    "388591",
+    "23463",
+    "387509",
+    "11332",
+    "54626",
+    "83715"
+  ],
+  "matched_gene_order": "First100 eligible source rows",
+  "full_two_family": {
+    "gene_budget_calls": 82985,
+    "seconds": 2.077102710492909,
+    "candidate_count": 1211581
+  },
+  "matched_exact": {
+    "gene_budget_calls": 500,
+    "mismatches": 0,
+    "seconds": {
+      "two_family": 0.013061755802482367,
+      "exhaustive": 0.7221556399017572
+    },
+    "candidate_count": {
+      "two_family": 7300,
+      "exhaustive": 404800
+    },
+    "exhaustive_over_two_family_runtime_ratio": 55.28779214847307
+  },
+  "ablations": {
+    "contiguous_only": {
+      "minimum_wrong": 67,
+      "maximum_wrong": 74,
+      "both_equal": 359,
+      "gene_budget_calls": 500,
+      "minimum_wrong_rate": 0.134,
+      "maximum_wrong_rate": 0.148
+    },
+    "ends_only": {
+      "minimum_wrong": 12,
+      "maximum_wrong": 7,
+      "both_equal": 481,
+      "gene_budget_calls": 500,
+      "minimum_wrong_rate": 0.024,
+      "maximum_wrong_rate": 0.014
+    }
+  },
+  "full_spectrum_ablations": {
+    "contiguous_only": {
+      "0": {
+        "minimum_wrong": 0,
+        "maximum_wrong": 0,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.0,
+        "maximum_wrong_rate": 0.0
+      },
+      "1": {
+        "minimum_wrong": 4980,
+        "maximum_wrong": 3137,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.30005422666747,
+        "maximum_wrong_rate": 0.18901006205940832
+      },
+      "2": {
+        "minimum_wrong": 4554,
+        "maximum_wrong": 2809,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.274386937398325,
+        "maximum_wrong_rate": 0.16924745435922153
+      },
+      "3": {
+        "minimum_wrong": 4129,
+        "maximum_wrong": 2511,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.24877989998192446,
+        "maximum_wrong_rate": 0.15129240224136892
+      },
+      "4": {
+        "minimum_wrong": 3696,
+        "maximum_wrong": 2227,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.22269084774356812,
+        "maximum_wrong_rate": 0.1341808760619389
+      }
+    },
+    "ends_only": {
+      "0": {
+        "minimum_wrong": 0,
+        "maximum_wrong": 0,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.0,
+        "maximum_wrong_rate": 0.0
+      },
+      "1": {
+        "minimum_wrong": 0,
+        "maximum_wrong": 0,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.0,
+        "maximum_wrong_rate": 0.0
+      },
+      "2": {
+        "minimum_wrong": 275,
+        "maximum_wrong": 260,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.01656925950472977,
+        "maximum_wrong_rate": 0.015665481713562694
+      },
+      "3": {
+        "minimum_wrong": 491,
+        "maximum_wrong": 569,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.029583659697535698,
+        "maximum_wrong_rate": 0.034283304211604505
+      },
+      "4": {
+        "minimum_wrong": 816,
+        "maximum_wrong": 1072,
+        "n_genes": 16597,
+        "minimum_wrong_rate": 0.049165511839489064,
+        "maximum_wrong_rate": 0.06458998614207387
+      }
+    }
+  },
+  "practical_gene_audit": {
+    "baseline_top20_gene_ids": [
+      "54431",
+      "6282",
+      "9015",
+      "56902",
+      "222487",
+      "147991",
+      "84135",
+      "23198",
+      "5954",
+      "10669",
+      "57332",
+      "7004",
+      "2118",
+      "84955",
+      "84365",
+      "55726",
+      "153443",
+      "8502",
+      "54801",
+      "493860"
+    ],
+    "robust_positive_genes": 6538,
+    "robust_negative_genes": 4547,
+    "baseline_top20_robust_positive": 20,
+    "output": "GSE50760_gene_audit.tsv",
+    "definition": "A robust-positive gene has positive paired mean after every subset of at most4 donor deletions. This is a descriptive stability screen, not significance or biological truth.",
+    "worst_case": "The smallest signed paired t across every retained count n,n-1,...,n-4; exact signed-rational comparison across retained counts. Mean, sample variance and actual removed-donor witness are supplied."
+  },
+  "timing_scope": "Entire extrema call including sorting and exact arithmetic; serialization, preprocessing and ablation calls excluded from matched runtime. One alternating-order matched run; ratios depend on hardware and Python.",
+  "exactness_scope": "Score comparison on the exact binary64 paired-effect input; no floating tolerance used for equality. Equal extrema values may have different valid retained-index witnesses.",
+  "validation_status": "passed"
+}

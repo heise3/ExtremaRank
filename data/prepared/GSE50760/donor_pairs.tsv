@@ -1,0 +1,19 @@
+donor_id	reference_sample_id	target_sample_id	reference_condition	target_condition
+AMC_2	GSM1228202	GSM1228184	normal colon	primary colorectal cancer
+AMC_3	GSM1228203	GSM1228185	normal colon	primary colorectal cancer
+AMC_5	GSM1228204	GSM1228186	normal colon	primary colorectal cancer
+AMC_6	GSM1228205	GSM1228187	normal colon	primary colorectal cancer
+AMC_7	GSM1228206	GSM1228188	normal colon	primary colorectal cancer
+AMC_8	GSM1228207	GSM1228189	normal colon	primary colorectal cancer
+AMC_9	GSM1228208	GSM1228190	normal colon	primary colorectal cancer
+AMC_10	GSM1228209	GSM1228191	normal colon	primary colorectal cancer
+AMC_12	GSM1228210	GSM1228192	normal colon	primary colorectal cancer
+AMC_13	GSM1228211	GSM1228193	normal colon	primary colorectal cancer
+AMC_17	GSM1228212	GSM1228194	normal colon	primary colorectal cancer
+AMC_18	GSM1228213	GSM1228195	normal colon	primary colorectal cancer
+AMC_19	GSM1228214	GSM1228196	normal colon	primary colorectal cancer
+AMC_20	GSM1228215	GSM1228197	normal colon	primary colorectal cancer
+AMC_21	GSM1228216	GSM1228198	normal colon	primary colorectal cancer
+AMC_22	GSM1228217	GSM1228199	normal colon	primary colorectal cancer
+AMC_23	GSM1228218	GSM1228200	normal colon	primary colorectal cancer
+AMC_24	GSM1228219	GSM1228201	normal colon	primary colorectal cancer

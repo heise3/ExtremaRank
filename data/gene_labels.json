@@ -1,0 +1,757 @@
+{
+  "schema_version": 1,
+  "scope": "Union of baseline top20 and entered/exited witness genes from two real signed-t ranking audits; no full-universe annotation download.",
+  "n_requested_gene_ids": 45,
+  "requested_gene_ids": [
+    "602",
+    "2118",
+    "3383",
+    "3553",
+    "3759",
+    "4616",
+    "4792",
+    "5954",
+    "6280",
+    "6282",
+    "6351",
+    "7004",
+    "7124",
+    "8502",
+    "8870",
+    "9015",
+    "9076",
+    "9619",
+    "10669",
+    "23198",
+    "25902",
+    "51099",
+    "53831",
+    "54431",
+    "54801",
+    "55726",
+    "55858",
+    "56902",
+    "57332",
+    "64757",
+    "80149",
+    "83716",
+    "84135",
+    "84365",
+    "84561",
+    "84955",
+    "147991",
+    "153443",
+    "222487",
+    "493860",
+    "643802",
+    "654817",
+    "100996732",
+    "102465879",
+    "105379695"
+  ],
+  "retrieved_at_utc": "2026-10-03T03:21:16.643246+00:00",
+  "primary_api_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=602%2C2118%2C3383%2C3553%2C3759%2C4616%2C4792%2C5954%2C6280%2C6282%2C6351%2C7004%2C7124%2C8502%2C8870%2C9015%2C9076%2C9619%2C10669%2C23198%2C25902%2C51099%2C53831%2C54431%2C54801%2C55726%2C55858%2C56902%2C57332%2C64757%2C80149%2C83716%2C84135%2C84365%2C84561%2C84955%2C147991%2C153443%2C222487%2C493860%2C643802%2C654817%2C100996732%2C102465879%2C105379695&retmode=json&version=2.0&tool=ExtremaRank",
+  "resolved_api_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gene&id=602%2C2118%2C3383%2C3553%2C3759%2C4616%2C4792%2C5954%2C6280%2C6282%2C6351%2C7004%2C7124%2C8502%2C8870%2C9015%2C9076%2C9619%2C10669%2C23198%2C25902%2C51099%2C53831%2C54431%2C54801%2C55726%2C55858%2C56902%2C57332%2C64757%2C80149%2C83716%2C84135%2C84365%2C84561%2C84955%2C147991%2C153443%2C222487%2C493860%2C643802%2C654817%2C100996732%2C102465879%2C105379695&retmode=json&version=2.0&tool=ExtremaRank",
+  "raw_source_file": "gene_labels.ncbi_raw.json",
+  "raw_response_bytes": 173438,
+  "raw_response_sha256": "f51bc341c55628c8a4614200e43f6c13087232b693c894a8c46f516c9dc5638f",
+  "input_report_file": "data/annotation_input_up_snapshot.json",
+  "input_report_sha256": "1f5f6380811cacf3b67a06cd55d8f84ef88d7d85cce8e56d65180bfac6c343ed",
+  "labels": {
+    "602": {
+      "gene_id": "602",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/602",
+      "symbol": "BCL3",
+      "name": "BCL3 transcription coactivator",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "2118": {
+      "gene_id": "2118",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/2118",
+      "symbol": "ETV4",
+      "name": "ETS variant transcription factor 4",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "3383": {
+      "gene_id": "3383",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/3383",
+      "symbol": "ICAM1",
+      "name": "intercellular adhesion molecule 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "3553": {
+      "gene_id": "3553",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/3553",
+      "symbol": "IL1B",
+      "name": "interleukin 1 beta",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "3759": {
+      "gene_id": "3759",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/3759",
+      "symbol": "KCNJ2",
+      "name": "potassium inwardly rectifying channel subfamily J member 2",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "4616": {
+      "gene_id": "4616",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/4616",
+      "symbol": "GADD45B",
+      "name": "growth arrest and DNA damage inducible beta",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "4792": {
+      "gene_id": "4792",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/4792",
+      "symbol": "NFKBIA",
+      "name": "NFKB inhibitor alpha",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "5954": {
+      "gene_id": "5954",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/5954",
+      "symbol": "RCN1",
+      "name": "reticulocalbin 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "6280": {
+      "gene_id": "6280",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/6280",
+      "symbol": "S100A9",
+      "name": "S100 calcium binding protein A9",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "6282": {
+      "gene_id": "6282",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/6282",
+      "symbol": "S100A11",
+      "name": "S100 calcium binding protein A11",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "6351": {
+      "gene_id": "6351",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/6351",
+      "symbol": "CCL4",
+      "name": "C-C motif chemokine ligand 4",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "7004": {
+      "gene_id": "7004",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/7004",
+      "symbol": "TEAD4",
+      "name": "TEA domain transcription factor 4",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "7124": {
+      "gene_id": "7124",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/7124",
+      "symbol": "TNF",
+      "name": "tumor necrosis factor",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "8502": {
+      "gene_id": "8502",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/8502",
+      "symbol": "PKP4",
+      "name": "plakophilin 4",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "8870": {
+      "gene_id": "8870",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/8870",
+      "symbol": "IER3",
+      "name": "immediate early response 3",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "9015": {
+      "gene_id": "9015",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/9015",
+      "symbol": "TAF1A",
+      "name": "TATA-box binding protein associated factor, RNA polymerase I subunit A",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "9076": {
+      "gene_id": "9076",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/9076",
+      "symbol": "CLDN1",
+      "name": "claudin 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "9619": {
+      "gene_id": "9619",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/9619",
+      "symbol": "ABCG1",
+      "name": "ATP binding cassette subfamily G member 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "10669": {
+      "gene_id": "10669",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/10669",
+      "symbol": "CGREF1",
+      "name": "cell growth regulator with EF-hand domain 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "23198": {
+      "gene_id": "23198",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/23198",
+      "symbol": "PSME4",
+      "name": "proteasome activator subunit 4",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "25902": {
+      "gene_id": "25902",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/25902",
+      "symbol": "MTHFD1L",
+      "name": "methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 1 like",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "51099": {
+      "gene_id": "51099",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/51099",
+      "symbol": "ABHD5",
+      "name": "abhydrolase domain containing 5, lysophosphatidic acid acyltransferase",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "53831": {
+      "gene_id": "53831",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/53831",
+      "symbol": "GPR84",
+      "name": "G protein-coupled receptor 84",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "54431": {
+      "gene_id": "54431",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/54431",
+      "symbol": "DNAJC10",
+      "name": "DnaJ heat shock protein family (Hsp40) member C10",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "54801": {
+      "gene_id": "54801",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/54801",
+      "symbol": "HAUS6",
+      "name": "HAUS augmin like complex subunit 6",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "55726": {
+      "gene_id": "55726",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/55726",
+      "symbol": "INTS13",
+      "name": "integrator complex subunit 13",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "55858": {
+      "gene_id": "55858",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/55858",
+      "symbol": "TMEM165",
+      "name": "transmembrane protein 165",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "56902": {
+      "gene_id": "56902",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/56902",
+      "symbol": "PNO1",
+      "name": "partner of NOB1 homolog",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "57332": {
+      "gene_id": "57332",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/57332",
+      "symbol": "CBX8",
+      "name": "chromobox 8",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "64757": {
+      "gene_id": "64757",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/64757",
+      "symbol": "MTARC1",
+      "name": "mitochondrial amidoxime reducing component 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "80149": {
+      "gene_id": "80149",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/80149",
+      "symbol": "ZC3H12A",
+      "name": "zinc finger CCCH-type containing 12A",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "83716": {
+      "gene_id": "83716",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/83716",
+      "symbol": "CRISPLD2",
+      "name": "cysteine rich secretory protein LCCL domain containing 2",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "84135": {
+      "gene_id": "84135",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/84135",
+      "symbol": "UTP15",
+      "name": "UTP15 small subunit processome component",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "84365": {
+      "gene_id": "84365",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/84365",
+      "symbol": "NIFK",
+      "name": "nucleolar protein interacting with the FHA domain of MKI67",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "84561": {
+      "gene_id": "84561",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/84561",
+      "symbol": "SLC12A8",
+      "name": "solute carrier family 12 member 8",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "84955": {
+      "gene_id": "84955",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/84955",
+      "symbol": "NUDCD1",
+      "name": "NudC domain containing 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "147991": {
+      "gene_id": "147991",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/147991",
+      "symbol": "DPY19L3",
+      "name": "dpy-19 like C-mannosyltransferase 3",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "153443": {
+      "gene_id": "153443",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/153443",
+      "symbol": "SRFBP1",
+      "name": "serum response factor binding protein 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "222487": {
+      "gene_id": "222487",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/222487",
+      "symbol": "ADGRG3",
+      "name": "adhesion G protein-coupled receptor G3",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "493860": {
+      "gene_id": "493860",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/493860",
+      "symbol": "CCDC73",
+      "name": "coiled-coil domain containing 73",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "643802": {
+      "gene_id": "643802",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/643802",
+      "symbol": "MPHOSPH10P1",
+      "name": "MPHOSPH10 pseudogene 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "654817": {
+      "gene_id": "654817",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/654817",
+      "symbol": "NCF1C",
+      "name": "neutrophil cytosolic factor 1C (pseudogene)",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "100996732": {
+      "gene_id": "100996732",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/100996732",
+      "symbol": "LINC02802",
+      "name": "long independently transcribed non-coding RNA 2802",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "102465879": {
+      "gene_id": "102465879",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/102465879",
+      "symbol": "MIR8085",
+      "name": "microRNA 8085",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    },
+    "105379695": {
+      "gene_id": "105379695",
+      "primary_source_url": "https://www.ncbi.nlm.nih.gov/gene/105379695",
+      "symbol": "IER3-AS1",
+      "name": "IER3 antisense RNA 1",
+      "taxon": {
+        "taxid": 9606,
+        "scientific_name": "Homo sapiens"
+      },
+      "annotation_status": "resolved",
+      "ncbi_status_raw": "",
+      "replacement_gene_id": null,
+      "nomenclature_status": "Official"
+    }
+  },
+  "interpretation_limit": "Human-readable identifier labels only; no biological/clinical validation or gene-function inference.",
+  "status_note": "Resolved means an exact requested-ID esummary record with symbol/name/taxon was returned. NCBI status/currentid fields are preserved; blank fields are not interpreted as evidence of withdrawal. Replaced/discontinued or missing records are explicit.",
+  "original_input_report_file": "results/real_topk.json",
+  "original_input_report_sha256": "1f5f6380811cacf3b67a06cd55d8f84ef88d7d85cce8e56d65180bfac6c343ed",
+  "current_final_report_file": "results/real_topk.json",
+  "current_final_report_sha256": "fba51b6e168e1b5a1a3c7627f0109ef199793ce090d952b82a08171490b3c44c",
+  "input_report_revision_note": "Annotation requested from the earlier two-dataset up-only report digest. The final report now contains six dataset-direction audits (up, down, absolute). The 45 requested labels exactly match the current up-direction baseline/witness union; other directions were not part of the annotation request.",
+  "current_report_coverage": {
+    "annotation_direction": "up",
+    "n_up_audits": 2,
+    "n_current_up_union_gene_ids": 45,
+    "requested_gene_ids_exactly_match_current_up_union": true,
+    "all_current_up_union_ids_have_labels": true,
+    "n_current_all_direction_union_gene_ids": 91,
+    "gene_ids_outside_annotation_scope": [
+      "124",
+      "575",
+      "766",
+      "1595",
+      "1718",
+      "2059",
+      "2628",
+      "3039",
+      "3040",
+      "3043",
+      "3363",
+      "3638",
+      "3693",
+      "4593",
+      "5126",
+      "5166",
+      "5283",
+      "6319",
+      "6689",
+      "6713",
+      "8633",
+      "9211",
+      "9340",
+      "9429",
+      "10174",
+      "10457",
+      "11343",
+      "27345",
+      "51059",
+      "55506",
+      "58493",
+      "79085",
+      "81794",
+      "92736",
+      "118980",
+      "192666",
+      "256435",
+      "266675",
+      "284346",
+      "284948",
+      "340419",
+      "651746",
+      "100506023",
+      "101929882",
+      "102724740",
+      "105369382"
+    ],
+    "outside_scope_policy": "Display the GeneID with an unknown/not-requested label; do not infer symbols or treat as withdrawn."
+  },
+  "snapshot_status": "Byte-identical reconstruction verified against the SHA256 recorded at annotation time; original up-only snapshot retained."
+}

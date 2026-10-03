@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "software": {
+    "name": "ExtremaRank",
+    "version": "0.1.0"
+  },
+  "status": "REFUTED",
+  "input": {
+    "path": "/Users/feishuduobang/Documents/Codex/2026-10-03/new-chat/outputs/extremarank/examples/variance_reversal.tsv",
+    "sha256": "8ac2995dc296fff9d10da4ab876d9d3bd837ab3c8119974c597906e17d841cf3",
+    "sha256_scope": "original input file bytes, before gzip decompression",
+    "delimiter": "tab",
+    "compression": "none",
+    "n_donors": 4,
+    "n_genes": 2,
+    "donor_ids": [
+      "donor_1",
+      "donor_2",
+      "donor_3",
+      "donor_4"
+    ]
+  },
+  "parameters": {
+    "budget": 1,
+    "top_k_requested": 1,
+    "top_k": 1,
+    "top_k_default_reduced": false,
+    "direction": "up",
+    "max_nodes": 10000,
+    "skip_topk": false
+  },
+  "tie_policy": {
+    "gene_ranks": "exact ranking-score ties use ascending lexical gene ID",
+    "donor_value_ties": "equal effects are sorted by original input row index",
+    "within_cardinality_extrema": "first attaining two-family candidate in deterministic traversal order",
+    "across_cardinality_extrema": "equal extended paired-t scores keep the fewest deletions"
+  },
+  "target": "unordered baseline up paired-t top-K gene set under any shared deletion of <=budget donors",
+  "arithmetic": "exact moments and comparisons of parsed finite binary64 effects; decimal scores are display only",
+  "score_conventions": {
+    "all_zero": "descriptive t=0",
+    "nonzero_constant": "signed infinity",
+    "variance": "sample variance, denominator retained_count-1"
+  },
+  "baseline_topk_scores": [
+    {
+      "gene_id": "gene_H",
+      "t": 4.934637712198268
+    }
+  ],
+  "topk_audit": {
+    "status": "REFUTED",
+    "baseline_topk": [
+      "gene_H"
+    ],
+    "witness_topk": [
+      "gene_A"
+    ],
+    "deleted_indices": [
+      3
+    ],
+    "max_deletions": 1,
+    "nodes": 1,
+    "bound_candidates": 8,
+    "retained_counts_completed": [
+      4
+    ],
+    "bound_method": "two_family",
+    "direction": "up",
+    "target": "unordered paired-t top-K set; lexical gene-ID ties",
+    "arithmetic": "exact moments/comparisons of input binary64 values",
+    "deleted_donors": [
+      "donor_4"
+    ]
+  },
+  "outputs": {
+    "summary": "summary.tsv",
+    "exact_cardinality_envelopes": "envelopes.tsv"
+  },
+  "timing_seconds": {
+    "input_and_envelopes": 0.0002894587814807892,
+    "shared_topk": 8.308328688144684e-05,
+    "total_before_writing": 0.000372542068362236
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "seed": 314159,
+  "kind": "synthetic scalar-oracle benchmark",
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "matched": [
+    {
+      "donors": 8,
+      "genes": 4,
+      "retained": 4,
+      "exact_mismatches": 0,
+      "two_family_candidates_per_gene": 8,
+      "exhaustive_candidates_per_gene": 70,
+      "seconds": {
+        "two_family": 9.44170169532299e-05,
+        "exhaustive": 0.0003427090123295784
+      },
+      "speedup": 3.6297377674973736
+    },
+    {
+      "donors": 12,
+      "genes": 4,
+      "retained": 6,
+      "exact_mismatches": 0,
+      "two_family_candidates_per_gene": 12,
+      "exhaustive_candidates_per_gene": 924,
+      "seconds": {
+        "two_family": 8.316664025187492e-05,
+        "exhaustive": 0.004481707699596882
+      },
+      "speedup": 53.88828604863409
+    },
+    {
+      "donors": 16,
+      "genes": 4,
+      "retained": 8,
+      "exact_mismatches": 0,
+      "two_family_candidates_per_gene": 16,
+      "exhaustive_candidates_per_gene": 12870,
+      "seconds": {
+        "two_family": 0.00010412465780973434,
+        "exhaustive": 0.06933370791375637
+      },
+      "speedup": 665.8721322325877
+    },
+    {
+      "donors": 20,
+      "genes": 4,
+      "retained": 10,
+      "exact_mismatches": 0,
+      "two_family_candidates_per_gene": 20,
+      "exhaustive_candidates_per_gene": 184756,
+      "seconds": {
+        "two_family": 0.00013966672122478485,
+        "exhaustive": 1.1078119999729097
+      },
+      "speedup": 7931.825063681101
+    }
+  ],
+  "large": [
+    {
+      "donors": 32,
+      "genes": 512,
+      "retained": 16,
+      "two_family_seconds": 0.023610792122781277,
+      "two_family_candidates_per_gene": 32,
+      "exhaustive_candidates_per_gene": "601080390",
+      "exhaustive_executed": false
+    },
+    {
+      "donors": 64,
+      "genes": 512,
+      "retained": 32,
+      "two_family_seconds": 0.0452284999191761,
+      "two_family_candidates_per_gene": 64,
+      "exhaustive_candidates_per_gene": "1832624140942590534",
+      "exhaustive_executed": false
+    },
+    {
+      "donors": 128,
+      "genes": 512,
+      "retained": 64,
+      "two_family_seconds": 0.09046645788475871,
+      "two_family_candidates_per_gene": 128,
+      "exhaustive_candidates_per_gene": "23951146041928082866135587776380551750",
+      "exhaustive_executed": false
+    }
+  ],
+  "claim": "Same exact-arithmetic scalar target; speed versus exhaustive enumeration, not approximate DE methods."
+}

@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0",
+  "validated_at_utc": "2026-10-03T03:40:13.176508+00:00",
+  "tests": {
+    "Python3.12": {
+      "methods": 30,
+      "status": "passed"
+    },
+    "Python3.14": {
+      "methods": 30,
+      "status": "passed"
+    }
+  },
+  "clean_wheel_install": {
+    "python": "3.14",
+    "installed_module": "/Users/feishuduobang/Documents/Codex/2026-10-03/new-chat/work/extremarank-clean/lib/python3.14/site-packages/extremarank",
+    "smoke_status": "REFUTED",
+    "smoke_deleted_donor": "donor_4",
+    "source_installed_wheel_code_identical": true,
+    "wheel_sha256": "ed84d091f551ac1077f50d7af7465a0eae5def681eac6064c8f37d7ccbb44aa6",
+    "dependencies": [
+      "extremarank",
+      "pip"
+    ]
+  },
+  "archive_tables_verified": 18,
+  "source_hash_count": 6,
+  "annotation_snapshot_and_final_revision_hashes": "verified",
+  "local_markdown_links": "passed",
+  "browser_interaction": {
+    "study_switch": "passed",
+    "direction_absolute": "passed",
+    "deletion_slider": "passed",
+    "candidate_count_slider": "passed",
+    "console_errors": 0
+  },
+  "publication_status": "Public repository created: https://github.com/heise3/ExtremaRank; live credentials verified; upload in progress at packaging.",
+  "claims": "Exact scalar extrema and valid shared-ranking audits of fixed binary64 paired effects. No worldwide priority, clinical efficacy, DE significance or GitHub star guarantee.",
+  "authentication_correction": "Earlier restricted-network gh auth status failure was misclassified as invalid token. Live network verification confirmed the existing heise3 credentials were valid."
+}

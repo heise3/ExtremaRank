@@ -1,0 +1,15 @@
+donor_id	reference_sample_id	target_sample_id	reference_condition	target_condition
+PBMC_replicate_1	GSM2326887	GSM2326902	baseline	intravenous LPS
+PBMC_replicate_3	GSM2326889	GSM2326904	baseline	intravenous LPS
+PBMC_replicate_4	GSM2326890	GSM2326905	baseline	intravenous LPS
+PBMC_replicate_5	GSM2326891	GSM2326906	baseline	intravenous LPS
+PBMC_replicate_6	GSM2326892	GSM2326907	baseline	intravenous LPS
+PBMC_replicate_7	GSM2326893	GSM2326908	baseline	intravenous LPS
+PBMC_replicate_8	GSM2326894	GSM2326909	baseline	intravenous LPS
+PBMC_replicate_9	GSM2326895	GSM2326910	baseline	intravenous LPS
+PBMC_replicate_10	GSM2326896	GSM2326911	baseline	intravenous LPS
+PBMC_replicate_11	GSM2326897	GSM2326912	baseline	intravenous LPS
+PBMC_replicate_12	GSM2326898	GSM2326913	baseline	intravenous LPS
+PBMC_replicate_13	GSM2326899	GSM2326914	baseline	intravenous LPS
+PBMC_replicate_14	GSM2326900	GSM2326915	baseline	intravenous LPS
+PBMC_replicate_15	GSM2326901	GSM2326916	baseline	intravenous LPS

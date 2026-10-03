@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "extremarank"
+version = "0.1.0"
+description = "Exact studentized subset extrema for paired omics ranking audits"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["bioinformatics", "RNA-seq", "robustness", "paired-data", "exact-optimization"]
+classifiers = ["Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Bio-Informatics"]
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/heise3/ExtremaRank"
+Issues = "https://github.com/heise3/ExtremaRank/issues"
+
+[project.optional-dependencies]
+benchmark = ["numpy>=1.24,<3"]
+
+[project.scripts]
+extremarank = "extremarank.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

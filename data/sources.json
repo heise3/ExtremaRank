@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "description": "Original public NCBI processed counts and GEO metadata; raw files retain their source status and are not relicensed under the software license.",
+  "retrieval_date_utc": "2026-10-03",
+  "files": [
+    {
+      "file": "GSE87290_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?type=rnaseq_counts&acc=GSE87290&format=file&file=GSE87290_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/geo/download/?type=rnaseq_counts&acc=GSE87290&format=file&file=GSE87290_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+      "retrieved_at_utc": "2026-10-03T03:04:05.843633+00:00",
+      "bytes": 1333166,
+      "sha256": "030e3a59ae8d3dcc8d3861d468bb11cb2acb19af70c635dfacdb760581c14bd2",
+      "http_content_type": "application/octet-stream",
+      "http_last_modified": null,
+      "relative_path": "raw/GSE87290/GSE87290_raw_counts_GRCh38.p13_NCBI.tsv.gz"
+    },
+    {
+      "file": "samples_metadata.soft",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87290&targ=gsm&view=brief&form=text",
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87290&targ=gsm&view=brief&form=text",
+      "retrieved_at_utc": "2026-10-03T03:04:08.036761+00:00",
+      "bytes": 119602,
+      "sha256": "4cf0c728ee298ec85536da180389c33f16131c55e96ffcce52f5ece988b545b2",
+      "http_content_type": "geo/text",
+      "http_last_modified": null,
+      "relative_path": "raw/GSE87290/samples_metadata.soft"
+    },
+    {
+      "file": "series_metadata.soft",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87290&targ=self&view=brief&form=text",
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87290&targ=self&view=brief&form=text",
+      "retrieved_at_utc": "2026-10-03T03:04:52.210877+00:00",
+      "bytes": 3983,
+      "sha256": "c6db895fea66eec5c9e7076d24ab2b7afe92101fa7e8ab6d07271562d0f0848d",
+      "http_content_type": "geo/text",
+      "http_last_modified": null,
+      "relative_path": "raw/GSE87290/series_metadata.soft"
+    },
+    {
+      "file": "GSE50760_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/download/?type=rnaseq_counts&acc=GSE50760&format=file&file=GSE50760_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/geo/download/?type=rnaseq_counts&acc=GSE50760&format=file&file=GSE50760_raw_counts_GRCh38.p13_NCBI.tsv.gz",
+      "retrieved_at_utc": "2026-10-03T03:04:55.145785+00:00",
+      "bytes": 2358563,
+      "sha256": "ffa68762e84954bd038fda10c408b0eecc0ba725f181dd15c8dbcbbfc44ebeb1",
+      "http_content_type": "application/octet-stream",
+      "http_last_modified": null,
+      "relative_path": "raw/GSE50760/GSE50760_raw_counts_GRCh38.p13_NCBI.tsv.gz"
+    },
+    {
+      "file": "samples_metadata.soft",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50760&targ=gsm&view=brief&form=text",
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50760&targ=gsm&view=brief&form=text",
+      "retrieved_at_utc": "2026-10-03T03:04:59.186078+00:00",
+      "bytes": 202049,
+      "sha256": "08ce6e674e811955f7e91f179d89a037e658a1130c879c2a4e8b307969a93810",
+      "http_content_type": "geo/text",
+      "http_last_modified": null,
+      "relative_path": "raw/GSE50760/samples_metadata.soft"
+    },
+    {
+      "file": "series_metadata.soft",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50760&targ=self&view=brief&form=text",
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50760&targ=self&view=brief&form=text",
+      "retrieved_at_utc": "2026-10-03T03:05:00.378351+00:00",
+      "bytes": 4751,
+      "sha256": "26feffb63a3bc4407664f44c65a2f9306f988f34994858cb0deb7b92b6354bf3",
+      "http_content_type": "geo/text",
+      "http_last_modified": null,
+      "relative_path": "raw/GSE50760/series_metadata.soft"
+    }
+  ],
+  "source_records": {
+    "GSE87290": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87290",
+    "GSE50760": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE50760"
+  },
+  "pipeline_documentation": "https://www.ncbi.nlm.nih.gov/geo/info/rnaseqcounts.html"
+}

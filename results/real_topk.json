@@ -1,0 +1,498 @@
+{
+  "target": "full frozen eligible signed paired-t top20 set",
+  "max_deletions": 4,
+  "datasets": [
+    {
+      "accession": "GSE87290",
+      "direction": "up",
+      "donors": 14,
+      "genes": 13328,
+      "effects_sha256": "efe14c67577f347086873b2b4ed8c865381a424f891d41ec24f00ccd364e113f",
+      "audit_seconds": 0.4795111673884094,
+      "audit": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "102465879",
+          "602",
+          "6351",
+          "80149",
+          "53831",
+          "3553",
+          "4616",
+          "83716",
+          "3759",
+          "6280",
+          "4792",
+          "64757",
+          "3383",
+          "9619",
+          "105379695",
+          "654817",
+          "100996732",
+          "8870",
+          "51099",
+          "7124"
+        ],
+        "witness_topk": [
+          "102465879",
+          "602",
+          "6351",
+          "80149",
+          "53831",
+          "83716",
+          "3553",
+          "4616",
+          "3759",
+          "4792",
+          "100996732",
+          "6280",
+          "64757",
+          "3383",
+          "654817",
+          "9619",
+          "105379695",
+          "51099",
+          "8870",
+          "643802"
+        ],
+        "deleted_indices": [
+          3
+        ],
+        "max_deletions": 4,
+        "nodes": 1,
+        "bound_candidates": 186592,
+        "retained_counts_completed": [
+          14
+        ],
+        "bound_method": "two_family",
+        "direction": "up",
+        "target": "unordered paired-t top-K set; lexical gene-ID ties",
+        "arithmetic": "exact moments/comparisons of input binary64 values"
+      },
+      "baseline_independently_verified": true,
+      "witness_independently_verified": true,
+      "deleted_donor_ids": [
+        "PBMC_replicate_5"
+      ],
+      "entered_gene_ids": [
+        "643802"
+      ],
+      "exited_gene_ids": [
+        "7124"
+      ]
+    },
+    {
+      "accession": "GSE87290",
+      "direction": "down",
+      "donors": 14,
+      "genes": 13328,
+      "effects_sha256": "efe14c67577f347086873b2b4ed8c865381a424f891d41ec24f00ccd364e113f",
+      "audit_seconds": 0.4739784998819232,
+      "audit": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "5166",
+          "6713",
+          "58493",
+          "11343",
+          "105369382",
+          "81794",
+          "27345",
+          "6319",
+          "3693",
+          "2059",
+          "1595",
+          "5283",
+          "2628",
+          "3363",
+          "55506",
+          "10457",
+          "10174",
+          "101929882",
+          "3638",
+          "1718"
+        ],
+        "witness_topk": [
+          "5166",
+          "58493",
+          "6713",
+          "105369382",
+          "6319",
+          "11343",
+          "3693",
+          "5283",
+          "27345",
+          "81794",
+          "2059",
+          "102724740",
+          "1595",
+          "3363",
+          "2628",
+          "118980",
+          "55506",
+          "10457",
+          "101929882",
+          "1718"
+        ],
+        "deleted_indices": [
+          2
+        ],
+        "max_deletions": 4,
+        "nodes": 1,
+        "bound_candidates": 186592,
+        "retained_counts_completed": [
+          14
+        ],
+        "bound_method": "two_family",
+        "direction": "down",
+        "target": "unordered paired-t top-K set; lexical gene-ID ties",
+        "arithmetic": "exact moments/comparisons of input binary64 values"
+      },
+      "baseline_independently_verified": true,
+      "witness_independently_verified": true,
+      "deleted_donor_ids": [
+        "PBMC_replicate_4"
+      ],
+      "entered_gene_ids": [
+        "102724740",
+        "118980"
+      ],
+      "exited_gene_ids": [
+        "10174",
+        "3638"
+      ]
+    },
+    {
+      "accession": "GSE87290",
+      "direction": "absolute",
+      "donors": 14,
+      "genes": 13328,
+      "effects_sha256": "efe14c67577f347086873b2b4ed8c865381a424f891d41ec24f00ccd364e113f",
+      "audit_seconds": 0.49340587481856346,
+      "audit": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "5166",
+          "6713",
+          "58493",
+          "11343",
+          "105369382",
+          "102465879",
+          "81794",
+          "27345",
+          "602",
+          "6351",
+          "6319",
+          "80149",
+          "3693",
+          "2059",
+          "1595",
+          "53831",
+          "5283",
+          "2628",
+          "3363",
+          "55506"
+        ],
+        "witness_topk": [
+          "256435",
+          "5166",
+          "58493",
+          "6713",
+          "105369382",
+          "6319",
+          "11343",
+          "3693",
+          "5283",
+          "102465879",
+          "27345",
+          "81794",
+          "602",
+          "6351",
+          "80149",
+          "2059",
+          "102724740",
+          "1595",
+          "53831",
+          "3363"
+        ],
+        "deleted_indices": [
+          2
+        ],
+        "max_deletions": 4,
+        "nodes": 1,
+        "bound_candidates": 186592,
+        "retained_counts_completed": [
+          14
+        ],
+        "bound_method": "two_family",
+        "direction": "absolute",
+        "target": "unordered paired-t top-K set; lexical gene-ID ties",
+        "arithmetic": "exact moments/comparisons of input binary64 values"
+      },
+      "baseline_independently_verified": true,
+      "witness_independently_verified": true,
+      "deleted_donor_ids": [
+        "PBMC_replicate_4"
+      ],
+      "entered_gene_ids": [
+        "102724740",
+        "256435"
+      ],
+      "exited_gene_ids": [
+        "2628",
+        "55506"
+      ]
+    },
+    {
+      "accession": "GSE50760",
+      "direction": "up",
+      "donors": 18,
+      "genes": 16597,
+      "effects_sha256": "a29b6d6943a541492149e7913fabdb2ad43f59adf97ab5a29ceb7c9085539de7",
+      "audit_seconds": 0.733325167093426,
+      "audit": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "54431",
+          "6282",
+          "9015",
+          "56902",
+          "222487",
+          "147991",
+          "84135",
+          "23198",
+          "5954",
+          "10669",
+          "57332",
+          "7004",
+          "2118",
+          "84955",
+          "84365",
+          "55726",
+          "153443",
+          "8502",
+          "54801",
+          "493860"
+        ],
+        "witness_topk": [
+          "54431",
+          "6282",
+          "9015",
+          "56902",
+          "5954",
+          "147991",
+          "222487",
+          "7004",
+          "84135",
+          "55726",
+          "84561",
+          "25902",
+          "23198",
+          "10669",
+          "57332",
+          "153443",
+          "55858",
+          "84955",
+          "9076",
+          "2118"
+        ],
+        "deleted_indices": [
+          3
+        ],
+        "max_deletions": 4,
+        "nodes": 1,
+        "bound_candidates": 298746,
+        "retained_counts_completed": [
+          18
+        ],
+        "bound_method": "two_family",
+        "direction": "up",
+        "target": "unordered paired-t top-K set; lexical gene-ID ties",
+        "arithmetic": "exact moments/comparisons of input binary64 values"
+      },
+      "baseline_independently_verified": true,
+      "witness_independently_verified": true,
+      "deleted_donor_ids": [
+        "AMC_6"
+      ],
+      "entered_gene_ids": [
+        "25902",
+        "55858",
+        "84561",
+        "9076"
+      ],
+      "exited_gene_ids": [
+        "493860",
+        "54801",
+        "84365",
+        "8502"
+      ]
+    },
+    {
+      "accession": "GSE50760",
+      "direction": "down",
+      "donors": 18,
+      "genes": 16597,
+      "effects_sha256": "a29b6d6943a541492149e7913fabdb2ad43f59adf97ab5a29ceb7c9085539de7",
+      "audit_seconds": 0.7284123753197491,
+      "audit": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "92736",
+          "266675",
+          "766",
+          "8633",
+          "6689",
+          "340419",
+          "284948",
+          "51059",
+          "100506023",
+          "9211",
+          "3043",
+          "575",
+          "9340",
+          "5126",
+          "192666",
+          "4593",
+          "284346",
+          "124",
+          "9429",
+          "79085"
+        ],
+        "witness_topk": [
+          "92736",
+          "266675",
+          "766",
+          "8633",
+          "6689",
+          "340419",
+          "100506023",
+          "284948",
+          "9211",
+          "51059",
+          "3043",
+          "9340",
+          "575",
+          "5126",
+          "192666",
+          "4593",
+          "284346",
+          "9429",
+          "3040",
+          "124"
+        ],
+        "deleted_indices": [
+          14
+        ],
+        "max_deletions": 4,
+        "nodes": 1,
+        "bound_candidates": 298746,
+        "retained_counts_completed": [
+          18
+        ],
+        "bound_method": "two_family",
+        "direction": "down",
+        "target": "unordered paired-t top-K set; lexical gene-ID ties",
+        "arithmetic": "exact moments/comparisons of input binary64 values"
+      },
+      "baseline_independently_verified": true,
+      "witness_independently_verified": true,
+      "deleted_donor_ids": [
+        "AMC_21"
+      ],
+      "entered_gene_ids": [
+        "3040"
+      ],
+      "exited_gene_ids": [
+        "79085"
+      ]
+    },
+    {
+      "accession": "GSE50760",
+      "direction": "absolute",
+      "donors": 18,
+      "genes": 16597,
+      "effects_sha256": "a29b6d6943a541492149e7913fabdb2ad43f59adf97ab5a29ceb7c9085539de7",
+      "audit_seconds": 0.739724958781153,
+      "audit": {
+        "status": "REFUTED",
+        "baseline_topk": [
+          "92736",
+          "266675",
+          "766",
+          "8633",
+          "6689",
+          "340419",
+          "284948",
+          "51059",
+          "100506023",
+          "9211",
+          "54431",
+          "3043",
+          "575",
+          "9340",
+          "6282",
+          "5126",
+          "192666",
+          "4593",
+          "9015",
+          "284346"
+        ],
+        "witness_topk": [
+          "92736",
+          "266675",
+          "766",
+          "8633",
+          "284948",
+          "6689",
+          "51059",
+          "340419",
+          "100506023",
+          "54431",
+          "3043",
+          "9211",
+          "10669",
+          "222487",
+          "651746",
+          "6282",
+          "575",
+          "3039",
+          "9340",
+          "3040"
+        ],
+        "deleted_indices": [
+          17
+        ],
+        "max_deletions": 4,
+        "nodes": 1,
+        "bound_candidates": 298746,
+        "retained_counts_completed": [
+          18
+        ],
+        "bound_method": "two_family",
+        "direction": "absolute",
+        "target": "unordered paired-t top-K set; lexical gene-ID ties",
+        "arithmetic": "exact moments/comparisons of input binary64 values"
+      },
+      "baseline_independently_verified": true,
+      "witness_independently_verified": true,
+      "deleted_donor_ids": [
+        "AMC_24"
+      ],
+      "entered_gene_ids": [
+        "10669",
+        "222487",
+        "3039",
+        "3040",
+        "651746"
+      ],
+      "exited_gene_ids": [
+        "192666",
+        "284346",
+        "4593",
+        "5126",
+        "9015"
+      ]
+    }
+  ]
+}
