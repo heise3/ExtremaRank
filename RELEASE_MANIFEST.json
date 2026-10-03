@@ -273,8 +273,8 @@
     },
     {
       "path": "results/VALIDATION.json",
-      "bytes": 1609,
-      "sha256": "d4c2f442e44af70b7c666b3a70f5b7e8e72abcfbd98e6e718bccdbe236aa9830"
+      "bytes": 1811,
+      "sha256": "d0353c40fa962a44cc87c052ac545dba95b55db87e3f10c8b93d6632358ff063"
     },
     {
       "path": "results/archive_manifest.json",

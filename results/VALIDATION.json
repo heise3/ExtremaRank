@@ -17,11 +17,14 @@
     "smoke_status": "REFUTED",
     "smoke_deleted_donor": "donor_4",
     "source_installed_wheel_code_identical": true,
-    "wheel_sha256": "ed84d091f551ac1077f50d7af7465a0eae5def681eac6064c8f37d7ccbb44aa6",
+    "wheel_sha256": "89a369961a949905ec451d3eb4b01265f0dd6697bffb1b9cc9b3afa366515b49",
     "dependencies": [
       "extremarank",
       "pip"
-    ]
+    ],
+    "initial_tested_wheel_sha256": "ed84d091f551ac1077f50d7af7465a0eae5def681eac6064c8f37d7ccbb44aa6",
+    "publication_metadata_rebuild": true,
+    "published_wheel_source_code_identical": true
   },
   "archive_tables_verified": 18,
   "source_hash_count": 6,
@@ -34,7 +37,7 @@
     "candidate_count_slider": "passed",
     "console_errors": 0
   },
-  "publication_status": "Public repository created: https://github.com/heise3/ExtremaRank; live credentials verified; upload in progress at packaging.",
+  "publication_status": "Source uploaded to public https://github.com/heise3/ExtremaRank; release artifacts packaged after live authentication verification.",
   "claims": "Exact scalar extrema and valid shared-ranking audits of fixed binary64 paired effects. No worldwide priority, clinical efficacy, DE significance or GitHub star guarantee.",
   "authentication_correction": "Earlier restricted-network gh auth status failure was misclassified as invalid token. Live network verification confirmed the existing heise3 credentials were valid."
 }
