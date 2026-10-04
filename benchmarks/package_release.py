@@ -2,10 +2,12 @@
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+VERSION = re.search(r'__version__ = "([^"]+)"', (ROOT/'src/extremarank/__init__.py').read_text()).group(1)
 
 
 def selected_files():
@@ -21,13 +23,13 @@ def selected_files():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--output',type=Path,default=ROOT.parent/'ExtremaRank-v0.1.0-source.zip')
+    parser.add_argument('--output',type=Path,default=ROOT.parent/f'ExtremaRank-v{VERSION}-source.zip')
     args = parser.parse_args()
     paths = list(selected_files())
     records = [dict(path=str(p.relative_to(ROOT)),bytes=p.stat().st_size,
                     sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in paths]
     manifest = ROOT/'RELEASE_MANIFEST.json'
-    manifest.write_text(json.dumps(dict(version='0.1.0',files=records,
+    manifest.write_text(json.dumps(dict(version=VERSION,files=records,
         note='Manifest excludes itself; archive hash is stored alongside archive.'),indent=2)+'\n')
     paths.append(manifest)
     with zipfile.ZipFile(args.output,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as archive:

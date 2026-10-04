@@ -16,3 +16,5 @@ jobs:
       - run: python -m pip install .
       - run: python -m unittest discover -s tests -v
       - run: python benchmarks/independent_theorem_check.py --cases 10000 --output results/ci_theorem_check.json
+      - run: python benchmarks/independent_welch_check.py --cases 200 --output results/ci_welch_check.json
+      - run: extremarank study data/prepared/Golub/matrix.csv.gz --metadata data/prepared/Golub/metadata.tsv --target AML --reference ALL --design welch --budget 1 --top-k 20 --no-diagnostics --output results/ci_study

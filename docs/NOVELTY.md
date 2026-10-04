@@ -77,3 +77,10 @@ Small genuine paired studies provide exact validation and an interpretable demon
 The intended result is therefore a concrete algorithm with a polynomial-size one-feature candidate family and a transparent exact/anytime shared-subset audit. Publication-level claims require the complete theorem, numerical correctness appropriate to the implementation, primary-method collision checks, and evidence of measurable gain. GitHub visibility and star counts cannot be guaranteed by these results.
 
 The current synthetic search ablation in [search_ablation.json](../results/search_ablation.json) holds branch order, witness trials and stopping limits fixed. Its two stable finite-variance constructions show fewer nodes with the exact envelope than with independent moment boxes; its easy counterexample and proportional-tie cases show no node benefit and can favor exhaustive search in wall time. These deliberately synthetic results isolate the oracle's effect and do not establish a general runtime advantage or biological relevance. [UTILITY.md](UTILITY.md) gives the practical use contract and the evidence limits.
+# v0.2 extension note
+
+The Welch mode uses routine moment algebra and bounded exhaustive enumeration.
+Matrix adapters, delete-one diagnostics and external ranking-table comparison
+are usability extensions, not additional mathematical novelty claims. The
+conditional two-family theorem and the priority limits below concern paired
+signed self-normalized scores only.

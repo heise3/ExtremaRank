@@ -37,7 +37,7 @@ class Score:
         if not self._sum_squares:
             return 0.0
         squared = float(Fraction(self._sum ** 2, self._sum_squares))
-        return math.copysign(math.sqrt(squared), self._sum) if self._sum else 0.0
+        return math.copysign(math.sqrt(squared), -1.0 if self._sum < 0 else 1.0) if self._sum else 0.0
 
     @property
     def t(self) -> float:
@@ -48,13 +48,13 @@ class Score:
             return 0.0
         variance_numerator = self.count * self._sum_squares - self._sum ** 2
         if variance_numerator == 0:
-            return math.copysign(math.inf, self._sum)
+            return math.copysign(math.inf, -1.0 if self._sum < 0 else 1.0)
         try:
             squared = float(Fraction((self.count - 1) * self._sum ** 2,
                                      variance_numerator))
         except OverflowError:
             squared = math.inf
-        return math.copysign(math.sqrt(squared), self._sum)
+        return math.copysign(math.sqrt(squared), -1.0 if self._sum < 0 else 1.0)
 
     def as_dict(self) -> dict:
         t = self.t

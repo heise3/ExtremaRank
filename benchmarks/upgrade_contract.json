@@ -1,0 +1,18 @@
+{
+  "version": "v0.2.0",
+  "declared_before_execution": true,
+  "dataset": "Bioconductor multtest 2.68.0 golub; complete 3051-feature, 38-sample processed training matrix",
+  "target": "AML",
+  "reference": "ALL",
+  "design": "welch",
+  "transform": "none; provider preprocessing frozen",
+  "budget": [1, 2],
+  "top_k": 20,
+  "directions": ["up", "down", "absolute"],
+  "max_subsets": 10000,
+  "diagnostics": "every feasible one-sample deletion",
+  "independent_checks": "Fraction-based ranking checks for complete baselines, every returned witness, and all delete-one sets",
+  "limma_adapter": "full-feature baseline and all 38 single-sample refits; eBayes(lmFit(~group)), AML minus ALL; up/down/absolute Top-20",
+  "claim_ceiling": "numerical/ranking sensitivity on frozen public matrices; no diagnostic prediction or biological validation",
+  "raw_genotype_sample_identity": "NOT_EVALUATED; public processed matrices lack raw genotype inputs"
+}

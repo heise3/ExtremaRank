@@ -1,0 +1,406 @@
+{
+  "schema_version": 2,
+  "software": {
+    "name": "ExtremaRank",
+    "version": "0.2.0"
+  },
+  "status": "REFUTED",
+  "target": "unordered Welch-statistic top-K; >=2 retained per group; lexical feature-ID ties",
+  "arithmetic": "exact Welch comparisons of finite binary64 input values",
+  "parameters": {
+    "budget": 2,
+    "top_k": 20,
+    "direction": "absolute",
+    "max_subsets": 10000
+  },
+  "input": {
+    "n_units": 38,
+    "n_features": 3051,
+    "unit_ids": [
+      "Golub_train_01",
+      "Golub_train_02",
+      "Golub_train_03",
+      "Golub_train_04",
+      "Golub_train_05",
+      "Golub_train_06",
+      "Golub_train_07",
+      "Golub_train_08",
+      "Golub_train_09",
+      "Golub_train_10",
+      "Golub_train_11",
+      "Golub_train_12",
+      "Golub_train_13",
+      "Golub_train_14",
+      "Golub_train_15",
+      "Golub_train_16",
+      "Golub_train_17",
+      "Golub_train_18",
+      "Golub_train_19",
+      "Golub_train_20",
+      "Golub_train_21",
+      "Golub_train_22",
+      "Golub_train_23",
+      "Golub_train_24",
+      "Golub_train_25",
+      "Golub_train_26",
+      "Golub_train_27",
+      "Golub_train_28",
+      "Golub_train_29",
+      "Golub_train_30",
+      "Golub_train_31",
+      "Golub_train_32",
+      "Golub_train_33",
+      "Golub_train_34",
+      "Golub_train_35",
+      "Golub_train_36",
+      "Golub_train_37",
+      "Golub_train_38"
+    ],
+    "target_count": 11,
+    "reference_count": 27
+  },
+  "score_conventions": {
+    "equal_means": "t=0, including zero standard error",
+    "unequal_constant_groups": "signed infinity; descriptive extension, no inferential p value"
+  },
+  "topk_audit": {
+    "status": "REFUTED",
+    "baseline_topk": [
+      "X95735_at",
+      "M27891_at",
+      "M55150_at",
+      "M16038_at",
+      "L09209_s_at",
+      "M31523_at",
+      "X74262_at",
+      "Z15115_at",
+      "L47738_at",
+      "U22376_cds2_s_at",
+      "HG1612-HT1612_at",
+      "M91432_at",
+      "L41870_at",
+      "U72936_s_at",
+      "X51521_at",
+      "U50136_rna1_at",
+      "Y12670_at",
+      "X74801_at",
+      "Y00787_s_at",
+      "J05243_at"
+    ],
+    "witness_topk": [
+      "X95735_at",
+      "M27891_at",
+      "L09209_s_at",
+      "M16038_at",
+      "M55150_at",
+      "M31523_at",
+      "L47738_at",
+      "X74262_at",
+      "U22376_cds2_s_at",
+      "Z15115_at",
+      "HG1612-HT1612_at",
+      "X74801_at",
+      "Y12670_at",
+      "M91432_at",
+      "X51521_at",
+      "U50136_rna1_at",
+      "U72936_s_at",
+      "M23197_at",
+      "U82759_at",
+      "J05243_at"
+    ],
+    "deleted_indices": [
+      0
+    ],
+    "max_deletions": 2,
+    "subsets_checked": 1,
+    "feasible_deletion_sets": 741,
+    "max_subsets": 10000,
+    "direction": "absolute",
+    "search_method": "bounded exhaustive shared-sample enumeration",
+    "arithmetic": "exact Welch comparisons of finite binary64 input values",
+    "target": "unordered Welch-statistic top-K; >=2 retained per group; lexical feature-ID ties",
+    "deleted_units": [
+      "Golub_train_01"
+    ]
+  },
+  "outputs": {
+    "baseline": "baseline.tsv.gz",
+    "diagnostics": "diagnostics.tsv.gz",
+    "sample_influence": "sample_influence.tsv.gz",
+    "report": "report.html"
+  },
+  "preparation": {
+    "schema_version": 1,
+    "design": "welch",
+    "contrast": "AML - ALL",
+    "target": "AML",
+    "reference": "ALL",
+    "orientation": "features",
+    "transform": "none",
+    "pseudocount": null,
+    "min_cpm": 0.0,
+    "cpm_filter": ">=min_cpm in >=half included samples; all source features define library totals",
+    "matrix_sha256": "072cadf7d385785542b0011a81bf04efd23693710708210343658e813545d2cc",
+    "metadata_sha256": "6cf2779c1ceb1542d92a927f6ba07caeae14bc8b93590393f536fcbf9544e213",
+    "matrix_source_features": 3051,
+    "retained_features": 3051,
+    "included_samples": [
+      "Golub_train_01",
+      "Golub_train_02",
+      "Golub_train_03",
+      "Golub_train_04",
+      "Golub_train_05",
+      "Golub_train_06",
+      "Golub_train_07",
+      "Golub_train_08",
+      "Golub_train_09",
+      "Golub_train_10",
+      "Golub_train_11",
+      "Golub_train_12",
+      "Golub_train_13",
+      "Golub_train_14",
+      "Golub_train_15",
+      "Golub_train_16",
+      "Golub_train_17",
+      "Golub_train_18",
+      "Golub_train_19",
+      "Golub_train_20",
+      "Golub_train_21",
+      "Golub_train_22",
+      "Golub_train_23",
+      "Golub_train_24",
+      "Golub_train_25",
+      "Golub_train_26",
+      "Golub_train_27",
+      "Golub_train_28",
+      "Golub_train_29",
+      "Golub_train_30",
+      "Golub_train_31",
+      "Golub_train_32",
+      "Golub_train_33",
+      "Golub_train_34",
+      "Golub_train_35",
+      "Golub_train_36",
+      "Golub_train_37",
+      "Golub_train_38"
+    ],
+    "independent_units": 38,
+    "excluded_other_group_samples": [],
+    "excluded_incomplete_donors": [],
+    "missing_policy": "error",
+    "excluded_missing_features": [],
+    "excluded_features": [],
+    "library_totals": null,
+    "unit_metadata": [
+      {
+        "sample_id": "Golub_train_01",
+        "group": "ALL",
+        "donor_id": "Golub_train_01"
+      },
+      {
+        "sample_id": "Golub_train_02",
+        "group": "ALL",
+        "donor_id": "Golub_train_02"
+      },
+      {
+        "sample_id": "Golub_train_03",
+        "group": "ALL",
+        "donor_id": "Golub_train_03"
+      },
+      {
+        "sample_id": "Golub_train_04",
+        "group": "ALL",
+        "donor_id": "Golub_train_04"
+      },
+      {
+        "sample_id": "Golub_train_05",
+        "group": "ALL",
+        "donor_id": "Golub_train_05"
+      },
+      {
+        "sample_id": "Golub_train_06",
+        "group": "ALL",
+        "donor_id": "Golub_train_06"
+      },
+      {
+        "sample_id": "Golub_train_07",
+        "group": "ALL",
+        "donor_id": "Golub_train_07"
+      },
+      {
+        "sample_id": "Golub_train_08",
+        "group": "ALL",
+        "donor_id": "Golub_train_08"
+      },
+      {
+        "sample_id": "Golub_train_09",
+        "group": "ALL",
+        "donor_id": "Golub_train_09"
+      },
+      {
+        "sample_id": "Golub_train_10",
+        "group": "ALL",
+        "donor_id": "Golub_train_10"
+      },
+      {
+        "sample_id": "Golub_train_11",
+        "group": "ALL",
+        "donor_id": "Golub_train_11"
+      },
+      {
+        "sample_id": "Golub_train_12",
+        "group": "ALL",
+        "donor_id": "Golub_train_12"
+      },
+      {
+        "sample_id": "Golub_train_13",
+        "group": "ALL",
+        "donor_id": "Golub_train_13"
+      },
+      {
+        "sample_id": "Golub_train_14",
+        "group": "ALL",
+        "donor_id": "Golub_train_14"
+      },
+      {
+        "sample_id": "Golub_train_15",
+        "group": "ALL",
+        "donor_id": "Golub_train_15"
+      },
+      {
+        "sample_id": "Golub_train_16",
+        "group": "ALL",
+        "donor_id": "Golub_train_16"
+      },
+      {
+        "sample_id": "Golub_train_17",
+        "group": "ALL",
+        "donor_id": "Golub_train_17"
+      },
+      {
+        "sample_id": "Golub_train_18",
+        "group": "ALL",
+        "donor_id": "Golub_train_18"
+      },
+      {
+        "sample_id": "Golub_train_19",
+        "group": "ALL",
+        "donor_id": "Golub_train_19"
+      },
+      {
+        "sample_id": "Golub_train_20",
+        "group": "ALL",
+        "donor_id": "Golub_train_20"
+      },
+      {
+        "sample_id": "Golub_train_21",
+        "group": "ALL",
+        "donor_id": "Golub_train_21"
+      },
+      {
+        "sample_id": "Golub_train_22",
+        "group": "ALL",
+        "donor_id": "Golub_train_22"
+      },
+      {
+        "sample_id": "Golub_train_23",
+        "group": "ALL",
+        "donor_id": "Golub_train_23"
+      },
+      {
+        "sample_id": "Golub_train_24",
+        "group": "ALL",
+        "donor_id": "Golub_train_24"
+      },
+      {
+        "sample_id": "Golub_train_25",
+        "group": "ALL",
+        "donor_id": "Golub_train_25"
+      },
+      {
+        "sample_id": "Golub_train_26",
+        "group": "ALL",
+        "donor_id": "Golub_train_26"
+      },
+      {
+        "sample_id": "Golub_train_27",
+        "group": "ALL",
+        "donor_id": "Golub_train_27"
+      },
+      {
+        "sample_id": "Golub_train_28",
+        "group": "AML",
+        "donor_id": "Golub_train_28"
+      },
+      {
+        "sample_id": "Golub_train_29",
+        "group": "AML",
+        "donor_id": "Golub_train_29"
+      },
+      {
+        "sample_id": "Golub_train_30",
+        "group": "AML",
+        "donor_id": "Golub_train_30"
+      },
+      {
+        "sample_id": "Golub_train_31",
+        "group": "AML",
+        "donor_id": "Golub_train_31"
+      },
+      {
+        "sample_id": "Golub_train_32",
+        "group": "AML",
+        "donor_id": "Golub_train_32"
+      },
+      {
+        "sample_id": "Golub_train_33",
+        "group": "AML",
+        "donor_id": "Golub_train_33"
+      },
+      {
+        "sample_id": "Golub_train_34",
+        "group": "AML",
+        "donor_id": "Golub_train_34"
+      },
+      {
+        "sample_id": "Golub_train_35",
+        "group": "AML",
+        "donor_id": "Golub_train_35"
+      },
+      {
+        "sample_id": "Golub_train_36",
+        "group": "AML",
+        "donor_id": "Golub_train_36"
+      },
+      {
+        "sample_id": "Golub_train_37",
+        "group": "AML",
+        "donor_id": "Golub_train_37"
+      },
+      {
+        "sample_id": "Golub_train_38",
+        "group": "AML",
+        "donor_id": "Golub_train_38"
+      }
+    ],
+    "identity_check": "strict source IDs only; raw genotype/sample-swap verification NOT_EVALUATED",
+    "guarantee_input": "finite binary64 prepared values; preprocessing frozen before deletion",
+    "inference": "descriptive ranking sensitivity; no confounder adjustment or FDR inference",
+    "prepared_path": "values.csv.gz",
+    "command_inputs": {
+      "matrix": "/Users/feishuduobang/Documents/Codex/2026-10-03/new-chat/outputs/extremarank/data/prepared/Golub/matrix.csv.gz",
+      "metadata": "/Users/feishuduobang/Documents/Codex/2026-10-03/new-chat/outputs/extremarank/data/prepared/Golub/metadata.tsv"
+    }
+  },
+  "delete_one_summary": {
+    "scope": "baseline plus every feasible one-unit deletion; no multi-deletion rank bounds",
+    "n_scenarios": 38,
+    "n_changed": 38,
+    "skipped_units": []
+  },
+  "timing_seconds": {
+    "study_total_before_writing": 2.410804499872029
+  },
+  "distribution_note": "Large CSV/TSV files compressed losslessly after execution; reruns write ordinary tables."
+}

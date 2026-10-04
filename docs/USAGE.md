@@ -1,5 +1,9 @@
 # Use ExtremaRank on paired omics effects
 
+For v0.2 matrix/metadata preparation, independent groups, external models and
+offline sample-influence reports, use the [study workflows](STUDY.md).
+This page retains the original paired-effects interface.
+
 ExtremaRank asks how donor deletion can change a gene's signed paired t score or a selected top-K gene set. Every retained subset recomputes both the mean and the sample variance. The scalar envelopes are exact over all allowed subsets of the parsed binary64 effects. The shared top-K search returns a certificate, a concrete common deletion witness, or an unresolved result at its node limit.
 
 This is a descriptive robustness audit. It does not calculate differential-expression p values or control false discovery rates. Effects and preprocessing remain frozen during the audit: deletion does not rerun normalization, covariate adjustment, or expression filtering. Start with biologically meaningful paired donor effects, such as a normalized within-donor treatment-minus-control contrast; different preprocessing choices define different inputs.

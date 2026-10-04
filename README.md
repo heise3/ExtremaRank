@@ -4,18 +4,20 @@
 [Releases](https://github.com/heise3/ExtremaRank/releases) ·
 [Report an issue](https://github.com/heise3/ExtremaRank/issues)
 
-**Which of your paired omics candidates survive removing a few donors?**
+**Which of your omics candidates survive removing a few biological samples?**
 
-ExtremaRank computes exact worst-case studentized scores and audits whether a
-Top-K feature set can change under shared donor deletion. It recomputes both
-mean and variance. A counterexample includes the actual donor IDs and the
-replacement feature list.
+ExtremaRank audits whether a Top-K feature set changes under shared sample
+deletion. v0.2 supports **paired studies**, **independent two-group Welch
+rankings**, and **ranking tables from external refit methods**. Study reports
+show actual deletion witnesses, candidate exits/entries, and every feasible
+delete-one rank. Guarantees are specific to the selected workflow.
 
 The core has **no third-party dependencies**. Python 3.10+ is sufficient.
-CSV/TSV inputs make it usable with paired transcriptomics, proteomics or
-metabolomics whenever an ordinary paired-t ranking is the desired target.
+The bundled real examples cover paired RNA-seq, independent-group microarrays,
+and refitted limma moderated-t tables. Processed proteomics/metabolomics can
+meet the numeric input contract but have not received real-data validation.
 
-[中文结果与使用说明](docs/REPORT_CN.md) · [Usage](docs/USAGE.md) ·
+[v0.2 workflows](docs/STUDY.md) · [中文扩展说明](docs/UPGRADE_CN.md) · [Paired CLI](docs/USAGE.md) ·
 [Proof](docs/THEOREM.md) · [Prior art](docs/PRIOR_ART.md) ·
 [Utility and limits](docs/UTILITY.md) · [Interactive report](results/report.html)
 
@@ -23,10 +25,22 @@ metabolomics whenever an ordinary paired-t ranking is the desired target.
 
 ```bash
 python -m pip install .
+# Independent two-group study, including sample diagnostics and report.html.
+extremarank study data/prepared/Golub/matrix.csv.gz \
+  --metadata data/prepared/Golub/metadata.tsv --target AML --reference ALL \
+  --design welch --budget 2 --top-k 20 --output golub-audit
+
+# Original exact paired-effects interface remains available.
 extremarank examples/variance_reversal.tsv --budget 1 --top-k 1 --output my-audit
 ```
 
-For your data, put donor IDs in the first column and one feature per remaining
+For `study`, supply a feature-by-sample matrix and aligned sample metadata;
+declare target/reference and the paired or independent design. Explicit
+preparation, missing-feature exclusion and incomplete-pair policies are
+documented in the [study guide](docs/STUDY.md). Existing external refits can be
+compared with `extremarank compare`; an executed limma adapter is included.
+
+For the original paired-effects CLI, put donor IDs in the first column and one feature per remaining
 column. Values are **already prepared within-donor target-minus-reference
 effects**. Freeze normalization, pairing and the feature universe before
 auditing. The software checks unique IDs and finite rectangular data.
@@ -61,6 +75,11 @@ use descriptive score zero; nonzero constant vectors use extended t of ±∞.
 These conventions are recorded explicitly and do not define inferential p-values.
 
 ## The algorithmic contribution
+
+The theorem below concerns the **paired** mode. The independent Welch mode
+uses exact moment comparisons and bounded exhaustive search; it does not
+inherit the paired speedup. External-table comparisons use only supplied
+scenarios and report `OBSERVED_STABLE`/`OBSERVED_CHANGED`, not certificates.
 
 For retained effects, let `S = sum(x)` and `Q = sum(x²)`. At a fixed retained
 count, signed paired-t ranking is equivalent to `R = S/sqrt(Q)`.
@@ -130,6 +149,28 @@ ground truth or a reason to remove those donors from the experiment.
 Independent checks include 200,000 exact scalar scenarios with forced inclusion
 and exhaustive shared-subset ranking tests. See the JSON files in `results/`.
 
+### v0.2 independent-group and external-model validation
+
+The complete public Golub processed microarray training matrix has 27 ALL / 11
+AML samples and 3,051 provider-selected features. Native Welch Top-20 audits
+at budgets 1 and 2 found independently replayed shared-deletion witnesses in
+all three ranking directions. Every feasible delete-one scenario was inspected:
+
+| Ranking | Welch delete-one changes | Refitted limma delete-one changes |
+|---|---:|---:|
+| Up | 27 / 38 | 28 / 38 |
+| Down | 34 / 38 | 30 / 38 |
+| Absolute | 38 / 38 | 33 / 38 |
+
+117 full-feature Welch rankings matched independent Fraction arithmetic;
+117 external limma Top-20 sets matched the R exporter. The external interface
+reports observed changes only. An additional 2,000 small Welch problems passed
+91,227 exact rank comparisons and 6,000 complete status checks. All 44 package
+tests passed locally on Python 3.12 and 3.14. See the
+[frozen contract](benchmarks/upgrade_contract.json), [real results](results/upgrade_real.json)
+and [workflow guide](docs/STUDY.md). These are sensitivity checks, not disease
+classification or biomarker-validation results.
+
 ## Reproduce offline
 
 ```bash
@@ -137,6 +178,8 @@ python -m unittest discover -s tests -v
 python benchmarks/independent_theorem_check.py
 python benchmarks/search_ablation.py
 python benchmarks/scaling.py
+python benchmarks/independent_welch_check.py --cases 2000
+python benchmarks/upgrade_real.py
 
 # Only raw-count preparation / full real-data reproduction needs NumPy.
 python -m pip install '.[benchmark]'
@@ -151,12 +194,14 @@ for these bundled reproductions. Missing source files can be restored with
 
 ## Scope
 
-Use the tool for fixed paired effects and ordinary paired-t feature ranking,
-especially small paired studies where a candidate shortlist should be audited
-before follow-up work. It provides deterministic worst-case input sensitivity.
-It does not replace limma/DESeq2, estimate FDR, model cell types, certify
-moderated t or covariate-adjusted models, or re-estimate upstream normalization.
-It does not measure prediction accuracy or guarantee biomarker validation.
+Use the native audits for fixed paired effects or independent-group Welch
+rankings. Both compare exact input statistics and may report `UNRESOLVED` at a
+finite search limit. Use the external-table interface for observed refit
+scenarios from other models. Input preparation is frozen in native audits;
+the external refitting pipeline controls its own preparation. No workflow
+estimates FDR, models cell types, measures prediction accuracy, or guarantees
+biomarker validation. Broader model compatibility of `compare` does not imply
+an exact all-deletion theorem for those external models.
 
 Software: MIT. Third-party data attribution: [data/DATA_LICENSE.md](data/DATA_LICENSE.md).
 Questions, counterexamples to the theorem, independently verified datasets and

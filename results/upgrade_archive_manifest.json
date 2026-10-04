@@ -1,0 +1,355 @@
+{
+  "files": [
+    {
+      "original_path": "data/prepared/Golub/limma/refits.tsv",
+      "archived_path": "data/prepared/Golub/limma/refits.tsv.gz",
+      "original_sha256": "2f2b86837dec2570726a1552e952bf6e0e52201fb73616cc5f1c73e1e5fe0462",
+      "archive_sha256": "e65a323e8dc1b2f35372a6ebeae27add84c08b5040e243d3e3c6f79f98dfe516",
+      "original_bytes": 6608155,
+      "archive_bytes": 1715074,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/Golub/matrix.binary64",
+      "archived_path": "data/prepared/Golub/matrix.binary64.gz",
+      "original_sha256": "f67b95c67f33cb4c7465351e3e95098791626c28d6a097b5b99c97359f936fb9",
+      "archive_sha256": "373028c97d6c1a9bbc9b98a8ef00c3c7175c378e36526c89156dfa8bf0a9f981",
+      "original_bytes": 927504,
+      "archive_bytes": 439476,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/Golub/matrix.csv",
+      "archived_path": "data/prepared/Golub/matrix.csv.gz",
+      "original_sha256": "056e812827ddd5defa4afd9a905ad2ddb1b5a6d29fc1672308e831293edb3a97",
+      "archive_sha256": "072cadf7d385785542b0011a81bf04efd23693710708210343658e813545d2cc",
+      "original_bytes": 2234361,
+      "archive_bytes": 472959,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/limma-absolute/feature_sensitivity.tsv",
+      "archived_path": "results/upgrade/limma-absolute/feature_sensitivity.tsv.gz",
+      "original_sha256": "28a0c9875a63806846ccc64b1db8c2752a07e46c1e0ebc7490a0988508c52e36",
+      "archive_sha256": "86bb694c93f931775691fc1530c7fb6997713a176aa09ae0fbf374420fec9dec",
+      "original_bytes": 110032,
+      "archive_bytes": 35295,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/limma-absolute/scenario_changes.tsv",
+      "archived_path": "results/upgrade/limma-absolute/scenario_changes.tsv.gz",
+      "original_sha256": "04471ab4e7fc955f075337e53c702dc33748783ad5c5fb032f46150d139365f9",
+      "archive_sha256": "885c40df65cde8c0fca9703321b3cffcb5750040f68c1a6f892839d6ffc3fda1",
+      "original_bytes": 5212,
+      "archive_bytes": 793,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/limma-down/feature_sensitivity.tsv",
+      "archived_path": "results/upgrade/limma-down/feature_sensitivity.tsv.gz",
+      "original_sha256": "b05ccc6abd9b1aa25d0b4f21efaa1d99ef8748acdc493e060813ae45ed341011",
+      "archive_sha256": "822abd82baf3ec278fdf49ed939ed2da29422262434311d21c8a314eeea0c4be",
+      "original_bytes": 110107,
+      "archive_bytes": 34822,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/limma-down/scenario_changes.tsv",
+      "archived_path": "results/upgrade/limma-down/scenario_changes.tsv.gz",
+      "original_sha256": "ff27503472f55f19e5a17b59e992fe483599cf0c571e8c22a54899c9237d9861",
+      "archive_sha256": "d3bed9ae82502971911461269d9a65cd48ac3b2d87f9e87552c2be11f4c8331b",
+      "original_bytes": 4696,
+      "archive_bytes": 729,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/limma-up/feature_sensitivity.tsv",
+      "archived_path": "results/upgrade/limma-up/feature_sensitivity.tsv.gz",
+      "original_sha256": "7c5855fd64bbcd38f1fb18ef305049ae3020041dbe269f0e8e2da14af9ca53a7",
+      "archive_sha256": "be010df643758b360595a27393ea51d35163b92a5ab96ce413280ec2b12f286d",
+      "original_bytes": 110103,
+      "archive_bytes": 34817,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/limma-up/scenario_changes.tsv",
+      "archived_path": "results/upgrade/limma-up/scenario_changes.tsv.gz",
+      "original_sha256": "4e846ed163c0422fc6e7fb3d454e9b28005f44ff35305f1301c71855f1130eb2",
+      "archive_sha256": "0b79b7e3053db8f917132f08b9c1040fc17d7f2b8155025e7d4bc7e7343361e7",
+      "original_bytes": 4680,
+      "archive_bytes": 693,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b1/baseline.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b1/baseline.tsv.gz",
+      "original_sha256": "3254ed39f2233f7d45b46acf66c9358e65dbac6dfde277b1cb644ba109b75071",
+      "archive_sha256": "ff0f8dfd058c0c9294149e6e5c05adc4d7a12cb3851680ed10b4583175b9a4a2",
+      "original_bytes": 189854,
+      "archive_bytes": 73555,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b1/diagnostics.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b1/diagnostics.tsv.gz",
+      "original_sha256": "0eb3eefb422eebd5daccc5948337e38a60b24bf8cb3830451894b9db7e857cdc",
+      "archive_sha256": "49ccef76c0ee50caae7e9687462a1a122ca6cbf827f3a2b803be29c28a5c101a",
+      "original_bytes": 189490,
+      "archive_bytes": 67669,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b1/groups.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b1/groups.tsv.gz",
+      "original_sha256": "6cf2779c1ceb1542d92a927f6ba07caeae14bc8b93590393f536fcbf9544e213",
+      "archive_sha256": "6222af7a3b2113c4dc699bb1b81612fd505eb539fc22141c376c6886df5282a5",
+      "original_bytes": 1317,
+      "archive_bytes": 233,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b1/sample_influence.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b1/sample_influence.tsv.gz",
+      "original_sha256": "a60b7d38acfe6fcbe9427289785d406de561e85554981a0c298aee804c29023b",
+      "archive_sha256": "e80ee9c18b1944a139cfa2946517bd7625bc46a3400506e40999defa1ef90b11",
+      "original_bytes": 5710,
+      "archive_bytes": 897,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b1/values.csv",
+      "archived_path": "results/upgrade/welch-absolute-b1/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "bac54c157407809e6c978e1426aa478a56eb9d664767f058b14b5c5da8fe6181",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b2/baseline.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b2/baseline.tsv.gz",
+      "original_sha256": "3254ed39f2233f7d45b46acf66c9358e65dbac6dfde277b1cb644ba109b75071",
+      "archive_sha256": "ff0f8dfd058c0c9294149e6e5c05adc4d7a12cb3851680ed10b4583175b9a4a2",
+      "original_bytes": 189854,
+      "archive_bytes": 73555,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b2/diagnostics.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b2/diagnostics.tsv.gz",
+      "original_sha256": "0eb3eefb422eebd5daccc5948337e38a60b24bf8cb3830451894b9db7e857cdc",
+      "archive_sha256": "49ccef76c0ee50caae7e9687462a1a122ca6cbf827f3a2b803be29c28a5c101a",
+      "original_bytes": 189490,
+      "archive_bytes": 67669,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b2/groups.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b2/groups.tsv.gz",
+      "original_sha256": "6cf2779c1ceb1542d92a927f6ba07caeae14bc8b93590393f536fcbf9544e213",
+      "archive_sha256": "6222af7a3b2113c4dc699bb1b81612fd505eb539fc22141c376c6886df5282a5",
+      "original_bytes": 1317,
+      "archive_bytes": 233,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b2/sample_influence.tsv",
+      "archived_path": "results/upgrade/welch-absolute-b2/sample_influence.tsv.gz",
+      "original_sha256": "a60b7d38acfe6fcbe9427289785d406de561e85554981a0c298aee804c29023b",
+      "archive_sha256": "e80ee9c18b1944a139cfa2946517bd7625bc46a3400506e40999defa1ef90b11",
+      "original_bytes": 5710,
+      "archive_bytes": 897,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-absolute-b2/values.csv",
+      "archived_path": "results/upgrade/welch-absolute-b2/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "bac54c157407809e6c978e1426aa478a56eb9d664767f058b14b5c5da8fe6181",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b1/baseline.tsv",
+      "archived_path": "results/upgrade/welch-down-b1/baseline.tsv.gz",
+      "original_sha256": "87afb2241e2ff2ff18c8657f4744855cfac86676dd9acbb303c7f08d9a481d24",
+      "archive_sha256": "52d8295da9516b4e4bb4897361e77c6ed034326654b8e8e25a73ed7a13abca36",
+      "original_bytes": 189854,
+      "archive_bytes": 72916,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b1/diagnostics.tsv",
+      "archived_path": "results/upgrade/welch-down-b1/diagnostics.tsv.gz",
+      "original_sha256": "dde6f97e1bf87b1ced6864d54ace05fd9c74d45d39227423d4491a856929a693",
+      "archive_sha256": "35f682bf09af71ce708c118d5b37057474a5dbd6ec4783977e042af1883ebb03",
+      "original_bytes": 189697,
+      "archive_bytes": 67337,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b1/groups.tsv",
+      "archived_path": "results/upgrade/welch-down-b1/groups.tsv.gz",
+      "original_sha256": "6cf2779c1ceb1542d92a927f6ba07caeae14bc8b93590393f536fcbf9544e213",
+      "archive_sha256": "6222af7a3b2113c4dc699bb1b81612fd505eb539fc22141c376c6886df5282a5",
+      "original_bytes": 1317,
+      "archive_bytes": 233,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b1/sample_influence.tsv",
+      "archived_path": "results/upgrade/welch-down-b1/sample_influence.tsv.gz",
+      "original_sha256": "136a3a1a21c396b44dd2dbf2515d133ad24e7c91df5cc00d1aca46d4408ff923",
+      "archive_sha256": "a4ac7df84d2d33ba71027a20b18ce02f3d8688ca89c78d0d248b0605463efd13",
+      "original_bytes": 4114,
+      "archive_bytes": 752,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b1/values.csv",
+      "archived_path": "results/upgrade/welch-down-b1/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "bac54c157407809e6c978e1426aa478a56eb9d664767f058b14b5c5da8fe6181",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b2/baseline.tsv",
+      "archived_path": "results/upgrade/welch-down-b2/baseline.tsv.gz",
+      "original_sha256": "87afb2241e2ff2ff18c8657f4744855cfac86676dd9acbb303c7f08d9a481d24",
+      "archive_sha256": "52d8295da9516b4e4bb4897361e77c6ed034326654b8e8e25a73ed7a13abca36",
+      "original_bytes": 189854,
+      "archive_bytes": 72916,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b2/diagnostics.tsv",
+      "archived_path": "results/upgrade/welch-down-b2/diagnostics.tsv.gz",
+      "original_sha256": "dde6f97e1bf87b1ced6864d54ace05fd9c74d45d39227423d4491a856929a693",
+      "archive_sha256": "35f682bf09af71ce708c118d5b37057474a5dbd6ec4783977e042af1883ebb03",
+      "original_bytes": 189697,
+      "archive_bytes": 67337,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b2/groups.tsv",
+      "archived_path": "results/upgrade/welch-down-b2/groups.tsv.gz",
+      "original_sha256": "6cf2779c1ceb1542d92a927f6ba07caeae14bc8b93590393f536fcbf9544e213",
+      "archive_sha256": "6222af7a3b2113c4dc699bb1b81612fd505eb539fc22141c376c6886df5282a5",
+      "original_bytes": 1317,
+      "archive_bytes": 233,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b2/sample_influence.tsv",
+      "archived_path": "results/upgrade/welch-down-b2/sample_influence.tsv.gz",
+      "original_sha256": "136a3a1a21c396b44dd2dbf2515d133ad24e7c91df5cc00d1aca46d4408ff923",
+      "archive_sha256": "a4ac7df84d2d33ba71027a20b18ce02f3d8688ca89c78d0d248b0605463efd13",
+      "original_bytes": 4114,
+      "archive_bytes": 752,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-down-b2/values.csv",
+      "archived_path": "results/upgrade/welch-down-b2/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "bac54c157407809e6c978e1426aa478a56eb9d664767f058b14b5c5da8fe6181",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b1/baseline.tsv",
+      "archived_path": "results/upgrade/welch-up-b1/baseline.tsv.gz",
+      "original_sha256": "93412e078aca3743c42ea4fa6af487236f7194851fb1478029361e335a29419a",
+      "archive_sha256": "b77af626a51c080dfffe2637e0418da1e554949b8bfaf9fb15b00b4671ade855",
+      "original_bytes": 189854,
+      "archive_bytes": 72956,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b1/diagnostics.tsv",
+      "archived_path": "results/upgrade/welch-up-b1/diagnostics.tsv.gz",
+      "original_sha256": "9edfd3fb36d120e4ecdbbe5f161077d2eb14121fb8e2d3f6b27fb1bad2fd5200",
+      "archive_sha256": "4edaf40392c86631404fba5c955e5158e0e7a60c90dca2db996d60436f9645f7",
+      "original_bytes": 189316,
+      "archive_bytes": 67287,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b1/groups.tsv",
+      "archived_path": "results/upgrade/welch-up-b1/groups.tsv.gz",
+      "original_sha256": "6cf2779c1ceb1542d92a927f6ba07caeae14bc8b93590393f536fcbf9544e213",
+      "archive_sha256": "6222af7a3b2113c4dc699bb1b81612fd505eb539fc22141c376c6886df5282a5",
+      "original_bytes": 1317,
+      "archive_bytes": 233,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b1/sample_influence.tsv",
+      "archived_path": "results/upgrade/welch-up-b1/sample_influence.tsv.gz",
+      "original_sha256": "40ee63998f7c6ce1a35cd57805804a2c41ab2280444f57f44df70ce08275f54a",
+      "archive_sha256": "1c2612885ba95af747b290e90ab628c0d1a18be6bd746556eca02c37e14674b0",
+      "original_bytes": 3604,
+      "archive_bytes": 595,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b1/values.csv",
+      "archived_path": "results/upgrade/welch-up-b1/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "bac54c157407809e6c978e1426aa478a56eb9d664767f058b14b5c5da8fe6181",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b2/baseline.tsv",
+      "archived_path": "results/upgrade/welch-up-b2/baseline.tsv.gz",
+      "original_sha256": "93412e078aca3743c42ea4fa6af487236f7194851fb1478029361e335a29419a",
+      "archive_sha256": "b77af626a51c080dfffe2637e0418da1e554949b8bfaf9fb15b00b4671ade855",
+      "original_bytes": 189854,
+      "archive_bytes": 72956,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b2/diagnostics.tsv",
+      "archived_path": "results/upgrade/welch-up-b2/diagnostics.tsv.gz",
+      "original_sha256": "9edfd3fb36d120e4ecdbbe5f161077d2eb14121fb8e2d3f6b27fb1bad2fd5200",
+      "archive_sha256": "4edaf40392c86631404fba5c955e5158e0e7a60c90dca2db996d60436f9645f7",
+      "original_bytes": 189316,
+      "archive_bytes": 67287,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b2/groups.tsv",
+      "archived_path": "results/upgrade/welch-up-b2/groups.tsv.gz",
+      "original_sha256": "6cf2779c1ceb1542d92a927f6ba07caeae14bc8b93590393f536fcbf9544e213",
+      "archive_sha256": "6222af7a3b2113c4dc699bb1b81612fd505eb539fc22141c376c6886df5282a5",
+      "original_bytes": 1317,
+      "archive_bytes": 233,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b2/sample_influence.tsv",
+      "archived_path": "results/upgrade/welch-up-b2/sample_influence.tsv.gz",
+      "original_sha256": "40ee63998f7c6ce1a35cd57805804a2c41ab2280444f57f44df70ce08275f54a",
+      "archive_sha256": "1c2612885ba95af747b290e90ab628c0d1a18be6bd746556eca02c37e14674b0",
+      "original_bytes": 3604,
+      "archive_bytes": 595,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/upgrade/welch-up-b2/values.csv",
+      "archived_path": "results/upgrade/welch-up-b2/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "bac54c157407809e6c978e1426aa478a56eb9d664767f058b14b5c5da8fe6181",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    }
+  ]
+}

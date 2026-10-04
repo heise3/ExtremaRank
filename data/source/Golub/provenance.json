@@ -1,0 +1,35 @@
+{
+  "package_url": "https://bioconductor.org/packages/3.23/bioc/src/contrib/multtest_2.68.0.tar.gz",
+  "package_sha256": "eeba5414411e26b010f8cead730c44dc3ef4ed203629d3acb42a4baa19ce3fd2",
+  "package_version": "2.68.0",
+  "package_license": "LGPL, as recorded in original DESCRIPTION; third-party material is not MIT",
+  "retrieved_at_utc": "2026-10-04T09:57:40.589969+00:00",
+  "source_files": [
+    {
+      "file": "golub.RData",
+      "package_member": "multtest/data/golub.RData",
+      "sha256": "c49407449272725e6e02ef5f609115ee1f6854e8b19d7f477625af012a8e3e47"
+    },
+    {
+      "file": "golub.Rd",
+      "package_member": "multtest/man/golub.Rd",
+      "sha256": "1d7dec0fc79bc967aa91fd00fc20844387ea09110634f8ce9e9860a5c4538af0"
+    },
+    {
+      "file": "PACKAGE_DESCRIPTION",
+      "package_member": "multtest/DESCRIPTION",
+      "sha256": "b6872ff7afaf478974d4401c499650c1eba41de8447c37ad9e17cad6e8eab6ee"
+    },
+    {
+      "file": "provider_preprocessing.R",
+      "package_member": "multtest/vignettes/golub.R",
+      "sha256": "818abd8d7b18e07f43db656cbee69e8c737f3e736879ba38a4c1154069d34637"
+    }
+  ],
+  "samples": 38,
+  "ALL": 27,
+  "AML": 11,
+  "features": 3051,
+  "sample_ids": "deterministic 1-based original matrix column labels; no new identity validation",
+  "preprocessing": "provider preprocessing frozen; threshold/filter/log10/column scale as retained in provider_preprocessing.R"
+}

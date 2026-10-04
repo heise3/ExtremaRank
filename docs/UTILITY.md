@@ -1,5 +1,10 @@
 # Practical use and evidence limits
 
+This page documents the original paired target. v0.2 also supports independent
+two-group Welch audits and comparisons of external refit tables; see
+[workflow-specific guarantees and executed validation](STUDY.md). The paired
+theorem and limits below do not automatically extend to the new targets.
+
 ExtremaRank answers a concrete sensitivity question: **would the entire selected feature set change if up to `b` biological donor pairs were absent, after recomputing the paired mean and sample variance?** A result is either a complete stability certificate, one shared donor deletion witness, or unresolved at the declared search budget. This can help a researcher assess whether a shortlist is sufficiently stable to justify follow-up work and identify which omitted donor pairs would change it.
 
 The useful deliverable is the actual omitted-pair witness and recomputed feature set. A sensitive list is not automatically incorrect, and an influential donor is not automatically an outlier. Deleting the witness to improve a preferred result would be a different analysis requiring scientific justification.

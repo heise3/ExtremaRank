@@ -12,6 +12,7 @@ import io
 import json
 import math
 import os
+import sys
 from pathlib import Path
 import tempfile
 import time
@@ -234,8 +235,16 @@ def _summarize(table: InputTable, budget: int, k: int, direction: str) -> tuple[
 
 
 def main(argv: Sequence[str] | None = None) -> int:
+    argv = list(sys.argv[1:] if argv is None else argv)
+    if argv and argv[0] in {"study", "prepare", "compare"}:
+        command, rest = argv[0], argv[1:]
+        if command == "compare":
+            from .external import main as compare_main
+            return compare_main(rest)
+        from .study import main as study_main
+        return study_main(rest, prepare_only=command == "prepare")
     parser = argparse.ArgumentParser(
-        prog="extremarank", description="Exact deletion envelopes and shared-donor top-K audit for paired effects.")
+        prog="extremarank", description="Exact paired-effect audits. Also: extremarank study / prepare / compare --help.")
     parser.add_argument("input", type=Path, help="UTF-8 donor x gene CSV/TSV, optionally gzip; first header must be donor_id")
     parser.add_argument("--budget", type=int, default=2, help="maximum deleted donors (default: 2); must leave >=2 donors")
     parser.add_argument("--top-k", type=int, default=None,

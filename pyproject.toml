@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "extremarank"
-version = "0.1.0"
-description = "Exact studentized subset extrema for paired omics ranking audits"
+version = "0.2.0"
+description = "Sample-deletion robustness audits for paired and independent-group omics rankings"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-keywords = ["bioinformatics", "RNA-seq", "robustness", "paired-data", "exact-optimization"]
+keywords = ["bioinformatics", "omics", "robustness", "paired-data", "Welch", "exact-optimization"]
 classifiers = ["Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Bio-Informatics"]
 dependencies = []
 

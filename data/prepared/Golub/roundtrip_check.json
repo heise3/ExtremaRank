@@ -1,0 +1,7 @@
+{
+  "values": 115938,
+  "mismatches": 0,
+  "source_bits_sha256": "f67b95c67f33cb4c7465351e3e95098791626c28d6a097b5b99c97359f936fb9",
+  "decimal_csv_sha256": "056e812827ddd5defa4afd9a905ad2ddb1b5a6d29fc1672308e831293edb3a97",
+  "note": "Python binary64 parser agrees exactly with original RData bits; R read.table can round one ulp differently"
+}

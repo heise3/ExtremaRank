@@ -1,0 +1,5 @@
+R 4.6.1
+limma 3.68.5
+model: ~group, levels ALL then AML; coefficient groupAML
+empirical Bayes recomputed per refit; trend=FALSE, robust=FALSE
+source processed input/filtering frozen; all feasible single-donor deletions

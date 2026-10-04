@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "Please cite the version and theorem when using this research software. Replace contributor metadata before registering a DOI."
-title: "ExtremaRank: exact studentized subset extrema for paired omics ranking audits"
+title: "ExtremaRank: sample-deletion robustness audits for paired and independent-group omics rankings"
 type: software
 authors:
   - name: "ExtremaRank contributors"
-version: 0.1.0
-date-released: '2026-10-03'
+version: 0.2.0
+date-released: '2026-10-04'
 license: MIT
 repository-code: "https://github.com/heise3/ExtremaRank"

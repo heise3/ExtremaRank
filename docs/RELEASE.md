@@ -10,7 +10,7 @@ been checked. Replace contributor metadata in CITATION.cff before DOI registrati
 
 Suggested GitHub description:
 
-> Exact worst-case studentized scores and shared-donor Top-K stability audits for paired omics. Dependency-free Python core, proof, CLI and reproducible public RNA-seq benchmarks.
+> Sample-deletion robustness audits for paired and independent-group omics: exact paired extrema, Welch audits, external refit comparison, and offline diagnostic reports.
 
 Suggested topics:
 
@@ -28,5 +28,8 @@ and [setup-python](https://github.com/actions/setup-python) documentation at pac
 Useful project presentation is already included: a short runnable example,
 full theorem, documented closest methods, one-command real-data reproduction,
 machine-readable witnesses, an offline interactive report, and an editable SVG.
-Feature requests should prioritize actual paired-data use and additional verified
-datasets. Scientific claims should remain restricted to the stated ranking target.
+v0.2 adds independent two-group studies, strict matrix/metadata preparation,
+delete-one diagnostics and an executed limma refit-table adapter. New local
+validation is recorded in `results/VALIDATION_V02.json`; `VALIDATION.json`
+retains the historical v0.1 record. Scientific claims remain restricted to the
+workflow-specific targets in `docs/STUDY.md`.

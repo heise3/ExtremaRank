@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "python": "3.14.6",
+  "wheel_sha256": "28c695767c61d4bcbb0dc5dccd1e6643e776df0af65e69700c21c51f3dd9d9f9",
+  "wheel_source_code_identical": true,
+  "installed_distribution_names": [
+    "extremarank",
+    "pip"
+  ],
+  "smoke_statuses": {
+    "welch": "REFUTED",
+    "external": "OBSERVED_CHANGED",
+    "paired": "REFUTED"
+  }
+}

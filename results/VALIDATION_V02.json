@@ -1,0 +1,60 @@
+{
+  "version": "0.2.0",
+  "validated_at_utc": "2026-10-04T10:01:01.946281+00:00",
+  "local_tests": {
+    "Python3.12": {
+      "tests": 44,
+      "status": "passed"
+    },
+    "Python3.14": {
+      "tests": 44,
+      "status": "passed"
+    }
+  },
+  "welch_independent": {
+    "cases": 2000,
+    "rank_evaluations": 91227,
+    "complete_status_checks": 6000,
+    "failures": 0,
+    "seed": 740125,
+    "arithmetic": "independent Fraction means and centered sample variances",
+    "seconds": 18.614988415967673
+  },
+  "real_data": {
+    "full_feature_welch_ranks": 117,
+    "mismatches": 0,
+    "limma_R_topk_matches": 117,
+    "limma_R_mismatches": 0
+  },
+  "clean_wheel_install": {
+    "version": "0.2.0",
+    "python": "3.14.6",
+    "wheel_sha256": "28c695767c61d4bcbb0dc5dccd1e6643e776df0af65e69700c21c51f3dd9d9f9",
+    "wheel_source_code_identical": true,
+    "installed_distribution_names": [
+      "extremarank",
+      "pip"
+    ],
+    "smoke_statuses": {
+      "welch": "REFUTED",
+      "external": "OBSERVED_CHANGED",
+      "paired": "REFUTED"
+    }
+  },
+  "public_source_files_verified": 4,
+  "source_binary64_decimal_values_checked": 115938,
+  "source_roundtrip_mismatches": 0,
+  "lossless_archive_files": 39,
+  "markdown_links": "passed",
+  "credential_pattern_scan": {
+    "files": 195,
+    "hits": 0,
+    "scope": "known token/private-key patterns; excludes git and build cache"
+  },
+  "browser_preview": {
+    "study_report_rendered": true,
+    "browser_console_errors": 0
+  },
+  "claim_limits": "Native frozen paired-t and Welch ranking sensitivity; external tables only supplied scenarios; no FDR, biological/clinical efficacy or global priority claim",
+  "remote_validation": "GitHub Actions run against the release commit; final status verified separately at publication"
+}
