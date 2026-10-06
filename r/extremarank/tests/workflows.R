@@ -95,6 +95,7 @@ if (requireNamespace("DelayedArray", quietly = TRUE)) {
         h <- HDF5Array::writeHDF5Array(counts, filepath = path, name = "counts", with.dimnames = TRUE)
         from_disk <- pseudobulk_extremarank(h, cells, min_cells = 2, block_rows = 1)
         stopifnot(identical(pb$data, from_disk$data)); unlink(path)
+        cat("HDF5-backed pseudobulk matched the independent dense reference\n")
     }
     b <- pb$data$B
     a <- extremarank(b$counts, b$metadata, "T", "R", k = 1, budget = 1, diagnostics = FALSE)

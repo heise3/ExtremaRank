@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/native-r.yml",
-      "bytes": 3714,
-      "sha256": "98f4b697c9972fcadcb708d6b93ea4932e8ebb7731c53c2457927f840927fde0"
+      "bytes": 3986,
+      "sha256": "c050eee23c75e11856de70318d47ff6e0f72160450d8ab6eda2978e9fc7ddf78"
     },
     {
       "path": ".github/workflows/tests.yml",
@@ -923,8 +923,8 @@
     },
     {
       "path": "r/extremarank/tests/workflows.R",
-      "bytes": 8727,
-      "sha256": "573982bb15ea385dcb36978a18b2564c9707bbafff950b1bf36be2e48e97cc5e"
+      "bytes": 8807,
+      "sha256": "2c70350b3bfe7f9d2b48d1f8d4858842a02abd4002c9c706202770d8097d0b02"
     },
     {
       "path": "r/extremarank/vignettes/native-workflows.Rmd",

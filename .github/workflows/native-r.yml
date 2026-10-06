@@ -25,7 +25,7 @@ jobs:
       - name: Build standard R source package
         run: R CMD build r/extremarank --no-manual --no-build-vignettes
       - name: Check native package and R-only oracle tests
-        run: R CMD check --no-manual --no-vignettes --install-args=--strip extremarank_0.5.0.tar.gz
+        run: R CMD check --no-manual --no-vignettes extremarank_0.5.0.tar.gz
       - name: Require zero errors and warnings
         shell: Rscript {0}
         run: |
@@ -62,11 +62,17 @@ jobs:
       - uses: r-lib/actions/setup-r@v2
         with:
           use-public-rspm: true
+      - name: Install HDF5 build system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev zlib1g-dev
       - name: Install optional experiment and model packages
         shell: Rscript {0}
         run: |
           install.packages(c("Rcpp", "BH", "Matrix", "digest", "BiocManager"))
-          BiocManager::install(c("limma", "edgeR", "DESeq2", "SingleCellExperiment", "DelayedArray", "HDF5Array"), ask = FALSE, update = FALSE)
+          packages <- c("limma", "edgeR", "DESeq2", "SingleCellExperiment", "DelayedArray", "HDF5Array")
+          BiocManager::install(packages, ask = FALSE, update = FALSE)
+          stopifnot(all(vapply(packages, requireNamespace, logical(1), quietly = TRUE)))
       - run: R CMD INSTALL r/extremarank
       - name: Test direct R model refits and experiment objects
         shell: Rscript {0}
