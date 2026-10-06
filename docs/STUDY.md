@@ -1,20 +1,21 @@
-# Paired, independent-group, and external-model workflows (v0.2)
+# Paired, independent-group, and external-model workflows (v0.3)
 
-ExtremaRank now has three ways to inspect candidate-list sensitivity. Choose
+ExtremaRank offers native and external ways to inspect candidate-list sensitivity. Choose
 the design and the ranking statistic deliberately; a shared file format does
 not make the statistical models interchangeable.
 
 | Workflow | Target | Guarantee and scope |
 |---|---|---|
 | `study --design paired` or the original effects CLI | Ordinary paired t on frozen within-donor differences | Exact scalar extrema via the two-family theorem; shared Top-K branch-and-bound may be unresolved at its limit. |
-| `study --design welch` | Ordinary unequal-variance two-group Welch statistic on independent samples | Exact integer ranking comparisons; bounded exhaustive enumeration of feasible shared deletions. No paired-theorem speedup. |
+| `study --design welch` | Ordinary unequal-variance two-group Welch statistic on independent samples | Exact integer ranking comparisons; safe conditional pruning or reference enumeration. Does not inherit the paired extremum theorem. |
 | `compare` | Scores exported from any external refit method | Only the supplied scenarios are inspected. `OBSERVED_STABLE` / `OBSERVED_CHANGED` never certify unobserved deletions or independently verify the external fits. |
 
-Real validation now includes the two paired RNA-seq studies from v0.1 and the
-public Golub microarray training matrix: 27 ALL / 11 AML samples and all 3,051
-provider-selected features. The latter also has an executed limma moderated-t
-delete-one adapter. Protein/metabolite/pathway matrices can meet the numeric
-contract, but no real proteomics or metabolomics validation is claimed.
+Real validation includes paired bulk RNA, the complete Golub processed microarray,
+Kang donor-level single-cell pseudobulk, technical CPTAC protein measurements,
+and biological Nutrimouse lipid percentages. Automatic refits cover limma,
+limma-voom, edgeR and DESeq2; some declared fits can be non-evaluable and remain
+visible. See [v0.3 results and scope](V03_CN.md),
+[individual certificates](ROBUSTNESS.md), and [refit/single-cell inputs](REFITS.md).
 
 ## Matrix and metadata
 
@@ -110,10 +111,12 @@ extremarank prepared/effects.csv --budget 2 --top-k 20 --output exact-envelopes
 budget in each group. In Welch mode, only deletions retaining at least two
 samples per group are feasible; the maximum budget is N-4. Paired mode requires
 at least two retained pairs. These minima are mathematical requirements, not
-recommended study sample sizes. `--max-nodes` bounds the paired search;
+recommended study sample sizes. `--max-nodes` bounds native branch-and-bound searches;
 `--max-subsets` bounds the Welch nonbaseline deletion sets (default 10,000).
-Neither is a wall-clock timeout. Welch search grows combinatorially; v0.2
-does not promise routine complete audits for large cohorts/budgets.
+Neither is a wall-clock timeout. v0.3 defaults to safe conditional Welch pruning;
+`--welch-search enumeration` retains the reference path. Search can still grow
+combinatorially. See [individual certificates and minimum changes](ROBUSTNESS.md).
+Automatic R refits and single-cell inputs are described in [REFITS.md](REFITS.md).
 
 Welch uses
 

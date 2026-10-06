@@ -1,0 +1,21 @@
+{
+  "version": "0.3.0",
+  "frozen_before_new_results": "2026-10-06",
+  "native_targets": ["unordered Top-K membership", "positive/zero/negative mean-effect direction"],
+  "native_designs": ["paired", "welch"],
+  "minimum_change": "Exact only when every smaller feasible deletion cardinality is excluded; otherwise report lower/upper bounds and a common deletion witness.",
+  "welch_bounds": "Exact rational mean intervals and enclosing variance intervals; univariate minimum-variance windows give a safe variance floor. No new two-group extremum theorem or priority claim.",
+  "model_adapters": ["limma", "limma-voom", "edgeR", "DESeq2"],
+  "model_scope": "Observed refits only; fixed input feature filter, explicit contrast/covariates, normalization and model re-estimated per scenario, failed fits retained as NOT_EVALUABLE.",
+  "single_cell": "Sum raw nonnegative integer counts by sample and cell type; donor is the deletion unit; cell counts and exclusions recorded; no cell-level pseudoreplication.",
+  "validation": {
+    "independent_small_problems": 1000,
+    "directions": ["up", "down", "absolute"],
+    "public_examples": ["existing paired RNA-seq", "Golub independent microarray", "Kang muscat example single-cell", "CPTAC UPS1 protein spike-in"],
+    "real_default_top_k": 20,
+    "real_native_budget": 2,
+    "model_refit_budget": 1,
+    "stable_synthetic_cases": "Separated features fixed before execution, plus ties, zero variance and difficult near-boundary cases.",
+    "no_result_rescue": "Preserve changed, unresolved, failed-fit and empty-universe outcomes; report provider preprocessing, no biomarker or clinical claims."
+  }
+}

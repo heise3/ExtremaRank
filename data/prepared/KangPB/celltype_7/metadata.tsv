@@ -1,0 +1,13 @@
+sample_id	donor_id	group	cell_type	n_cells	source_samples
+PB000095	101	ctrl	Megakaryocytes	11	"[""101_ctrl""]"
+PB000096	1015	ctrl	Megakaryocytes	20	"[""1015_ctrl""]"
+PB000097	1015	stim	Megakaryocytes	20	"[""1015_stim""]"
+PB000098	1016	stim	Megakaryocytes	10	"[""1016_stim""]"
+PB000099	1039	ctrl	Megakaryocytes	31	"[""1039_ctrl""]"
+PB000100	1039	stim	Megakaryocytes	36	"[""1039_stim""]"
+PB000101	1244	ctrl	Megakaryocytes	14	"[""1244_ctrl""]"
+PB000102	1244	stim	Megakaryocytes	13	"[""1244_stim""]"
+PB000103	1256	ctrl	Megakaryocytes	14	"[""1256_ctrl""]"
+PB000104	1256	stim	Megakaryocytes	17	"[""1256_stim""]"
+PB000105	1488	ctrl	Megakaryocytes	18	"[""1488_ctrl""]"
+PB000106	1488	stim	Megakaryocytes	29	"[""1488_stim""]"

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "design": "welch",
+  "contrast": "B - A",
+  "target": "B",
+  "reference": "A",
+  "orientation": "features",
+  "transform": "none",
+  "pseudocount": null,
+  "min_cpm": 0.0,
+  "cpm_filter": ">=min_cpm in >=half included samples; all source features define library totals",
+  "matrix_sha256": "43232b5671b5b5d64cbdda0c6f94379504fcbcf5eadb4c2e16b6833659f66c37",
+  "metadata_sha256": "b0f2710fb54f649f45d336adecc7dbf366be88c0e1298e31b02edbf7b86a0e7d",
+  "matrix_source_features": 1097,
+  "retained_features": 1097,
+  "included_samples": [
+    "A7",
+    "A8",
+    "A9",
+    "B7",
+    "B8",
+    "B9"
+  ],
+  "independent_units": 6,
+  "excluded_other_group_samples": [],
+  "excluded_incomplete_donors": [],
+  "missing_policy": "error",
+  "excluded_missing_features": [],
+  "excluded_features": [],
+  "library_totals": null,
+  "unit_metadata": [
+    {
+      "sample_id": "A7",
+      "group": "A",
+      "donor_id": "A7",
+      "unit_type": "technical_measurement_run"
+    },
+    {
+      "sample_id": "A8",
+      "group": "A",
+      "donor_id": "A8",
+      "unit_type": "technical_measurement_run"
+    },
+    {
+      "sample_id": "A9",
+      "group": "A",
+      "donor_id": "A9",
+      "unit_type": "technical_measurement_run"
+    },
+    {
+      "sample_id": "B7",
+      "group": "B",
+      "donor_id": "B7",
+      "unit_type": "technical_measurement_run"
+    },
+    {
+      "sample_id": "B8",
+      "group": "B",
+      "donor_id": "B8",
+      "unit_type": "technical_measurement_run"
+    },
+    {
+      "sample_id": "B9",
+      "group": "B",
+      "donor_id": "B9",
+      "unit_type": "technical_measurement_run"
+    }
+  ],
+  "identity_check": "strict source IDs only; raw genotype/sample-swap verification NOT_EVALUATED",
+  "guarantee_input": "finite binary64 prepared values; preprocessing frozen before deletion",
+  "inference": "descriptive ranking sensitivity; no confounder adjustment or FDR inference",
+  "prepared_path": "values.csv.gz",
+  "distribution_note": "Large execution tables compressed losslessly after validation; archive manifest binds original and compressed bytes. Reruns write ordinary tables."
+}

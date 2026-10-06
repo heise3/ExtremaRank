@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "extremarank"
-version = "0.2.0"
+version = "0.3.0"
 description = "Sample-deletion robustness audits for paired and independent-group omics rankings"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -19,9 +19,13 @@ Issues = "https://github.com/heise3/ExtremaRank/issues"
 
 [project.optional-dependencies]
 benchmark = ["numpy>=1.24,<3"]
+single-cell = ["anndata>=0.11"]
 
 [project.scripts]
 extremarank = "extremarank.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+extremarank = ["r/*.R"]

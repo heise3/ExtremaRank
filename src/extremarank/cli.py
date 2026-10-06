@@ -236,13 +236,19 @@ def _summarize(table: InputTable, budget: int, k: int, direction: str) -> tuple[
 
 def main(argv: Sequence[str] | None = None) -> int:
     argv = list(sys.argv[1:] if argv is None else argv)
-    if argv and argv[0] in {"study", "prepare", "compare"}:
+    if argv and argv[0] in {"study", "prepare", "compare", "robustness", "refit", "pseudobulk"}:
         command, rest = argv[0], argv[1:]
         if command == "compare":
             from .external import main as compare_main
             return compare_main(rest)
+        if command == "refit":
+            from .models import main as refit_main
+            return refit_main(rest)
+        if command == "pseudobulk":
+            from .pseudobulk import main as pseudobulk_main
+            return pseudobulk_main(rest)
         from .study import main as study_main
-        return study_main(rest, prepare_only=command == "prepare")
+        return study_main(rest, prepare_only=command == "prepare", feature_mode=command == "robustness")
     parser = argparse.ArgumentParser(
         prog="extremarank", description="Exact paired-effect audits. Also: extremarank study / prepare / compare --help.")
     parser.add_argument("input", type=Path, help="UTF-8 donor x gene CSV/TSV, optionally gzip; first header must be donor_id")
@@ -254,8 +260,14 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--output", type=Path, required=True, help="output directory (existing result filenames are replaced)")
     parser.add_argument("--max-nodes", type=int, default=10000, help="shared top-K search node limit (default: 10000)")
     parser.add_argument("--skip-topk", action="store_true", help="compute every gene's exact envelopes; do not run shared top-K search")
+    parser.add_argument("--feature-audit",action="store_true",help="also certify individual candidates and bound minimum membership/direction changes")
+    parser.add_argument("--features",choices=("baseline","all"),default="baseline")
+    parser.add_argument("--feature-id",action="append")
+    parser.add_argument("--max-subsets",type=int,default=10000,help="evaluated deletion-set limit for the individual audit")
     parser.add_argument("--version", action="version", version=f"ExtremaRank {__version__}")
     args = parser.parse_args(argv)
+    if args.feature_id or args.features == "all":
+        args.feature_audit = True
     start = time.perf_counter()
     try:
         table = read_effects(args.input)
@@ -265,7 +277,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         k = min(20, g) if args.top_k is None else args.top_k
         if not 1 <= k <= g:
             raise ValueError(f"--top-k must be between 1 and {g}; only the omitted default is reduced")
-        if args.max_nodes < 1:
+        if args.max_nodes < 1 or args.max_subsets < 1:
             raise ValueError("--max-nodes must be positive")
         summaries, envelopes, baseline_scores, order = _summarize(table, args.budget, k, args.direction)
         envelopes_seconds = time.perf_counter() - start
@@ -312,6 +324,18 @@ def main(argv: Sequence[str] | None = None) -> int:
                                "shared_topk": completed - envelopes_seconds, "total_before_writing": completed},
         }
         args.output.mkdir(parents=True, exist_ok=True)
+        reserved={args.output/name for name in ('summary.tsv','envelopes.tsv','audit.json','feature_robustness.json','feature_robustness.tsv')}
+        if args.input.resolve() in {p.resolve() for p in reserved}:
+            raise ValueError("output filenames would overwrite the paired source input")
+        if args.feature_audit:
+            from .robustness import audit_feature_robustness, write_feature_report
+            from .diagnostics import PreparedPaired
+            features=args.feature_id or (table.gene_ids if args.features=='all' else None)
+            granular=audit_feature_robustness(PreparedPaired(table.effects),table.gene_ids,k,args.budget,
+                'paired',args.direction,features,args.max_nodes,args.max_subsets)
+            write_feature_report(granular,table.donor_ids,args.output)
+            report['feature_robustness']={key:granular[key] for key in ('status','nodes','scenarios_checked','topk_minimum_change','scope')}
+            report['outputs'].update(feature_robustness='feature_robustness.tsv',minimum_changes='feature_robustness.json')
         _write_tsv(args.output / "summary.tsv", SUMMARY_COLUMNS, summaries)
         _write_tsv(args.output / "envelopes.tsv", ENVELOPE_COLUMNS, envelopes)
         _write_json(args.output / "audit.json", report)

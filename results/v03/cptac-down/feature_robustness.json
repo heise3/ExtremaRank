@@ -1,0 +1,1125 @@
+{
+  "status": "REFUTED",
+  "baseline_topk": [
+    "sp|P32563|VPH1_YEAST",
+    "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+    "sp|P35723|YET1_YEAST",
+    "sp|P32457|CDC3_YEAST",
+    "sp|Q06440|CORO_YEAST",
+    "sp|Q03532|HAS1_YEAST",
+    "sp|P38999|LYS9_YEAST",
+    "sp|P53337|ERV29_YEAST",
+    "sp|Q12136|SAS10_YEAST",
+    "sp|P41338|THIL_YEAST",
+    "sp|P32469|DPH5_YEAST",
+    "sp|P11412|G6PD_YEAST",
+    "sp|P00927|THDH_YEAST",
+    "sp|P54861|DNM1_YEAST",
+    "sp|P53852|SYC_YEAST",
+    "sp|P42941|SERB_YEAST",
+    "sp|P07806|SYV_YEAST",
+    "sp|Q04062|RPN9_YEAST",
+    "sp|P25567|SRO9_YEAST",
+    "sp|P19414|ACON_YEAST"
+  ],
+  "budget": 2,
+  "direction": "down",
+  "design": "welch",
+  "features": [
+    {
+      "feature_id": "sp|P32563|VPH1_YEAST",
+      "baseline_rank": 1,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            5
+          ],
+          "topk": [
+            "sp|P43590|YFH6_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38689|KPR3_YEAST",
+            "sp|P16474|GRP78_YEAST",
+            "sp|P07245|C1TC_YEAST",
+            "sp|Q99257|MEX67_YEAST",
+            "sp|P04076|ARLY_YEAST",
+            "sp|P07806|SYV_YEAST",
+            "sp|P07258|CARA_YEAST",
+            "sp|P33330|SERC_YEAST",
+            "sp|P32469|DPH5_YEAST",
+            "sp|Q04636|POB3_YEAST",
+            "sp|Q08224|THI20_YEAST;sp|Q08975|THI21_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|P09064|IF2B_YEAST",
+            "sp|P18899|DDR48_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|P41277|GPP1_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "B9"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+      "baseline_rank": 2,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            2
+          ],
+          "topk": [
+            "sp|P33338|SLA2_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P32469|DPH5_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|Q05933|ARPC3_YEAST",
+            "sp|P41911|GPD2_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|P40517|YRB2_YEAST",
+            "sp|Q12078|SMF3_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P00927|THDH_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|P37263|YC16_YEAST",
+            "sp|P32787|MG101_YEAST",
+            "sp|Q06205|FKBP4_YEAST",
+            "sp|P00937|TRPG_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|P11412|G6PD_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A9"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P35723|YET1_YEAST",
+      "baseline_rank": 3,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P32457|CDC3_YEAST",
+      "baseline_rank": 4,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            5
+          ],
+          "topk": [
+            "sp|P43590|YFH6_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38689|KPR3_YEAST",
+            "sp|P16474|GRP78_YEAST",
+            "sp|P07245|C1TC_YEAST",
+            "sp|Q99257|MEX67_YEAST",
+            "sp|P04076|ARLY_YEAST",
+            "sp|P07806|SYV_YEAST",
+            "sp|P07258|CARA_YEAST",
+            "sp|P33330|SERC_YEAST",
+            "sp|P32469|DPH5_YEAST",
+            "sp|Q04636|POB3_YEAST",
+            "sp|Q08224|THI20_YEAST;sp|Q08975|THI21_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|P09064|IF2B_YEAST",
+            "sp|P18899|DDR48_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|P41277|GPP1_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "B9"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|Q06440|CORO_YEAST",
+      "baseline_rank": 5,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            1
+          ],
+          "topk": [
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P25567|SRO9_YEAST",
+            "sp|P42941|SERB_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P50861|RIB4_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P38623|RCK2_YEAST",
+            "sp|P07245|C1TC_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|P0CX54|RL12B_YEAST;sp|P0CX53|RL12A_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P05453|ERF3_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|Q06489|MTNA_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|P42846|KRI1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|P39729|RBG1_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A8"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|Q03532|HAS1_YEAST",
+      "baseline_rank": 6,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            3
+          ],
+          "topk": [
+            "sp|P32563|VPH1_YEAST",
+            "sp|P43588|RPN11_YEAST",
+            "sp|P53622|COPA_YEAST",
+            "sp|P32915|SC61A_YEAST",
+            "sp|P25567|SRO9_YEAST",
+            "sp|P25087|ERG6_YEAST",
+            "sp|P19414|ACON_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|P20447|DBP3_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|P47912|LCF4_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|P33317|DUT_YEAST",
+            "sp|P32787|MG101_YEAST",
+            "sp|P80967|TOM5_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P0CH09|RL402_YEAST;sp|P0CH08|RL401_YEAST;sp|P0CG63|UBI4P_YEAST",
+            "sp|Q06440|CORO_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "B7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P38999|LYS9_YEAST",
+      "baseline_rank": 7,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            1
+          ],
+          "topk": [
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P25567|SRO9_YEAST",
+            "sp|P42941|SERB_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P50861|RIB4_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P38623|RCK2_YEAST",
+            "sp|P07245|C1TC_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|P0CX54|RL12B_YEAST;sp|P0CX53|RL12A_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P05453|ERF3_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|Q06489|MTNA_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|P42846|KRI1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|P39729|RBG1_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A8"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P53337|ERV29_YEAST",
+      "baseline_rank": 8,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            2
+          ],
+          "topk": [
+            "sp|P33338|SLA2_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P32469|DPH5_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|Q05933|ARPC3_YEAST",
+            "sp|P41911|GPD2_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|P40517|YRB2_YEAST",
+            "sp|Q12078|SMF3_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P00927|THDH_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|P37263|YC16_YEAST",
+            "sp|P32787|MG101_YEAST",
+            "sp|Q06205|FKBP4_YEAST",
+            "sp|P00937|TRPG_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|P11412|G6PD_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A9"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|Q12136|SAS10_YEAST",
+      "baseline_rank": 9,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            2
+          ],
+          "topk": [
+            "sp|P33338|SLA2_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P32469|DPH5_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|Q05933|ARPC3_YEAST",
+            "sp|P41911|GPD2_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|P40517|YRB2_YEAST",
+            "sp|Q12078|SMF3_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P00927|THDH_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|P37263|YC16_YEAST",
+            "sp|P32787|MG101_YEAST",
+            "sp|Q06205|FKBP4_YEAST",
+            "sp|P00937|TRPG_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|P11412|G6PD_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A9"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P41338|THIL_YEAST",
+      "baseline_rank": 10,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            4
+          ],
+          "topk": [
+            "sp|O13516|RS9A_YEAST",
+            "sp|Q12159|YRA1_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|P53731|ARPC2_YEAST",
+            "sp|Q04493|PFD5_YEAST",
+            "sp|P38858|SOL3_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P38623|RCK2_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P08518|RPB2_YEAST",
+            "sp|P42941|SERB_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P39533|ACON2_YEAST",
+            "sp|Q04178|HPRT_YEAST",
+            "sp|P54861|DNM1_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|Q12068|GRE2_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "B8"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P32469|DPH5_YEAST",
+      "baseline_rank": 11,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P11412|G6PD_YEAST",
+      "baseline_rank": 12,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            3
+          ],
+          "topk": [
+            "sp|P32563|VPH1_YEAST",
+            "sp|P43588|RPN11_YEAST",
+            "sp|P53622|COPA_YEAST",
+            "sp|P32915|SC61A_YEAST",
+            "sp|P25567|SRO9_YEAST",
+            "sp|P25087|ERG6_YEAST",
+            "sp|P19414|ACON_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|P20447|DBP3_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|P47912|LCF4_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|P33317|DUT_YEAST",
+            "sp|P32787|MG101_YEAST",
+            "sp|P80967|TOM5_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P0CH09|RL402_YEAST;sp|P0CH08|RL401_YEAST;sp|P0CG63|UBI4P_YEAST",
+            "sp|Q06440|CORO_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "B7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P00927|THDH_YEAST",
+      "baseline_rank": 13,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P54861|DNM1_YEAST",
+      "baseline_rank": 14,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            1
+          ],
+          "topk": [
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P25567|SRO9_YEAST",
+            "sp|P42941|SERB_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P50861|RIB4_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P38623|RCK2_YEAST",
+            "sp|P07245|C1TC_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|P0CX54|RL12B_YEAST;sp|P0CX53|RL12A_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P05453|ERF3_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|Q06489|MTNA_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|P42846|KRI1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|P39729|RBG1_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A8"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P53852|SYC_YEAST",
+      "baseline_rank": 15,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P42941|SERB_YEAST",
+      "baseline_rank": 16,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P07806|SYV_YEAST",
+      "baseline_rank": 17,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|Q04062|RPN9_YEAST",
+      "baseline_rank": 18,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            1
+          ],
+          "topk": [
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P25567|SRO9_YEAST",
+            "sp|P42941|SERB_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P50861|RIB4_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|P38623|RCK2_YEAST",
+            "sp|P07245|C1TC_YEAST",
+            "sp|P35723|YET1_YEAST",
+            "sp|P0CX54|RL12B_YEAST;sp|P0CX53|RL12A_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P05453|ERF3_YEAST",
+            "sp|P53852|SYC_YEAST",
+            "sp|Q06489|MTNA_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|P42846|KRI1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|P39729|RBG1_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A8"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P25567|SRO9_YEAST",
+      "baseline_rank": 19,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "sp|P19414|ACON_YEAST",
+      "baseline_rank": 20,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "sp|P54861|DNM1_YEAST",
+            "sp|P32563|VPH1_YEAST",
+            "sp|P53337|ERV29_YEAST",
+            "sp|Q12068|GRE2_YEAST",
+            "sp|P38999|LYS9_YEAST",
+            "sp|Q05515|SVF1_YEAST",
+            "sp|P32457|CDC3_YEAST",
+            "sp|Q06440|CORO_YEAST",
+            "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+            "sp|P48589|RS12_YEAST",
+            "sp|P40032|TPA1_YEAST",
+            "sp|Q12136|SAS10_YEAST",
+            "sp|Q03532|HAS1_YEAST",
+            "sp|P45978|SCD6_YEAST",
+            "sp|P41338|THIL_YEAST",
+            "sp|Q04062|RPN9_YEAST",
+            "sp|P11412|G6PD_YEAST",
+            "sp|P38805|RPF1_YEAST",
+            "sp|P12630|BAR1_YEAST",
+            "sp|P46985|MNN11_YEAST"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "A7"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    }
+  ],
+  "first_topk_witness": {
+    "deleted_indices": [
+      0
+    ],
+    "topk": [
+      "sp|P54861|DNM1_YEAST",
+      "sp|P32563|VPH1_YEAST",
+      "sp|P53337|ERV29_YEAST",
+      "sp|Q12068|GRE2_YEAST",
+      "sp|P38999|LYS9_YEAST",
+      "sp|Q05515|SVF1_YEAST",
+      "sp|P32457|CDC3_YEAST",
+      "sp|Q06440|CORO_YEAST",
+      "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+      "sp|P48589|RS12_YEAST",
+      "sp|P40032|TPA1_YEAST",
+      "sp|Q12136|SAS10_YEAST",
+      "sp|Q03532|HAS1_YEAST",
+      "sp|P45978|SCD6_YEAST",
+      "sp|P41338|THIL_YEAST",
+      "sp|Q04062|RPN9_YEAST",
+      "sp|P11412|G6PD_YEAST",
+      "sp|P38805|RPF1_YEAST",
+      "sp|P12630|BAR1_YEAST",
+      "sp|P46985|MNN11_YEAST"
+    ],
+    "deleted_units": [
+      "A7"
+    ]
+  },
+  "nodes": 3,
+  "topk_minimum_change": {
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "exact": 1
+  },
+  "scenarios_checked": 14,
+  "query_bounds_pruned": 60,
+  "limits": {
+    "max_nodes": 10000,
+    "max_scenarios": 10000
+  },
+  "input_binary64_sha256": "000fb5bfb9ac9fd3e3379241626cbe15927d45e285b8394f62233651d922285e",
+  "hash_scope": "UTF-8 compact JSON {shape,feature_ids,design,group_labels} in input order, NUL, then row-major little-endian binary64 values; group labels 0=target/paired, 1=reference",
+  "scope": "exact membership and effect-sign properties of frozen finite binary64 native inputs; lower/upper minimum deletion bounds; lexical feature-ID ties",
+  "bound_method": "rational group mean/variance enclosures with relaxed minimum-variance windows",
+  "unit_ids": [
+    "A7",
+    "A8",
+    "A9",
+    "B7",
+    "B8",
+    "B9"
+  ],
+  "distribution_note": "Large execution tables compressed losslessly after validation; archive manifest binds original and compressed bytes. Reruns write ordinary tables."
+}

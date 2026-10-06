@@ -1,0 +1,28 @@
+{
+  "frozen_before_native_or_model_outcomes": "2026-10-06",
+  "single_cell": {
+    "source": "Bioconductor ExperimentHub EH2259, Kang18_8vs8; provider ind/stim/cell annotations",
+    "package_example_limitation": "muscat example_sce has only two paired donors; retain as ingestion example, not nonzero deletion benchmark",
+    "cells": "provider multiplets == singlet only; preserve all annotated cell types and all source genes",
+    "aggregation": "exact donor + condition + cell-type sums; min_cells 10",
+    "native_evaluated_cell_type": "B cells",
+    "native_transform": "log2(CPM + 1), frozen before donor deletion; all source features define library totals",
+    "contrast": "stim - ctrl",
+    "top_k": 20,
+    "native_budget": 2,
+    "model_budget": 1,
+    "model_feature_filter": "total count >=10 and count >=1 in at least 3 included pseudobulks; frozen baseline universe",
+    "models": ["limma-voom", "edgeR", "DESeq2"],
+    "identity": "public provider donor IDs; raw genotype identity NOT_EVALUATED"
+  },
+  "proteomics": {
+    "source": "statOmics/msqrob2data commit 6338dcfebea8681b20f6f30431b865a37d3ef428, cptacAvsB_lab3 proteinGroups.txt",
+    "units": "six technical measurement runs, three per spike-in condition; not six independent patients",
+    "frozen_filter": "exclude Reverse, Potential contaminant, Only identified by site flagged +; retain proteins with finite positive intensity in all six runs",
+    "transform": "log2 supplied MaxQuant Intensity; no imputation or additional normalization",
+    "contrast": "B - A",
+    "top_k": 20,
+    "budget": 2,
+    "scope": "protein/run-deletion numeric robustness benchmark; no donor-level inference, spike-in detection superiority or biomarker claim"
+  }
+}

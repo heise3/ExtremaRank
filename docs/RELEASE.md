@@ -33,3 +33,11 @@ delete-one diagnostics and an executed limma refit-table adapter. New local
 validation is recorded in `results/VALIDATION_V02.json`; `VALIDATION.json`
 retains the historical v0.1 record. Scientific claims remain restricted to the
 workflow-specific targets in `docs/STUDY.md`.
+
+## v0.3 release
+
+v0.3 includes all six planned improvements described in [V03_CN.md](V03_CN.md),
+with local validation in `results/VALIDATION_V03.json`. R integrations run
+locally; GitHub CI runs the core on 3.10/3.12/3.14 and optional H5AD separately.
+No unrun remote R check is implied. Source zip and dependency-free wheel
+include SHA256 digests; third-party data attribution is in `DATA_LICENSE.md`.

@@ -1,0 +1,835 @@
+{
+  "scope": "baseline plus every feasible one-unit deletion; no multi-deletion rank bounds",
+  "selection_fraction_meaning": "fraction of inspected deletion scenarios, not a probability",
+  "n_scenarios": 40,
+  "n_changed": 3,
+  "skipped_units": [],
+  "scenarios": [
+    {
+      "deleted_unit": "mouse_1",
+      "deleted_index": 0,
+      "metadata": {
+        "sample_id": "mouse_1",
+        "donor_id": "mouse_1",
+        "group": "wt",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_2",
+      "deleted_index": 1,
+      "metadata": {
+        "sample_id": "mouse_2",
+        "donor_id": "mouse_2",
+        "group": "wt",
+        "diet": "sun"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_3",
+      "deleted_index": 2,
+      "metadata": {
+        "sample_id": "mouse_3",
+        "donor_id": "mouse_3",
+        "group": "wt",
+        "diet": "sun"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_4",
+      "deleted_index": 3,
+      "metadata": {
+        "sample_id": "mouse_4",
+        "donor_id": "mouse_4",
+        "group": "wt",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_5",
+      "deleted_index": 4,
+      "metadata": {
+        "sample_id": "mouse_5",
+        "donor_id": "mouse_5",
+        "group": "wt",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_6",
+      "deleted_index": 5,
+      "metadata": {
+        "sample_id": "mouse_6",
+        "donor_id": "mouse_6",
+        "group": "wt",
+        "diet": "coc"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_7",
+      "deleted_index": 6,
+      "metadata": {
+        "sample_id": "mouse_7",
+        "donor_id": "mouse_7",
+        "group": "wt",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_8",
+      "deleted_index": 7,
+      "metadata": {
+        "sample_id": "mouse_8",
+        "donor_id": "mouse_8",
+        "group": "wt",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_9",
+      "deleted_index": 8,
+      "metadata": {
+        "sample_id": "mouse_9",
+        "donor_id": "mouse_9",
+        "group": "wt",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_10",
+      "deleted_index": 9,
+      "metadata": {
+        "sample_id": "mouse_10",
+        "donor_id": "mouse_10",
+        "group": "wt",
+        "diet": "coc"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_11",
+      "deleted_index": 10,
+      "metadata": {
+        "sample_id": "mouse_11",
+        "donor_id": "mouse_11",
+        "group": "wt",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_12",
+      "deleted_index": 11,
+      "metadata": {
+        "sample_id": "mouse_12",
+        "donor_id": "mouse_12",
+        "group": "wt",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_13",
+      "deleted_index": 12,
+      "metadata": {
+        "sample_id": "mouse_13",
+        "donor_id": "mouse_13",
+        "group": "wt",
+        "diet": "sun"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_14",
+      "deleted_index": 13,
+      "metadata": {
+        "sample_id": "mouse_14",
+        "donor_id": "mouse_14",
+        "group": "wt",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_15",
+      "deleted_index": 14,
+      "metadata": {
+        "sample_id": "mouse_15",
+        "donor_id": "mouse_15",
+        "group": "wt",
+        "diet": "sun"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_16",
+      "deleted_index": 15,
+      "metadata": {
+        "sample_id": "mouse_16",
+        "donor_id": "mouse_16",
+        "group": "wt",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_17",
+      "deleted_index": 16,
+      "metadata": {
+        "sample_id": "mouse_17",
+        "donor_id": "mouse_17",
+        "group": "wt",
+        "diet": "coc"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_18",
+      "deleted_index": 17,
+      "metadata": {
+        "sample_id": "mouse_18",
+        "donor_id": "mouse_18",
+        "group": "wt",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_19",
+      "deleted_index": 18,
+      "metadata": {
+        "sample_id": "mouse_19",
+        "donor_id": "mouse_19",
+        "group": "wt",
+        "diet": "coc"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_20",
+      "deleted_index": 19,
+      "metadata": {
+        "sample_id": "mouse_20",
+        "donor_id": "mouse_20",
+        "group": "wt",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_21",
+      "deleted_index": 20,
+      "metadata": {
+        "sample_id": "mouse_21",
+        "donor_id": "mouse_21",
+        "group": "ppar",
+        "diet": "coc"
+      },
+      "topk_changed": true,
+      "jaccard": 0.6666666666666666,
+      "exited_features": [
+        "C20.1n.9"
+      ],
+      "entered_features": [
+        "C18.2n.6"
+      ]
+    },
+    {
+      "deleted_unit": "mouse_22",
+      "deleted_index": 21,
+      "metadata": {
+        "sample_id": "mouse_22",
+        "donor_id": "mouse_22",
+        "group": "ppar",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_23",
+      "deleted_index": 22,
+      "metadata": {
+        "sample_id": "mouse_23",
+        "donor_id": "mouse_23",
+        "group": "ppar",
+        "diet": "sun"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_24",
+      "deleted_index": 23,
+      "metadata": {
+        "sample_id": "mouse_24",
+        "donor_id": "mouse_24",
+        "group": "ppar",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_25",
+      "deleted_index": 24,
+      "metadata": {
+        "sample_id": "mouse_25",
+        "donor_id": "mouse_25",
+        "group": "ppar",
+        "diet": "sun"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_26",
+      "deleted_index": 25,
+      "metadata": {
+        "sample_id": "mouse_26",
+        "donor_id": "mouse_26",
+        "group": "ppar",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_27",
+      "deleted_index": 26,
+      "metadata": {
+        "sample_id": "mouse_27",
+        "donor_id": "mouse_27",
+        "group": "ppar",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_28",
+      "deleted_index": 27,
+      "metadata": {
+        "sample_id": "mouse_28",
+        "donor_id": "mouse_28",
+        "group": "ppar",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_29",
+      "deleted_index": 28,
+      "metadata": {
+        "sample_id": "mouse_29",
+        "donor_id": "mouse_29",
+        "group": "ppar",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_30",
+      "deleted_index": 29,
+      "metadata": {
+        "sample_id": "mouse_30",
+        "donor_id": "mouse_30",
+        "group": "ppar",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_31",
+      "deleted_index": 30,
+      "metadata": {
+        "sample_id": "mouse_31",
+        "donor_id": "mouse_31",
+        "group": "ppar",
+        "diet": "coc"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_32",
+      "deleted_index": 31,
+      "metadata": {
+        "sample_id": "mouse_32",
+        "donor_id": "mouse_32",
+        "group": "ppar",
+        "diet": "coc"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_33",
+      "deleted_index": 32,
+      "metadata": {
+        "sample_id": "mouse_33",
+        "donor_id": "mouse_33",
+        "group": "ppar",
+        "diet": "ref"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_34",
+      "deleted_index": 33,
+      "metadata": {
+        "sample_id": "mouse_34",
+        "donor_id": "mouse_34",
+        "group": "ppar",
+        "diet": "sun"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_35",
+      "deleted_index": 34,
+      "metadata": {
+        "sample_id": "mouse_35",
+        "donor_id": "mouse_35",
+        "group": "ppar",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_36",
+      "deleted_index": 35,
+      "metadata": {
+        "sample_id": "mouse_36",
+        "donor_id": "mouse_36",
+        "group": "ppar",
+        "diet": "coc"
+      },
+      "topk_changed": true,
+      "jaccard": 0.6666666666666666,
+      "exited_features": [
+        "C20.1n.9"
+      ],
+      "entered_features": [
+        "C18.2n.6"
+      ]
+    },
+    {
+      "deleted_unit": "mouse_37",
+      "deleted_index": 36,
+      "metadata": {
+        "sample_id": "mouse_37",
+        "donor_id": "mouse_37",
+        "group": "ppar",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_38",
+      "deleted_index": 37,
+      "metadata": {
+        "sample_id": "mouse_38",
+        "donor_id": "mouse_38",
+        "group": "ppar",
+        "diet": "fish"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_39",
+      "deleted_index": 38,
+      "metadata": {
+        "sample_id": "mouse_39",
+        "donor_id": "mouse_39",
+        "group": "ppar",
+        "diet": "lin"
+      },
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "deleted_unit": "mouse_40",
+      "deleted_index": 39,
+      "metadata": {
+        "sample_id": "mouse_40",
+        "donor_id": "mouse_40",
+        "group": "ppar",
+        "diet": "sun"
+      },
+      "topk_changed": true,
+      "jaccard": 0.6666666666666666,
+      "exited_features": [
+        "C20.1n.9"
+      ],
+      "entered_features": [
+        "C20.4n.6"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "feature_id": "C16.0",
+      "baseline_rank": 1,
+      "baseline_t": -7.51309461835903,
+      "best_observed_rank": 1,
+      "worst_observed_rank": 1,
+      "loo_selected_count": 40,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 1.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": true
+    },
+    {
+      "feature_id": "C18.0",
+      "baseline_rank": 2,
+      "baseline_t": -6.620983722699089,
+      "best_observed_rank": 2,
+      "worst_observed_rank": 3,
+      "loo_selected_count": 40,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 1.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": true
+    },
+    {
+      "feature_id": "C20.3n.6",
+      "baseline_rank": 3,
+      "baseline_t": -6.572359924600741,
+      "best_observed_rank": 2,
+      "worst_observed_rank": 3,
+      "loo_selected_count": 40,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 1.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": true
+    },
+    {
+      "feature_id": "C16.1n.9",
+      "baseline_rank": 4,
+      "baseline_t": 5.010985786732708,
+      "best_observed_rank": 4,
+      "worst_observed_rank": 4,
+      "loo_selected_count": 40,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 1.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": true
+    },
+    {
+      "feature_id": "C20.1n.9",
+      "baseline_rank": 5,
+      "baseline_t": 3.7740982747430754,
+      "best_observed_rank": 5,
+      "worst_observed_rank": 6,
+      "loo_selected_count": 37,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.925,
+      "loo_sign_changes": 0,
+      "baseline_topk": true
+    },
+    {
+      "feature_id": "C20.4n.6",
+      "baseline_rank": 6,
+      "baseline_t": -3.4573381451520038,
+      "best_observed_rank": 5,
+      "worst_observed_rank": 7,
+      "loo_selected_count": 1,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.025,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C18.2n.6",
+      "baseline_rank": 7,
+      "baseline_t": 3.3977417881807948,
+      "best_observed_rank": 5,
+      "worst_observed_rank": 7,
+      "loo_selected_count": 2,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.05,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C18.1n.9",
+      "baseline_rank": 8,
+      "baseline_t": 2.6100898354129214,
+      "best_observed_rank": 8,
+      "worst_observed_rank": 10,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C20.2n.6",
+      "baseline_rank": 9,
+      "baseline_t": 2.5060490701353184,
+      "best_observed_rank": 8,
+      "worst_observed_rank": 10,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C20.3n.9",
+      "baseline_rank": 10,
+      "baseline_t": -2.3139605791371713,
+      "best_observed_rank": 9,
+      "worst_observed_rank": 12,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C22.6n.3",
+      "baseline_rank": 11,
+      "baseline_t": -2.1350271510612497,
+      "best_observed_rank": 9,
+      "worst_observed_rank": 11,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C14.0",
+      "baseline_rank": 12,
+      "baseline_t": 1.812606180415875,
+      "best_observed_rank": 11,
+      "worst_observed_rank": 13,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C18.3n.3",
+      "baseline_rank": 13,
+      "baseline_t": 1.5324656235052654,
+      "best_observed_rank": 12,
+      "worst_observed_rank": 16,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C16.1n.7",
+      "baseline_rank": 14,
+      "baseline_t": 1.4951720194644171,
+      "best_observed_rank": 13,
+      "worst_observed_rank": 16,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C20.5n.3",
+      "baseline_rank": 15,
+      "baseline_t": -1.3032848949847524,
+      "best_observed_rank": 13,
+      "worst_observed_rank": 17,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C22.5n.6",
+      "baseline_rank": 16,
+      "baseline_t": -1.1774982339521343,
+      "best_observed_rank": 14,
+      "worst_observed_rank": 18,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C22.5n.3",
+      "baseline_rank": 17,
+      "baseline_t": -0.953878383992252,
+      "best_observed_rank": 15,
+      "worst_observed_rank": 19,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C18.3n.6",
+      "baseline_rank": 18,
+      "baseline_t": -0.9344873174783732,
+      "best_observed_rank": 16,
+      "worst_observed_rank": 21,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C18.1n.7",
+      "baseline_rank": 19,
+      "baseline_t": 0.6734281839399279,
+      "best_observed_rank": 17,
+      "worst_observed_rank": 20,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 0,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C20.3n.3",
+      "baseline_rank": 20,
+      "baseline_t": 0.47142721174270746,
+      "best_observed_rank": 18,
+      "worst_observed_rank": 20,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 1,
+      "baseline_topk": false
+    },
+    {
+      "feature_id": "C22.4n.6",
+      "baseline_rank": 21,
+      "baseline_t": -0.03714228842115751,
+      "best_observed_rank": 20,
+      "worst_observed_rank": 21,
+      "loo_selected_count": 0,
+      "loo_scenarios": 40,
+      "loo_selection_fraction": 0.0,
+      "loo_sign_changes": 20,
+      "baseline_topk": false
+    }
+  ]
+}

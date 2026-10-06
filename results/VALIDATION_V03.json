@@ -1,0 +1,51 @@
+{
+  "version": "0.3.0",
+  "date": "2026-10-06",
+  "final_status": "PASS",
+  "source_sha256": {
+    "src/extremarank/__init__.py": "9b2cf3795fcc0938996dac5c871944285135cc2ebac9a5149859a588205014f0",
+    "src/extremarank/__main__.py": "ce92638aa9082c82b400862096d4c7c7a30493cea4169ca2ac34232690cafc90",
+    "src/extremarank/audit.py": "2e1fb75cf7fa35a10d3eb8ea06375c2af0410aca86c255e8f03cb9dab4fc56d4",
+    "src/extremarank/cli.py": "c96a4d2ea9195f984a5e02b601e16a29e973a8380205ae1bc7f72257ff9cd4ce",
+    "src/extremarank/core.py": "ea6a0bb7ea7733be494e23c96d0d1e07e20423953a655de7315e2d30fc1abc26",
+    "src/extremarank/diagnostics.py": "3995732968afde4ff3042995dc669471237d34d10bcace78c907854c07d00b98",
+    "src/extremarank/external.py": "6366bbf40a20c3a50864add18587a56c97d1d6dd7d9431cd940e07ebddc49db5",
+    "src/extremarank/models.py": "7f1539101e0992f05c0d3cea346d6087e347cfe5db4d5c8cfb7fe532a5f84cd4",
+    "src/extremarank/preparation.py": "9f410dcb11458262fb62994ff36a86582f3ba2d4fc1e2417b831737feae37edc",
+    "src/extremarank/pseudobulk.py": "9dcf882d83cfa79fcdfb586cd26a2b6b5eb209d76998d9bce2dea20059f72365",
+    "src/extremarank/r/refit.R": "90195138ccb67158496a1079dd14fd3f9dd6a9bbce54038e591a82771859fbe7",
+    "src/extremarank/robustness.py": "854b2c320f51a77f574591828de0a60c6ab7ed73c7b8350ae6c42b91285ef2e4",
+    "src/extremarank/study.py": "e577f652a80b79fad18bfeabd68ef59e209182bed90e1b57ab40ce0b258f1fa2",
+    "src/extremarank/unpaired.py": "45fcf37dbb4eeb3c12f4e7e5c1960b1c625dd6dd1919dccb5175accee2a9661b"
+  },
+  "local_tests": {
+    "total": 59,
+    "full_optional_env": "Python 3.12; EXTREMARANK_R_TESTS=1, H5AD installed",
+    "full_optional_passed": 59,
+    "failed": 0,
+    "core_only_python_versions": [
+      "3.12",
+      "3.14"
+    ],
+    "optional_skips_without_dependencies": 4
+  },
+  "new_independent_check": {
+    "cases": 1000,
+    "native_design_direction_problems": 6000,
+    "independent_property_and_scalar_enclosure_checks": 1434768,
+    "failures": 0,
+    "seed": 60319,
+    "seconds": 30.00848870817572,
+    "oracle": "Complete deletion subsets, Fraction means and centered sample variances, lexical ranking ties; checks statuses, exact minimum changes, witnesses and root and forced-inclusion scalar enclosures, plus capped-search intervals."
+  },
+  "real_checks": {
+    "native_full_feature_rankings": 183,
+    "R_topk_sets": 300,
+    "pseudobulk_integer_sums": 4347470,
+    "mismatches": 0
+  },
+  "stable_benchmark": "results/welch_pruning_v03.json",
+  "external_non_evaluable_scenario_preserved": "Kang edgeR signed sqrt QL F baseline and six refits; raw negative F rows retained. This outcome is not a test failure or rescued by changing the target.",
+  "packaging": "Wheel source bytes verified for 14 Python/R files; clean dependency-free installation and native/R adapter smoke checks. Source archive per-file hashes stored in RELEASE_MANIFEST.json; remote verification stored separately after publication.",
+  "CI_scope": "Core tests and independent checks on Python 3.10/3.12/3.14; separate optional H5AD job. R models locally tested; no remote R test claim."
+}

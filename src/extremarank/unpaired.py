@@ -148,6 +148,8 @@ class WelchAuditResult:
     feasible_deletion_sets: int
     max_subsets: int
     direction: str
+    nodes: int = 0
+    query_bounds_pruned: int = 0
     search_method: str = "bounded exhaustive shared-sample enumeration"
     arithmetic: str = "exact Welch comparisons of finite binary64 input values"
     target: str = "unordered Welch-statistic top-K; >=2 retained per group; lexical feature-ID ties"
@@ -158,14 +160,16 @@ class WelchAuditResult:
 
 def audit_welch(values: Iterable[Iterable[float]], groups: Iterable[str], feature_ids: Iterable[str],
                 target: str, reference: str, k: int, max_deletions: int,
-                max_subsets: int = 10000, direction: str = "up") -> WelchAuditResult:
+                max_subsets: int = 10000, direction: str = "up",
+                search_method: str = "enumeration", max_nodes: int = 10000) -> WelchAuditResult:
     prepared = PreparedWelch(values, groups, target, reference)
-    return audit_prepared_welch(prepared, feature_ids, k, max_deletions, max_subsets, direction)
+    return audit_prepared_welch(prepared, feature_ids, k, max_deletions, max_subsets, direction, search_method, max_nodes)
 
 
 def audit_prepared_welch(prepared: PreparedWelch, feature_ids: Iterable[str], k: int,
                          max_deletions: int, max_subsets: int = 10000,
-                         direction: str = "up") -> WelchAuditResult:
+                         direction: str = "up", search_method: str = "enumeration",
+                         max_nodes: int = 10000) -> WelchAuditResult:
     ids = tuple(feature_ids)
     if len(ids) != len(prepared.rows[0]) or any(not isinstance(x, str) or not x for x in ids) or len(set(ids)) != len(ids):
         raise ValueError("feature IDs must be nonempty unique strings matching the matrix")
@@ -175,6 +179,19 @@ def audit_prepared_welch(prepared: PreparedWelch, feature_ids: Iterable[str], k:
         raise ValueError("budget must be between 0 and total sample count minus four")
     if isinstance(max_subsets, bool) or not isinstance(max_subsets, int) or max_subsets < 1:
         raise ValueError("max_subsets must be a positive integer")
+    if search_method not in {"enumeration", "branch-bound"}:
+        raise ValueError("search_method must be enumeration or branch-bound")
+    if search_method == "branch-bound":
+        from .robustness import audit_feature_robustness
+        report = audit_feature_robustness(prepared, ids, k, max_deletions, "welch", direction,
+            max_nodes=max_nodes, max_scenarios=max_subsets, stop_at_first=True)
+        witness = report["first_topk_witness"]
+        return WelchAuditResult(report["status"], tuple(report["baseline_topk"]),
+            tuple(witness["topk"]) if witness else None,
+            tuple(witness["deleted_indices"]) if witness else None,
+            max_deletions, report["scenarios_checked"], prepared.deletion_count(max_deletions),
+            max_subsets, direction, report["nodes"], report["query_bounds_pruned"],
+            search_method="exact rational mean/variance branch-and-bound")
     baseline = rank_welch(prepared.evaluate(), ids, direction, k)
     selected = set(baseline)
     outsiders = tuple(i for i in range(len(ids)) if i not in selected)

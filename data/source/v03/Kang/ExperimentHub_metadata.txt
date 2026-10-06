@@ -1,0 +1,16 @@
+DataFrame with 1 row and 15 columns
+             title dataprovider      species taxonomyid      genome
+       <character>  <character>  <character>  <integer> <character>
+EH2259 Kang18_8vs8          GEO Homo sapiens       9606          NA
+                  description coordinate_1_based             maintainer
+                  <character>          <integer>            <character>
+EH2259 Droplet-based scRNA-..                  1 Helena L. Crowell <h..
+       rdatadateadded preparerclass
+          <character>   <character>
+EH2259     2019-04-15      muscData
+                                                  tags           rdataclass
+                                                <AsIs>          <character>
+EH2259 ExperimentHub,ExperimentData,ExpressionData,... SingleCellExperiment
+                    rdatapath              sourceurl  sourcetype
+                  <character>            <character> <character>
+EH2259 muscData/Kang18_8vs8.. https://www.ncbi.nlm..      tar.gz

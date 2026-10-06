@@ -1,6 +1,6 @@
 # Use ExtremaRank on paired omics effects
 
-For v0.2 matrix/metadata preparation, independent groups, external models and
+For current matrix/metadata preparation, independent groups, external models and
 offline sample-influence reports, use the [study workflows](STUDY.md).
 This page retains the original paired-effects interface.
 
@@ -124,3 +124,6 @@ python benchmarks/independent_theorem_check.py --cases 200000 --output results/i
 ```
 
 The scalar two-family scan avoids enumerating all subsets. Its cost grows with genes, donors, and the requested deletion counts. The shared top-K search can still require exponentially many nodes in difficult cases; `--max-nodes` and `--skip-topk` expose that limit directly. Benchmark timings are machine- and input-dependent.
+
+For individual membership/sign certification and minimum change intervals, add
+`--feature-audit` or use the [robustness workflow](ROBUSTNESS.md).

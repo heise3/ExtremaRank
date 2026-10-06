@@ -1,0 +1,9 @@
+{
+  "cases": 200,
+  "rank_evaluations": 9426,
+  "complete_status_checks": 600,
+  "failures": 0,
+  "seed": 740125,
+  "arithmetic": "independent Fraction means and centered sample variances",
+  "seconds": 0.986463540699333
+}

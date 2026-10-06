@@ -1,0 +1,21 @@
+{
+  "dataset": "mixOmics 6.36.0 Nutrimouse",
+  "data": "All 21 provider hepatic fatty-acid percentages, 40 biological mice",
+  "target": "ppar",
+  "reference": "wt",
+  "native_design": "welch",
+  "native_directions": [
+    "up",
+    "down",
+    "absolute"
+  ],
+  "native_budget": 2,
+  "top_k": 5,
+  "transform": "none; supplied percentages",
+  "filter": "none; require complete finite values",
+  "model": "limma moderated t with categorical diet adjustment",
+  "model_budget": 1,
+  "unit": "one biological mouse per source row; source IDs only, raw identity NOT_EVALUATED",
+  "inference_limit": "Percentage composition, not absolute metabolite concentration; native score does not adjust for diet, automatic limma explicitly does.",
+  "provider_label_note": "Provider ppar denotes PPARalpha knockout; fixed after inspecting labels and before ranking outcomes."
+}

@@ -1,0 +1,9 @@
+deleted_unit	group	topk_changed	jaccard	exited_features	entered_features
+101	paired	True	0.8181818181818182	"[""HNRNPA1"", ""RPS3A""]"	"[""IL1RN"", ""EAF2""]"
+1015	paired	True	0.8181818181818182	"[""HNRNPA1"", ""RPS3A""]"	"[""SOBP"", ""RPL10_ENSG00000147403""]"
+1016	paired	True	0.7391304347826086	"[""IFITM2"", ""RPS6"", ""HNRNPA1""]"	"[""RPL10_ENSG00000147403"", ""HLA-DQB1_ENSG00000179344"", ""FTH1""]"
+1039	paired	True	0.3793103448275862	"[""IRF7"", ""IFITM2"", ""EPSTI1"", ""SAMD9"", ""RPS6"", ""C5orf56"", ""CXCL11"", ""HNRNPA1"", ""RPS3A""]"	"[""SUB1"", ""GBP1"", ""CARD16"", ""XRN1"", ""PSMB9_ENSG00000240065"", ""HLA-E_ENSG00000204592"", ""BST2"", ""NUB1"", ""PLSCR1""]"
+107	paired	True	0.6666666666666666	"[""UBE2L6"", ""CXCL11"", ""HNRNPA1"", ""RPS3A""]"	"[""WARS"", ""PSME2"", ""SP110"", ""RNF213""]"
+1244	paired	True	0.8181818181818182	"[""HNRNPA1"", ""RPS3A""]"	"[""CCL8"", ""ZFP36L1""]"
+1256	paired	True	0.9047619047619048	"[""RPS3A""]"	"[""TAP1_ENSG00000168394""]"
+1488	paired	True	0.8181818181818182	"[""HNRNPA1"", ""RPS3A""]"	"[""SP110"", ""DRAP1""]"

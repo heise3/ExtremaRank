@@ -84,3 +84,16 @@ Matrix adapters, delete-one diagnostics and external ranking-table comparison
 are usability extensions, not additional mathematical novelty claims. The
 conditional two-family theorem and the priority limits below concern paired
 signed self-normalized scores only.
+
+## v0.3 extension boundary
+
+The implementation adds shared per-feature membership/sign searches, certified
+lower/upper minimum-change intervals, and conservative exact-rational Welch
+conditional enclosures. The minimum-variance window fact, endpoint membership
+proofs, case-deletion sensitivity, and generic branch-and-bound have prior art.
+Automatic R refits, strict donor-level pseudobulk, H5AD/10X ingestion, and
+provenance checks are practical engineering extensions, not new DE estimators
+or first single-cell robustness claims. The exact paired conditional two-family
+characterization remains the specific proposed mathematical contribution.
+No publication-level or global-priority novelty claim is implied by a release.
+See [bound derivation](ROBUSTNESS.md) and the preserved [prior-art screen](PRIOR_ART.md).

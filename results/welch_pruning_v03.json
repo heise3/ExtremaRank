@@ -1,0 +1,90 @@
+{
+  "records": [
+    {
+      "case": "separated-fixed-input",
+      "samples": 20,
+      "features": 8,
+      "budget": 3,
+      "method": "enumeration",
+      "status": "CERTIFIED",
+      "seconds": 0.02668270794674754,
+      "scenarios_checked": 1350,
+      "feasible_deletion_sets": 1350,
+      "nodes": 0,
+      "query_bounds_pruned": 0
+    },
+    {
+      "case": "separated-fixed-input",
+      "samples": 20,
+      "features": 8,
+      "budget": 3,
+      "method": "branch-bound",
+      "status": "CERTIFIED",
+      "seconds": 0.0021897079423069954,
+      "scenarios_checked": 24,
+      "feasible_deletion_sets": 1350,
+      "nodes": 9,
+      "query_bounds_pruned": 9
+    },
+    {
+      "case": "separated-fixed-input",
+      "samples": 50,
+      "features": 8,
+      "budget": 3,
+      "method": "enumeration",
+      "status": "CERTIFIED",
+      "seconds": 0.42974512465298176,
+      "scenarios_checked": 20875,
+      "feasible_deletion_sets": 20875,
+      "nodes": 0,
+      "query_bounds_pruned": 0
+    },
+    {
+      "case": "separated-fixed-input",
+      "samples": 50,
+      "features": 8,
+      "budget": 3,
+      "method": "branch-bound",
+      "status": "CERTIFIED",
+      "seconds": 0.002827499993145466,
+      "scenarios_checked": 24,
+      "feasible_deletion_sets": 20875,
+      "nodes": 9,
+      "query_bounds_pruned": 9
+    },
+    {
+      "case": "separated-fixed-input",
+      "samples": 100,
+      "features": 8,
+      "budget": 3,
+      "method": "enumeration",
+      "status": "CERTIFIED",
+      "seconds": 3.4246672498993576,
+      "scenarios_checked": 166750,
+      "feasible_deletion_sets": 166750,
+      "nodes": 0,
+      "query_bounds_pruned": 0
+    },
+    {
+      "case": "separated-fixed-input",
+      "samples": 100,
+      "features": 8,
+      "budget": 3,
+      "method": "branch-bound",
+      "status": "CERTIFIED",
+      "seconds": 0.0036243749782443047,
+      "scenarios_checked": 24,
+      "feasible_deletion_sets": 166750,
+      "nodes": 9,
+      "query_bounds_pruned": 9
+    },
+    {
+      "case": "tied-boundary-finite-limit",
+      "method": "branch-bound",
+      "status": "UNRESOLVED",
+      "scenarios_checked": 5,
+      "nodes": 2
+    }
+  ],
+  "scope": "One-machine matched exact arithmetic; separated stable synthetic inputs demonstrate pruning, not typical or worst-case speed. Difficult outcomes retained. No timing comparison with DESeq2/edgeR/limma."
+}

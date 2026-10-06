@@ -1,0 +1,333 @@
+{
+  "version": "0.3.0",
+  "pseudobulk": {
+    "genes": 35635,
+    "provider_singlet_cells": 24679,
+    "retained_cells": 24629,
+    "pseudobulks": 122,
+    "exact_integer_sums_checked": 4347470,
+    "mismatches": 0,
+    "cell_types": 8
+  },
+  "native": [
+    {
+      "dataset": "golub",
+      "units": 38,
+      "features": 3051,
+      "native_runs": [
+        {
+          "direction": "up",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 6,
+            "REFUTED": 14
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 741,
+          "output": "results/v03/golub-up"
+        },
+        {
+          "direction": "down",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 1,
+            "REFUTED": 19
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 741,
+          "output": "results/v03/golub-down"
+        },
+        {
+          "direction": "absolute",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 3,
+            "REFUTED": 17
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 741,
+          "output": "results/v03/golub-absolute"
+        }
+      ],
+      "independent_full_feature_rank_checks": 93,
+      "rank_mismatches": 0,
+      "certificate_validation": "Exhaustive independent small-problem tests support proofs; real baseline and every distinct reported witness replayed independently. Real unreported subsets not enumerated by this checker."
+    },
+    {
+      "dataset": "kang-b",
+      "units": 8,
+      "features": 35635,
+      "native_runs": [
+        {
+          "direction": "up",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 6,
+            "REFUTED": 14
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 36,
+          "output": "results/v03/kang-b-up"
+        },
+        {
+          "direction": "down",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 7,
+            "REFUTED": 13
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 36,
+          "output": "results/v03/kang-b-down"
+        },
+        {
+          "direction": "absolute",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 5,
+            "REFUTED": 15
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 36,
+          "output": "results/v03/kang-b-absolute"
+        }
+      ],
+      "independent_full_feature_rank_checks": 42,
+      "rank_mismatches": 0,
+      "certificate_validation": "Exhaustive independent small-problem tests support proofs; real baseline and every distinct reported witness replayed independently. Real unreported subsets not enumerated by this checker."
+    },
+    {
+      "dataset": "cptac",
+      "units": 6,
+      "features": 1097,
+      "native_runs": [
+        {
+          "direction": "up",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 4,
+            "REFUTED": 16
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 15,
+          "output": "results/v03/cptac-up"
+        },
+        {
+          "direction": "down",
+          "status": "REFUTED",
+          "membership": {
+            "REFUTED": 20
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 14,
+          "output": "results/v03/cptac-down"
+        },
+        {
+          "direction": "absolute",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 2,
+            "REFUTED": 18
+          },
+          "effect_sign": {
+            "CERTIFIED": 20
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 15,
+          "output": "results/v03/cptac-absolute"
+        }
+      ],
+      "independent_full_feature_rank_checks": 36,
+      "rank_mismatches": 0,
+      "certificate_validation": "Exhaustive independent small-problem tests support proofs; real baseline and every distinct reported witness replayed independently. Real unreported subsets not enumerated by this checker."
+    },
+    {
+      "dataset": "nutrimouse",
+      "units": 40,
+      "features": 21,
+      "native_runs": [
+        {
+          "direction": "up",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 4,
+            "REFUTED": 1
+          },
+          "effect_sign": {
+            "CERTIFIED": 5
+          },
+          "minimum_topk_change": {
+            "lower_bound": 2,
+            "upper_bound": 2,
+            "exact": 2
+          },
+          "scenarios_checked": 820,
+          "output": "results/v03/nutrimouse-up"
+        },
+        {
+          "direction": "down",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 4,
+            "REFUTED": 1
+          },
+          "effect_sign": {
+            "CERTIFIED": 5
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 788,
+          "output": "results/v03/nutrimouse-down"
+        },
+        {
+          "direction": "absolute",
+          "status": "REFUTED",
+          "membership": {
+            "CERTIFIED": 4,
+            "REFUTED": 1
+          },
+          "effect_sign": {
+            "CERTIFIED": 5
+          },
+          "minimum_topk_change": {
+            "lower_bound": 1,
+            "upper_bound": 1,
+            "exact": 1
+          },
+          "scenarios_checked": 820,
+          "output": "results/v03/nutrimouse-absolute"
+        }
+      ],
+      "independent_full_feature_rank_checks": 12,
+      "rank_mismatches": 0,
+      "certificate_validation": "Exhaustive independent small-problem tests support proofs; real baseline and every distinct reported witness replayed independently. Real unreported subsets not enumerated by this checker."
+    }
+  ],
+  "automatic_refits": [
+    {
+      "dataset_model": "golub-limma",
+      "status": "OBSERVED_CHANGED",
+      "requested_refits": 38,
+      "valid_refits": 38,
+      "failed_refits": 0,
+      "baseline_valid": true,
+      "matched_R_topk_sets": 117,
+      "R_topk_mismatches": 0,
+      "retained_features": 3051,
+      "output": "results/v03/golub-limma"
+    },
+    {
+      "dataset_model": "kang-b-limma-voom",
+      "status": "OBSERVED_CHANGED",
+      "requested_refits": 8,
+      "valid_refits": 8,
+      "failed_refits": 0,
+      "baseline_valid": true,
+      "matched_R_topk_sets": 27,
+      "R_topk_mismatches": 0,
+      "retained_features": 8852,
+      "output": "results/v03/kang-b-limma-voom"
+    },
+    {
+      "dataset_model": "kang-b-edgeR",
+      "status": "NOT_EVALUABLE",
+      "requested_refits": 8,
+      "valid_refits": 2,
+      "failed_refits": 6,
+      "baseline_valid": false,
+      "matched_R_topk_sets": 6,
+      "R_topk_mismatches": 0,
+      "retained_features": 8852,
+      "output": "results/v03/kang-b-edgeR"
+    },
+    {
+      "dataset_model": "kang-b-DESeq2",
+      "status": "OBSERVED_CHANGED",
+      "requested_refits": 8,
+      "valid_refits": 8,
+      "failed_refits": 0,
+      "baseline_valid": true,
+      "matched_R_topk_sets": 27,
+      "R_topk_mismatches": 0,
+      "retained_features": 8852,
+      "output": "results/v03/kang-b-DESeq2"
+    },
+    {
+      "dataset_model": "nutrimouse-limma-diet",
+      "status": "OBSERVED_CHANGED",
+      "requested_refits": 40,
+      "valid_refits": 40,
+      "failed_refits": 0,
+      "baseline_valid": true,
+      "matched_R_topk_sets": 123,
+      "R_topk_mismatches": 0,
+      "retained_features": 21,
+      "output": "results/v03/nutrimouse-limma-diet"
+    }
+  ],
+  "seconds": 159.92765441630036,
+  "claim": "Sample-deletion ranking sensitivity only; technical protein runs and biological lipid/microarray/donor units have different semantics. No biological truth, prediction, FDR or clinical efficacy claim."
+}

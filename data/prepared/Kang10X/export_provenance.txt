@@ -1,0 +1,6 @@
+source dimensions 35635 29065
+provider singlets 24679
+raw donor IDs 101,107,1015,1016,1039,1244,1256,1488
+R 4.6.1
+Matrix 1.7.5
+Filter and audit contract: benchmarks/v03_data_contract.json

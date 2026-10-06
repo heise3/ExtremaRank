@@ -1,7 +1,7 @@
 # Practical use and evidence limits
 
-This page documents the original paired target. v0.2 also supports independent
-two-group Welch audits and comparisons of external refit tables; see
+This page documents the original paired target. v0.3 also supports individual certificates, independent
+two-group Welch audits, automatic model refits and donor-level single-cell inputs; see
 [workflow-specific guarantees and executed validation](STUDY.md). The paired
 theorem and limits below do not automatically extend to the new targets.
 

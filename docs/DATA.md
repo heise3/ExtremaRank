@@ -169,3 +169,10 @@ GSE50760. Every baseline top20 gene in these two inputs remains directionally
 positive through four donor deletions. Directional robustness does not imply
 that its top20 membership is stable; a joint ranking audit is needed for that
 separate question.
+
+## v0.3 additional inputs
+
+The frozen single-cell/protein contracts are in `benchmarks/v03_data_contract.json`;
+Nutrimouse is in `benchmarks/v03_lipid_contract.json`. New source bytes and package
+provenance are in `data/source/v03/`. See [data attribution](../DATA_LICENSE.md),
+[Chinese validation report](V03_CN.md), and [executed results](../results/validation_v03_real.json).

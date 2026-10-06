@@ -14,7 +14,7 @@ from .preparation import prepare_study
 from .unpaired import PreparedWelch, audit_prepared_welch, rank_welch
 
 
-def main(argv=None, prepare_only=False):
+def main(argv=None, prepare_only=False, feature_mode=False):
     parser = argparse.ArgumentParser(prog="extremarank prepare" if prepare_only else "extremarank study",
         description="Prepare a declared contrast from a matrix and strictly aligned sample metadata.")
     parser.add_argument("matrix", type=Path, help="feature_id x samples (default), or sample_id x features")
@@ -33,10 +33,17 @@ def main(argv=None, prepare_only=False):
         parser.add_argument("--budget", type=int, default=2)
         parser.add_argument("--top-k", type=int, default=None)
         parser.add_argument("--direction", choices=("up", "down", "absolute"), default="up")
-        parser.add_argument("--max-nodes", type=int, default=10000, help="paired branch-and-bound node limit")
+        parser.add_argument("--max-nodes", type=int, default=10000, help="branch-and-bound node limit")
         parser.add_argument("--max-subsets", type=int, default=10000, help="Welch nonbaseline deletion-set limit")
+        parser.add_argument("--welch-search", choices=("branch-bound", "enumeration"), default="branch-bound")
+        parser.add_argument("--feature-audit", action="store_true", default=feature_mode,
+                            help="audit individual membership/direction and minimum-change bounds")
+        parser.add_argument("--features", choices=("baseline", "all"), default="baseline")
+        parser.add_argument("--feature-id", action="append", help="query specified feature IDs instead")
         parser.add_argument("--no-diagnostics", action="store_true", help="omit delete-one diagnostics and HTML")
     args = parser.parse_args(argv)
+    if not prepare_only and (args.feature_id or args.features == "all"):
+        args.feature_audit = True
     started = time.perf_counter()
     try:
         study = prepare_study(args.matrix, args.metadata, args.target, args.reference,
@@ -51,7 +58,7 @@ def main(argv=None, prepare_only=False):
             if not 1 <= k <= g or args.max_nodes < 1 or args.max_subsets < 1:
                 raise ValueError("invalid top-K or search limit")
         reserved = {args.output / name for name in ("effects.csv", "values.csv", "groups.tsv", "preparation.json",
-            "baseline.tsv", "summary.tsv", "envelopes.tsv", "audit.json", "diagnostics.tsv", "diagnostics.json", "sample_influence.tsv", "report.html")}
+            "baseline.tsv", "summary.tsv", "envelopes.tsv", "audit.json", "diagnostics.tsv", "diagnostics.json", "sample_influence.tsv", "report.html", "feature_robustness.json", "feature_robustness.tsv")}
         if args.matrix.resolve() in {p.resolve() for p in reserved} or args.metadata.resolve() in {p.resolve() for p in reserved}:
             raise ValueError("output filenames would overwrite a source matrix or metadata; choose a separate directory")
         args.output.mkdir(parents=True, exist_ok=True)
@@ -80,7 +87,7 @@ def main(argv=None, prepare_only=False):
             scores = prepared.evaluate()
             order = rank_welch(scores, study.feature_ids, args.direction)
             audit = audit_prepared_welch(prepared, study.feature_ids, k, args.budget,
-                                          args.max_subsets, args.direction).as_dict()
+                                          args.max_subsets, args.direction, args.welch_search, args.max_nodes).as_dict()
             audit["deleted_units"] = ([study.unit_ids[i] for i in audit["deleted_indices"]]
                                       if audit["deleted_indices"] is not None else None)
             baseline = [{"feature_id": study.feature_ids[j], "baseline_rank": r,
@@ -98,6 +105,15 @@ def main(argv=None, prepare_only=False):
                 "topk_audit": audit, "outputs": {"baseline": "baseline.tsv"}}
         report["preparation"] = study.manifest
         report["preparation"]["command_inputs"] = {"matrix": str(args.matrix), "metadata": str(args.metadata)}
+        granular = None
+        if args.feature_audit:
+            from .robustness import audit_feature_robustness, write_feature_report
+            features = args.feature_id or (study.feature_ids if args.features == "all" else None)
+            granular = audit_feature_robustness(prepared, study.feature_ids, k, args.budget,
+                args.design, args.direction, features, args.max_nodes, args.max_subsets)
+            write_feature_report(granular,study.unit_ids,args.output)
+            report["feature_robustness"] = {key: granular[key] for key in ("status", "nodes", "scenarios_checked", "query_bounds_pruned", "scope")}
+            report["outputs"].update(feature_robustness="feature_robustness.tsv", minimum_changes="feature_robustness.json")
         if not args.no_diagnostics:
             diagnostics = delete_one_diagnostics(prepared, study.feature_ids, study.unit_ids, k,
                                                   args.direction, args.design, study.unit_metadata)
@@ -115,7 +131,7 @@ def main(argv=None, prepare_only=False):
             report["delete_one_summary"] = {key: diagnostics[key] for key in
                                              ("scope", "n_scenarios", "n_changed", "skipped_units")}
             report["outputs"].update({"diagnostics": "diagnostics.tsv", "sample_influence": "sample_influence.tsv", "report": "report.html"})
-            (args.output / "report.html").write_text(html_report(report, diagnostics), encoding="utf-8")
+            (args.output / "report.html").write_text(html_report(report, diagnostics, granular), encoding="utf-8")
         report.setdefault("timing_seconds", {})["study_total_before_writing"] = time.perf_counter()-started
         _write_json(args.output / "audit.json", report)
     except (OSError, ValueError) as exc:

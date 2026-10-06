@@ -1,0 +1,199 @@
+{
+  "schema_version": 2,
+  "software": {
+    "name": "ExtremaRank",
+    "version": "0.3.0"
+  },
+  "status": "REFUTED",
+  "target": "unordered Welch-statistic top-K; >=2 retained per group; lexical feature-ID ties",
+  "arithmetic": "exact Welch comparisons of finite binary64 input values",
+  "parameters": {
+    "budget": 2,
+    "top_k": 20,
+    "direction": "down",
+    "max_subsets": 10000
+  },
+  "input": {
+    "n_units": 6,
+    "n_features": 1097,
+    "unit_ids": [
+      "A7",
+      "A8",
+      "A9",
+      "B7",
+      "B8",
+      "B9"
+    ],
+    "target_count": 3,
+    "reference_count": 3
+  },
+  "score_conventions": {
+    "equal_means": "t=0, including zero standard error",
+    "unequal_constant_groups": "signed infinity; descriptive extension, no inferential p value"
+  },
+  "topk_audit": {
+    "status": "REFUTED",
+    "baseline_topk": [
+      "sp|P32563|VPH1_YEAST",
+      "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+      "sp|P35723|YET1_YEAST",
+      "sp|P32457|CDC3_YEAST",
+      "sp|Q06440|CORO_YEAST",
+      "sp|Q03532|HAS1_YEAST",
+      "sp|P38999|LYS9_YEAST",
+      "sp|P53337|ERV29_YEAST",
+      "sp|Q12136|SAS10_YEAST",
+      "sp|P41338|THIL_YEAST",
+      "sp|P32469|DPH5_YEAST",
+      "sp|P11412|G6PD_YEAST",
+      "sp|P00927|THDH_YEAST",
+      "sp|P54861|DNM1_YEAST",
+      "sp|P53852|SYC_YEAST",
+      "sp|P42941|SERB_YEAST",
+      "sp|P07806|SYV_YEAST",
+      "sp|Q04062|RPN9_YEAST",
+      "sp|P25567|SRO9_YEAST",
+      "sp|P19414|ACON_YEAST"
+    ],
+    "witness_topk": [
+      "sp|P54861|DNM1_YEAST",
+      "sp|P32563|VPH1_YEAST",
+      "sp|P53337|ERV29_YEAST",
+      "sp|Q12068|GRE2_YEAST",
+      "sp|P38999|LYS9_YEAST",
+      "sp|Q05515|SVF1_YEAST",
+      "sp|P32457|CDC3_YEAST",
+      "sp|Q06440|CORO_YEAST",
+      "sp|Q3E7Y3|RS22B_YEAST;sp|P0C0W1|RS22A_YEAST",
+      "sp|P48589|RS12_YEAST",
+      "sp|P40032|TPA1_YEAST",
+      "sp|Q12136|SAS10_YEAST",
+      "sp|Q03532|HAS1_YEAST",
+      "sp|P45978|SCD6_YEAST",
+      "sp|P41338|THIL_YEAST",
+      "sp|Q04062|RPN9_YEAST",
+      "sp|P11412|G6PD_YEAST",
+      "sp|P38805|RPF1_YEAST",
+      "sp|P12630|BAR1_YEAST",
+      "sp|P46985|MNN11_YEAST"
+    ],
+    "deleted_indices": [
+      0
+    ],
+    "max_deletions": 2,
+    "subsets_checked": 1,
+    "feasible_deletion_sets": 15,
+    "max_subsets": 10000,
+    "direction": "down",
+    "nodes": 0,
+    "query_bounds_pruned": 0,
+    "search_method": "exact rational mean/variance branch-and-bound",
+    "arithmetic": "exact Welch comparisons of finite binary64 input values",
+    "target": "unordered Welch-statistic top-K; >=2 retained per group; lexical feature-ID ties",
+    "deleted_units": [
+      "A7"
+    ]
+  },
+  "outputs": {
+    "baseline": "baseline.tsv",
+    "feature_robustness": "feature_robustness.tsv",
+    "minimum_changes": "feature_robustness.json",
+    "diagnostics": "diagnostics.tsv",
+    "sample_influence": "sample_influence.tsv",
+    "report": "report.html"
+  },
+  "preparation": {
+    "schema_version": 1,
+    "design": "welch",
+    "contrast": "B - A",
+    "target": "B",
+    "reference": "A",
+    "orientation": "features",
+    "transform": "none",
+    "pseudocount": null,
+    "min_cpm": 0.0,
+    "cpm_filter": ">=min_cpm in >=half included samples; all source features define library totals",
+    "matrix_sha256": "43232b5671b5b5d64cbdda0c6f94379504fcbcf5eadb4c2e16b6833659f66c37",
+    "metadata_sha256": "b0f2710fb54f649f45d336adecc7dbf366be88c0e1298e31b02edbf7b86a0e7d",
+    "matrix_source_features": 1097,
+    "retained_features": 1097,
+    "included_samples": [
+      "A7",
+      "A8",
+      "A9",
+      "B7",
+      "B8",
+      "B9"
+    ],
+    "independent_units": 6,
+    "excluded_other_group_samples": [],
+    "excluded_incomplete_donors": [],
+    "missing_policy": "error",
+    "excluded_missing_features": [],
+    "excluded_features": [],
+    "library_totals": null,
+    "unit_metadata": [
+      {
+        "sample_id": "A7",
+        "group": "A",
+        "donor_id": "A7",
+        "unit_type": "technical_measurement_run"
+      },
+      {
+        "sample_id": "A8",
+        "group": "A",
+        "donor_id": "A8",
+        "unit_type": "technical_measurement_run"
+      },
+      {
+        "sample_id": "A9",
+        "group": "A",
+        "donor_id": "A9",
+        "unit_type": "technical_measurement_run"
+      },
+      {
+        "sample_id": "B7",
+        "group": "B",
+        "donor_id": "B7",
+        "unit_type": "technical_measurement_run"
+      },
+      {
+        "sample_id": "B8",
+        "group": "B",
+        "donor_id": "B8",
+        "unit_type": "technical_measurement_run"
+      },
+      {
+        "sample_id": "B9",
+        "group": "B",
+        "donor_id": "B9",
+        "unit_type": "technical_measurement_run"
+      }
+    ],
+    "identity_check": "strict source IDs only; raw genotype/sample-swap verification NOT_EVALUATED",
+    "guarantee_input": "finite binary64 prepared values; preprocessing frozen before deletion",
+    "inference": "descriptive ranking sensitivity; no confounder adjustment or FDR inference",
+    "prepared_path": "values.csv.gz",
+    "command_inputs": {
+      "matrix": "data/prepared/CPTAC_runs/matrix.tsv",
+      "metadata": "data/prepared/CPTAC_runs/metadata.tsv"
+    }
+  },
+  "feature_robustness": {
+    "status": "REFUTED",
+    "nodes": 3,
+    "scenarios_checked": 14,
+    "query_bounds_pruned": 60,
+    "scope": "exact membership and effect-sign properties of frozen finite binary64 native inputs; lower/upper minimum deletion bounds; lexical feature-ID ties"
+  },
+  "delete_one_summary": {
+    "scope": "baseline plus every feasible one-unit deletion; no multi-deletion rank bounds",
+    "n_scenarios": 6,
+    "n_changed": 6,
+    "skipped_units": []
+  },
+  "timing_seconds": {
+    "study_total_before_writing": 0.1765564582310617
+  },
+  "distribution_note": "Large execution tables compressed losslessly after validation; archive manifest binds original and compressed bytes. Reruns write ordinary tables."
+}

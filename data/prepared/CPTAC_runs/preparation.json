@@ -1,0 +1,20 @@
+{
+  "source_sha256": "48c54e6d31e507917e90e71264a222aaa3d8d55b944b0b216ffd2cee00c40cf9",
+  "retained_proteins": 1097,
+  "excluded": {
+    "provider_flags": 51,
+    "missing_or_nonpositive": 422
+  },
+  "source_columns": [
+    "Intensity 6A_7",
+    "Intensity 6A_8",
+    "Intensity 6A_9",
+    "Intensity 6B_7",
+    "Intensity 6B_8",
+    "Intensity 6B_9"
+  ],
+  "transform": "log2 supplied Intensity; complete positive values in all runs; no imputation or additional normalization",
+  "independence_claim": "Technical spike-in measurement runs only; no independent patient/donor claim",
+  "contract": "benchmarks/v03_data_contract.json",
+  "distribution_note": "Large execution tables compressed losslessly after validation; archive manifest binds original and compressed bytes. Reruns write ordinary tables."
+}

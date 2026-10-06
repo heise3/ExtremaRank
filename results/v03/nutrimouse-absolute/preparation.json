@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "design": "welch",
+  "contrast": "ppar - wt",
+  "target": "ppar",
+  "reference": "wt",
+  "orientation": "features",
+  "transform": "none",
+  "pseudocount": null,
+  "min_cpm": 0.0,
+  "cpm_filter": ">=min_cpm in >=half included samples; all source features define library totals",
+  "matrix_sha256": "9560089e87b1c76bedf3767eeda4d3cd5feb2642fdb146e5393258602492cea3",
+  "metadata_sha256": "cdcb3d4967ba044d01f66ef76df6c9b503eac8f1af864889b9395d0f1627c61a",
+  "matrix_source_features": 21,
+  "retained_features": 21,
+  "included_samples": [
+    "mouse_1",
+    "mouse_2",
+    "mouse_3",
+    "mouse_4",
+    "mouse_5",
+    "mouse_6",
+    "mouse_7",
+    "mouse_8",
+    "mouse_9",
+    "mouse_10",
+    "mouse_11",
+    "mouse_12",
+    "mouse_13",
+    "mouse_14",
+    "mouse_15",
+    "mouse_16",
+    "mouse_17",
+    "mouse_18",
+    "mouse_19",
+    "mouse_20",
+    "mouse_21",
+    "mouse_22",
+    "mouse_23",
+    "mouse_24",
+    "mouse_25",
+    "mouse_26",
+    "mouse_27",
+    "mouse_28",
+    "mouse_29",
+    "mouse_30",
+    "mouse_31",
+    "mouse_32",
+    "mouse_33",
+    "mouse_34",
+    "mouse_35",
+    "mouse_36",
+    "mouse_37",
+    "mouse_38",
+    "mouse_39",
+    "mouse_40"
+  ],
+  "independent_units": 40,
+  "excluded_other_group_samples": [],
+  "excluded_incomplete_donors": [],
+  "missing_policy": "error",
+  "excluded_missing_features": [],
+  "excluded_features": [],
+  "library_totals": null,
+  "unit_metadata": [
+    {
+      "sample_id": "mouse_1",
+      "donor_id": "mouse_1",
+      "group": "wt",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_2",
+      "donor_id": "mouse_2",
+      "group": "wt",
+      "diet": "sun"
+    },
+    {
+      "sample_id": "mouse_3",
+      "donor_id": "mouse_3",
+      "group": "wt",
+      "diet": "sun"
+    },
+    {
+      "sample_id": "mouse_4",
+      "donor_id": "mouse_4",
+      "group": "wt",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_5",
+      "donor_id": "mouse_5",
+      "group": "wt",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_6",
+      "donor_id": "mouse_6",
+      "group": "wt",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_7",
+      "donor_id": "mouse_7",
+      "group": "wt",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_8",
+      "donor_id": "mouse_8",
+      "group": "wt",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_9",
+      "donor_id": "mouse_9",
+      "group": "wt",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_10",
+      "donor_id": "mouse_10",
+      "group": "wt",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_11",
+      "donor_id": "mouse_11",
+      "group": "wt",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_12",
+      "donor_id": "mouse_12",
+      "group": "wt",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_13",
+      "donor_id": "mouse_13",
+      "group": "wt",
+      "diet": "sun"
+    },
+    {
+      "sample_id": "mouse_14",
+      "donor_id": "mouse_14",
+      "group": "wt",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_15",
+      "donor_id": "mouse_15",
+      "group": "wt",
+      "diet": "sun"
+    },
+    {
+      "sample_id": "mouse_16",
+      "donor_id": "mouse_16",
+      "group": "wt",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_17",
+      "donor_id": "mouse_17",
+      "group": "wt",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_18",
+      "donor_id": "mouse_18",
+      "group": "wt",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_19",
+      "donor_id": "mouse_19",
+      "group": "wt",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_20",
+      "donor_id": "mouse_20",
+      "group": "wt",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_21",
+      "donor_id": "mouse_21",
+      "group": "ppar",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_22",
+      "donor_id": "mouse_22",
+      "group": "ppar",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_23",
+      "donor_id": "mouse_23",
+      "group": "ppar",
+      "diet": "sun"
+    },
+    {
+      "sample_id": "mouse_24",
+      "donor_id": "mouse_24",
+      "group": "ppar",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_25",
+      "donor_id": "mouse_25",
+      "group": "ppar",
+      "diet": "sun"
+    },
+    {
+      "sample_id": "mouse_26",
+      "donor_id": "mouse_26",
+      "group": "ppar",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_27",
+      "donor_id": "mouse_27",
+      "group": "ppar",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_28",
+      "donor_id": "mouse_28",
+      "group": "ppar",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_29",
+      "donor_id": "mouse_29",
+      "group": "ppar",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_30",
+      "donor_id": "mouse_30",
+      "group": "ppar",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_31",
+      "donor_id": "mouse_31",
+      "group": "ppar",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_32",
+      "donor_id": "mouse_32",
+      "group": "ppar",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_33",
+      "donor_id": "mouse_33",
+      "group": "ppar",
+      "diet": "ref"
+    },
+    {
+      "sample_id": "mouse_34",
+      "donor_id": "mouse_34",
+      "group": "ppar",
+      "diet": "sun"
+    },
+    {
+      "sample_id": "mouse_35",
+      "donor_id": "mouse_35",
+      "group": "ppar",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_36",
+      "donor_id": "mouse_36",
+      "group": "ppar",
+      "diet": "coc"
+    },
+    {
+      "sample_id": "mouse_37",
+      "donor_id": "mouse_37",
+      "group": "ppar",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_38",
+      "donor_id": "mouse_38",
+      "group": "ppar",
+      "diet": "fish"
+    },
+    {
+      "sample_id": "mouse_39",
+      "donor_id": "mouse_39",
+      "group": "ppar",
+      "diet": "lin"
+    },
+    {
+      "sample_id": "mouse_40",
+      "donor_id": "mouse_40",
+      "group": "ppar",
+      "diet": "sun"
+    }
+  ],
+  "identity_check": "strict source IDs only; raw genotype/sample-swap verification NOT_EVALUATED",
+  "guarantee_input": "finite binary64 prepared values; preprocessing frozen before deletion",
+  "inference": "descriptive ranking sensitivity; no confounder adjustment or FDR inference",
+  "prepared_path": "values.csv"
+}

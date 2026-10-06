@@ -1,0 +1,1075 @@
+{
+  "status": "REFUTED",
+  "baseline_topk": [
+    "X95735_at",
+    "M27891_at",
+    "M55150_at",
+    "M16038_at",
+    "L09209_s_at",
+    "M31523_at",
+    "X74262_at",
+    "Z15115_at",
+    "L47738_at",
+    "U22376_cds2_s_at",
+    "HG1612-HT1612_at",
+    "M91432_at",
+    "L41870_at",
+    "U72936_s_at",
+    "X51521_at",
+    "U50136_rna1_at",
+    "Y12670_at",
+    "X74801_at",
+    "Y00787_s_at",
+    "J05243_at"
+  ],
+  "budget": 2,
+  "direction": "absolute",
+  "design": "welch",
+  "features": [
+    {
+      "feature_id": "X95735_at",
+      "baseline_rank": 1,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M27891_at",
+      "baseline_rank": 2,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M55150_at",
+      "baseline_rank": 3,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M16038_at",
+      "baseline_rank": 4,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [
+            28,
+            31
+          ],
+          "topk": [
+            "J05243_at",
+            "X95735_at",
+            "M27891_at",
+            "M55150_at",
+            "M31211_s_at",
+            "M60527_at",
+            "L47738_at",
+            "U22376_cds2_s_at",
+            "M31523_at",
+            "S50223_at",
+            "U20998_at",
+            "HG1612-HT1612_at",
+            "D87078_at",
+            "U72936_s_at",
+            "U62136_at",
+            "M19311_s_at",
+            "L41870_at",
+            "L09209_s_at",
+            "X74801_at",
+            "U46499_at"
+          ],
+          "effect_sign": 1,
+          "deleted_units": [
+            "Golub_train_29",
+            "Golub_train_32"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "L09209_s_at",
+      "baseline_rank": 5,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [
+            28,
+            34
+          ],
+          "topk": [
+            "X95735_at",
+            "Y00787_s_at",
+            "M28130_rna1_s_at",
+            "M27891_at",
+            "M92287_at",
+            "U22376_cds2_s_at",
+            "M69043_at",
+            "U82759_at",
+            "S50223_at",
+            "L08246_at",
+            "U20998_at",
+            "M55150_at",
+            "M19311_s_at",
+            "D87078_at",
+            "X74262_at",
+            "M31523_at",
+            "M16038_at",
+            "U49844_at",
+            "L41870_at",
+            "X07743_at"
+          ],
+          "effect_sign": 1,
+          "deleted_units": [
+            "Golub_train_29",
+            "Golub_train_35"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M31523_at",
+      "baseline_rank": 6,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [
+            27,
+            28
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "D87078_at",
+            "M16038_at",
+            "X74262_at",
+            "M19311_s_at",
+            "U20998_at",
+            "M31211_s_at",
+            "U22376_cds2_s_at",
+            "M55150_at",
+            "D38073_at",
+            "L09209_s_at",
+            "U62136_at",
+            "L41870_at",
+            "L47738_at",
+            "U72936_s_at",
+            "X70297_at",
+            "X68560_at",
+            "X74801_at",
+            "HG1612-HT1612_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_28",
+            "Golub_train_29"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "X74262_at",
+      "baseline_rank": 7,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [
+            1,
+            31
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "J05243_at",
+            "M55150_at",
+            "L47738_at",
+            "M31523_at",
+            "HG1612-HT1612_at",
+            "U72936_s_at",
+            "U46499_at",
+            "M16038_at",
+            "L09209_s_at",
+            "Z15115_at",
+            "J04615_at",
+            "U22376_cds2_s_at",
+            "D88422_at",
+            "M91432_at",
+            "M31211_s_at",
+            "L41870_at",
+            "X74801_at",
+            "U97105_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_02",
+            "Golub_train_32"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "Z15115_at",
+      "baseline_rank": 8,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            27
+          ],
+          "topk": [
+            "M27891_at",
+            "X95735_at",
+            "M16038_at",
+            "L09209_s_at",
+            "X74262_at",
+            "M55150_at",
+            "L47738_at",
+            "D38073_at",
+            "D88422_at",
+            "U72936_s_at",
+            "X51521_at",
+            "HG1612-HT1612_at",
+            "U50136_rna1_at",
+            "Y12670_at",
+            "M23197_at",
+            "U46499_at",
+            "M31523_at",
+            "M91432_at",
+            "X62654_rna1_at",
+            "M31211_s_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_28"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "L47738_at",
+      "baseline_rank": 9,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            28
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "U22376_cds2_s_at",
+            "U20998_at",
+            "M55150_at",
+            "D87078_at",
+            "U62136_at",
+            "L09209_s_at",
+            "M16038_at",
+            "M19311_s_at",
+            "X74262_at",
+            "M31211_s_at",
+            "L41870_at",
+            "M31523_at",
+            "J05243_at",
+            "X63469_at",
+            "X74801_at",
+            "X68560_at",
+            "Z15115_at",
+            "X15949_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_29"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "U22376_cds2_s_at",
+      "baseline_rank": 10,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            27
+          ],
+          "topk": [
+            "M27891_at",
+            "X95735_at",
+            "M16038_at",
+            "L09209_s_at",
+            "X74262_at",
+            "M55150_at",
+            "L47738_at",
+            "D38073_at",
+            "D88422_at",
+            "U72936_s_at",
+            "X51521_at",
+            "HG1612-HT1612_at",
+            "U50136_rna1_at",
+            "Y12670_at",
+            "M23197_at",
+            "U46499_at",
+            "M31523_at",
+            "M91432_at",
+            "X62654_rna1_at",
+            "M31211_s_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_28"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "HG1612-HT1612_at",
+      "baseline_rank": 11,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            28
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "U22376_cds2_s_at",
+            "U20998_at",
+            "M55150_at",
+            "D87078_at",
+            "U62136_at",
+            "L09209_s_at",
+            "M16038_at",
+            "M19311_s_at",
+            "X74262_at",
+            "M31211_s_at",
+            "L41870_at",
+            "M31523_at",
+            "J05243_at",
+            "X63469_at",
+            "X74801_at",
+            "X68560_at",
+            "Z15115_at",
+            "X15949_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_29"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M91432_at",
+      "baseline_rank": 12,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            28
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "U22376_cds2_s_at",
+            "U20998_at",
+            "M55150_at",
+            "D87078_at",
+            "U62136_at",
+            "L09209_s_at",
+            "M16038_at",
+            "M19311_s_at",
+            "X74262_at",
+            "M31211_s_at",
+            "L41870_at",
+            "M31523_at",
+            "J05243_at",
+            "X63469_at",
+            "X74801_at",
+            "X68560_at",
+            "Z15115_at",
+            "X15949_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_29"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "L41870_at",
+      "baseline_rank": 13,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "L09209_s_at",
+            "M16038_at",
+            "M55150_at",
+            "M31523_at",
+            "L47738_at",
+            "X74262_at",
+            "U22376_cds2_s_at",
+            "Z15115_at",
+            "HG1612-HT1612_at",
+            "X74801_at",
+            "Y12670_at",
+            "M91432_at",
+            "X51521_at",
+            "U50136_rna1_at",
+            "U72936_s_at",
+            "M23197_at",
+            "U82759_at",
+            "J05243_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_01"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "U72936_s_at",
+      "baseline_rank": 14,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            6
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "M55150_at",
+            "M16038_at",
+            "L09209_s_at",
+            "L47738_at",
+            "M31523_at",
+            "X74262_at",
+            "U82759_at",
+            "Z15115_at",
+            "U22376_cds2_s_at",
+            "X74801_at",
+            "M12959_s_at",
+            "HG1612-HT1612_at",
+            "M91432_at",
+            "U50136_rna1_at",
+            "X51521_at",
+            "Y12670_at",
+            "M63138_at",
+            "J05243_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_07"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "X51521_at",
+      "baseline_rank": 15,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            11
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "M16038_at",
+            "X74262_at",
+            "L47738_at",
+            "M55150_at",
+            "M91432_at",
+            "L09209_s_at",
+            "U22376_cds2_s_at",
+            "M31523_at",
+            "U72936_s_at",
+            "Z15115_at",
+            "Y00787_s_at",
+            "HG1612-HT1612_at",
+            "X07743_at",
+            "L41870_at",
+            "U26266_s_at",
+            "J05243_at",
+            "M23197_at",
+            "D14874_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_12"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "U50136_rna1_at",
+      "baseline_rank": 16,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            11
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "M16038_at",
+            "X74262_at",
+            "L47738_at",
+            "M55150_at",
+            "M91432_at",
+            "L09209_s_at",
+            "U22376_cds2_s_at",
+            "M31523_at",
+            "U72936_s_at",
+            "Z15115_at",
+            "Y00787_s_at",
+            "HG1612-HT1612_at",
+            "X07743_at",
+            "L41870_at",
+            "U26266_s_at",
+            "J05243_at",
+            "M23197_at",
+            "D14874_at"
+          ],
+          "effect_sign": 1,
+          "deleted_units": [
+            "Golub_train_12"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "Y12670_at",
+      "baseline_rank": 17,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            10
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "M16038_at",
+            "M55150_at",
+            "L09209_s_at",
+            "M31523_at",
+            "X74262_at",
+            "L41870_at",
+            "Z15115_at",
+            "U22376_cds2_s_at",
+            "L47738_at",
+            "U72936_s_at",
+            "M91432_at",
+            "U62136_at",
+            "HG1612-HT1612_at",
+            "Y00787_s_at",
+            "U32944_at",
+            "X51521_at",
+            "U50136_rna1_at",
+            "X15949_at"
+          ],
+          "effect_sign": 1,
+          "deleted_units": [
+            "Golub_train_11"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "X74801_at",
+      "baseline_rank": 18,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            3
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "M16038_at",
+            "L09209_s_at",
+            "M55150_at",
+            "M31523_at",
+            "X74262_at",
+            "L47738_at",
+            "Z15115_at",
+            "U22376_cds2_s_at",
+            "Y12670_at",
+            "HG1612-HT1612_at",
+            "M91432_at",
+            "X51521_at",
+            "U50136_rna1_at",
+            "J05243_at",
+            "U72936_s_at",
+            "M23197_at",
+            "U82759_at",
+            "L41870_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_04"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "Y00787_s_at",
+      "baseline_rank": 19,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            0
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "L09209_s_at",
+            "M16038_at",
+            "M55150_at",
+            "M31523_at",
+            "L47738_at",
+            "X74262_at",
+            "U22376_cds2_s_at",
+            "Z15115_at",
+            "HG1612-HT1612_at",
+            "X74801_at",
+            "Y12670_at",
+            "M91432_at",
+            "X51521_at",
+            "U50136_rna1_at",
+            "U72936_s_at",
+            "M23197_at",
+            "U82759_at",
+            "J05243_at"
+          ],
+          "effect_sign": 1,
+          "deleted_units": [
+            "Golub_train_01"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "J05243_at",
+      "baseline_rank": 20,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": [
+            1
+          ],
+          "topk": [
+            "X95735_at",
+            "M27891_at",
+            "M55150_at",
+            "M16038_at",
+            "L09209_s_at",
+            "Z15115_at",
+            "U22376_cds2_s_at",
+            "M31523_at",
+            "X74262_at",
+            "Y00787_s_at",
+            "L41870_at",
+            "HG1612-HT1612_at",
+            "L47738_at",
+            "X51521_at",
+            "X74801_at",
+            "U72936_s_at",
+            "M91432_at",
+            "U50136_rna1_at",
+            "X15949_at",
+            "Y12670_at"
+          ],
+          "effect_sign": -1,
+          "deleted_units": [
+            "Golub_train_02"
+          ]
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    }
+  ],
+  "first_topk_witness": {
+    "deleted_indices": [
+      0
+    ],
+    "topk": [
+      "X95735_at",
+      "M27891_at",
+      "L09209_s_at",
+      "M16038_at",
+      "M55150_at",
+      "M31523_at",
+      "L47738_at",
+      "X74262_at",
+      "U22376_cds2_s_at",
+      "Z15115_at",
+      "HG1612-HT1612_at",
+      "X74801_at",
+      "Y12670_at",
+      "M91432_at",
+      "X51521_at",
+      "U50136_rna1_at",
+      "U72936_s_at",
+      "M23197_at",
+      "U82759_at",
+      "J05243_at"
+    ],
+    "deleted_units": [
+      "Golub_train_01"
+    ]
+  },
+  "nodes": 730,
+  "topk_minimum_change": {
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "exact": 1
+  },
+  "scenarios_checked": 741,
+  "query_bounds_pruned": 106,
+  "limits": {
+    "max_nodes": 10000,
+    "max_scenarios": 10000
+  },
+  "input_binary64_sha256": "8a29d7e4bbae53c21b7450c39f4e956159c47a78542ad17d19cf0339334a6a90",
+  "hash_scope": "UTF-8 compact JSON {shape,feature_ids,design,group_labels} in input order, NUL, then row-major little-endian binary64 values; group labels 0=target/paired, 1=reference",
+  "scope": "exact membership and effect-sign properties of frozen finite binary64 native inputs; lower/upper minimum deletion bounds; lexical feature-ID ties",
+  "bound_method": "rational group mean/variance enclosures with relaxed minimum-variance windows",
+  "unit_ids": [
+    "Golub_train_01",
+    "Golub_train_02",
+    "Golub_train_03",
+    "Golub_train_04",
+    "Golub_train_05",
+    "Golub_train_06",
+    "Golub_train_07",
+    "Golub_train_08",
+    "Golub_train_09",
+    "Golub_train_10",
+    "Golub_train_11",
+    "Golub_train_12",
+    "Golub_train_13",
+    "Golub_train_14",
+    "Golub_train_15",
+    "Golub_train_16",
+    "Golub_train_17",
+    "Golub_train_18",
+    "Golub_train_19",
+    "Golub_train_20",
+    "Golub_train_21",
+    "Golub_train_22",
+    "Golub_train_23",
+    "Golub_train_24",
+    "Golub_train_25",
+    "Golub_train_26",
+    "Golub_train_27",
+    "Golub_train_28",
+    "Golub_train_29",
+    "Golub_train_30",
+    "Golub_train_31",
+    "Golub_train_32",
+    "Golub_train_33",
+    "Golub_train_34",
+    "Golub_train_35",
+    "Golub_train_36",
+    "Golub_train_37",
+    "Golub_train_38"
+  ],
+  "distribution_note": "Large execution tables compressed losslessly after validation; archive manifest binds original and compressed bytes. Reruns write ordinary tables."
+}

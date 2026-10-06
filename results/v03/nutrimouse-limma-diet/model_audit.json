@@ -1,0 +1,915 @@
+{
+  "software": {
+    "name": "ExtremaRank",
+    "version": "0.3.0"
+  },
+  "model": "limma",
+  "contrast": "ppar - wt",
+  "categorical_covariates": [
+    "diet"
+  ],
+  "numeric_covariates": [],
+  "paired": false,
+  "budget": 1,
+  "top_k": 5,
+  "direction": "up",
+  "feasible_deletion_sets": 40,
+  "requested_refits": 40,
+  "all_feasible_scenarios_requested": true,
+  "fixed_feature_filter": {
+    "min_total_count": null,
+    "min_count": null,
+    "min_count_samples": null,
+    "excluded": [],
+    "retained": 21
+  },
+  "input_sha256": {
+    "matrix": "9560089e87b1c76bedf3767eeda4d3cd5feb2642fdb146e5393258602492cea3",
+    "metadata": "cdcb3d4967ba044d01f66ef76df6c9b503eac8f1af864889b9395d0f1627c61a",
+    "R_script": "90195138ccb67158496a1079dd14fd3f9dd6a9bbce54038e591a82771859fbe7"
+  },
+  "normalization": "Recomputed per retained scenario; edgeR/voom library totals include all source features before fixed filtering.",
+  "scope": "only the provided refit tables; no certificate for any unobserved deletion combination",
+  "identity_check": "Source IDs only; raw genotype/sample identity NOT_EVALUATED",
+  "excluded_other_group_samples": [],
+  "ranking_statistic": "moderated t",
+  "status": "OBSERVED_CHANGED",
+  "refit_provenance": "R adapter executed the declared model per scenario; exported package versions, fit warnings and complete fixed-universe scores are retained.",
+  "baseline_topk": [
+    "C16.1n.9",
+    "C18.2n.6",
+    "C20.2n.6",
+    "C18.1n.9",
+    "C14.0"
+  ],
+  "n_scenarios": 40,
+  "selection_fraction_meaning": "frequency across supplied scenarios, not a probability",
+  "scenarios": [
+    {
+      "scenario_id": "delete_1",
+      "deleted_units": [
+        "mouse_1"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_2",
+      "deleted_units": [
+        "mouse_2"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_3",
+      "deleted_units": [
+        "mouse_3"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_4",
+      "deleted_units": [
+        "mouse_4"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_5",
+      "deleted_units": [
+        "mouse_5"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_6",
+      "deleted_units": [
+        "mouse_6"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_7",
+      "deleted_units": [
+        "mouse_7"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_8",
+      "deleted_units": [
+        "mouse_8"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_9",
+      "deleted_units": [
+        "mouse_9"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_10",
+      "deleted_units": [
+        "mouse_10"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_11",
+      "deleted_units": [
+        "mouse_11"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_12",
+      "deleted_units": [
+        "mouse_12"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_13",
+      "deleted_units": [
+        "mouse_13"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_14",
+      "deleted_units": [
+        "mouse_14"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_15",
+      "deleted_units": [
+        "mouse_15"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_16",
+      "deleted_units": [
+        "mouse_16"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_17",
+      "deleted_units": [
+        "mouse_17"
+      ],
+      "topk_changed": true,
+      "jaccard": 0.6666666666666666,
+      "exited_features": [
+        "C14.0"
+      ],
+      "entered_features": [
+        "C20.1n.9"
+      ]
+    },
+    {
+      "scenario_id": "delete_18",
+      "deleted_units": [
+        "mouse_18"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_19",
+      "deleted_units": [
+        "mouse_19"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_20",
+      "deleted_units": [
+        "mouse_20"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_21",
+      "deleted_units": [
+        "mouse_21"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_22",
+      "deleted_units": [
+        "mouse_22"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_23",
+      "deleted_units": [
+        "mouse_23"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_24",
+      "deleted_units": [
+        "mouse_24"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_25",
+      "deleted_units": [
+        "mouse_25"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_26",
+      "deleted_units": [
+        "mouse_26"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_27",
+      "deleted_units": [
+        "mouse_27"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_28",
+      "deleted_units": [
+        "mouse_28"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_29",
+      "deleted_units": [
+        "mouse_29"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_30",
+      "deleted_units": [
+        "mouse_30"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_31",
+      "deleted_units": [
+        "mouse_31"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_32",
+      "deleted_units": [
+        "mouse_32"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_33",
+      "deleted_units": [
+        "mouse_33"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_34",
+      "deleted_units": [
+        "mouse_34"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_35",
+      "deleted_units": [
+        "mouse_35"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_36",
+      "deleted_units": [
+        "mouse_36"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_37",
+      "deleted_units": [
+        "mouse_37"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_38",
+      "deleted_units": [
+        "mouse_38"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_39",
+      "deleted_units": [
+        "mouse_39"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    },
+    {
+      "scenario_id": "delete_40",
+      "deleted_units": [
+        "mouse_40"
+      ],
+      "topk_changed": false,
+      "jaccard": 1.0,
+      "exited_features": [],
+      "entered_features": []
+    }
+  ],
+  "features": [
+    {
+      "feature_id": "C16.1n.9",
+      "baseline_rank": 1,
+      "best_observed_rank": 1,
+      "worst_observed_rank": 2,
+      "observed_selection_count": 40,
+      "observed_scenarios": 40,
+      "baseline_topk": true,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C18.2n.6",
+      "baseline_rank": 2,
+      "best_observed_rank": 1,
+      "worst_observed_rank": 2,
+      "observed_selection_count": 40,
+      "observed_scenarios": 40,
+      "baseline_topk": true,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C20.2n.6",
+      "baseline_rank": 3,
+      "best_observed_rank": 3,
+      "worst_observed_rank": 4,
+      "observed_selection_count": 40,
+      "observed_scenarios": 40,
+      "baseline_topk": true,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C18.1n.9",
+      "baseline_rank": 4,
+      "best_observed_rank": 3,
+      "worst_observed_rank": 4,
+      "observed_selection_count": 40,
+      "observed_scenarios": 40,
+      "baseline_topk": true,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C14.0",
+      "baseline_rank": 5,
+      "best_observed_rank": 5,
+      "worst_observed_rank": 6,
+      "observed_selection_count": 39,
+      "observed_scenarios": 40,
+      "baseline_topk": true,
+      "smallest_observed_membership_change": 1
+    },
+    {
+      "feature_id": "C20.1n.9",
+      "baseline_rank": 6,
+      "best_observed_rank": 5,
+      "worst_observed_rank": 7,
+      "observed_selection_count": 1,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": 1
+    },
+    {
+      "feature_id": "C16.1n.7",
+      "baseline_rank": 7,
+      "best_observed_rank": 6,
+      "worst_observed_rank": 7,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C18.3n.3",
+      "baseline_rank": 8,
+      "best_observed_rank": 8,
+      "worst_observed_rank": 8,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C18.1n.7",
+      "baseline_rank": 9,
+      "best_observed_rank": 9,
+      "worst_observed_rank": 10,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C20.3n.3",
+      "baseline_rank": 10,
+      "best_observed_rank": 9,
+      "worst_observed_rank": 10,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C22.4n.6",
+      "baseline_rank": 11,
+      "best_observed_rank": 11,
+      "worst_observed_rank": 11,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C18.3n.6",
+      "baseline_rank": 12,
+      "best_observed_rank": 12,
+      "worst_observed_rank": 12,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C22.5n.3",
+      "baseline_rank": 13,
+      "best_observed_rank": 13,
+      "worst_observed_rank": 13,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C20.5n.3",
+      "baseline_rank": 14,
+      "best_observed_rank": 14,
+      "worst_observed_rank": 15,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C22.5n.6",
+      "baseline_rank": 15,
+      "best_observed_rank": 14,
+      "worst_observed_rank": 16,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C20.3n.9",
+      "baseline_rank": 16,
+      "best_observed_rank": 15,
+      "worst_observed_rank": 16,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C20.4n.6",
+      "baseline_rank": 17,
+      "best_observed_rank": 17,
+      "worst_observed_rank": 17,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C22.6n.3",
+      "baseline_rank": 18,
+      "best_observed_rank": 18,
+      "worst_observed_rank": 18,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C16.0",
+      "baseline_rank": 19,
+      "best_observed_rank": 19,
+      "worst_observed_rank": 20,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C18.0",
+      "baseline_rank": 20,
+      "best_observed_rank": 19,
+      "worst_observed_rank": 20,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    },
+    {
+      "feature_id": "C20.3n.6",
+      "baseline_rank": 21,
+      "best_observed_rank": 21,
+      "worst_observed_rank": 21,
+      "observed_selection_count": 0,
+      "observed_scenarios": 40,
+      "baseline_topk": false,
+      "smallest_observed_membership_change": null
+    }
+  ],
+  "fit_status": [
+    {
+      "scenario_id": "baseline",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_1",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_2",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_3",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_4",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_5",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_6",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_7",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_8",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_9",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_10",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_11",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_12",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_13",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_14",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_15",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_16",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_17",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_18",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_19",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_20",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_21",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_22",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_23",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_24",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_25",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_26",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_27",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_28",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_29",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_30",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_31",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_32",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_33",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_34",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_35",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_36",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_37",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_38",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_39",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    },
+    {
+      "scenario_id": "delete_40",
+      "status": "OK",
+      "detail": "Full fixed-universe ranking fitted",
+      "warnings": ""
+    }
+  ],
+  "valid_refits": 40,
+  "failed_refits": 0
+}

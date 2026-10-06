@@ -1,0 +1,9 @@
+{
+  "cases": 1000,
+  "native_design_direction_problems": 6000,
+  "independent_property_and_scalar_enclosure_checks": 1434768,
+  "failures": 0,
+  "seed": 60319,
+  "seconds": 30.00848870817572,
+  "oracle": "Complete deletion subsets, Fraction means and centered sample variances, lexical ranking ties; checks statuses, exact minimum changes, witnesses and root and forced-inclusion scalar enclosures, plus capped-search intervals."
+}

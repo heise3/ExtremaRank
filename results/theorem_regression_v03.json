@@ -1,0 +1,43 @@
+{
+  "verification_passed": true,
+  "seed": 20261004,
+  "requested_cases": 10000,
+  "completed_cases": 10000,
+  "coverage": {
+    "integer": 5000,
+    "normal_binary64": 5000,
+    "nonempty_fixed": 10000,
+    "all_positive_sums": 3368,
+    "all_negative_sums": 3340,
+    "mixed_or_zero_sums": 3292,
+    "all_zero_substitutions": 11,
+    "positive_constant_substitutions": 10,
+    "negative_constant_substitutions": 10,
+    "disparate_scale_substitutions": 10
+  },
+  "failure_count": 0,
+  "failures": [],
+  "exhaustive_subset_evaluations": 90456,
+  "candidate_subset_evaluations": 42308,
+  "arithmetic": "exact binary64 dyadics lifted to common integer units; exact cross products",
+  "implementation_imported": false,
+  "sampling_note": "stdlib Random; independently rerunnable 200k check, not the earlier NumPy stream",
+  "retained_count_minimum": 2,
+  "total_donor_counts": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "fixed_donor_counts": [
+    1,
+    2,
+    3
+  ],
+  "elapsed_seconds": 0.17058899998664856,
+  "python": "3.14.6 (main, Jun 10 2026, 10:03:53) [Clang 17.0.0 (clang-1700.6.4.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "generated_at_utc": "2026-10-06T08:09:07.392696+00:00",
+  "claim_limit": "finite exact verification supports theorem review; does not replace proof or establish priority"
+}

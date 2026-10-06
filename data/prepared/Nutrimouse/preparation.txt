@@ -1,0 +1,4 @@
+Nutrimouse from mixOmics 6.36.0; all 21 liver fatty-acid percentages measured by gas chromatography.
+40 biological mice; wt versus ppar, four mice in each genotype/diet combination.
+Values are supplied percentage compositions, not absolute concentrations. No transformation, filtering or imputation.
+Source row IDs prefixed mouse_; raw identity NOT_EVALUATED. Frozen contract benchmarks/v03_lipid_contract.json.

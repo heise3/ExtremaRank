@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/statOmics/msqrob2data/6338dcfebea8681b20f6f30431b865a37d3ef428/dda/cptacAvsB_lab3/background.md",
+      "path": "background.md",
+      "sha256": "8fd1509cbf9f50cac95e1799c673376f8604f18c2a3ca9ba2cc1fe7f8bdc43e2",
+      "bytes": 1099,
+      "bundled": false
+    },
+    {
+      "url": "https://raw.githubusercontent.com/statOmics/msqrob2data/6338dcfebea8681b20f6f30431b865a37d3ef428/dda/cptacAvsB_lab3/experimental_annotation.txt",
+      "path": "experimental_annotation.txt",
+      "sha256": "9a7422233f69c9ea399bce5042448e030153b8d14b6ab8f9ae39dd71cdd5a725",
+      "bytes": 156
+    },
+    {
+      "url": "https://raw.githubusercontent.com/statOmics/msqrob2data/6338dcfebea8681b20f6f30431b865a37d3ef428/dda/cptacAvsB_lab3/proteinGroups.txt",
+      "path": "proteinGroups.txt",
+      "sha256": "48c54e6d31e507917e90e71264a222aaa3d8d55b944b0b216ffd2cee00c40cf9",
+      "bytes": 4641574
+    },
+    {
+      "url": "https://bioconductor.posit.co/packages/3.23/bioc/src/contrib/muscat_1.26.0.tar.gz",
+      "path": "muscat_1.26.0.tar.gz",
+      "sha256": "59298f754214fef55ed7e727f56a4e3e69c033599e33919937a3135a808664cc",
+      "bytes": 7770312,
+      "bundled": false
+    }
+  ]
+}

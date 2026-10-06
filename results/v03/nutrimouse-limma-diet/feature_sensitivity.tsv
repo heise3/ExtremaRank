@@ -1,0 +1,22 @@
+feature_id	baseline_rank	best_observed_rank	worst_observed_rank	observed_selection_count	observed_scenarios	baseline_topk	smallest_observed_membership_change
+C16.1n.9	1	1	2	40	40	True	
+C18.2n.6	2	1	2	40	40	True	
+C20.2n.6	3	3	4	40	40	True	
+C18.1n.9	4	3	4	40	40	True	
+C14.0	5	5	6	39	40	True	1
+C20.1n.9	6	5	7	1	40	False	1
+C16.1n.7	7	6	7	0	40	False	
+C18.3n.3	8	8	8	0	40	False	
+C18.1n.7	9	9	10	0	40	False	
+C20.3n.3	10	9	10	0	40	False	
+C22.4n.6	11	11	11	0	40	False	
+C18.3n.6	12	12	12	0	40	False	
+C22.5n.3	13	13	13	0	40	False	
+C20.5n.3	14	14	15	0	40	False	
+C22.5n.6	15	14	16	0	40	False	
+C20.3n.9	16	15	16	0	40	False	
+C20.4n.6	17	17	17	0	40	False	
+C22.6n.3	18	18	18	0	40	False	
+C16.0	19	19	20	0	40	False	
+C18.0	20	19	20	0	40	False	
+C20.3n.6	21	21	21	0	40	False	

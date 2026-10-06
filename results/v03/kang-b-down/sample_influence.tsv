@@ -1,0 +1,9 @@
+deleted_unit	group	topk_changed	jaccard	exited_features	entered_features
+101	paired	True	0.8181818181818182	"[""ISCU"", ""PFN1""]"	"[""ORAI2"", ""GNB2L1""]"
+1015	paired	True	0.9047619047619048	"[""RPL5""]"	"[""PTMA""]"
+1016	paired	True	0.7391304347826086	"[""RPL10A"", ""PFN1"", ""RPL5""]"	"[""RPSA"", ""RPS3"", ""RPS8""]"
+1039	paired	True	0.6	"[""HLA-DQB1_ENSG00000179344"", ""PTPRCAP"", ""RPL10A"", ""PFN1"", ""RPL5""]"	"[""BIRC3"", ""LAGE3_ENSG00000196976"", ""RPL15"", ""RPS4X"", ""LINC00926""]"
+107	paired	True	0.6	"[""HLA-DQB1_ENSG00000179344"", ""EEF2"", ""HLA-DMA_ENSG00000204257"", ""PFN1"", ""RPL5""]"	"[""GSTP1"", ""RHOG"", ""RPS8"", ""SMIM14"", ""ALOX5AP""]"
+1244	paired	True	0.7391304347826086	"[""ISCU"", ""PFN1"", ""RPL5""]"	"[""CYB5A"", ""GPX4"", ""COX4I1""]"
+1256	paired	True	0.8181818181818182	"[""ISCU"", ""PFN1""]"	"[""PTMA"", ""ATP5F1""]"
+1488	paired	True	0.8181818181818182	"[""ISCU"", ""RPL5""]"	"[""BBC3"", ""CMTM7""]"

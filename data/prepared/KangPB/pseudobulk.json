@@ -1,0 +1,220 @@
+{
+  "status": "PREPARED",
+  "input_format": "10x",
+  "n_cells": 24679,
+  "retained_cells": 24629,
+  "n_genes": 35635,
+  "min_cells": 10,
+  "n_pseudobulks": 122,
+  "cell_types": [
+    {
+      "cell_type": "B cells",
+      "directory": "celltype_1",
+      "n_pseudobulks": 16,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "107",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 8,
+        "stim": 8
+      }
+    },
+    {
+      "cell_type": "CD14+ Monocytes",
+      "directory": "celltype_2",
+      "n_pseudobulks": 16,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "107",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 8,
+        "stim": 8
+      }
+    },
+    {
+      "cell_type": "CD4 T cells",
+      "directory": "celltype_3",
+      "n_pseudobulks": 16,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "107",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 8,
+        "stim": 8
+      }
+    },
+    {
+      "cell_type": "CD8 T cells",
+      "directory": "celltype_4",
+      "n_pseudobulks": 16,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "107",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 8,
+        "stim": 8
+      }
+    },
+    {
+      "cell_type": "Dendritic cells",
+      "directory": "celltype_5",
+      "n_pseudobulks": 14,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "107",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 6,
+        "stim": 8
+      }
+    },
+    {
+      "cell_type": "FCGR3A+ Monocytes",
+      "directory": "celltype_6",
+      "n_pseudobulks": 16,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "107",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 8,
+        "stim": 8
+      }
+    },
+    {
+      "cell_type": "Megakaryocytes",
+      "directory": "celltype_7",
+      "n_pseudobulks": 12,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 6,
+        "stim": 6
+      }
+    },
+    {
+      "cell_type": "NK cells",
+      "directory": "celltype_8",
+      "n_pseudobulks": 16,
+      "donors": [
+        "101",
+        "1015",
+        "1016",
+        "1039",
+        "107",
+        "1244",
+        "1256",
+        "1488"
+      ],
+      "groups": {
+        "ctrl": 8,
+        "stim": 8
+      }
+    }
+  ],
+  "excluded_low_cell_units": [
+    {
+      "cell_type": "Dendritic cells",
+      "donor_id": "1039",
+      "group": "ctrl",
+      "n_cells": 9
+    },
+    {
+      "cell_type": "Dendritic cells",
+      "donor_id": "107",
+      "group": "ctrl",
+      "n_cells": 8
+    },
+    {
+      "cell_type": "Megakaryocytes",
+      "donor_id": "101",
+      "group": "stim",
+      "n_cells": 9
+    },
+    {
+      "cell_type": "Megakaryocytes",
+      "donor_id": "1016",
+      "group": "ctrl",
+      "n_cells": 8
+    },
+    {
+      "cell_type": "Megakaryocytes",
+      "donor_id": "107",
+      "group": "ctrl",
+      "n_cells": 6
+    },
+    {
+      "cell_type": "Megakaryocytes",
+      "donor_id": "107",
+      "group": "stim",
+      "n_cells": 4
+    },
+    {
+      "cell_type": "NA",
+      "donor_id": "1039",
+      "group": "stim",
+      "n_cells": 6
+    }
+  ],
+  "excluded_non_gene_features": 0,
+  "source_entries": 14188476,
+  "input_sha256": {
+    "data/prepared/Kang10X/cell_metadata.tsv.gz": "d665bba4f62bc438afd831898bd728cd6bc046919a6b1b8149a937c35b59e56b",
+    "data/prepared/Kang10X/barcodes.tsv.gz": "f07615f6fab89494abd4ba7404f9ce5b4e1761c464c960b478842870a6f4a381",
+    "data/prepared/Kang10X/features.tsv.gz": "b1f877df1fdf02fd90338a0721a0765a95a07c4fab57d1d179ede48258032efb",
+    "data/prepared/Kang10X/matrix.mtx.gz": "55647bdbaef7b3bed86f6fa696f0de8fda23587f868b8f053f912a58d19bef0a"
+  },
+  "counts_layer": null,
+  "merge_technical_declared": false,
+  "carried_covariates": [],
+  "ignored_cell_metadata_columns": [],
+  "aggregation": "Exact integer sum by donor + condition + cell type; multiple sample libraries require an explicit technical-merge declaration; duplicate MTX coordinates are additive.",
+  "scope": "Cells are never independent deletion units. Counts/annotations/QC supplied by caller; cell identity and genotype checks NOT_EVALUATED."
+}

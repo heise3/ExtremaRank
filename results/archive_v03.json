@@ -1,0 +1,436 @@
+{
+  "files": [
+    {
+      "original_path": "results/v03/cptac-absolute/values.csv",
+      "archived_path": "results/v03/cptac-absolute/values.csv.gz",
+      "original_sha256": "a43d8817711f3526a4f3bededdbe8174ed285d82de02d0ca47ad375860c888af",
+      "archive_sha256": "b25657e39353b82d668d974d40185cff7c7b026e47dbc2c41eabb6d7d0677ad7",
+      "original_bytes": 149690,
+      "archive_bytes": 65959,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/cptac-down/values.csv",
+      "archived_path": "results/v03/cptac-down/values.csv.gz",
+      "original_sha256": "a43d8817711f3526a4f3bededdbe8174ed285d82de02d0ca47ad375860c888af",
+      "archive_sha256": "b25657e39353b82d668d974d40185cff7c7b026e47dbc2c41eabb6d7d0677ad7",
+      "original_bytes": 149690,
+      "archive_bytes": 65959,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/cptac-up/values.csv",
+      "archived_path": "results/v03/cptac-up/values.csv.gz",
+      "original_sha256": "a43d8817711f3526a4f3bededdbe8174ed285d82de02d0ca47ad375860c888af",
+      "archive_sha256": "b25657e39353b82d668d974d40185cff7c7b026e47dbc2c41eabb6d7d0677ad7",
+      "original_bytes": 149690,
+      "archive_bytes": 65959,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-absolute/baseline.tsv",
+      "archived_path": "results/v03/golub-absolute/baseline.tsv.gz",
+      "original_sha256": "3254ed39f2233f7d45b46acf66c9358e65dbac6dfde277b1cb644ba109b75071",
+      "archive_sha256": "8ff2e816dbdd874b0c337c7e23ac13c74e2d66e4ec70192afbccd756f1f56bef",
+      "original_bytes": 189854,
+      "archive_bytes": 73555,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-absolute/diagnostics.tsv",
+      "archived_path": "results/v03/golub-absolute/diagnostics.tsv.gz",
+      "original_sha256": "0eb3eefb422eebd5daccc5948337e38a60b24bf8cb3830451894b9db7e857cdc",
+      "archive_sha256": "755870cff0fda2c1173bc62b0f9429f6785c87340fb9f3c6f0004a898d064807",
+      "original_bytes": 189490,
+      "archive_bytes": 67669,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-absolute/values.csv",
+      "archived_path": "results/v03/golub-absolute/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "3ee88e17bcc5bbba45c34d85e539a90507f40e540a5cf86986265101fa701582",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-down/baseline.tsv",
+      "archived_path": "results/v03/golub-down/baseline.tsv.gz",
+      "original_sha256": "87afb2241e2ff2ff18c8657f4744855cfac86676dd9acbb303c7f08d9a481d24",
+      "archive_sha256": "2b2abd5ba3cd0b34775738c7901af9dca972aa8bf0a31b6865e028f9d5835026",
+      "original_bytes": 189854,
+      "archive_bytes": 72916,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-down/diagnostics.tsv",
+      "archived_path": "results/v03/golub-down/diagnostics.tsv.gz",
+      "original_sha256": "dde6f97e1bf87b1ced6864d54ace05fd9c74d45d39227423d4491a856929a693",
+      "archive_sha256": "c03931acee40c3895f27409ab92427943ee42fa33c192766463d12b38eff1082",
+      "original_bytes": 189697,
+      "archive_bytes": 67337,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-down/values.csv",
+      "archived_path": "results/v03/golub-down/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "3ee88e17bcc5bbba45c34d85e539a90507f40e540a5cf86986265101fa701582",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-limma/baseline.tsv",
+      "archived_path": "results/v03/golub-limma/baseline.tsv.gz",
+      "original_sha256": "bfa887c0278610f13ecd3419888bdd49c2922b394c556b64d2d3061c02809ebc",
+      "archive_sha256": "b36892b31b80d2963ec0dc00403bf8a3b9f1ed3acc7d6a268063ff859f5df5b3",
+      "original_bytes": 379686,
+      "archive_bytes": 134594,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-limma/feature_sensitivity.tsv",
+      "archived_path": "results/v03/golub-limma/feature_sensitivity.tsv.gz",
+      "original_sha256": "3ffd18422722cb6097ee9bd85a31c4b792451f5fc8f8220cc13fe5bb520c4320",
+      "archive_sha256": "c2c7b7908b4f905ca02d602fc460b85bf4fe4b46e986fc1beab7d1876bca37d2",
+      "original_bytes": 113214,
+      "archive_bytes": 34973,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-limma/model_input.tsv",
+      "archived_path": "results/v03/golub-limma/model_input.tsv.gz",
+      "original_sha256": "8b8e0d6e572b3e0eeb0345ea9bb14359c03ab787946bf17fbc60e4d38f0ef160",
+      "archive_sha256": "22c40dfb57dc086ddf39082eeb0f9381e5a6cf007377294241cc6bf253d2bd68",
+      "original_bytes": 1996305,
+      "archive_bytes": 462592,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-limma/refits.tsv",
+      "archived_path": "results/v03/golub-limma/refits.tsv.gz",
+      "original_sha256": "c6fdfb12c718675ff69ce9abc7258f1d642952207b03176700ad85923666c072",
+      "archive_sha256": "b7b2888c4a05574fbfa974b9dc5d6720d65bce3864dcc0a1b4df3a43409cf008",
+      "original_bytes": 15786716,
+      "archive_bytes": 5156929,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-up/baseline.tsv",
+      "archived_path": "results/v03/golub-up/baseline.tsv.gz",
+      "original_sha256": "93412e078aca3743c42ea4fa6af487236f7194851fb1478029361e335a29419a",
+      "archive_sha256": "2c390a1cb089023f8ab7d69cc8a9645a534e4dbbf143a675c5ecbfbf27c4ee39",
+      "original_bytes": 189854,
+      "archive_bytes": 72956,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-up/diagnostics.tsv",
+      "archived_path": "results/v03/golub-up/diagnostics.tsv.gz",
+      "original_sha256": "9edfd3fb36d120e4ecdbbe5f161077d2eb14121fb8e2d3f6b27fb1bad2fd5200",
+      "archive_sha256": "e3606ece7918ceb2219b5b5d32ed3e051b2705d1a2f7ebdfe72fba6222e1fb65",
+      "original_bytes": 189316,
+      "archive_bytes": 67287,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/golub-up/values.csv",
+      "archived_path": "results/v03/golub-up/values.csv.gz",
+      "original_sha256": "17b959bc4b504a91069220eb5acac41298f24409c1488af85a7436d32a4ed58f",
+      "archive_sha256": "3ee88e17bcc5bbba45c34d85e539a90507f40e540a5cf86986265101fa701582",
+      "original_bytes": 1996304,
+      "archive_bytes": 382278,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-DESeq2/baseline.tsv",
+      "archived_path": "results/v03/kang-b-DESeq2/baseline.tsv.gz",
+      "original_sha256": "7bfaa2e20998d744c58e7eb7c4d0aa13d3b5d039e20ddc52571906fcde104594",
+      "archive_sha256": "d680b945f948abc70af8da9bb1fb554e1af684841c52778bc3e39223228b6b69",
+      "original_bytes": 1066612,
+      "archive_bytes": 390737,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-DESeq2/feature_sensitivity.tsv",
+      "archived_path": "results/v03/kang-b-DESeq2/feature_sensitivity.tsv.gz",
+      "original_sha256": "04dae70289f686536063b058dea6bc7afaf0d20f6965aeb80419c8ca18e60ee8",
+      "archive_sha256": "4942f1e58af463426a2194bb2fee2309e3650c682feb2bba7a0532e56516ac94",
+      "original_bytes": 292786,
+      "archive_bytes": 102354,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-DESeq2/model_input.tsv",
+      "archived_path": "results/v03/kang-b-DESeq2/model_input.tsv.gz",
+      "original_sha256": "368f536296733b2e26c8a6a32e70277681e32f5d644414044a204ec9537e7ddf",
+      "archive_sha256": "b12ebb7aa648ddba7f4d5417e2e9ede918f50ddcfd291e916d6717a97cf218d4",
+      "original_bytes": 388541,
+      "archive_bytes": 146369,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-DESeq2/refits.tsv",
+      "archived_path": "results/v03/kang-b-DESeq2/refits.tsv.gz",
+      "original_sha256": "730b375020e80ea259f38d67011bfea1a7e0f02e4c410dd84e83c27d99120caf",
+      "archive_sha256": "0dd68a2fcef35bca82274f8d57b1505ec34d37455b1dc7a0fa8e1a69e826605e",
+      "original_bytes": 9309822,
+      "archive_bytes": 3067271,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-absolute/diagnostics.tsv",
+      "archived_path": "results/v03/kang-b-absolute/diagnostics.tsv.gz",
+      "original_sha256": "7383051666fc255adc0d4c7ed6847c363fadb1eb54b9fba602f2aec1d5094065",
+      "archive_sha256": "54ed1f01bbfa2dd9fbc776ecbdd35cea3303658bcdeae6b1f099fc759acb7471",
+      "original_bytes": 1848149,
+      "archive_bytes": 529798,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-absolute/effects.csv",
+      "archived_path": "results/v03/kang-b-absolute/effects.csv.gz",
+      "original_sha256": "73f67dbbe331a64e7b271388684b9243348b7814769d23a9c841bc23d07dbaaf",
+      "archive_sha256": "88252b83d744f41d2f3655126f7b11e386c8818ae9db648d84e7f4ee176a82a2",
+      "original_bytes": 2315440,
+      "archive_bytes": 480236,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-absolute/envelopes.tsv",
+      "archived_path": "results/v03/kang-b-absolute/envelopes.tsv.gz",
+      "original_sha256": "d0fcfe85a627b6cf798487df44a516dca361acb0aa440cfddc8b6fb2e8f50faa",
+      "archive_sha256": "6d189f5e37066063748bae44d196ffac0f6a7445e2ed7a8e5ff5a9b8954df105",
+      "original_bytes": 16261607,
+      "archive_bytes": 3633607,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-absolute/summary.tsv",
+      "archived_path": "results/v03/kang-b-absolute/summary.tsv.gz",
+      "original_sha256": "b92054bf9bf6d490a16229d223880fbf840227ceac44c349360bc6fc5e696825",
+      "archive_sha256": "8f4a2565407a0e16c130c5230c8c48191d887afc6432b66c1c0ea18eaba30c18",
+      "original_bytes": 3429761,
+      "archive_bytes": 838759,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-down/diagnostics.tsv",
+      "archived_path": "results/v03/kang-b-down/diagnostics.tsv.gz",
+      "original_sha256": "d623de2558ad998d97bda5afe6e73d5fac49caa8a08bc6ab2f78e2afeb6f827d",
+      "archive_sha256": "7a5549e6ef123711e6bfad84d3e98d194ce7050e7255182faff75cf16724a3ec",
+      "original_bytes": 1848195,
+      "archive_bytes": 540659,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-down/effects.csv",
+      "archived_path": "results/v03/kang-b-down/effects.csv.gz",
+      "original_sha256": "73f67dbbe331a64e7b271388684b9243348b7814769d23a9c841bc23d07dbaaf",
+      "archive_sha256": "88252b83d744f41d2f3655126f7b11e386c8818ae9db648d84e7f4ee176a82a2",
+      "original_bytes": 2315440,
+      "archive_bytes": 480236,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-down/envelopes.tsv",
+      "archived_path": "results/v03/kang-b-down/envelopes.tsv.gz",
+      "original_sha256": "d0fcfe85a627b6cf798487df44a516dca361acb0aa440cfddc8b6fb2e8f50faa",
+      "archive_sha256": "6d189f5e37066063748bae44d196ffac0f6a7445e2ed7a8e5ff5a9b8954df105",
+      "original_bytes": 16261607,
+      "archive_bytes": 3633607,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-down/summary.tsv",
+      "archived_path": "results/v03/kang-b-down/summary.tsv.gz",
+      "original_sha256": "96b35031cbc593542bdccebc93bed75fe7c61bc761040d710b1ea6358d421d06",
+      "archive_sha256": "96c14f319eb88de465ce5a31984b7082ca1120851c699fdce24d66834a96dd05",
+      "original_bytes": 3429761,
+      "archive_bytes": 834532,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-edgeR/model_input.tsv",
+      "archived_path": "results/v03/kang-b-edgeR/model_input.tsv.gz",
+      "original_sha256": "368f536296733b2e26c8a6a32e70277681e32f5d644414044a204ec9537e7ddf",
+      "archive_sha256": "b12ebb7aa648ddba7f4d5417e2e9ede918f50ddcfd291e916d6717a97cf218d4",
+      "original_bytes": 388541,
+      "archive_bytes": 146369,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-edgeR/refits.tsv",
+      "archived_path": "results/v03/kang-b-edgeR/refits.tsv.gz",
+      "original_sha256": "77883170d4a58b88a197121f952a0c9d2df99f374af5c68390e4d5d3cbe7bec7",
+      "archive_sha256": "dc30bf60bd0f0e305b3327d34dfd037a1b652dd2cc20cb9a162035c31a7d8910",
+      "original_bytes": 2319597,
+      "archive_bytes": 969673,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-limma-voom/baseline.tsv",
+      "archived_path": "results/v03/kang-b-limma-voom/baseline.tsv.gz",
+      "original_sha256": "1b07930212f4bd3b46b1527bb12dca1144388e8dfff395502376ece95f1a7653",
+      "archive_sha256": "d4fead641740c1ad99a8eecb5be67dc71dcc154852471903aa578601e9011027",
+      "original_bytes": 1067068,
+      "archive_bytes": 415398,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-limma-voom/feature_sensitivity.tsv",
+      "archived_path": "results/v03/kang-b-limma-voom/feature_sensitivity.tsv.gz",
+      "original_sha256": "0fe28984201aa4a0448d6ec2b073a28bbb693e0852df3fc43ec48f96794d2a8d",
+      "archive_sha256": "35e4ba41acaa4af3cdb63ff00df328ed82720aa580cd7e1b8a47e83a9b202b6a",
+      "original_bytes": 292773,
+      "archive_bytes": 102407,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-limma-voom/model_input.tsv",
+      "archived_path": "results/v03/kang-b-limma-voom/model_input.tsv.gz",
+      "original_sha256": "368f536296733b2e26c8a6a32e70277681e32f5d644414044a204ec9537e7ddf",
+      "archive_sha256": "b12ebb7aa648ddba7f4d5417e2e9ede918f50ddcfd291e916d6717a97cf218d4",
+      "original_bytes": 388541,
+      "archive_bytes": 146369,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-limma-voom/refits.tsv",
+      "archived_path": "results/v03/kang-b-limma-voom/refits.tsv.gz",
+      "original_sha256": "66ac1c5edf6624230f448cb2cc80ebc16e80c280bf47cd22a42ad451538f927c",
+      "archive_sha256": "b317b0297c6265c9b663405fe21dcebfe8c49d4ec294b87c87da41611e1edfd5",
+      "original_bytes": 9310960,
+      "archive_bytes": 3367197,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-up/diagnostics.tsv",
+      "archived_path": "results/v03/kang-b-up/diagnostics.tsv.gz",
+      "original_sha256": "facaee72413df2a7c5a17704b75f3c2e07efceefac57157677795f7ec3ea06b1",
+      "archive_sha256": "43d0a5c7d2b33a83657ae2046e05ab60cf3c14ccf9020bf6f6d3b0452b46623b",
+      "original_bytes": 1847867,
+      "archive_bytes": 543156,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-up/effects.csv",
+      "archived_path": "results/v03/kang-b-up/effects.csv.gz",
+      "original_sha256": "73f67dbbe331a64e7b271388684b9243348b7814769d23a9c841bc23d07dbaaf",
+      "archive_sha256": "88252b83d744f41d2f3655126f7b11e386c8818ae9db648d84e7f4ee176a82a2",
+      "original_bytes": 2315440,
+      "archive_bytes": 480236,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-up/envelopes.tsv",
+      "archived_path": "results/v03/kang-b-up/envelopes.tsv.gz",
+      "original_sha256": "d0fcfe85a627b6cf798487df44a516dca361acb0aa440cfddc8b6fb2e8f50faa",
+      "archive_sha256": "6d189f5e37066063748bae44d196ffac0f6a7445e2ed7a8e5ff5a9b8954df105",
+      "original_bytes": 16261607,
+      "archive_bytes": 3633607,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/kang-b-up/summary.tsv",
+      "archived_path": "results/v03/kang-b-up/summary.tsv.gz",
+      "original_sha256": "7d2df60901c083289b7884b58bee7e449d4778d7e258b3fc7a90bb27dc76130a",
+      "archive_sha256": "57252af058eb38bde19198aaa1c26a52228b7af0d3e53318374bc5e38611dee0",
+      "original_bytes": 3429761,
+      "archive_bytes": 835548,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "results/v03/nutrimouse-limma-diet/refits.tsv",
+      "archived_path": "results/v03/nutrimouse-limma-diet/refits.tsv.gz",
+      "original_sha256": "cbd8b9072dafdba16253caeaec6684a923bd8cb549092164a03557beefada9e5",
+      "archive_sha256": "534afae963e754475e6c27c9bc0f83b2115a69ebca5b24624907843dbe90f319",
+      "original_bytes": 113761,
+      "archive_bytes": 35071,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_1/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_1/matrix.tsv.gz",
+      "original_sha256": "9dc192c76810d1fe0a3058641ec027eb553db33e85bb14f049c36ab4c4f1bd82",
+      "archive_sha256": "de76c140f273382de101951a453268772e0a0b45498695b419369824bd9bdb2d",
+      "original_bytes": 1564897,
+      "archive_bytes": 322616,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_2/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_2/matrix.tsv.gz",
+      "original_sha256": "9119530c18efe2f21685d6a5b23a5b23d19bc0b09c74225e524cb815017e969f",
+      "archive_sha256": "192154b1c687785c657890f81beaf0a4725eb05374e6ce3576a9b3922c47ea36",
+      "original_bytes": 1599854,
+      "archive_bytes": 364129,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_3/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_3/matrix.tsv.gz",
+      "original_sha256": "bd84d0bbc53f5a0e0b367b18bc1064881243190ddc435508bc378f932c6fe45f",
+      "archive_sha256": "3d7987af5f146feac3760a6d9859371206483643cbb5d8d213c118f6b9384b9c",
+      "original_bytes": 1616635,
+      "archive_bytes": 380752,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_4/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_4/matrix.tsv.gz",
+      "original_sha256": "24dd3b51418994130e8928bcf36495d18aba07c484b6e4ea87bc400d7a148b18",
+      "archive_sha256": "36705b60435a2bcc7259d6cb1b4bcb6d6d1fe72334817f1644c571574659bc69",
+      "original_bytes": 1551144,
+      "archive_bytes": 299948,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_5/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_5/matrix.tsv.gz",
+      "original_sha256": "e03e4ef85e191f784f3f3670111fb4bf47a10036eafea3b0b574895078e579f9",
+      "archive_sha256": "33871f05c1c8ceb0924817af90eb7fbf542b6a7fd539d300ed7fa0488d42b760",
+      "original_bytes": 1400959,
+      "archive_bytes": 274130,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_6/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_6/matrix.tsv.gz",
+      "original_sha256": "f5365d829dee968a47cb1c647c1ee8e4a826fd6d9f2cce09bbf35606f287729b",
+      "archive_sha256": "b860aa9f1559e17fbdf5177f9f62f7c3313d1d883677f0fdc8cfa67c7f98ecf4",
+      "original_bytes": 1564035,
+      "archive_bytes": 318310,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_7/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_7/matrix.tsv.gz",
+      "original_sha256": "9c4528c656857ea3e1b74727e55f19a393f915a306e09f03a7d92ee41666bab8",
+      "archive_sha256": "0267eb96b1cb0560270e09034671cfe5466b6f8e27bac4da966ca93117ed4dae",
+      "original_bytes": 1244609,
+      "archive_bytes": 228203,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/KangPB/celltype_8/matrix.tsv",
+      "archived_path": "data/prepared/KangPB/celltype_8/matrix.tsv.gz",
+      "original_sha256": "242dda5616d26cae57e2ae64cac9523d726113257fde2644ffcb7bf02bd450df",
+      "archive_sha256": "e8a18c46addca92b44afdc01a0117891493fe352c1990b6e7d5bda142ed320df",
+      "original_bytes": 1553187,
+      "archive_bytes": 306029,
+      "lossless_verified": true
+    },
+    {
+      "original_path": "data/prepared/CPTAC_runs/matrix.tsv",
+      "archived_path": "data/prepared/CPTAC_runs/matrix.tsv.gz",
+      "original_sha256": "43232b5671b5b5d64cbdda0c6f94379504fcbcf5eadb4c2e16b6833659f66c37",
+      "archive_sha256": "3dc58bf72fc16cfe4f9201ee833a1fa039b090adc75bbba56b375504fd5711e5",
+      "original_bytes": 150789,
+      "archive_bytes": 69066,
+      "lossless_verified": true
+    }
+  ]
+}

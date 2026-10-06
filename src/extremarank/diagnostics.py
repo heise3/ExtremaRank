@@ -11,6 +11,9 @@ from .unpaired import rank_welch
 
 class PreparedPaired:
     def __init__(self, rows):
+        rows = tuple(tuple(float(x) for x in row) for row in rows)
+        if len(rows) < 2 or not rows[0] or any(len(row) != len(rows[0]) for row in rows):
+            raise ValueError("paired values require a rectangular matrix with >=2 units and >=1 feature")
         self.rows = rows
         self.prepared = [PreparedValues(row[j] for row in rows) for j in range(len(rows[0]))]
         self.totals = [(sum(p.ints), sum(x*x for x in p.ints)) for p in self.prepared]
@@ -75,7 +78,7 @@ def delete_one_diagnostics(prepared, ids, unit_ids, k, direction, design, metada
         "skipped_units": skipped, "scenarios": scenarios, "features": features}
 
 
-def html_report(report, diagnostics):
+def html_report(report, diagnostics, granular=None):
     def table(headers, rows):
         return "<table><thead><tr>" + "".join("<th>"+escape(h)+"</th>" for h in headers) + "</tr></thead><tbody>" + "".join(
             "<tr>"+"".join("<td>"+escape(str(cell))+"</td>" for cell in row)+"</tr>" for row in rows) + "</tbody></table>"
@@ -98,6 +101,18 @@ def html_report(report, diagnostics):
                    "The listed common deletion changes the initial top-K set." if status == "REFUTED" else
                    "The declared search budget was reached; stability remains unresolved." if status == "UNRESOLVED" else
                    "The shared multi-deletion search was not run.")
+    extra = ""
+    if granular:
+        def radius(item):
+            if item["exact_minimum_change"] is not None:
+                return str(item["exact_minimum_change"])+" (exact)"
+            lo, hi = item["minimum_change_lower_bound"], item["minimum_change_upper_bound"]
+            return str(lo)+".."+str(hi)+" (bounded)" if hi is not None else ">="+str(lo)+"; no witness within inspected budget"
+        rows = [(row["feature_id"], row["baseline_rank"], row["membership"]["status"],
+                 row["membership"]["certified_through"], radius(row["membership"]),
+                 row["direction"]["status"], radius(row["direction"])) for row in granular["features"][:200]]
+        extra = '<div class="card"><h2>Individual candidate guarantees and minimum changes</h2><p>Membership means preserving each candidate\'s baseline inside/outside Top-K status. Direction means preserving the positive/zero/negative mean-effect sign. Exact minima exclude every smaller feasible deletion; incomplete searches retain bounds. All queried features and common deletion witnesses are in feature_robustness.json.</p><div class="scroll">'+table(
+            ["Feature", "Baseline rank", "Membership", "Certified through", "Minimum membership change", "Direction", "Minimum direction change"], rows)+'</div></div>'
     return """<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ExtremaRank study audit</title><style>body{font-family:system-ui,sans-serif;max-width:1200px;margin:32px auto;padding:0 20px;color:#17283a;background:#f8fafc}h1,h2{color:#163f66}.card{background:white;border:1px solid #d5dfeb;border-radius:10px;padding:20px;margin:20px 0}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border-bottom:1px solid #d5dfeb;text-align:left;padding:10px;overflow-wrap:anywhere}th{background:#eef4fa}code{overflow-wrap:anywhere}.scroll{overflow:auto}small{color:#49637c}</style><h1>ExtremaRank study audit</h1>""" + (
         '<div class="card"><h2>'+status+'</h2><p>'+escape(description)+'</p><p>Design: '+escape(prep.get("design", "paired"))+
@@ -108,4 +123,4 @@ def html_report(report, diagnostics):
         '.</p><div class="scroll">'+table(["Deleted unit", "Group", "Jaccard", "Exits", "Entries"], sample_rows)+'</div></div>'+
         '<div class="card"><h2>Candidate rank sensitivity</h2><p>Ranges include baseline and feasible delete-one scenarios only. Selection counts are scenario frequencies, not probabilities. All features are available in diagnostics.tsv.</p><div class="scroll">'+
         table(["Feature", "Baseline", "Best inspected rank", "Worst inspected rank", "LOO selected", "LOO scenarios", "Sign changes"], feature_rows)+
-        '</div></div><p>ExtremaRank '+escape(report.get("software", {}).get("version", ""))+' · Offline report; no external scripts or network requests.</p></html>')
+        '</div></div>'+extra+'<p>ExtremaRank '+escape(report.get("software", {}).get("version", ""))+' · Offline report; no external scripts or network requests.</p></html>')

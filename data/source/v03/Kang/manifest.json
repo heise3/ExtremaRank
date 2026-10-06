@@ -1,0 +1,8 @@
+{
+  "resource": "EH2259",
+  "url": "https://experimenthub.bioconductor.org/fetch/2259",
+  "bytes": 39078983,
+  "sha256": "b631d72139ad157cfc7530800268a4a9d1194f81dce0d2b387ca3d600acce485",
+  "source_metadata": "metadata.tsv",
+  "provider_processing": "Bioconductor muscData Kang18_8vs8; counts and provider annotations, no source byte re-encoding"
+}

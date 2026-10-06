@@ -1,0 +1,6 @@
+# Preserve byte hashes of third-party sources and generated numerical evidence.
+# Treat bulk artifacts as binary diffs to keep code review focused and avoid
+# expanding multi-million-value tables in patches. Files remain ordinary data.
+data/source/** -text -diff
+data/prepared/** -text -diff
+results/v03/** -text -diff

@@ -1,0 +1,9 @@
+"cell_type"	"filename"	"units"
+"B cells"	"expected_1.tsv"	16
+"CD14+ Monocytes"	"expected_2.tsv"	16
+"CD4 T cells"	"expected_3.tsv"	16
+"CD8 T cells"	"expected_4.tsv"	16
+"Dendritic cells"	"expected_5.tsv"	14
+"FCGR3A+ Monocytes"	"expected_6.tsv"	16
+"Megakaryocytes"	"expected_7.tsv"	12
+"NK cells"	"expected_8.tsv"	16

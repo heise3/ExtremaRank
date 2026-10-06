@@ -1,0 +1,26 @@
+{
+  "source_url": "https://bioconductor.posit.co/packages/3.23/bioc/src/contrib/mixOmics_6.36.0.tar.gz",
+  "package_archive_sha256": "632cf746a892088f8a770e23fc18ae6d4fae4cda74c8830344d28ee46d41d0b3",
+  "package_archive_bytes": 19993376,
+  "bundled_archive": false,
+  "files": [
+    {
+      "path": "DESCRIPTION",
+      "sha256": "8861a457a6d7c4e5df513f09ee0bf6a5b3655b2a39ded9f6c4e7a5c9ec67902c",
+      "bytes": 4028,
+      "member": "mixOmics/DESCRIPTION"
+    },
+    {
+      "path": "nutrimouse.Rd",
+      "sha256": "cbc73af3033d4caf3db5ac66c4ac4f8cd09b9622a4821859bc887c48967895e4",
+      "bytes": 2545,
+      "member": "mixOmics/man/nutrimouse.Rd"
+    },
+    {
+      "path": "nutrimouse.rda",
+      "sha256": "3c6212f3f13feb88e3ff8e48c855a284d496cf60ca1b53c7e5913978bf8261fc",
+      "bytes": 7647,
+      "member": "mixOmics/data/nutrimouse.rda"
+    }
+  ]
+}

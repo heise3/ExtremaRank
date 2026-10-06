@@ -1,0 +1,20 @@
+{
+  "source_url": "https://bioconductor.posit.co/packages/3.23/bioc/src/contrib/muscat_1.26.0.tar.gz",
+  "package_archive_sha256": "59298f754214fef55ed7e727f56a4e3e69c033599e33919937a3135a808664cc",
+  "package_archive_bytes": 7770312,
+  "bundled_archive": false,
+  "files": [
+    {
+      "path": "DESCRIPTION",
+      "member": "muscat/DESCRIPTION",
+      "sha256": "c988a46ab8a7e67bfde2f6a4f9fe3338a727bc4cadf4741112d993569d43dc23",
+      "bytes": 2416
+    },
+    {
+      "path": "example_sce.rda",
+      "member": "muscat/data/example_sce.rda",
+      "sha256": "f66811fa513a01a91dae01bad308e96ed5238277246b911d8e1cd5f4425c3ed9",
+      "bytes": 1045440
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "schema_version": 1,
+  "software": {
+    "name": "ExtremaRank",
+    "version": "0.3.0"
+  },
+  "status": "REFUTED",
+  "input": {
+    "path": "/Users/feishuduobang/Documents/Codex/2026-10-03/new-chat/outputs/extremarank/results/v03/kang-b-down/effects.csv",
+    "sha256": "73f67dbbe331a64e7b271388684b9243348b7814769d23a9c841bc23d07dbaaf",
+    "sha256_scope": "original input file bytes, before gzip decompression",
+    "delimiter": "comma",
+    "compression": "none",
+    "n_donors": 8,
+    "n_genes": 35635,
+    "donor_ids": [
+      "101",
+      "1015",
+      "1016",
+      "1039",
+      "107",
+      "1244",
+      "1256",
+      "1488"
+    ]
+  },
+  "parameters": {
+    "budget": 2,
+    "top_k_requested": 20,
+    "top_k": 20,
+    "top_k_default_reduced": false,
+    "direction": "down",
+    "max_nodes": 10000,
+    "skip_topk": false
+  },
+  "tie_policy": {
+    "gene_ranks": "exact ranking-score ties use ascending lexical gene ID",
+    "donor_value_ties": "equal effects are sorted by original input row index",
+    "within_cardinality_extrema": "first attaining two-family candidate in deterministic traversal order",
+    "across_cardinality_extrema": "equal extended paired-t scores keep the fewest deletions"
+  },
+  "target": "unordered baseline down paired-t top-K gene set under any shared deletion of <=budget donors",
+  "arithmetic": "exact moments and comparisons of parsed finite binary64 effects; decimal scores are display only",
+  "score_conventions": {
+    "all_zero": "descriptive t=0",
+    "nonzero_constant": "signed infinity",
+    "variance": "sample variance, denominator retained_count-1"
+  },
+  "baseline_topk_scores": [
+    {
+      "gene_id": "RPL7",
+      "t": -23.995103577379815
+    },
+    {
+      "gene_id": "RPS6",
+      "t": -21.313481624591336
+    },
+    {
+      "gene_id": "HNRNPA1",
+      "t": -19.153306055690994
+    },
+    {
+      "gene_id": "RPS3A",
+      "t": -18.86245034875636
+    },
+    {
+      "gene_id": "RPL10_ENSG00000147403",
+      "t": -18.10066646061603
+    },
+    {
+      "gene_id": "ZFP36L1",
+      "t": -17.665414716362083
+    },
+    {
+      "gene_id": "ID3",
+      "t": -17.10073111667099
+    },
+    {
+      "gene_id": "RPL7A_ENSG00000148303",
+      "t": -14.443570532774613
+    },
+    {
+      "gene_id": "FTH1",
+      "t": -13.8344726663046
+    },
+    {
+      "gene_id": "RPS2",
+      "t": -13.65086419907192
+    },
+    {
+      "gene_id": "CTSH",
+      "t": -13.591439389649052
+    },
+    {
+      "gene_id": "HLA-DQB1_ENSG00000179344",
+      "t": -13.091706212673609
+    },
+    {
+      "gene_id": "RPL6",
+      "t": -13.06683876509036
+    },
+    {
+      "gene_id": "EEF2",
+      "t": -12.790073558632338
+    },
+    {
+      "gene_id": "HLA-DMA_ENSG00000204257",
+      "t": -12.659131598547539
+    },
+    {
+      "gene_id": "PTPRCAP",
+      "t": -12.606909184867128
+    },
+    {
+      "gene_id": "RPL10A",
+      "t": -12.586834105798474
+    },
+    {
+      "gene_id": "ISCU",
+      "t": -11.718274784468063
+    },
+    {
+      "gene_id": "PFN1",
+      "t": -11.170164119383404
+    },
+    {
+      "gene_id": "RPL5",
+      "t": -11.146178923855766
+    }
+  ],
+  "topk_audit": {
+    "status": "REFUTED",
+    "baseline_topk": [
+      "RPL7",
+      "RPS6",
+      "HNRNPA1",
+      "RPS3A",
+      "RPL10_ENSG00000147403",
+      "ZFP36L1",
+      "ID3",
+      "RPL7A_ENSG00000148303",
+      "FTH1",
+      "RPS2",
+      "CTSH",
+      "HLA-DQB1_ENSG00000179344",
+      "RPL6",
+      "EEF2",
+      "HLA-DMA_ENSG00000204257",
+      "PTPRCAP",
+      "RPL10A",
+      "ISCU",
+      "PFN1",
+      "RPL5"
+    ],
+    "witness_topk": [
+      "RPS6",
+      "RPL7",
+      "HNRNPA1",
+      "GSTP1",
+      "RPS3A",
+      "RPL10_ENSG00000147403",
+      "ZFP36L1",
+      "RPL10A",
+      "ID3",
+      "PTPRCAP",
+      "RPL6",
+      "RHOG",
+      "RPL7A_ENSG00000148303",
+      "RPS8",
+      "FTH1",
+      "RPS2",
+      "ISCU",
+      "CTSH",
+      "SMIM14",
+      "ALOX5AP"
+    ],
+    "deleted_indices": [
+      4
+    ],
+    "max_deletions": 2,
+    "nodes": 1,
+    "bound_candidates": 285080,
+    "retained_counts_completed": [
+      8
+    ],
+    "bound_method": "two_family",
+    "direction": "down",
+    "target": "unordered paired-t top-K set; lexical gene-ID ties",
+    "arithmetic": "exact moments/comparisons of input binary64 values",
+    "deleted_donors": [
+      "107"
+    ]
+  },
+  "outputs": {
+    "summary": "summary.tsv.gz",
+    "exact_cardinality_envelopes": "envelopes.tsv.gz",
+    "feature_robustness": "feature_robustness.tsv",
+    "minimum_changes": "feature_robustness.json",
+    "diagnostics": "diagnostics.tsv.gz",
+    "sample_influence": "sample_influence.tsv",
+    "report": "report.html"
+  },
+  "timing_seconds": {
+    "input_and_envelopes": 2.561813833657652,
+    "shared_topk": 0.9217487503774464,
+    "total_before_writing": 3.4835625840350986,
+    "study_total_before_writing": 10.999259250238538
+  },
+  "preparation": {
+    "schema_version": 1,
+    "design": "paired",
+    "contrast": "stim - ctrl",
+    "target": "stim",
+    "reference": "ctrl",
+    "orientation": "features",
+    "transform": "cpm-log2",
+    "pseudocount": 1.0,
+    "min_cpm": 0.0,
+    "cpm_filter": ">=min_cpm in >=half included samples; all source features define library totals",
+    "matrix_sha256": "9dc192c76810d1fe0a3058641ec027eb553db33e85bb14f049c36ab4c4f1bd82",
+    "metadata_sha256": "62184426e61ca44f3c0f46908f6577eeb196d340cc2e8e3da7369754ee8e7c65",
+    "matrix_source_features": 35635,
+    "retained_features": 35635,
+    "included_samples": [
+      "PB000001",
+      "PB000002",
+      "PB000003",
+      "PB000004",
+      "PB000005",
+      "PB000006",
+      "PB000007",
+      "PB000008",
+      "PB000009",
+      "PB000010",
+      "PB000011",
+      "PB000012",
+      "PB000013",
+      "PB000014",
+      "PB000015",
+      "PB000016"
+    ],
+    "independent_units": 8,
+    "excluded_other_group_samples": [],
+    "excluded_incomplete_donors": [],
+    "missing_policy": "error",
+    "excluded_missing_features": [],
+    "excluded_features": [],
+    "library_totals": {
+      "PB000001": 127183.0,
+      "PB000002": 162695.0,
+      "PB000003": 552545.0,
+      "PB000004": 436755.0,
+      "PB000005": 155845.0,
+      "PB000006": 140347.0,
+      "PB000007": 37551.0,
+      "PB000008": 66371.0,
+      "PB000009": 52658.0,
+      "PB000010": 72374.0,
+      "PB000011": 157830.0,
+      "PB000012": 127309.0,
+      "PB000013": 259126.0,
+      "PB000014": 265414.0,
+      "PB000015": 288109.0,
+      "PB000016": 383162.0
+    },
+    "unit_metadata": [
+      {
+        "donor_id": "101",
+        "target_sample": "PB000002",
+        "reference_sample": "PB000001"
+      },
+      {
+        "donor_id": "1015",
+        "target_sample": "PB000004",
+        "reference_sample": "PB000003"
+      },
+      {
+        "donor_id": "1016",
+        "target_sample": "PB000006",
+        "reference_sample": "PB000005"
+      },
+      {
+        "donor_id": "1039",
+        "target_sample": "PB000008",
+        "reference_sample": "PB000007"
+      },
+      {
+        "donor_id": "107",
+        "target_sample": "PB000010",
+        "reference_sample": "PB000009"
+      },
+      {
+        "donor_id": "1244",
+        "target_sample": "PB000012",
+        "reference_sample": "PB000011"
+      },
+      {
+        "donor_id": "1256",
+        "target_sample": "PB000014",
+        "reference_sample": "PB000013"
+      },
+      {
+        "donor_id": "1488",
+        "target_sample": "PB000016",
+        "reference_sample": "PB000015"
+      }
+    ],
+    "identity_check": "strict source IDs only; raw genotype/sample-swap verification NOT_EVALUATED",
+    "guarantee_input": "finite binary64 prepared values; preprocessing frozen before deletion",
+    "inference": "descriptive ranking sensitivity; no confounder adjustment or FDR inference",
+    "prepared_path": "effects.csv.gz",
+    "command_inputs": {
+      "matrix": "data/prepared/KangPB/celltype_1/matrix.tsv",
+      "metadata": "data/prepared/KangPB/celltype_1/metadata.tsv"
+    }
+  },
+  "feature_robustness": {
+    "status": "REFUTED",
+    "nodes": 22,
+    "scenarios_checked": 36,
+    "query_bounds_pruned": 46,
+    "scope": "exact membership and effect-sign properties of frozen finite binary64 native inputs; lower/upper minimum deletion bounds; lexical feature-ID ties"
+  },
+  "delete_one_summary": {
+    "scope": "baseline plus every feasible one-unit deletion; no multi-deletion rank bounds",
+    "n_scenarios": 8,
+    "n_changed": 8,
+    "skipped_units": []
+  },
+  "distribution_note": "Large execution tables compressed losslessly after validation; archive manifest binds original and compressed bytes. Reruns write ordinary tables."
+}

@@ -6,20 +6,20 @@
 
 **Which of your omics candidates survive removing a few biological samples?**
 
-ExtremaRank audits whether a Top-K feature set changes under shared sample
-deletion. v0.2 supports **paired studies**, **independent two-group Welch
-rankings**, and **ranking tables from external refit methods**. Study reports
-show actual deletion witnesses, candidate exits/entries, and every feasible
-delete-one rank. Guarantees are specific to the selected workflow.
+ExtremaRank audits whether omics candidates survive shared sample deletion.
+v0.3 adds **individual membership/sign certificates**, **minimum deletion
+change bounds**, **safe Welch pruning**, **automatic limma/voom/edgeR/DESeq2
+refits**, and **donor-level single-cell pseudobulk**.
 
-The core has **no third-party dependencies**. Python 3.10+ is sufficient.
-The bundled real examples cover paired RNA-seq, independent-group microarrays,
-and refitted limma moderated-t tables. Processed proteomics/metabolomics can
-meet the numeric input contract but have not received real-data validation.
+The core has **no third-party dependencies** and runs on Python 3.10+.
+Real examples cover paired bulk RNA-seq, independent microarrays, an 8-donor
+single-cell study, technical protein measurements, and biological lipid data.
+Native certificates and observed external-model refits have different guarantees.
 
-[v0.2 workflows](docs/STUDY.md) · [中文扩展说明](docs/UPGRADE_CN.md) · [Paired CLI](docs/USAGE.md) ·
+[中文 v0.3 说明](docs/V03_CN.md) · [Individual certificates](docs/ROBUSTNESS.md) ·
+[Model refits / single cell](docs/REFITS.md) · [Study inputs](docs/STUDY.md) ·
 [Proof](docs/THEOREM.md) · [Prior art](docs/PRIOR_ART.md) ·
-[Utility and limits](docs/UTILITY.md) · [Interactive report](results/report.html)
+[Data attribution](DATA_LICENSE.md) · [Example report](results/v03/nutrimouse-up/report.html)
 
 ## Install and run
 
@@ -28,7 +28,7 @@ python -m pip install .
 # Independent two-group study, including sample diagnostics and report.html.
 extremarank study data/prepared/Golub/matrix.csv.gz \
   --metadata data/prepared/Golub/metadata.tsv --target AML --reference ALL \
-  --design welch --budget 2 --top-k 20 --output golub-audit
+  --design welch --budget 2 --top-k 20 --feature-audit --output golub-audit
 
 # Original exact paired-effects interface remains available.
 extremarank examples/variance_reversal.tsv --budget 1 --top-k 1 --output my-audit
@@ -38,7 +38,10 @@ For `study`, supply a feature-by-sample matrix and aligned sample metadata;
 declare target/reference and the paired or independent design. Explicit
 preparation, missing-feature exclusion and incomplete-pair policies are
 documented in the [study guide](docs/STUDY.md). Existing external refits can be
-compared with `extremarank compare`; an executed limma adapter is included.
+compared with `extremarank compare`. `extremarank refit` executes four declared
+R model adapters and retains non-estimable scenarios. `extremarank pseudobulk`
+aggregates raw single-cell counts by donor, condition and cell type.
+See the [refit/single-cell guide](docs/REFITS.md).
 
 For the original paired-effects CLI, put donor IDs in the first column and one feature per remaining
 column. Values are **already prepared within-donor target-minus-reference
@@ -77,8 +80,8 @@ These conventions are recorded explicitly and do not define inferential p-values
 ## The algorithmic contribution
 
 The theorem below concerns the **paired** mode. The independent Welch mode
-uses exact moment comparisons and bounded exhaustive search; it does not
-inherit the paired speedup. External-table comparisons use only supplied
+uses exact moment comparisons and conservative rational conditional bounds;
+it can prune favorable inputs but does not inherit the paired extremum theorem. External-table comparisons use only supplied
 scenarios and report `OBSERVED_STABLE`/`OBSERVED_CHANGED`, not certificates.
 
 For retained effects, let `S = sum(x)` and `Q = sum(x²)`. At a fixed retained
@@ -171,6 +174,45 @@ tests passed locally on Python 3.12 and 3.14. See the
 and [workflow guide](docs/STUDY.md). These are sensitivity checks, not disease
 classification or biomarker-validation results.
 
+## v0.3: partial stability and real cross-omics validation
+
+With deletion budget 2, individual certificates retain useful candidates even
+when the whole original shortlist changes:
+
+| Real input, upward ranking | Independent deletion units | Frozen features | Certified original members | Certified effect signs |
+|---|---:|---:|---:|---:|
+| Golub microarray | 38 samples | 3,051 | 6 / 20 | 20 / 20 |
+| Kang B-cell pseudobulk | 8 paired donors | 35,635 | 6 / 20 | 20 / 20 |
+| CPTAC protein measurements | 6 technical runs | 1,097 | 4 / 20 | 20 / 20 |
+| Nutrimouse lipid percentages | 40 biological mice | 21 | 4 / 5 | 5 / 5 |
+
+For Nutrimouse upward Top-5, **every single-mouse deletion preserves membership,
+but a verified two-mouse deletion changes it**: the exact minimum change is 2.
+The other three upward lists have verified one-unit changes. These are ranking
+sensitivity outcomes, not biological ground truth. Technical protein runs do
+not substitute for independent biological replication. Lipid percentages are
+compositions, not absolute metabolite concentrations.
+
+The new checker completed **6,000 native design/direction problems and
+1,434,768 property/enclosure checks with zero failures**. Real baseline and
+all distinct reported witnesses matched **183 independent full-feature Fraction
+rankings**. Single-cell aggregation matched **4,347,470 independent R sums**.
+Automatic refits matched **300 R-exported Top-K sets** in three directions.
+All 59 tests passed locally including optional H5AD and all four R adapters.
+
+One frozen Kang edgeR signed-sqrt-QL-F ranking is `NOT_EVALUABLE`: tiny negative
+raw QL F values prevent finite scores in its baseline and six refits. The
+original rows and failed fits are preserved; genes are not removed or scores
+clipped to manufacture coverage. Limma-voom and DESeq2 completed all eight
+paired donor refits. The edgeR adapter passes a separate complete integration
+fixture. See [real results](results/validation_v03_real.json).
+
+On the predefined separated stable Welch example (100 samples, budget 3),
+enumeration checked 166,750 subsets; the safe search inspected 24 subsets and
+9 bound nodes for the same certificate. This favorable synthetic case does
+not establish typical or worst-case speed. A tied finite-limit case remains
+`UNRESOLVED`. See [pruning results](results/welch_pruning_v03.json).
+
 ## Reproduce offline
 
 ```bash
@@ -180,6 +222,8 @@ python benchmarks/search_ablation.py
 python benchmarks/scaling.py
 python benchmarks/independent_welch_check.py --cases 2000
 python benchmarks/upgrade_real.py
+python benchmarks/independent_robustness_check.py --cases 1000
+python benchmarks/welch_pruning_v03.py
 
 # Only raw-count preparation / full real-data reproduction needs NumPy.
 python -m pip install '.[benchmark]'
@@ -206,3 +250,20 @@ an exact all-deletion theorem for those external models.
 Software: MIT. Third-party data attribution: [data/DATA_LICENSE.md](data/DATA_LICENSE.md).
 Questions, counterexamples to the theorem, independently verified datasets and
 new target models are useful contributions; see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+For the full v0.3 public validation, install R with `limma`, `edgeR`, `DESeq2`,
+`Matrix`, `SummarizedExperiment` and `SingleCellExperiment`, then run:
+
+```bash
+python data/fetch_v03_sources.py --offline
+python benchmarks/reproduce_v03.py
+# Verify/regenerate reports using bundled prepared inputs, without source export:
+python benchmarks/reproduce_v03.py --checks-only
+```
+
+Optional H5AD integration: `pip install '.[single-cell]'`. R integration tests:
+`EXTREMARANK_R_TESTS=1 python -m unittest discover -s tests -v`.
+The wheel contains the R adapter but no large datasets. The source release
+contains fixed raw/prepared public inputs and results for offline reproduction.
+Large execution tables are losslessly gzipped, with both byte hashes recorded
+in [archive_v03.json](results/archive_v03.json); reruns write ordinary tables.

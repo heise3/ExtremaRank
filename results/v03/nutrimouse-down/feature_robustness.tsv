@@ -1,0 +1,6 @@
+feature_id	baseline_rank	baseline_topk	baseline_effect_sign	membership_status	membership_minimum_change_lower_bound	membership_minimum_change_upper_bound	membership_exact_minimum_change	membership_certified_through	membership_witness	direction_status	direction_minimum_change_lower_bound	direction_minimum_change_upper_bound	direction_exact_minimum_change	direction_certified_through	direction_witness
+C16.0	1	True	-1	CERTIFIED	3			2	null	CERTIFIED	3			2	null
+C18.0	2	True	-1	CERTIFIED	3			2	null	CERTIFIED	3			2	null
+C20.3n.6	3	True	-1	CERTIFIED	3			2	null	CERTIFIED	3			2	null
+C20.4n.6	4	True	-1	CERTIFIED	3			2	null	CERTIFIED	3			2	null
+C20.3n.9	5	True	-1	REFUTED	1	1	1	0	"{""deleted_indices"": [5], ""topk"": [""C16.0"", ""C18.0"", ""C20.3n.6"", ""C20.4n.6"", ""C22.6n.3""], ""effect_sign"": -1, ""deleted_units"": [""mouse_6""]}"	CERTIFIED	3			2	null
