@@ -2,6 +2,9 @@ name: native-r
 on: [push, pull_request]
 permissions:
   contents: read
+defaults:
+  run:
+    shell: bash
 jobs:
   package:
     runs-on: ${{ matrix.os }}
