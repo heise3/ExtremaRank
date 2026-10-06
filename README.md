@@ -7,21 +7,59 @@
 **Which of your omics candidates survive removing a few biological samples?**
 
 ExtremaRank audits whether omics candidates survive shared sample deletion.
-v0.3 adds **individual membership/sign certificates**, **minimum deletion
+v0.4 ships a **native R package**: exact R/C++ computation, direct Bioconductor
+model refits, sparse donor pseudobulk and experiment-object interfaces.
+It runs entirely in R without Python, reticulate or a subprocess bridge.
+The existing Python implementation also provides **individual membership/sign certificates**, **minimum deletion
 change bounds**, **safe Welch pruning**, **automatic limma/voom/edgeR/DESeq2
 refits**, and **donor-level single-cell pseudobulk**.
 
-The core has **no third-party dependencies** and runs on Python 3.10+.
+The Python core has **no third-party dependencies** and runs on Python 3.10+.
+The R package uses Rcpp, BH, Matrix and digest, with optional Bioconductor models.
 Real examples cover paired bulk RNA-seq, independent microarrays, an 8-donor
 single-cell study, technical protein measurements, and biological lipid data.
 Native certificates and observed external-model refits have different guarantees.
 
+[原生 R 包中文指南](docs/R_NATIVE_CN.md) · [R package](r/extremarank) ·
 [中文 v0.3 说明](docs/V03_CN.md) · [Individual certificates](docs/ROBUSTNESS.md) ·
 [Model refits / single cell](docs/REFITS.md) · [Study inputs](docs/STUDY.md) ·
 [Proof](docs/THEOREM.md) · [Prior art](docs/PRIOR_ART.md) ·
 [Data attribution](DATA_LICENSE.md) · [Example report](results/v03/nutrimouse-up/report.html)
 
 ## Install and run
+
+### Native R
+
+```r
+install.packages(c("Rcpp", "BH", "Matrix", "digest"))
+install.packages(
+  "https://github.com/heise3/ExtremaRank/releases/download/v0.4.0/extremarank_0.4.0.tar.gz",
+  repos = NULL, type = "source")
+library(extremarank)
+
+# x: features in rows, samples in columns; metadata has sample_id/group/donor_id.
+result <- extremarank(x, metadata, target = "treated", reference = "control",
+                     design = "paired", k = 20, budget = 2)
+result$features
+write_extremarank(result, "my-r-audit")
+```
+
+For precomputed donor-by-feature effects, call `extremarank_effects(effects)`.
+For independent groups, use `design = "welch"`. To run limma, limma-voom, edgeR
+or DESeq2 directly in R, call `refit_extremarank()`. For SingleCellExperiment
+raw counts, call `pseudobulk_extremarank(sce, assay = "counts")` before analysis.
+These models retain an **observed sensitivity** scope. Native exact audits
+can return certificates for the declared deletion budget.
+
+Source installation needs a C++17 compiler (Rtools on Windows, Xcode command
+line tools on macOS). There is no Python installation step. See the
+[R package README](r/extremarank/README.md) for a runnable toy example and
+[native R validation](results/v04/README.md) for actual verification results.
+The small R source archive installs without downloading the full benchmark
+repository. Alternatively, use `remotes::install_github("heise3/ExtremaRank",
+subdir = "r/extremarank", ref = "v0.4.0", upgrade = "never")`.
+
+### Python
 
 ```bash
 python -m pip install .

@@ -1,0 +1,6 @@
+"feature_id"	"baseline_rank"	"baseline_topk"	"baseline_t"	"baseline_effect"	"baseline_effect_sign"	"membership_status"	"membership_minimum_change_lower_bound"	"membership_minimum_change_upper_bound"	"membership_exact_minimum_change"	"membership_certified_through"	"direction_status"	"direction_minimum_change_lower_bound"	"direction_minimum_change_upper_bound"	"direction_exact_minimum_change"	"direction_certified_through"
+"C16.1n.9"	1	TRUE	5.01098578673271	0.355	1	"CERTIFIED"	3	NA	NA	2	"CERTIFIED"	3	NA	NA	2
+"C20.1n.9"	2	TRUE	3.77409827474307	0.144	1	"CERTIFIED"	3	NA	NA	2	"CERTIFIED"	3	NA	NA	2
+"C18.2n.6"	3	TRUE	3.3977417881808	8.351	1	"CERTIFIED"	3	NA	NA	2	"CERTIFIED"	3	NA	NA	2
+"C18.1n.9"	4	TRUE	2.61008983541292	5.6515	1	"CERTIFIED"	3	NA	NA	2	"CERTIFIED"	3	NA	NA	2
+"C20.2n.6"	5	TRUE	2.50604907013532	0.1505	1	"REFUTED"	2	2	2	1	"CERTIFIED"	3	NA	NA	2

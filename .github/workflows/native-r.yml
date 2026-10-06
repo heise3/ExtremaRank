@@ -1,0 +1,53 @@
+name: native-r
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    env:
+      _R_CHECK_FORCE_SUGGESTS_: false
+    steps:
+      - uses: actions/checkout@v7
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install native R dependencies
+        shell: Rscript {0}
+        run: install.packages(c("Rcpp", "BH", "Matrix", "digest"))
+      - name: Build standard R source package
+        run: R CMD build r/extremarank --no-manual --no-build-vignettes
+      - name: Check native package and R-only oracle tests
+        run: R CMD check --no-manual --no-vignettes --install-args=--strip extremarank_0.4.0.tar.gz
+      - name: Require zero errors and warnings
+        shell: Rscript {0}
+        run: |
+          log <- readLines("extremarank.Rcheck/00check.log")
+          stopifnot(!any(grepl("\\b(ERROR|WARNING)\\b", log, perl = TRUE)))
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-r-${{ matrix.os }}
+          path: extremarank.Rcheck/00check.log
+  bioconductor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install optional experiment and model packages
+        shell: Rscript {0}
+        run: |
+          install.packages(c("Rcpp", "BH", "Matrix", "digest", "BiocManager"))
+          BiocManager::install(c("limma", "edgeR", "DESeq2", "SingleCellExperiment"), ask = FALSE, update = FALSE)
+      - run: R CMD INSTALL r/extremarank
+      - name: Test direct R model refits and experiment objects
+        shell: Rscript {0}
+        run: |
+          source("r/extremarank/tests/models.R")
+          source("r/extremarank/tests/native.R")

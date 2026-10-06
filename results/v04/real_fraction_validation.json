@@ -1,0 +1,44 @@
+{
+  "datasets": [
+    {
+      "dataset": "golub",
+      "features": 3051,
+      "units": 38,
+      "distinct_baseline_and_witness_sets": 31,
+      "independent_complete_feature_ranks": 93,
+      "witness_checks": 50,
+      "mismatches": 0
+    },
+    {
+      "dataset": "kang-b",
+      "features": 35635,
+      "units": 8,
+      "distinct_baseline_and_witness_sets": 14,
+      "independent_complete_feature_ranks": 42,
+      "witness_checks": 42,
+      "mismatches": 0
+    },
+    {
+      "dataset": "cptac",
+      "features": 1097,
+      "units": 6,
+      "distinct_baseline_and_witness_sets": 12,
+      "independent_complete_feature_ranks": 36,
+      "witness_checks": 54,
+      "mismatches": 0
+    },
+    {
+      "dataset": "nutrimouse",
+      "features": 21,
+      "units": 40,
+      "distinct_baseline_and_witness_sets": 4,
+      "independent_complete_feature_ranks": 12,
+      "witness_checks": 3,
+      "mismatches": 0
+    }
+  ],
+  "independent_complete_feature_ranks": 183,
+  "mismatches": 0,
+  "seconds": 34.5737594156526,
+  "scope": "Every distinct native R reported witness and baseline replayed with Fraction means and centered sample variances; actual full-feature C++ ranks match; real unreported subsets are not exhaustively enumerated"
+}

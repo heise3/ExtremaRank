@@ -5,3 +5,9 @@ __pycache__/
 build/
 dist/
 .DS_Store
+*.o
+*.so
+*.dll
+*.Rcheck/
+r/extremarank/*.tar.gz
+extremarank_*.tar.gz

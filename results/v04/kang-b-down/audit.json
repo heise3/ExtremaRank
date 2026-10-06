@@ -1,0 +1,576 @@
+{
+  "status": "REFUTED",
+  "baseline_topk": ["RPL7", "RPS6", "HNRNPA1", "RPS3A", "RPL10_ENSG00000147403", "ZFP36L1", "ID3", "RPL7A_ENSG00000148303", "FTH1", "RPS2", "CTSH", "HLA-DQB1_ENSG00000179344", "RPL6", "EEF2", "HLA-DMA_ENSG00000204257", "PTPRCAP", "RPL10A", "ISCU", "PFN1", "RPL5"],
+  "features": [
+    {
+      "feature_id": "RPL7",
+      "baseline_rank": 1,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -23.9951035773798,
+      "baseline_effect": -0.493449832569874,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPS6",
+      "baseline_rank": 2,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -21.3134816245913,
+      "baseline_effect": -0.36461721045331,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "HNRNPA1",
+      "baseline_rank": 3,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -19.153306055691,
+      "baseline_effect": -0.8493942849391,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPS3A",
+      "baseline_rank": 4,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -18.8624503487564,
+      "baseline_effect": -0.387162184594027,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPL10_ENSG00000147403",
+      "baseline_rank": 5,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -18.100666460616,
+      "baseline_effect": -0.485661858115505,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "ZFP36L1",
+      "baseline_rank": 6,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -17.6654147163621,
+      "baseline_effect": -1.10911428845487,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "ID3",
+      "baseline_rank": 7,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -17.100731116671,
+      "baseline_effect": -1.21068588635621,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPL7A_ENSG00000148303",
+      "baseline_rank": 8,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -14.4435705327746,
+      "baseline_effect": -0.478660048272895,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [3, 4],
+          "deleted_units": ["1016", "1039"],
+          "topk": ["RPL7", "RPS3A", "RPL10_ENSG00000147403", "HLA-DQB1_ENSG00000179344", "CCNG2", "LAGE3_ENSG00000196976", "ID3", "FTH1", "HNRNPA1", "RPS6", "RPL6", "ZFP36L1", "RPS2", "RPSA", "BIRC3", "RPL8", "RPS3", "ISCU", "RPL15", "HLA-DMA_ENSG00000204257"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "FTH1",
+      "baseline_rank": 9,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -13.8344726663046,
+      "baseline_effect": -0.953772935904461,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [1, 4],
+          "deleted_units": ["101", "1039"],
+          "topk": ["RPL7", "ID3", "RPS6", "HNRNPA1", "GLTSCR2", "BIRC3", "ZFP36L1", "RPS3A", "RPL15", "LAGE3_ENSG00000196976", "RPL10_ENSG00000147403", "OAZ1", "RPS2", "HLA-DMA_ENSG00000204257", "RPL7A_ENSG00000148303", "RPL5", "TUBA4A", "RPL6", "RPS4X", "EMP3"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPS2",
+      "baseline_rank": 10,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -13.6508641990719,
+      "baseline_effect": -0.378185745130359,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [5, 6],
+          "deleted_units": ["107", "1244"],
+          "topk": ["SMIM14", "RPS6", "RPL7", "CYB5A", "ARL6IP5", "C21orf59", "ZFP36L1", "RPS3A", "HNRNPA1", "GSTP1", "EEF2", "RPL7A_ENSG00000148303", "PLIN2", "RPL10_ENSG00000147403", "VASP", "ID3", "RPL10A", "CTSH", "PTPRCAP", "RPL6"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "CTSH",
+      "baseline_rank": 11,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -13.5914393896491,
+      "baseline_effect": -1.45286296896248,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [1, 3],
+          "deleted_units": ["101", "1016"],
+          "topk": ["HLA-DQB1_ENSG00000179344", "RPL10_ENSG00000147403", "RPS3A", "RPL7", "FTH1", "RPS6", "HNRNPA1", "ZFP36L1", "RPSA", "RPS3", "RPL5", "RPL7A_ENSG00000148303", "RPS2", "ID3", "GNB2L1", "SIPA1", "HLA-DMA_ENSG00000204257", "ORAI2", "ISCU", "RPL6"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "HLA-DQB1_ENSG00000179344",
+      "baseline_rank": 12,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -13.0917062126736,
+      "baseline_effect": -0.850014896214438,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["RPL7", "ID3", "RPS6", "HNRNPA1", "RPS3A", "ZFP36L1", "BIRC3", "RPL10_ENSG00000147403", "LAGE3_ENSG00000196976", "RPS2", "RPL15", "RPL6", "HLA-DMA_ENSG00000204257", "RPL7A_ENSG00000148303", "RPS4X", "FTH1", "EEF2", "CTSH", "ISCU", "LINC00926"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPL6",
+      "baseline_rank": 13,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -13.0668387650904,
+      "baseline_effect": -0.565892841274206,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [1, 6],
+          "deleted_units": ["101", "1244"],
+          "topk": ["RPL7", "ZFP36L1", "EEF2", "RPS6", "CTSH", "SIAH2", "RPS3A", "HDAC1", "RPL7A_ENSG00000148303", "HNRNPA1", "GPX4", "RPL10_ENSG00000147403", "CYB5A", "RPL9", "RPS15A", "ID3", "RPL5", "GNB2L1", "ORAI2", "RPS2"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "EEF2",
+      "baseline_rank": 14,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -12.7900735586323,
+      "baseline_effect": -0.609648397062987,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 5,
+          "deleted_units": "107",
+          "topk": ["RPS6", "RPL7", "HNRNPA1", "GSTP1", "RPS3A", "RPL10_ENSG00000147403", "ZFP36L1", "RPL10A", "ID3", "PTPRCAP", "RPL6", "RHOG", "RPL7A_ENSG00000148303", "RPS8", "FTH1", "RPS2", "ISCU", "CTSH", "SMIM14", "ALOX5AP"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "HLA-DMA_ENSG00000204257",
+      "baseline_rank": 15,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -12.6591315985475,
+      "baseline_effect": -1.14751682360223,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 5,
+          "deleted_units": "107",
+          "topk": ["RPS6", "RPL7", "HNRNPA1", "GSTP1", "RPS3A", "RPL10_ENSG00000147403", "ZFP36L1", "RPL10A", "ID3", "PTPRCAP", "RPL6", "RHOG", "RPL7A_ENSG00000148303", "RPS8", "FTH1", "RPS2", "ISCU", "CTSH", "SMIM14", "ALOX5AP"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "PTPRCAP",
+      "baseline_rank": 16,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -12.6069091848671,
+      "baseline_effect": -0.913123737694757,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["RPL7", "ID3", "RPS6", "HNRNPA1", "RPS3A", "ZFP36L1", "BIRC3", "RPL10_ENSG00000147403", "LAGE3_ENSG00000196976", "RPS2", "RPL15", "RPL6", "HLA-DMA_ENSG00000204257", "RPL7A_ENSG00000148303", "RPS4X", "FTH1", "EEF2", "CTSH", "ISCU", "LINC00926"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPL10A",
+      "baseline_rank": 17,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -12.5868341057985,
+      "baseline_effect": -0.418074402924639,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 3,
+          "deleted_units": "1016",
+          "topk": ["RPL7", "RPS3A", "RPL10_ENSG00000147403", "HLA-DQB1_ENSG00000179344", "FTH1", "RPS6", "HNRNPA1", "RPSA", "ZFP36L1", "RPS3", "ID3", "RPS2", "RPL7A_ENSG00000148303", "RPL6", "ISCU", "CTSH", "RPS8", "HLA-DMA_ENSG00000204257", "EEF2", "PTPRCAP"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "ISCU",
+      "baseline_rank": 18,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -11.7182747844681,
+      "baseline_effect": -0.779826354040806,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 1,
+          "deleted_units": "101",
+          "topk": ["RPL7", "RPS6", "HNRNPA1", "RPS3A", "ZFP36L1", "RPL10_ENSG00000147403", "ID3", "RPL5", "RPL7A_ENSG00000148303", "RPS2", "CTSH", "FTH1", "PTPRCAP", "HLA-DQB1_ENSG00000179344", "ORAI2", "EEF2", "HLA-DMA_ENSG00000204257", "RPL6", "GNB2L1", "RPL10A"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "PFN1",
+      "baseline_rank": 19,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -11.1701641193834,
+      "baseline_effect": -0.572078288226739,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 1,
+          "deleted_units": "101",
+          "topk": ["RPL7", "RPS6", "HNRNPA1", "RPS3A", "ZFP36L1", "RPL10_ENSG00000147403", "ID3", "RPL5", "RPL7A_ENSG00000148303", "RPS2", "CTSH", "FTH1", "PTPRCAP", "HLA-DQB1_ENSG00000179344", "ORAI2", "EEF2", "HLA-DMA_ENSG00000204257", "RPL6", "GNB2L1", "RPL10A"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "RPL5",
+      "baseline_rank": 20,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -11.1461789238558,
+      "baseline_effect": -0.444622664182721,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 2,
+          "deleted_units": "1015",
+          "topk": ["RPL7", "RPS6", "RPL10_ENSG00000147403", "ID3", "HNRNPA1", "ZFP36L1", "RPS3A", "RPL10A", "HLA-DMA_ENSG00000204257", "RPS2", "RPL7A_ENSG00000148303", "PTPRCAP", "FTH1", "CTSH", "EEF2", "RPL6", "HLA-DQB1_ENSG00000179344", "PFN1", "ISCU", "PTMA"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    }
+  ],
+  "budget": 2,
+  "top_k": 20,
+  "design": "paired",
+  "direction": "down",
+  "unit_ids": ["101", "1015", "1016", "1039", "107", "1244", "1256", "1488"],
+  "first_topk_witness": {
+    "deleted_indices": 1,
+    "deleted_units": "101",
+    "topk": ["RPL7", "RPS6", "HNRNPA1", "RPS3A", "ZFP36L1", "RPL10_ENSG00000147403", "ID3", "RPL5", "RPL7A_ENSG00000148303", "RPS2", "CTSH", "FTH1", "PTPRCAP", "HLA-DQB1_ENSG00000179344", "ORAI2", "EEF2", "HLA-DMA_ENSG00000204257", "RPL6", "GNB2L1", "RPL10A"]
+  },
+  "topk_minimum_change": {
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "exact": 1
+  },
+  "nodes": 22,
+  "scenarios_checked": 36,
+  "query_bounds_pruned": 46,
+  "feasible_deletion_sets": "36",
+  "limits": {
+    "max_nodes": 10000,
+    "max_scenarios": 10000
+  },
+  "arithmetic": "native C++ arbitrary-precision dyadic integers and rational bounds; exact finite binary64 ranking decisions",
+  "index_base": 1
+}

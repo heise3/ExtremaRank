@@ -1,0 +1,304 @@
+{
+  "native_runs": {
+    "golub-up": {
+      "dataset": "golub",
+      "direction": "up",
+      "status": "REFUTED",
+      "features": 3051,
+      "units": 38,
+      "certified_members": 6,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 741,
+      "nodes": 730,
+      "seconds": 1.488,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "golub-down": {
+      "dataset": "golub",
+      "direction": "down",
+      "status": "REFUTED",
+      "features": 3051,
+      "units": 38,
+      "certified_members": 1,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 741,
+      "nodes": 730,
+      "seconds": 1.497,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "golub-absolute": {
+      "dataset": "golub",
+      "direction": "absolute",
+      "status": "REFUTED",
+      "features": 3051,
+      "units": 38,
+      "certified_members": 3,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 741,
+      "nodes": 730,
+      "seconds": 1.606,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "kang-b-up": {
+      "dataset": "kang-b",
+      "direction": "up",
+      "status": "REFUTED",
+      "features": 35635,
+      "units": 8,
+      "certified_members": 6,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 36,
+      "nodes": 22,
+      "seconds": 0.604000000000003,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "kang-b-down": {
+      "dataset": "kang-b",
+      "direction": "down",
+      "status": "REFUTED",
+      "features": 35635,
+      "units": 8,
+      "certified_members": 7,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 36,
+      "nodes": 22,
+      "seconds": 0.644000000000002,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "kang-b-absolute": {
+      "dataset": "kang-b",
+      "direction": "absolute",
+      "status": "REFUTED",
+      "features": 35635,
+      "units": 8,
+      "certified_members": 5,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 36,
+      "nodes": 22,
+      "seconds": 0.706000000000003,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "cptac-up": {
+      "dataset": "cptac",
+      "direction": "up",
+      "status": "REFUTED",
+      "features": 1097,
+      "units": 6,
+      "certified_members": 4,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 15,
+      "nodes": 4,
+      "seconds": 0.0279999999999987,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "technical measurement runs only"
+    },
+    "cptac-down": {
+      "dataset": "cptac",
+      "direction": "down",
+      "status": "REFUTED",
+      "features": 1097,
+      "units": 6,
+      "certified_members": 0,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 14,
+      "nodes": 3,
+      "seconds": 0.0279999999999987,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "technical measurement runs only"
+    },
+    "cptac-absolute": {
+      "dataset": "cptac",
+      "direction": "absolute",
+      "status": "REFUTED",
+      "features": 1097,
+      "units": 6,
+      "certified_members": 2,
+      "certified_signs": 20,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 15,
+      "nodes": 4,
+      "seconds": 0.0329999999999977,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "technical measurement runs only"
+    },
+    "nutrimouse-up": {
+      "dataset": "nutrimouse",
+      "direction": "up",
+      "status": "REFUTED",
+      "features": 21,
+      "units": 40,
+      "certified_members": 4,
+      "certified_signs": 5,
+      "minimum_change": {
+        "lower_bound": 2,
+        "upper_bound": 2,
+        "exact": 2
+      },
+      "scenarios": 820,
+      "nodes": 809,
+      "seconds": 0.0120000000000005,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "nutrimouse-down": {
+      "dataset": "nutrimouse",
+      "direction": "down",
+      "status": "REFUTED",
+      "features": 21,
+      "units": 40,
+      "certified_members": 4,
+      "certified_signs": 5,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 788,
+      "nodes": 777,
+      "seconds": 0.0120000000000005,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    },
+    "nutrimouse-absolute": {
+      "dataset": "nutrimouse",
+      "direction": "absolute",
+      "status": "REFUTED",
+      "features": 21,
+      "units": 40,
+      "certified_members": 4,
+      "certified_signs": 5,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      },
+      "scenarios": 820,
+      "nodes": 809,
+      "seconds": 0.0139999999999993,
+      "v03_property_comparison": "matched; frozen R inputs audited independently",
+      "biological_scope": "biological sample/donor"
+    }
+  },
+  "pseudobulk_sum_checks": 4347470,
+  "input_cells": 24679,
+  "models": {
+    "golub-limma": {
+      "status": "OBSERVED_CHANGED",
+      "valid_refits": 38,
+      "failed_refits": 0,
+      "baseline": "OK",
+      "versions": ["4.6.1", "3.68.5"],
+      "seconds": 0.18
+    },
+    "nutrimouse-limma": {
+      "status": "OBSERVED_CHANGED",
+      "valid_refits": 40,
+      "failed_refits": 0,
+      "baseline": "OK",
+      "versions": ["4.6.1", "3.68.5"],
+      "seconds": 0.0480000000000018
+    },
+    "kang-b-limma-voom": {
+      "status": "OBSERVED_CHANGED",
+      "valid_refits": 8,
+      "failed_refits": 0,
+      "baseline": "OK",
+      "versions": ["4.6.1", "3.68.5", "4.10.5"],
+      "seconds": 2.545
+    },
+    "kang-b-limma-voom-v03-contract": {
+      "status": "OBSERVED_CHANGED",
+      "valid_refits": 8,
+      "failed_refits": 0,
+      "baseline": "OK",
+      "fixed_min_count_samples": 3,
+      "versions": ["4.6.1", "3.68.5", "4.10.5"],
+      "seconds": 2.444
+    },
+    "kang-b-edgeR": {
+      "status": "NOT_EVALUABLE",
+      "valid_refits": 2,
+      "failed_refits": 6,
+      "baseline": "NOT_EVALUABLE",
+      "versions": ["4.6.1", "4.10.5"],
+      "seconds": 20.413
+    },
+    "kang-b-edgeR-v03-contract": {
+      "status": "NOT_EVALUABLE",
+      "valid_refits": 2,
+      "failed_refits": 6,
+      "baseline": "NOT_EVALUABLE",
+      "fixed_min_count_samples": 3,
+      "versions": ["4.6.1", "4.10.5"],
+      "seconds": 20.371
+    },
+    "kang-b-DESeq2": {
+      "status": "OBSERVED_CHANGED",
+      "valid_refits": 7,
+      "failed_refits": 1,
+      "baseline": "OK",
+      "versions": ["4.6.1", "1.52.0"],
+      "seconds": 22.654
+    },
+    "kang-b-DESeq2-v03-contract": {
+      "status": "OBSERVED_CHANGED",
+      "valid_refits": 8,
+      "failed_refits": 0,
+      "baseline": "OK",
+      "fixed_min_count_samples": 3,
+      "versions": ["4.6.1", "1.52.0"],
+      "seconds": 22.063
+    }
+  },
+  "scope": "R native ranking sensitivity; CPTAC technical runs are not biological replication; failed Kang edgeR scores retained"
+}

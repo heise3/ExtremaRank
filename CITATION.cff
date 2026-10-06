@@ -4,7 +4,7 @@ title: "ExtremaRank: sample-deletion robustness audits for paired and independen
 type: software
 authors:
   - name: "ExtremaRank contributors"
-version: 0.3.0
+version: 0.4.0
 date-released: '2026-10-06'
 license: MIT
 repository-code: "https://github.com/heise3/ExtremaRank"

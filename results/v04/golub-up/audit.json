@@ -1,0 +1,581 @@
+{
+  "status": "REFUTED",
+  "baseline_topk": ["X95735_at", "M27891_at", "M55150_at", "M16038_at", "L09209_s_at", "U50136_rna1_at", "Y12670_at", "Y00787_s_at", "U82759_at", "M23197_at", "M63138_at", "X62654_rna1_at", "X07743_at", "D88422_at", "L08246_at", "U67963_at", "M28130_rna1_s_at", "M19045_f_at", "U46499_at", "D14874_at"],
+  "features": [
+    {
+      "feature_id": "X95735_at",
+      "baseline_rank": 1,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 10.5777480888816,
+      "baseline_effect": 1.88146077441077,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M27891_at",
+      "baseline_rank": 2,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 9.77584665725552,
+      "baseline_effect": 2.89194097643098,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M55150_at",
+      "baseline_rank": 3,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 8.0329392125638,
+      "baseline_effect": 0.754397474747475,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M16038_at",
+      "baseline_rank": 4,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 7.98325956844796,
+      "baseline_effect": 1.38216781144781,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "L09209_s_at",
+      "baseline_rank": 5,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 7.96552791357062,
+      "baseline_effect": 1.52238717171717,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "U50136_rna1_at",
+      "baseline_rank": 6,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.97029391331588,
+      "baseline_effect": 0.803765353535353,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [12, 38],
+          "deleted_units": ["Golub_train_12", "Golub_train_38"],
+          "topk": ["X95735_at", "M27891_at", "M16038_at", "L09209_s_at", "X17042_at", "M63138_at", "X64072_s_at", "M23197_at", "M55150_at", "U67963_at", "D14874_at", "X62654_rna1_at", "M19045_f_at", "M83652_s_at", "X07743_at", "Y12670_at", "L08246_at", "Y00787_s_at", "M22960_at", "X14008_rna1_f_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "Y12670_at",
+      "baseline_rank": 7,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.96131024907752,
+      "baseline_effect": 1.05836717171717,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [29, 35],
+          "deleted_units": ["Golub_train_29", "Golub_train_35"],
+          "topk": ["X95735_at", "Y00787_s_at", "M28130_rna1_s_at", "M27891_at", "M69043_at", "U82759_at", "L08246_at", "M55150_at", "M16038_at", "X07743_at", "L09209_s_at", "X62654_rna1_at", "X70070_at", "M28209_at", "M27783_s_at", "M62762_at", "U02020_at", "X70297_at", "M21551_rna1_at", "M81695_s_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "Y00787_s_at",
+      "baseline_rank": 8,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.86557886432735,
+      "baseline_effect": 2.69044777777778,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 38,
+          "deleted_units": "Golub_train_38",
+          "topk": ["X95735_at", "M27891_at", "M16038_at", "L09209_s_at", "X64072_s_at", "M55150_at", "U67963_at", "M63138_at", "M23197_at", "X17042_at", "X62654_rna1_at", "Y12670_at", "M83652_s_at", "M22960_at", "U82759_at", "M19045_f_at", "X07743_at", "U50136_rna1_at", "D14874_at", "L08246_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "U82759_at",
+      "baseline_rank": 9,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.82302196005656,
+      "baseline_effect": 1.14417841750842,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [2, 12],
+          "deleted_units": ["Golub_train_02", "Golub_train_12"],
+          "topk": ["X95735_at", "M27891_at", "M16038_at", "Y00787_s_at", "M55150_at", "L09209_s_at", "L08246_at", "X07743_at", "M28130_rna1_s_at", "D14874_at", "M11147_at", "M23197_at", "M63138_at", "U50136_rna1_at", "D88422_at", "X62654_rna1_at", "M19045_f_at", "Y12670_at", "X17042_at", "U67963_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M23197_at",
+      "baseline_rank": 10,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.78781948087932,
+      "baseline_effect": 1.23497498316498,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [2, 29],
+          "deleted_units": ["Golub_train_02", "Golub_train_29"],
+          "topk": ["X95735_at", "M27891_at", "M55150_at", "M16038_at", "L09209_s_at", "Y00787_s_at", "M69043_at", "M81695_s_at", "U50136_rna1_at", "U82759_at", "M63138_at", "L08246_at", "X07743_at", "Y12670_at", "U67963_at", "X70297_at", "X62654_rna1_at", "M28130_rna1_s_at", "M21551_rna1_at", "M19045_f_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M63138_at",
+      "baseline_rank": 11,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.77110198185867,
+      "baseline_effect": 0.911281818181818,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [12, 35],
+          "deleted_units": ["Golub_train_12", "Golub_train_35"],
+          "topk": ["Y00787_s_at", "X95735_at", "M28130_rna1_s_at", "M27891_at", "L08246_at", "M16038_at", "X07743_at", "U82759_at", "M55150_at", "L09209_s_at", "X62654_rna1_at", "M69043_at", "M19045_f_at", "U02020_at", "D14874_at", "M11147_at", "M62762_at", "U50136_rna1_at", "M23197_at", "Y12670_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "X62654_rna1_at",
+      "baseline_rank": 12,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.76000429842915,
+      "baseline_effect": 1.28271616161616,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "X07743_at",
+      "baseline_rank": 13,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.7422299860193,
+      "baseline_effect": 1.49402686868687,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [6, 38],
+          "deleted_units": ["Golub_train_06", "Golub_train_38"],
+          "topk": ["X95735_at", "M27891_at", "X64072_s_at", "M16038_at", "L09209_s_at", "M55150_at", "M63138_at", "U67963_at", "M23197_at", "X17042_at", "M83652_s_at", "X62654_rna1_at", "Y12670_at", "M19045_f_at", "M22960_at", "X14008_rna1_f_at", "D14874_at", "U50136_rna1_at", "J03801_f_at", "U82759_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "D88422_at",
+      "baseline_rank": 14,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.4520349204053,
+      "baseline_effect": 1.95122410774411,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 29,
+          "deleted_units": "Golub_train_29",
+          "topk": ["X95735_at", "M27891_at", "M55150_at", "L09209_s_at", "M16038_at", "U82759_at", "M69043_at", "U50136_rna1_at", "M81695_s_at", "Y12670_at", "Y00787_s_at", "X70297_at", "M63138_at", "X07743_at", "X62654_rna1_at", "M21551_rna1_at", "U67963_at", "M23197_at", "L08246_at", "M19045_f_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "L08246_at",
+      "baseline_rank": 15,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.41827226223376,
+      "baseline_effect": 1.06971727272727,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 32,
+          "deleted_units": "Golub_train_32",
+          "topk": ["X95735_at", "M27891_at", "M55150_at", "U46499_at", "L09209_s_at", "M16038_at", "D88422_at", "X07743_at", "X04085_rna1_at", "X62654_rna1_at", "U50136_rna1_at", "Y12670_at", "U82759_at", "Y00787_s_at", "M63138_at", "M23197_at", "U67963_at", "D14874_at", "X17042_at", "X61587_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "U67963_at",
+      "baseline_rank": 16,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.4162178354415,
+      "baseline_effect": 0.656734848484848,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 12,
+          "deleted_units": "Golub_train_12",
+          "topk": ["X95735_at", "M27891_at", "M16038_at", "M55150_at", "L09209_s_at", "Y00787_s_at", "X07743_at", "M23197_at", "D14874_at", "U50136_rna1_at", "M63138_at", "L08246_at", "Y12670_at", "X62654_rna1_at", "M28130_rna1_s_at", "M19045_f_at", "U82759_at", "D88422_at", "M11147_at", "X17042_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M28130_rna1_s_at",
+      "baseline_rank": 17,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.32170283696108,
+      "baseline_effect": 2.6413865993266,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 28,
+          "deleted_units": "Golub_train_28",
+          "topk": ["M27891_at", "X95735_at", "M16038_at", "L09209_s_at", "M55150_at", "D88422_at", "U50136_rna1_at", "Y12670_at", "M23197_at", "U46499_at", "X62654_rna1_at", "M19045_f_at", "J03801_f_at", "U82759_at", "M63138_at", "M96326_rna1_at", "Y00787_s_at", "X07743_at", "L08246_at", "X14008_rna1_f_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "M19045_f_at",
+      "baseline_rank": 18,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.25138994997569,
+      "baseline_effect": 1.40396202020202,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 15,
+          "deleted_units": "Golub_train_15",
+          "topk": ["X95735_at", "M27891_at", "M16038_at", "M55150_at", "L09209_s_at", "Y12670_at", "U50136_rna1_at", "M63138_at", "X62654_rna1_at", "Y00787_s_at", "M23197_at", "X07743_at", "U82759_at", "L08246_at", "D88422_at", "U67963_at", "M28130_rna1_s_at", "U46499_at", "X04085_rna1_at", "D14874_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "U46499_at",
+      "baseline_rank": 19,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.24236237044855,
+      "baseline_effect": 1.75391922558923,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 12,
+          "deleted_units": "Golub_train_12",
+          "topk": ["X95735_at", "M27891_at", "M16038_at", "M55150_at", "L09209_s_at", "Y00787_s_at", "X07743_at", "M23197_at", "D14874_at", "U50136_rna1_at", "M63138_at", "L08246_at", "Y12670_at", "X62654_rna1_at", "M28130_rna1_s_at", "M19045_f_at", "U82759_at", "D88422_at", "M11147_at", "X17042_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "D14874_at",
+      "baseline_rank": 20,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 6.23412443951394,
+      "baseline_effect": 0.726976464646465,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "Golub_train_04",
+          "topk": ["X95735_at", "M27891_at", "M16038_at", "L09209_s_at", "M55150_at", "Y12670_at", "U50136_rna1_at", "M23197_at", "U82759_at", "Y00787_s_at", "X07743_at", "M63138_at", "X62654_rna1_at", "D88422_at", "L08246_at", "U67963_at", "M28130_rna1_s_at", "U46499_at", "M19045_f_at", "X04085_rna1_at"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    }
+  ],
+  "budget": 2,
+  "top_k": 20,
+  "design": "welch",
+  "direction": "up",
+  "unit_ids": ["Golub_train_01", "Golub_train_02", "Golub_train_03", "Golub_train_04", "Golub_train_05", "Golub_train_06", "Golub_train_07", "Golub_train_08", "Golub_train_09", "Golub_train_10", "Golub_train_11", "Golub_train_12", "Golub_train_13", "Golub_train_14", "Golub_train_15", "Golub_train_16", "Golub_train_17", "Golub_train_18", "Golub_train_19", "Golub_train_20", "Golub_train_21", "Golub_train_22", "Golub_train_23", "Golub_train_24", "Golub_train_25", "Golub_train_26", "Golub_train_27", "Golub_train_28", "Golub_train_29", "Golub_train_30", "Golub_train_31", "Golub_train_32", "Golub_train_33", "Golub_train_34", "Golub_train_35", "Golub_train_36", "Golub_train_37", "Golub_train_38"],
+  "first_topk_witness": {
+    "deleted_indices": 4,
+    "deleted_units": "Golub_train_04",
+    "topk": ["X95735_at", "M27891_at", "M16038_at", "L09209_s_at", "M55150_at", "Y12670_at", "U50136_rna1_at", "M23197_at", "U82759_at", "Y00787_s_at", "X07743_at", "M63138_at", "X62654_rna1_at", "D88422_at", "L08246_at", "U67963_at", "M28130_rna1_s_at", "U46499_at", "M19045_f_at", "X04085_rna1_at"]
+  },
+  "topk_minimum_change": {
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "exact": 1
+  },
+  "nodes": 730,
+  "scenarios_checked": 741,
+  "query_bounds_pruned": 107,
+  "feasible_deletion_sets": "741",
+  "limits": {
+    "max_nodes": 10000,
+    "max_scenarios": 10000
+  },
+  "arithmetic": "native C++ arbitrary-precision dyadic integers and rational bounds; exact finite binary64 ranking decisions",
+  "index_base": 1
+}

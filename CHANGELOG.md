@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.4.0 — 2026-10-06
+
+- Added a standalone native R package under `r/extremarank`; exact arbitrary
+  precision R/C++ ranking and deletion search run without any Python runtime.
+- Added paired and Welch audits, conditional extrema, feature membership and
+  sign certificates, minimum change intervals and one-based R witness indices.
+- Added matrix/Matrix/SummarizedExperiment interfaces, sparse donor-level
+  pseudobulk and an explicit policy for missing cell-type annotations.
+- Added direct limma, limma-voom, edgeR and DESeq2 refits in the R session with
+  frozen universes/covariates, streamed enumeration, preserved failures and
+  captured model warnings/messages. Their scope remains observed sensitivity.
+- Added R-only package tests and frozen independent Fraction golden cases,
+  native R real-data reproduction and cross-language independent validation.
+- Existing Python algorithms are unchanged; synchronized release version only.
+
 ## 0.3.0 — 2026-10-06
 
 - Individual Top-K membership and mean-effect sign certificates, with shared

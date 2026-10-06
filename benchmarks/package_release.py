@@ -14,9 +14,11 @@ def selected_files():
     for path in sorted(ROOT.rglob('*')):
         rel = path.relative_to(ROOT)
         if not path.is_file() or any(p in {'__pycache__','build','.git','dist','.venv'} or
-                                     p.endswith('.egg-info') for p in rel.parts):
+                                     p.endswith(('.egg-info', '.Rcheck')) for p in rel.parts):
             continue
-        if path.name == 'RELEASE_MANIFEST.json' or path.suffix in {'.pyc','.pyo'}:
+        if path.name == 'RELEASE_MANIFEST.json' or path.suffix in {'.pyc','.pyo','.o','.so','.dll'}:
+            continue
+        if path.name.startswith('extremarank_') and path.name.endswith('.tar.gz'):
             continue
         yield path
 

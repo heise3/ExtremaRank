@@ -1,0 +1,9 @@
+{
+  "cases": 1004,
+  "design_direction_problems": 6024,
+  "independent_checks": 439536,
+  "failures": 0,
+  "seed": 40606,
+  "oracle": "Fraction means and centered sample variances; complete shared deletion subsets; full ranks, exact scalar scores, membership/sign minima, actual witnesses, capped intervals and root/forced-inclusion enclosures",
+  "seconds": 66.96630716696382
+}

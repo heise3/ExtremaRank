@@ -1,0 +1,581 @@
+{
+  "status": "REFUTED",
+  "baseline_topk": ["ISG20", "B2M", "ISG15", "LAMP3", "TNFSF10", "DYNLT1", "LY6E", "TRIM22", "PSMB8_ENSG00000204264", "IRF7", "IFITM2", "EPSTI1", "SAMD9", "UBE2L6", "C5orf56", "CXCL11", "SOBP", "SP110", "TAP1_ENSG00000168394", "DRAP1"],
+  "features": [
+    {
+      "feature_id": "ISG20",
+      "baseline_rank": 1,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 33.6760763171933,
+      "baseline_effect": 3.28797362848053,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "B2M",
+      "baseline_rank": 2,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 29.9362555513906,
+      "baseline_effect": 0.710101376994109,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "ISG15",
+      "baseline_rank": 3,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 27.7840090810847,
+      "baseline_effect": 5.50371090548186,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "LAMP3",
+      "baseline_rank": 4,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 27.3634302022425,
+      "baseline_effect": 6.47967758707882,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "TNFSF10",
+      "baseline_rank": 5,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 26.2769380777413,
+      "baseline_effect": 6.0775049814159,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "DYNLT1",
+      "baseline_rank": 6,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 25.9731849588128,
+      "baseline_effect": 3.05515433685014,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [2, 4],
+          "deleted_units": ["1015", "1039"],
+          "topk": ["SUB1", "SOBP", "TRIM22", "GBP1", "ISG20", "PSMB8_ENSG00000204264", "ISG15", "CARD16", "LAMP3", "B2M", "SAMD9", "TNFSF10", "IFITM2", "XRN1", "CXCL11", "NUB1", "TTC39B", "BST2", "HLA-E_ENSG00000204592", "PSMB9_ENSG00000240065"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "LY6E",
+      "baseline_rank": 7,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 25.0234106872565,
+      "baseline_effect": 4.14152064910521,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [1, 4],
+          "deleted_units": ["101", "1039"],
+          "topk": ["IL1RN", "SUB1", "ISG20", "HLA-E_ENSG00000204592", "GBP1", "TRIM22", "ISG15", "CARD16", "B2M", "LAMP3", "PSMA2_ENSG00000106588", "SAT1", "IFITM2", "TNFSF10", "SELL", "NUB1", "MYL12A", "XRN1", "DYNLT1", "PSMB9_ENSG00000240065"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "TRIM22",
+      "baseline_rank": 8,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 24.0557052046107,
+      "baseline_effect": 3.0625363113064,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "PSMB8_ENSG00000204264",
+      "baseline_rank": 9,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 23.9324811957044,
+      "baseline_effect": 1.40575904705997,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [1, 4],
+          "deleted_units": ["101", "1039"],
+          "topk": ["IL1RN", "SUB1", "ISG20", "HLA-E_ENSG00000204592", "GBP1", "TRIM22", "ISG15", "CARD16", "B2M", "LAMP3", "PSMA2_ENSG00000106588", "SAT1", "IFITM2", "TNFSF10", "SELL", "NUB1", "MYL12A", "XRN1", "DYNLT1", "PSMB9_ENSG00000240065"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "IRF7",
+      "baseline_rank": 10,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 22.2553780907247,
+      "baseline_effect": 3.72117317485958,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["SUB1", "TRIM22", "GBP1", "LAMP3", "ISG20", "ISG15", "B2M", "CARD16", "TNFSF10", "XRN1", "PSMB9_ENSG00000240065", "HLA-E_ENSG00000204592", "BST2", "NUB1", "DYNLT1", "LY6E", "PLSCR1", "UBE2L6", "PSMB8_ENSG00000204264", "SAT1"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "IFITM2",
+      "baseline_rank": 11,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 22.1957306845491,
+      "baseline_effect": 2.85704952631818,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["SUB1", "TRIM22", "GBP1", "LAMP3", "ISG20", "ISG15", "B2M", "CARD16", "TNFSF10", "XRN1", "PSMB9_ENSG00000240065", "HLA-E_ENSG00000204592", "BST2", "NUB1", "DYNLT1", "LY6E", "PLSCR1", "UBE2L6", "PSMB8_ENSG00000204264", "SAT1"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "EPSTI1",
+      "baseline_rank": 12,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 22.1929089717145,
+      "baseline_effect": 3.65783322075696,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["SUB1", "TRIM22", "GBP1", "LAMP3", "ISG20", "ISG15", "B2M", "CARD16", "TNFSF10", "XRN1", "PSMB9_ENSG00000240065", "HLA-E_ENSG00000204592", "BST2", "NUB1", "DYNLT1", "LY6E", "PLSCR1", "UBE2L6", "PSMB8_ENSG00000204264", "SAT1"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "SAMD9",
+      "baseline_rank": 13,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 22.1159101312628,
+      "baseline_effect": 3.02291381318281,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["SUB1", "TRIM22", "GBP1", "LAMP3", "ISG20", "ISG15", "B2M", "CARD16", "TNFSF10", "XRN1", "PSMB9_ENSG00000240065", "HLA-E_ENSG00000204592", "BST2", "NUB1", "DYNLT1", "LY6E", "PLSCR1", "UBE2L6", "PSMB8_ENSG00000204264", "SAT1"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "UBE2L6",
+      "baseline_rank": 14,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 21.7973026911579,
+      "baseline_effect": 2.72811578230158,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 2,
+        "minimum_change_upper_bound": 2,
+        "exact_minimum_change": 2,
+        "certified_through": 1,
+        "witness": {
+          "deleted_indices": [1, 4],
+          "deleted_units": ["101", "1039"],
+          "topk": ["IL1RN", "SUB1", "ISG20", "HLA-E_ENSG00000204592", "GBP1", "TRIM22", "ISG15", "CARD16", "B2M", "LAMP3", "PSMA2_ENSG00000106588", "SAT1", "IFITM2", "TNFSF10", "SELL", "NUB1", "MYL12A", "XRN1", "DYNLT1", "PSMB9_ENSG00000240065"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "C5orf56",
+      "baseline_rank": 15,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 20.9475539858805,
+      "baseline_effect": 2.39234975929005,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["SUB1", "TRIM22", "GBP1", "LAMP3", "ISG20", "ISG15", "B2M", "CARD16", "TNFSF10", "XRN1", "PSMB9_ENSG00000240065", "HLA-E_ENSG00000204592", "BST2", "NUB1", "DYNLT1", "LY6E", "PLSCR1", "UBE2L6", "PSMB8_ENSG00000204264", "SAT1"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "CXCL11",
+      "baseline_rank": 16,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 20.7251917860322,
+      "baseline_effect": 7.6617883980438,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["SUB1", "TRIM22", "GBP1", "LAMP3", "ISG20", "ISG15", "B2M", "CARD16", "TNFSF10", "XRN1", "PSMB9_ENSG00000240065", "HLA-E_ENSG00000204592", "BST2", "NUB1", "DYNLT1", "LY6E", "PLSCR1", "UBE2L6", "PSMB8_ENSG00000204264", "SAT1"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "SOBP",
+      "baseline_rank": 17,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 18.22445850747,
+      "baseline_effect": 4.90631636980814,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 4,
+          "deleted_units": "1039",
+          "topk": ["SUB1", "TRIM22", "GBP1", "LAMP3", "ISG20", "ISG15", "B2M", "CARD16", "TNFSF10", "XRN1", "PSMB9_ENSG00000240065", "HLA-E_ENSG00000204592", "BST2", "NUB1", "DYNLT1", "LY6E", "PLSCR1", "UBE2L6", "PSMB8_ENSG00000204264", "SAT1"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "SP110",
+      "baseline_rank": 18,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 17.8319219957251,
+      "baseline_effect": 2.40522551835573,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 2,
+          "deleted_units": "1015",
+          "topk": ["ISG20", "PSMB8_ENSG00000204264", "IFITM2", "B2M", "SAMD9", "CXCL11", "ISG15", "LAMP3", "TNFSF10", "DYNLT1", "LY6E", "SOBP", "TRIM22", "UBE2L6", "IRF7", "C5orf56", "EPSTI1", "IFI16", "DRAP1", "IFITM3"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "TAP1_ENSG00000168394",
+      "baseline_rank": 19,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 17.7472264751395,
+      "baseline_effect": 1.83403448631612,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 1,
+          "deleted_units": "101",
+          "topk": ["ISG20", "IL1RN", "IFITM2", "ISG15", "B2M", "LAMP3", "LY6E", "DYNLT1", "PSMB8_ENSG00000204264", "TNFSF10", "TRIM22", "IRF7", "EAF2", "UBE2L6", "EPSTI1", "SAMD9", "CXCL11", "C5orf56", "SP110", "SOBP"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "DRAP1",
+      "baseline_rank": 20,
+      "baseline_topk": true,
+      "baseline_effect_sign": 1,
+      "baseline_t": 17.4118151889736,
+      "baseline_effect": 1.85062768877709,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 1,
+          "deleted_units": "101",
+          "topk": ["ISG20", "IL1RN", "IFITM2", "ISG15", "B2M", "LAMP3", "LY6E", "DYNLT1", "PSMB8_ENSG00000204264", "TNFSF10", "TRIM22", "IRF7", "EAF2", "UBE2L6", "EPSTI1", "SAMD9", "CXCL11", "C5orf56", "SP110", "SOBP"],
+          "effect_sign": 1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    }
+  ],
+  "budget": 2,
+  "top_k": 20,
+  "design": "paired",
+  "direction": "up",
+  "unit_ids": ["101", "1015", "1016", "1039", "107", "1244", "1256", "1488"],
+  "first_topk_witness": {
+    "deleted_indices": 1,
+    "deleted_units": "101",
+    "topk": ["ISG20", "IL1RN", "IFITM2", "ISG15", "B2M", "LAMP3", "LY6E", "DYNLT1", "PSMB8_ENSG00000204264", "TNFSF10", "TRIM22", "IRF7", "EAF2", "UBE2L6", "EPSTI1", "SAMD9", "CXCL11", "C5orf56", "SP110", "SOBP"]
+  },
+  "topk_minimum_change": {
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "exact": 1
+  },
+  "nodes": 22,
+  "scenarios_checked": 36,
+  "query_bounds_pruned": 42,
+  "feasible_deletion_sets": "36",
+  "limits": {
+    "max_nodes": 10000,
+    "max_scenarios": 10000
+  },
+  "arithmetic": "native C++ arbitrary-precision dyadic integers and rational bounds; exact finite binary64 ranking decisions",
+  "index_base": 1
+}

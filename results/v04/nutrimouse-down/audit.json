@@ -1,0 +1,156 @@
+{
+  "status": "REFUTED",
+  "baseline_topk": ["C16.0", "C18.0", "C20.3n.6", "C20.4n.6", "C20.3n.9"],
+  "features": [
+    {
+      "feature_id": "C16.0",
+      "baseline_rank": 1,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -7.51309461835903,
+      "baseline_effect": -5.455,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "C18.0",
+      "baseline_rank": 2,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -6.62098372269909,
+      "baseline_effect": -3.816,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "C20.3n.6",
+      "baseline_rank": 3,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -6.57235992460074,
+      "baseline_effect": -0.665,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "C20.4n.6",
+      "baseline_rank": 4,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -3.457338145152,
+      "baseline_effect": -4.3085,
+      "membership": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    },
+    {
+      "feature_id": "C20.3n.9",
+      "baseline_rank": 5,
+      "baseline_topk": true,
+      "baseline_effect_sign": -1,
+      "baseline_t": -2.31396057913717,
+      "baseline_effect": -0.5005,
+      "membership": {
+        "status": "REFUTED",
+        "minimum_change_lower_bound": 1,
+        "minimum_change_upper_bound": 1,
+        "exact_minimum_change": 1,
+        "certified_through": 0,
+        "witness": {
+          "deleted_indices": 6,
+          "deleted_units": "mouse_6",
+          "topk": ["C16.0", "C18.0", "C20.3n.6", "C20.4n.6", "C22.6n.3"],
+          "effect_sign": -1
+        }
+      },
+      "direction": {
+        "status": "CERTIFIED",
+        "minimum_change_lower_bound": 3,
+        "minimum_change_upper_bound": null,
+        "exact_minimum_change": null,
+        "certified_through": 2,
+        "witness": null
+      }
+    }
+  ],
+  "budget": 2,
+  "top_k": 5,
+  "design": "welch",
+  "direction": "down",
+  "unit_ids": ["mouse_1", "mouse_2", "mouse_3", "mouse_4", "mouse_5", "mouse_6", "mouse_7", "mouse_8", "mouse_9", "mouse_10", "mouse_11", "mouse_12", "mouse_13", "mouse_14", "mouse_15", "mouse_16", "mouse_17", "mouse_18", "mouse_19", "mouse_20", "mouse_21", "mouse_22", "mouse_23", "mouse_24", "mouse_25", "mouse_26", "mouse_27", "mouse_28", "mouse_29", "mouse_30", "mouse_31", "mouse_32", "mouse_33", "mouse_34", "mouse_35", "mouse_36", "mouse_37", "mouse_38", "mouse_39", "mouse_40"],
+  "first_topk_witness": {
+    "deleted_indices": 6,
+    "deleted_units": "mouse_6",
+    "topk": ["C16.0", "C18.0", "C20.3n.6", "C20.4n.6", "C22.6n.3"]
+  },
+  "topk_minimum_change": {
+    "lower_bound": 1,
+    "upper_bound": 1,
+    "exact": 1
+  },
+  "nodes": 777,
+  "scenarios_checked": 788,
+  "query_bounds_pruned": 42,
+  "feasible_deletion_sets": "820",
+  "limits": {
+    "max_nodes": 10000,
+    "max_scenarios": 10000
+  },
+  "arithmetic": "native C++ arbitrary-precision dyadic integers and rational bounds; exact finite binary64 ranking decisions",
+  "index_base": 1
+}
