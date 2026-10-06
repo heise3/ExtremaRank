@@ -11,8 +11,8 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
 // cpp_audit
-List cpp_audit(NumericMatrix x, CharacterVector ids, CharacterVector unit_ids, IntegerVector labels, bool paired_design, int k, int budget, std::string direction, IntegerVector selected, int max_nodes, int max_scenarios, int witness_trials, bool use_bounds);
-RcppExport SEXP _extremarank_cpp_audit(SEXP xSEXP, SEXP idsSEXP, SEXP unit_idsSEXP, SEXP labelsSEXP, SEXP paired_designSEXP, SEXP kSEXP, SEXP budgetSEXP, SEXP directionSEXP, SEXP selectedSEXP, SEXP max_nodesSEXP, SEXP max_scenariosSEXP, SEXP witness_trialsSEXP, SEXP use_boundsSEXP) {
+List cpp_audit(NumericMatrix x, CharacterVector ids, CharacterVector unit_ids, IntegerVector labels, bool paired_design, int k, int budget, std::string direction, IntegerVector selected, int max_nodes, int max_scenarios, int witness_trials, bool use_bounds, bool influence_order);
+RcppExport SEXP _extremarank_cpp_audit(SEXP xSEXP, SEXP idsSEXP, SEXP unit_idsSEXP, SEXP labelsSEXP, SEXP paired_designSEXP, SEXP kSEXP, SEXP budgetSEXP, SEXP directionSEXP, SEXP selectedSEXP, SEXP max_nodesSEXP, SEXP max_scenariosSEXP, SEXP witness_trialsSEXP, SEXP use_boundsSEXP, SEXP influence_orderSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -29,7 +29,8 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< int >::type max_scenarios(max_scenariosSEXP);
     Rcpp::traits::input_parameter< int >::type witness_trials(witness_trialsSEXP);
     Rcpp::traits::input_parameter< bool >::type use_bounds(use_boundsSEXP);
-    rcpp_result_gen = Rcpp::wrap(cpp_audit(x, ids, unit_ids, labels, paired_design, k, budget, direction, selected, max_nodes, max_scenarios, witness_trials, use_bounds));
+    Rcpp::traits::input_parameter< bool >::type influence_order(influence_orderSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_audit(x, ids, unit_ids, labels, paired_design, k, budget, direction, selected, max_nodes, max_scenarios, witness_trials, use_bounds, influence_order));
     return rcpp_result_gen;
 END_RCPP
 }
@@ -80,8 +81,8 @@ BEGIN_RCPP
 END_RCPP
 }
 // cpp_diagnostics
-List cpp_diagnostics(NumericMatrix x, CharacterVector ids, CharacterVector unit_ids, IntegerVector labels, bool paired_design, int k, std::string direction);
-RcppExport SEXP _extremarank_cpp_diagnostics(SEXP xSEXP, SEXP idsSEXP, SEXP unit_idsSEXP, SEXP labelsSEXP, SEXP paired_designSEXP, SEXP kSEXP, SEXP directionSEXP) {
+List cpp_diagnostics(NumericMatrix x, CharacterVector ids, CharacterVector unit_ids, IntegerVector labels, bool paired_design, int k, std::string direction, int max_diagnostics);
+RcppExport SEXP _extremarank_cpp_diagnostics(SEXP xSEXP, SEXP idsSEXP, SEXP unit_idsSEXP, SEXP labelsSEXP, SEXP paired_designSEXP, SEXP kSEXP, SEXP directionSEXP, SEXP max_diagnosticsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -92,17 +93,60 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< bool >::type paired_design(paired_designSEXP);
     Rcpp::traits::input_parameter< int >::type k(kSEXP);
     Rcpp::traits::input_parameter< std::string >::type direction(directionSEXP);
-    rcpp_result_gen = Rcpp::wrap(cpp_diagnostics(x, ids, unit_ids, labels, paired_design, k, direction));
+    Rcpp::traits::input_parameter< int >::type max_diagnostics(max_diagnosticsSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_diagnostics(x, ids, unit_ids, labels, paired_design, k, direction, max_diagnostics));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_plan
+List cpp_plan(IntegerVector labels, bool paired_design, int budget);
+RcppExport SEXP _extremarank_cpp_plan(SEXP labelsSEXP, SEXP paired_designSEXP, SEXP budgetSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerVector >::type labels(labelsSEXP);
+    Rcpp::traits::input_parameter< bool >::type paired_design(paired_designSEXP);
+    Rcpp::traits::input_parameter< int >::type budget(budgetSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_plan(labels, paired_design, budget));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_block_plan
+List cpp_block_plan(IntegerVector a, IntegerVector b, int budget, bool paired_design);
+RcppExport SEXP _extremarank_cpp_block_plan(SEXP aSEXP, SEXP bSEXP, SEXP budgetSEXP, SEXP paired_designSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< IntegerVector >::type a(aSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type b(bSEXP);
+    Rcpp::traits::input_parameter< int >::type budget(budgetSEXP);
+    Rcpp::traits::input_parameter< bool >::type paired_design(paired_designSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_block_plan(a, b, budget, paired_design));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_remaining
+std::string cpp_remaining(std::string planned, int completed);
+RcppExport SEXP _extremarank_cpp_remaining(SEXP plannedSEXP, SEXP completedSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< std::string >::type planned(plannedSEXP);
+    Rcpp::traits::input_parameter< int >::type completed(completedSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_remaining(planned, completed));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_extremarank_cpp_audit", (DL_FUNC) &_extremarank_cpp_audit, 13},
+    {"_extremarank_cpp_audit", (DL_FUNC) &_extremarank_cpp_audit, 14},
     {"_extremarank_cpp_extrema", (DL_FUNC) &_extremarank_cpp_extrema, 3},
     {"_extremarank_cpp_evaluate", (DL_FUNC) &_extremarank_cpp_evaluate, 6},
     {"_extremarank_cpp_bounds", (DL_FUNC) &_extremarank_cpp_bounds, 7},
-    {"_extremarank_cpp_diagnostics", (DL_FUNC) &_extremarank_cpp_diagnostics, 7},
+    {"_extremarank_cpp_diagnostics", (DL_FUNC) &_extremarank_cpp_diagnostics, 8},
+    {"_extremarank_cpp_plan", (DL_FUNC) &_extremarank_cpp_plan, 3},
+    {"_extremarank_cpp_block_plan", (DL_FUNC) &_extremarank_cpp_block_plan, 4},
+    {"_extremarank_cpp_remaining", (DL_FUNC) &_extremarank_cpp_remaining, 2},
     {NULL, NULL, 0}
 };
 

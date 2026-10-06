@@ -1,0 +1,81 @@
+---
+title: "Native R audits, coverage and practical workflows"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Native R audits, coverage and practical workflows}
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteEncoding{UTF-8}
+---
+
+ExtremaRank runs directly in R through its C++ exact kernel. Python is not a
+runtime dependency. Native certificates and observed fitted-model sensitivity
+have different scopes. Search caps leave unresolved questions explicit.
+
+```{r}
+library(extremarank)
+effects <- matrix(c(5, 4, 6, 5, 1, 2, 1, 2, -2, -1, -3, -2), nrow = 4,
+  dimnames = list(paste0("donor", 1:4), c("A", "B", "C")))
+result <- extremarank_effects(effects, k = 1, budget = 1,
+  search_order = "influence", max_diagnostics = 4)
+summary(result)
+as.data.frame(result)
+plot(result)
+plot(result, type = "influence")
+curve <- robustness_curve(effects, budgets = 0:2, k = 1, diagnostics = FALSE)
+curve$data
+plot(curve)
+```
+
+Rows in `effects` are donors, columns are features. For ordinary `extremarank`
+input the orientation is features by samples. Preparation, feature filtering
+and ranking ties are frozen before deletion. A lower change bound of budget+1
+means stability within the budget; it does not prove that the next deletion
+cardinality causes a change.
+
+```{r}
+set.seed(5006)
+x <- matrix(rnorm(30 * 8), 30, dimnames = list(paste0("g", 1:30), paste0("s", 1:8)))
+meta <- data.frame(sample_id = colnames(x), donor_id = colnames(x),
+  group = rep(c("treated", "control"), each = 4), site = rep(1:4, 2))
+preflight_extremarank(x, meta, "treated", "control", design = "welch", budget = 2)
+```
+
+Storage estimates exclude model objects and arbitrary precision integer memory.
+`max_dense_bytes` guards prepared sample matrices and pseudobulk output.
+DelayedMatrix inputs are read in row blocks; native audits still materialize
+their smaller feature-by-biological-unit matrix. Pseudobulk aggregation does
+not materialize the entire delayed cell matrix. Audit and diagnostic limits
+are independent. Default diagnostics are skipped at budget zero and otherwise
+capped at 100; use `diagnostics="all"` with an explicit limit when needed.
+
+```{r, eval=requireNamespace("limma", quietly=TRUE)}
+fits <- refit_extremarank(x, meta, "treated", "control", model = "limma",
+  design = "welch", budget = 1, k = 5, all_features = TRUE)
+summary(fits)
+head(as.data.frame(fits))
+zero <- refit_extremarank(x, meta, "treated", "control", model = "limma",
+  design = "welch", max_refits = 0)
+zero$status
+```
+
+`NOT_EVALUATED` means no deletion was run. `PARTIALLY_EVALUATED` records an
+incomplete stable-looking run. `OBSERVED_CHANGED` includes actual change
+witnesses, even if other scenarios failed. None certifies unseen refits.
+
+For larger models use `store_scores="disk", score_path="scores"` or
+`store_scores="none"`. `checkpoint="fits-cache"` saves each completed fit;
+`resume=TRUE` validates its frozen contract and can extend `max_refits`.
+`workers=2` runs two PSOCK processes and collects results in scenario order.
+Processes can increase RAM; the numeric input-copy guard does not bound model
+working memory. `delete_by="site"` deletes whole sites. Covariates and contrasts
+are fixed even if a deletion makes the design unidentifiable.
+
+Custom repeated-measure or multi-group models can use
+`refit_extremarank_custom`. Its function must refit the supplied retained data
+and return every frozen feature exactly once, with `feature_id`, `score` and
+`effect`. Declare biological deletion units and control any external state.
+This interface has an observed sensitivity scope.
+
+Real microarray, single-cell, protein and lipid reproductions, including failed
+fits, are recorded in the repository's `results/v04` and `results/v05` folders.
+The package does not establish FDR control or biological validity.

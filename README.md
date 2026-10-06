@@ -7,8 +7,11 @@
 **Which of your omics candidates survive removing a few biological samples?**
 
 ExtremaRank audits whether omics candidates survive shared sample deletion.
-v0.4 ships a **native R package**: exact R/C++ computation, direct Bioconductor
+v0.5 ships a **native R package**: exact R/C++ computation, direct Bioconductor
 model refits, sparse donor pseudobulk and experiment-object interfaces.
+v0.5 adds explicit coverage, candidate refit witnesses, grouped deletions,
+disk scores, resumable model fits, reproducible parallel workers, delayed
+input, preflight storage estimates, plots and a tighter conditional Welch floor.
 It runs entirely in R without Python, reticulate or a subprocess bridge.
 The existing Python implementation also provides **individual membership/sign certificates**, **minimum deletion
 change bounds**, **safe Welch pruning**, **automatic limma/voom/edgeR/DESeq2
@@ -20,7 +23,7 @@ Real examples cover paired bulk RNA-seq, independent microarrays, an 8-donor
 single-cell study, technical protein measurements, and biological lipid data.
 Native certificates and observed external-model refits have different guarantees.
 
-[原生 R 包中文指南](docs/R_NATIVE_CN.md) · [R package](r/extremarank) ·
+[v0.5 新功能](docs/V05_CN.md) · [原生 R 包中文指南](docs/R_NATIVE_CN.md) · [R package](r/extremarank) ·
 [中文 v0.3 说明](docs/V03_CN.md) · [Individual certificates](docs/ROBUSTNESS.md) ·
 [Model refits / single cell](docs/REFITS.md) · [Study inputs](docs/STUDY.md) ·
 [Proof](docs/THEOREM.md) · [Prior art](docs/PRIOR_ART.md) ·
@@ -31,10 +34,8 @@ Native certificates and observed external-model refits have different guarantees
 ### Native R
 
 ```r
-install.packages(c("Rcpp", "BH", "Matrix", "digest"))
-install.packages(
-  "https://github.com/heise3/ExtremaRank/releases/download/v0.4.0/extremarank_0.4.0.tar.gz",
-  repos = NULL, type = "source")
+source("https://raw.githubusercontent.com/heise3/ExtremaRank/v0.5.0/r/install_extremarank.R")
+install_extremarank()
 library(extremarank)
 
 # x: features in rows, samples in columns; metadata has sample_id/group/donor_id.
@@ -51,13 +52,16 @@ raw counts, call `pseudobulk_extremarank(sce, assay = "counts")` before analysis
 These models retain an **observed sensitivity** scope. Native exact audits
 can return certificates for the declared deletion budget.
 
-Source installation needs a C++17 compiler (Rtools on Windows, Xcode command
+The helper verifies SHA-256 and selects precompiled packages for R 4.6 on
+Windows x86_64 and CRAN macOS R.framework (arm64/x86_64). Other supported R
+versions and Homebrew R use source installation. Source installation needs a
+C++17 compiler (Rtools on Windows, Xcode command
 line tools on macOS). There is no Python installation step. See the
 [R package README](r/extremarank/README.md) for a runnable toy example and
-[native R validation](results/v04/README.md) for actual verification results.
+[native R validation](results/v05/README.md) for actual verification results.
 The small R source archive installs without downloading the full benchmark
 repository. Alternatively, use `remotes::install_github("heise3/ExtremaRank",
-subdir = "r/extremarank", ref = "v0.4.0", upgrade = "never")`.
+subdir = "r/extremarank", ref = "v0.5.0", upgrade = "never")`.
 
 ### Python
 

@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest, macos-15, macos-15-intel, windows-latest]
     env:
       _R_CHECK_FORCE_SUGGESTS_: false
     steps:
@@ -21,23 +21,42 @@ jobs:
           use-public-rspm: true
       - name: Install native R dependencies
         shell: Rscript {0}
-        run: install.packages(c("Rcpp", "BH", "Matrix", "digest"))
+        run: install.packages(c("Rcpp", "BH", "Matrix", "digest", "knitr", "markdown"))
       - name: Build standard R source package
         run: R CMD build r/extremarank --no-manual --no-build-vignettes
       - name: Check native package and R-only oracle tests
-        run: R CMD check --no-manual --no-vignettes --install-args=--strip extremarank_0.4.0.tar.gz
+        run: R CMD check --no-manual --no-vignettes --install-args=--strip extremarank_0.5.0.tar.gz
       - name: Require zero errors and warnings
         shell: Rscript {0}
         run: |
           log <- readLines("extremarank.Rcheck/00check.log")
           stopifnot(!any(grepl("\\b(ERROR|WARNING)\\b", log, perl = TRUE)))
+      - name: Build installable platform binary
+        if: runner.os != 'Linux'
+        run: R CMD INSTALL --build --strip extremarank_0.5.0.tar.gz
+      - name: Reinstall binary in an isolated library
+        if: runner.os != 'Linux'
+        shell: Rscript {0}
+        run: |
+          file <- list.files(pattern = "^extremarank_0[.]5[.]0[.](zip|tgz)$")
+          stopifnot(length(file) == 1L)
+          lib <- tempfile(); dir.create(lib)
+          install.packages(file, lib = lib, repos = NULL, type = "binary")
+          library(extremarank, lib.loc = lib)
+          e <- matrix(c(5,4,6,5,1,2,1,2,-2,-1,-3,-2), 4, dimnames = list(paste0("d",1:4),c("A","B","C")))
+          stopifnot(extremarank_effects(e,k=1,budget=1)$status == "CERTIFIED")
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: native-r-${{ matrix.os }}
-          path: extremarank.Rcheck/00check.log
+          path: |
+            extremarank.Rcheck/00check.log
+            extremarank_0.5.0.zip
+            extremarank_0.5.0.tgz
   bioconductor:
     runs-on: ubuntu-latest
+    env:
+      EXTREMARANK_TEST_PARALLEL: true
     steps:
       - uses: actions/checkout@v7
       - uses: r-lib/actions/setup-r@v2
@@ -47,10 +66,36 @@ jobs:
         shell: Rscript {0}
         run: |
           install.packages(c("Rcpp", "BH", "Matrix", "digest", "BiocManager"))
-          BiocManager::install(c("limma", "edgeR", "DESeq2", "SingleCellExperiment"), ask = FALSE, update = FALSE)
+          BiocManager::install(c("limma", "edgeR", "DESeq2", "SingleCellExperiment", "DelayedArray", "HDF5Array"), ask = FALSE, update = FALSE)
       - run: R CMD INSTALL r/extremarank
       - name: Test direct R model refits and experiment objects
         shell: Rscript {0}
         run: |
           source("r/extremarank/tests/models.R")
           source("r/extremarank/tests/native.R")
+          source("r/extremarank/tests/workflows.R")
+
+  compatibility:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        r: ['4.1', 'oldrel', 'devel']
+    env:
+      _R_CHECK_FORCE_SUGGESTS_: false
+    steps:
+      - uses: actions/checkout@v7
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: ${{ matrix.r }}
+          use-public-rspm: true
+      - name: Install dependencies
+        shell: Rscript {0}
+        run: install.packages(c("Rcpp", "BH", "digest", "knitr", "markdown"))
+      - run: R CMD INSTALL r/extremarank
+      - name: R-only exact and workflow tests
+        shell: Rscript {0}
+        run: |
+          source("r/extremarank/tests/native.R")
+          source("r/extremarank/tests/golden.R")
+          source("r/extremarank/tests/workflows.R")

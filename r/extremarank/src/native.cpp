@@ -6,6 +6,8 @@
 #include <cstring>
 #include <functional>
 #include <numeric>
+#include <map>
+#include <tuple>
 #include <set>
 #include <string>
 #include <vector>
@@ -21,7 +23,7 @@ Rat ratio(const Z& n, const Z& d) { return Rat(n, d); }
 
 // Decode IEEE-754 bits, retaining subnormals and all cancellation exactly.
 struct Feature {
-  std::vector<Z> x;
+  std::vector<Z> x; VI sorted, squareSorted;
   Z den = 1, s[2], q[2];
   Feature(NumericMatrix a, int j, const VI& labels) {
     int n=a.ncol(), emin=0;
@@ -40,6 +42,9 @@ struct Feature {
       if(mant[i]) { x[i]=mant[i]; x[i]<<=exponent[i]-emin; if(negative[i]) x[i]=-x[i]; }
       s[labels[i]]+=x[i]; q[labels[i]]+=x[i]*x[i];
     }
+    sorted.resize(n); std::iota(sorted.begin(),sorted.end(),0);
+    std::sort(sorted.begin(),sorted.end(),[&](int a,int b){return x[a]!=x[b]?x[a]<x[b]:a<b;});
+    squareSorted=sorted; std::sort(squareSorted.begin(),squareSorted.end(),[&](int a,int b){Z aa=x[a]*x[a],bb=x[b]*x[b];return aa!=bb?aa<bb:a<b;});
   }
 };
 struct Score { int sign=0; Z num=0, den=1; Rat effect=0; };
@@ -70,7 +75,7 @@ struct Bound { Score lo,hi; };
 struct Ext { Bound bound; VI lo,hi; int candidates=0; };
 Ext pairedBound(const Feature& f,const VI& inc,const VI& opt,int m,bool witness=false) {
   int u=opt.size(), n=inc.size()+m; if(m<0 || m>u || n<2) stop("invalid retained cardinality");
-  VI order=opt; std::sort(order.begin(),order.end(),[&](int a,int b){return f.x[a]!=f.x[b]?f.x[a]<f.x[b]:a<b;});
+  std::vector<bool> take(f.x.size(),false);for(int i:opt)take[i]=true; VI order;for(int i:f.sorted)if(take[i])order.push_back(i);
   std::vector<Z> ps(u+1),pq(u+1); Z sf=0,qf=0;
   for(int i:inc) { sf+=f.x[i]; qf+=f.x[i]*f.x[i]; }
   for(int i=0;i<u;++i) { ps[i+1]=ps[i]+f.x[order[i]]; pq[i+1]=pq[i]+f.x[order[i]]*f.x[order[i]]; }
@@ -99,9 +104,11 @@ struct Box { Rat slo,shi,vlo,vhi; };
 Box groupBox(const Feature& f,const VI& inc,const VI& opt,int m) {
   int n=inc.size()+m; if(n<2 || m<0 || m>int(opt.size())) stop("invalid Welch node");
   Z sf=0,qf=0; std::vector<Z> xs,squares,allowed;
-  for(int i:inc) {sf+=f.x[i];qf+=f.x[i]*f.x[i];allowed.push_back(f.x[i]);}
-  for(int i:opt) {xs.push_back(f.x[i]);squares.push_back(f.x[i]*f.x[i]);allowed.push_back(f.x[i]);}
-  std::sort(xs.begin(),xs.end());std::sort(squares.begin(),squares.end());std::sort(allowed.begin(),allowed.end());
+  std::vector<bool> fixed(f.x.size(),false),optional(f.x.size(),false);
+  for(int i:inc) {sf+=f.x[i];qf+=f.x[i]*f.x[i];fixed[i]=true;}
+  for(int i:opt)optional[i]=true;
+  for(int i:f.sorted){if(optional[i])xs.push_back(f.x[i]);if(optional[i]||fixed[i])allowed.push_back(f.x[i]);}
+  for(int i:f.squareSorted)if(optional[i])squares.push_back(f.x[i]*f.x[i]);
   Z slo=sf,shi=sf,qlo=qf,qhi=qf;
   for(int i=0;i<m;++i) {slo+=xs[i];shi+=xs[xs.size()-1-i];qlo+=squares[i];qhi+=squares[squares.size()-1-i];}
   Z s=0,q=0;for(int i=0;i<n;++i){s+=allowed[i];q+=allowed[i]*allowed[i];}
@@ -109,6 +116,14 @@ Box groupBox(const Feature& f,const VI& inc,const VI& opt,int m) {
   for(int start=1;start<=int(allowed.size())-n;++start) {
     Z a=allowed[start-1],b=allowed[start+n-1];s=s-a+b;q=q-a*a+b*b;Z v=Z(n)*q-s*s;if(v<floor)floor=v;
   }
+  // Pairwise decomposition: fixed-fixed + fixed-optional + optional-optional.
+  // Each separate minimum is a lower bound even when not jointly attainable.
+  int fixedCount=inc.size();Z constrained=Z(fixedCount)*qf-sf*sf;
+  if(fixedCount>0){std::vector<Z> cross;for(const Z& x:xs)cross.push_back(Z(fixedCount)*x*x-2*sf*x+qf);
+  std::sort(cross.begin(),cross.end());for(int i=0;i<m;++i)constrained+=cross[i];
+  if(m>1){Z os=0,oq=0;for(int i=0;i<m;++i){os+=xs[i];oq+=xs[i]*xs[i];}Z best=Z(m)*oq-os*os;
+    for(int i=1;i<=int(xs.size())-m;++i){Z a=xs[i-1],b=xs[i+m-1];os=os-a+b;oq=oq-a*a+b*b;Z v=Z(m)*oq-os*os;if(v<best)best=v;}constrained+=best;}
+  floor=std::max(floor,constrained);}
   Z a=slo*slo,b=shi*shi;Z minSquare=slo<=0 && shi>=0?Z(0):std::min(a,b);
   Z lo=Z(n)*qlo-std::max(a,b);lo=std::max(Z(0),std::max(floor,lo));
   Z hi=Z(n)*qhi-minSquare;hi=std::max(Z(0),hi);Z vd=Z(n)*n*(n-1);
@@ -225,18 +240,20 @@ List packProperty(const State& a,int budget,const Problem& p,CharacterVector uni
 }
 
 // [[Rcpp::export]]
-List cpp_audit(NumericMatrix x,CharacterVector ids,CharacterVector unit_ids,IntegerVector labels,bool paired_design,int k,int budget,std::string direction,IntegerVector selected,int max_nodes,int max_scenarios,int witness_trials=8,bool use_bounds=true){
+List cpp_audit(NumericMatrix x,CharacterVector ids,CharacterVector unit_ids,IntegerVector labels,bool paired_design,int k,int budget,std::string direction,IntegerVector selected,int max_nodes,int max_scenarios,int witness_trials=8,bool use_bounds=true,bool influence_order=false){
   Problem p(x,ids,labels,paired_design,direction,k);if(unit_ids.size()!=p.n || budget<0 || budget>p.n-2*p.ng || max_nodes<1 || max_scenarios<1 || witness_trials<0)stop("invalid budget, unit IDs or limits");
   std::vector<Query> queries;VI chosen;std::set<int> selectedSet;
   VI requested;for(int value:selected)requested.push_back(value);if(requested.empty())for(int i=0;i<k;++i)requested.push_back(p.baseOrder[i]+1);
   for(int value:requested){int j=value-1;if(j<0 || j>=p.g || !selectedSet.insert(j).second)stop("invalid queried features");chosen.push_back(j);queries.push_back({j,0});queries.push_back({j,1});}if(chosen.empty())stop("no queried features");
   std::vector<State> state(queries.size());std::set<VI> evaluated;Witness first;int nodes=0,checked=0,pruned=0;bool stopped=false;
-  auto inspect=[&](const VI& d,int r){if(!evaluated.insert(d).second)return;++checked;auto scores=p.evaluate(d);VI order=p.rank(scores,k);std::vector<bool> members(p.g,false);for(int j:order)members[j]=true;
+  auto inspect=[&](const VI& raw,int r){VI d=raw;std::sort(d.begin(),d.end());if(!evaluated.insert(d).second)return;++checked;auto scores=p.evaluate(d);VI order=p.rank(scores,k);std::vector<bool> members(p.g,false);for(int j:order)members[j]=true;
     if(members!=p.baseMember && !first.found)first={d,order,0,true};
     for(size_t q=0;q<queries.size();++q){int j=queries[q].feature;bool changed=queries[q].property==0?members[j]!=p.baseMember[j]:scores[j].sign!=p.baseSign[j];
       if(changed && (!state[q].upper || r<state[q].upper)){state[q].upper=r;state[q].witness={d,order,scores[j].sign,true};}}
   };
   VI all(p.n);std::iota(all.begin(),all.end(),0);
+  if(influence_order){std::vector<double> weight(p.n,0);for(int j:chosen){Z largest=0;for(const Z& x:p.data[j].x){Z a=abs(x);if(a>largest)largest=a;}if(largest!=0)for(int i=0;i<p.n;++i)weight[i]+=display(ratio(abs(p.data[j].x[i]),largest));}
+    std::stable_sort(all.begin(),all.end(),[&](int a,int b){return weight[a]>weight[b];});for(int h=0;h<p.ng;++h){p.pools[h].clear();for(int i:all)if(p.labels[i]==h)p.pools[h].push_back(i);}}
   for(int r=1;r<=budget;++r){
     VI active;for(size_t q=0;q<queries.size();++q)if(!state[q].upper)active.push_back(q);if(active.empty())break;
     int trials=0;p.deletions(r,[&](const VI& d){if(trials>=witness_trials || checked>=max_scenarios)return false;inspect(d,r);++trials;return true;});
@@ -264,7 +281,7 @@ List cpp_audit(NumericMatrix x,CharacterVector ids,CharacterVector unit_ids,Inte
         for(int h=0;h<p.ng;++h){VI pool;for(int i:node.opt)if(p.labels[i]==h)pool.push_back(i);int need=node.need[h];if(need<0 || need>int(pool.size())){feasible=false;break;}
           if(need==0 || need==int(pool.size())){if(need)node.inc.insert(node.inc.end(),pool.begin(),pool.end());node.opt.erase(std::remove_if(node.opt.begin(),node.opt.end(),[&](int i){return p.labels[i]==h;}),node.opt.end());node.need[h]=0;}}
         if(!feasible)continue;std::sort(node.inc.begin(),node.inc.end());++nodes;
-        if(node.opt.empty()){VI d;for(int i:all)if(!std::binary_search(node.inc.begin(),node.inc.end(),i))d.push_back(i);inspect(d,r);continue;}
+        if(node.opt.empty()){VI d;for(int i:all)if(!std::binary_search(node.inc.begin(),node.inc.end(),i))d.push_back(i);std::sort(d.begin(),d.end());inspect(d,r);continue;}
         if(use_bounds){auto b=p.bounds(node.inc,node.opt,node.need);Prover proof(p,b,node.queries,queries);VI remain;for(int q:node.queries)if(proof(queries[q]))++pruned;else remain.push_back(q);node.queries=remain;}
         if(node.queries.empty())continue;int pivot=node.opt[0],group=p.labels[pivot];node.opt.erase(node.opt.begin());stack.push_back(node);
         if(node.need[group]>0){node.inc.push_back(pivot);--node.need[group];stack.push_back(std::move(node));}
@@ -313,17 +330,38 @@ List cpp_bounds(NumericMatrix x,CharacterVector ids,IntegerVector labels,bool pa
 }
 
 // [[Rcpp::export]]
-List cpp_diagnostics(NumericMatrix x,CharacterVector ids,CharacterVector unit_ids,IntegerVector labels,bool paired_design,int k,std::string direction){
-  Problem p(x,ids,labels,paired_design,direction,k);if(unit_ids.size()!=p.n)stop("unit IDs disagree");
-  VI ranks(p.g),best(p.g),worst(p.g),selected(p.g,0),changedSign(p.g,0),skipped;List scenarios;int nScenarios=0,nChanged=0;
+List cpp_diagnostics(NumericMatrix x,CharacterVector ids,CharacterVector unit_ids,IntegerVector labels,bool paired_design,int k,std::string direction,int max_diagnostics=1000000){
+  Problem p(x,ids,labels,paired_design,direction,k);if(unit_ids.size()!=p.n || max_diagnostics<0)stop("invalid diagnostic limit or unit IDs");
+  VI ranks(p.g),best(p.g),worst(p.g),selected(p.g,0),changedSign(p.g,0),skipped,unrun;List scenarios;int nScenarios=0,nChanged=0;
   for(int i=0;i<p.g;++i)ranks[p.baseOrder[i]]=i+1;best=worst=ranks;
-  for(int i=0;i<p.n;++i){if(p.counts[p.labels[i]]<=2){skipped.push_back(i);continue;}
+  for(int i=0;i<p.n;++i){if(p.counts[p.labels[i]]<=2){skipped.push_back(i);continue;}if(nScenarios>=max_diagnostics){unrun.push_back(i);continue;}
     auto scores=p.evaluate({i});VI order=p.rank(scores,p.g);std::vector<bool> after(p.g,false);for(int r=0;r<p.g;++r){int j=order[r];best[j]=std::min(best[j],r+1);worst[j]=std::max(worst[j],r+1);if(r<k)after[j]=true;changedSign[j]+=scores[j].sign!=p.baseSign[j];}
     VI exits,entries;for(int r=0;r<k;++r){int j=p.baseOrder[r];if(!after[j])exits.push_back(j);j=order[r];if(!p.baseMember[j])entries.push_back(j);}for(int j=0;j<p.g;++j)selected[j]+=after[j];
     bool changed=after!=p.baseMember;++nScenarios;nChanged+=changed;double overlap=k-exits.size();
-    scenarios.push_back(List::create(_["deleted_unit"]=unit_ids[i],_["deleted_index"]=i+1,_["topk_changed"]=changed,_["jaccard"]=overlap/(2*k-overlap),_["exited_features"]=namedIds(exits,p.ids),_["entered_features"]=namedIds(entries,p.ids)));
+    scenarios.push_back(List::create(_["deleted_unit"]=as<std::string>(unit_ids[i]),_["deleted_index"]=i+1,_["topk_changed"]=changed,_["jaccard"]=overlap/(2*k-overlap),_["exited_features"]=namedIds(exits,p.ids),_["entered_features"]=namedIds(entries,p.ids)));
   }
   NumericVector t(p.g),fraction(p.g);LogicalVector original(p.g);for(int j=0;j<p.g;++j){t[j]=displayT(p.baseline[j]);fraction[j]=nScenarios?double(selected[j])/nScenarios:NA_REAL;original[j]=p.baseMember[j];}
   DataFrame features=DataFrame::create(_["feature_id"]=ids,_["baseline_rank"]=ranks,_["baseline_t"]=t,_["best_observed_rank"]=best,_["worst_observed_rank"]=worst,_["loo_selected_count"]=selected,_["loo_scenarios"]=IntegerVector(p.g,nScenarios),_["loo_selection_fraction"]=fraction,_["loo_sign_changes"]=changedSign,_["baseline_topk"]=original);
-  return List::create(_["features"]=features,_["scenarios"]=scenarios,_["n_scenarios"]=nScenarios,_["n_changed"]=nChanged,_["skipped_units"]=namedIds(skipped,as<std::vector<std::string>>(unit_ids)),_["scope"]="baseline plus every feasible one-unit deletion; observed fractions are not probabilities or multi-deletion bounds");
+  return List::create(_["features"]=features,_["scenarios"]=scenarios,_["n_scenarios"]=nScenarios,_["n_changed"]=nChanged,_["skipped_units"]=namedIds(skipped,as<std::vector<std::string>>(unit_ids)),_["not_run_units"]=namedIds(unrun,as<std::vector<std::string>>(unit_ids)),_["enumeration_capped"]=!unrun.empty(),_["feasible_scenarios"]=p.n-int(skipped.size()),_["scope"]="baseline plus evaluated feasible one-unit deletions; observed fractions are not probabilities or multi-deletion bounds");
 }
+
+// [[Rcpp::export]]
+List cpp_plan(IntegerVector labels,bool paired_design,int budget){
+  int ng=paired_design?1:2;VI counts(ng,0);for(int i:labels){if(i<0||i>=ng)stop("invalid labels");++counts[i];}
+  if(budget<0 || budget>labels.size()-2*ng)stop("invalid budget");
+  CharacterVector by(budget);Z total=0;
+  for(int r=1;r<=budget;++r){Z v=0;if(paired_design)v=chooseZ(labels.size(),r);else for(int a=std::max(0,r-counts[1]+2);a<=std::min(r,counts[0]-2);++a)v+=chooseZ(counts[0],a)*chooseZ(counts[1],r-a);by[r-1]=v.str();total+=v;}
+  return List::create(_["feasible_deletions"]=total.str(),_["by_cardinality"]=by,_["units"]=labels.size());
+}
+
+// [[Rcpp::export]]
+List cpp_block_plan(IntegerVector a,IntegerVector b,int budget,bool paired_design){
+ if(a.size()!=b.size()||budget<0||budget>a.size())stop("invalid block plan");
+ int na=0,nb=0;for(int i=0;i<a.size();++i){if(a[i]<0||b[i]<0)stop("negative block counts");na+=a[i];nb+=b[i];}
+ using Key=std::tuple<int,int,int>;std::map<Key,Z> dp;dp[Key(0,0,0)]=1;
+ for(int i=0;i<a.size();++i){checkUserInterrupt();auto next=dp;for(const auto& z:dp){int r=std::get<0>(z.first),x=std::get<1>(z.first)+a[i],y=std::get<2>(z.first)+b[i];if(r<budget&&na-x>=2&&(paired_design||nb-y>=2))next[Key(r+1,x,y)]+=z.second;}dp=std::move(next);if(dp.size()>1000000)stop("Grouped plan exceeds one million states; reduce the block budget");}
+ std::vector<Z> totals(budget+1);for(const auto& z:dp)totals[std::get<0>(z.first)]+=z.second;CharacterVector by(budget);Z total=0;for(int r=1;r<=budget;++r){by[r-1]=totals[r].str();total+=totals[r];}
+ return List::create(_["feasible_deletions"]=total.str(),_["by_cardinality"]=by,_["units"]=a.size());
+}
+// [[Rcpp::export]]
+std::string cpp_remaining(std::string planned,int completed){Z z(planned);z-=completed;if(z<0)stop("completed count exceeds plan");return z.str();}

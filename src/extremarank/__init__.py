@@ -5,5 +5,5 @@ from .unpaired import WelchScore, WelchAuditResult, PreparedWelch, compare_welch
 from .diagnostics import PreparedPaired
 from .robustness import audit_feature_robustness
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 __all__ = ["Score", "ExtremaResult", "PreparedValues", "compare_scores", "compare_abs_scores", "compare_t", "extrema", "score", "AuditResult", "audit_topk", "WelchScore", "WelchAuditResult", "PreparedWelch", "compare_welch", "audit_welch", "PreparedPaired", "audit_feature_robustness"]

@@ -1,6 +1,7 @@
 pseudobulk_extremarank <- function(x, metadata = NULL, assay = NULL, min_cells = 10L,
                                  covariates = character(), merge_technical = FALSE,
-                                 missing_cell_type = c("error", "drop")) {
+                                 missing_cell_type = c("error", "drop"),
+                                 max_dense_bytes = 512 * 1024^2, block_rows = 1000L) {
     input <- .er_input(x, metadata, assay, cells = TRUE)
     x <- input$x; meta <- input$metadata
     min_cells <- .er_int(min_cells, "min_cells", 1)
@@ -33,9 +34,17 @@ pseudobulk_extremarank <- function(x, metadata = NULL, assay = NULL, min_cells =
                                         dims = c(ncol(x), length(keys)))
     # With nonnegative integer summands every intermediate sum is <= its final
     # sum. Reject totals outside the exact integer range of binary64.
-    counts <- x %*% membership
-    .er_counts(counts)
-    counts <- as.matrix(counts)
+     .er_memory(nrow(x), length(keys), max_dense_bytes)
+    counts <- matrix(0, nrow(x), length(keys), dimnames = list(rownames(x), NULL))
+    step <- .er_block_rows(x, block_rows)
+    for (start in seq.int(1L, nrow(x), by = step)) {
+        take <- seq.int(start, min(nrow(x), start + step - 1L))
+        block <- x[take, , drop = FALSE]
+        if (inherits(block, "DelayedMatrix")) block <- as.matrix(block)
+        aggregate <- block %*% membership
+        .er_counts(aggregate)
+        counts[take, ] <- as.matrix(aggregate)
+    }
     ids <- sprintf("pb_%06d", seq_along(keys))
     colnames(counts) <- ids
     units <- meta[first, c("donor_id", "group", "cell_type", covariates), drop = FALSE]

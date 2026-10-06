@@ -7,7 +7,7 @@ sample deletion. The exact kernel is compiled C++ called directly from R.
 ```r
 install.packages(c("Rcpp", "BH", "Matrix", "digest"))
 install.packages(
-  "https://github.com/heise3/ExtremaRank/releases/download/v0.4.0/extremarank_0.4.0.tar.gz",
+  "https://github.com/heise3/ExtremaRank/releases/download/v0.5.0/extremarank_0.5.0.tar.gz",
   repos = NULL, type = "source")
 library(extremarank)
 
@@ -24,7 +24,7 @@ macOS users need the Xcode command line tools. A small standard R source archive
 is also attached to the GitHub release; it does not bundle the large benchmark
 datasets from the repository.
 Alternatively, `remotes::install_github("heise3/ExtremaRank", subdir = "r/extremarank",
-ref = "v0.4.0", upgrade = "never")` installs from the tagged repository and
+ref = "v0.5.0", upgrade = "never")` installs from the tagged repository and
 resolves dependencies. The small release archive is preferable if you only need
 the R package.
 
@@ -90,8 +90,42 @@ Tests run entirely in R, including frozen exact rational expected results:
 
 ```sh
 R CMD build r/extremarank
-R CMD check --no-manual extremarank_0.4.0.tar.gz
+R CMD check --no-manual extremarank_0.5.0.tar.gz
 ```
 
 The independent development oracle is `benchmarks/validate_native_r.py`; Python
 is used to verify the package, never to execute the installed R algorithm.
+
+
+## v0.5 practical controls
+
+`preflight_extremarank()` gives exact feasible deletion counts and approximate
+storage estimates. Default LOO diagnostics are skipped at budget zero and
+otherwise capped at 100; `max_diagnostics` is independent of search caps.
+Use `summary(result)`, `as.data.frame(result)`, `plot(result)` or
+`plot(result, type="influence")`. `robustness_curve(effects)` plots native
+candidate certificate/refutation/unresolved counts over paired budgets.
+
+Model refits expose per-candidate observed membership/sign changes and actual
+witnesses. `coverage` reports planned/evaluated/valid/failed/not-run counts.
+No executed deletion returns NOT_EVALUATED; an incomplete stable-looking run
+returns PARTIALLY_EVALUATED. `store_scores="disk"` with `score_path` or
+`store_scores="none"` avoids holding every score table in the returned object.
+Checkpoint/resume applies to model refits and checks frozen input/parameters/
+versions; max_refits can be extended. `workers=1:4` uses deterministic scenario
+collection and seeded RNG initialization while preserving the caller RNG.
+
+`delete_by="site"` removes whole metadata blocks. A declared named `contrast`
+is never silently altered. `refit_extremarank_custom()` supports predeclared
+repeated-measure/multi-group models with whole-unit deletion; user callbacks
+must return the full frozen feature universe and refit retained samples.
+DelayedArray/HDF5Array inputs are optional; cell aggregation is row-blocked and
+only its smaller biological-unit matrix is materialized. Native audits also
+materialize a sample matrix; max_dense_bytes is a storage guard, not a peak
+RAM guarantee. See `vignette("native-workflows", package="extremarank")` and
+[中文新功能](../../docs/V05_CN.md).
+
+R 4.6 Windows x86_64 and both macOS architectures have version-specific release
+binaries. The R-only installer at `r/install_extremarank.R` verifies SHA-256;
+other R versions use the source archive. Restart R before updating a loaded
+native package.

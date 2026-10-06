@@ -1,0 +1,6 @@
+"feature_id"	"baseline_rank"	"baseline_topk"	"membership_status"	"direction_status"	"membership_observed_changes"	"direction_observed_changes"	"best_observed_rank"	"worst_observed_rank"	"observed_selection_fraction"	"membership_minimum_observed_change"	"direction_minimum_observed_change"	"valid_deletion_refits"	"failed_deletion_refits"
+"C16.1n.9"	1	TRUE	"OBSERVED_STABLE"	"OBSERVED_STABLE"	0	0	1	2	1	NA	NA	40	0
+"C18.2n.6"	2	TRUE	"OBSERVED_STABLE"	"OBSERVED_STABLE"	0	0	1	2	1	NA	NA	40	0
+"C20.2n.6"	3	TRUE	"OBSERVED_STABLE"	"OBSERVED_STABLE"	0	0	3	4	1	NA	NA	40	0
+"C18.1n.9"	4	TRUE	"OBSERVED_STABLE"	"OBSERVED_STABLE"	0	0	3	4	1	NA	NA	40	0
+"C14.0"	5	TRUE	"OBSERVED_CHANGED"	"OBSERVED_STABLE"	1	0	5	6	0.975	1	NA	40	0

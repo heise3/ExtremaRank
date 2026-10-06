@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.5.0 — 2026-10-07
+
+- Fixed zero-refit stability reporting; exposed exact planned coverage and partial/capped states.
+- Added independently capped diagnostics, preflight storage/count estimates and timings.
+- Added candidate-level fitted-model membership/sign changes, witnesses and failed feature IDs.
+- Added disk/no-score modes, self-contained checksum exports, model checkpoints/resume and seeded PSOCK workers.
+- Added declared contrasts, weighted whole-block deletion planning and a frozen-universe custom-model interface.
+- Added delayed/HDF5 input, block pseudobulk, dense-output guards, summaries, plots, paired robustness curves and a built vignette.
+- Cached exact value orders and strengthened fixed-value Welch variance floors; influence ordering preserves exact proof decisions.
+- Added Windows and macOS binaries plus minimum/oldrel/devel R compatibility checks.
+
+
 ## 0.4.0 — 2026-10-06
 
 - Added a standalone native R package under `r/extremarank`; exact arbitrary

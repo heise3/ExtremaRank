@@ -24,8 +24,10 @@
         x <- SummarizedExperiment::assay(x, assay)
     } else if (!is.null(assay)) stop("assay applies only to a SummarizedExperiment", call. = FALSE)
     if (is.data.frame(x)) x <- as.matrix(x)
-    if (!is.matrix(x) && !inherits(x, "Matrix")) stop("x must be a numeric matrix, Matrix or SummarizedExperiment", call. = FALSE)
-    if (!is.numeric(x) && !inherits(x, "dMatrix")) stop("x must be numeric", call. = FALSE)
+    delayed <- inherits(x, "DelayedMatrix")
+    if (delayed && !requireNamespace("DelayedArray", quietly = TRUE)) stop("Install DelayedArray")
+    if (!is.matrix(x) && !inherits(x, "Matrix") && !delayed) stop("x must be a numeric matrix, Matrix or SummarizedExperiment", call. = FALSE)
+    if (!is.numeric(x) && !inherits(x, "dMatrix") && !(delayed && DelayedArray::type(x) %in% c("double", "integer"))) stop("x must be numeric", call. = FALSE)
     if (!nrow(x) || !ncol(x)) stop("x must have features in rows and samples or cells in columns", call. = FALSE)
     rownames(x) <- .er_ids(rownames(x), "feature IDs")
     colnames(x) <- .er_ids(colnames(x), if (cells) "cell IDs" else "sample IDs")
@@ -85,6 +87,11 @@
 }
 
 .er_counts <- function(x) {
+    if (inherits(x, "DelayedMatrix")) {
+        step <- .er_block_rows(x, 1000L)
+        for (start in seq.int(1L, nrow(x), by = step)) .er_counts(as.matrix(x[seq.int(start, min(nrow(x), start + step - 1L)), , drop = FALSE]))
+        return(invisible(TRUE))
+    }
     v <- if (inherits(x, "sparseMatrix")) x@x else as.vector(x)
     if (any(!is.finite(v)) || any(v < 0) || any(v != floor(v)) || any(v > 2^53 - 1))
         stop("raw counts must be finite, nonnegative integers no larger than 2^53 - 1", call. = FALSE)
@@ -92,11 +99,11 @@
 }
 
 .er_prepare <- function(x, metadata, target, reference, design, transform,
-                        missing, incomplete_pairs, min_cpm, pseudocount, assay) {
+                        missing, incomplete_pairs, min_cpm, pseudocount, assay, max_dense_bytes = 512 * 1024^2, block_rows = 1000L) {
     input <- .er_input(x, metadata, assay)
     source_hash <- digest::digest(input$x, algo = "sha256")
     samples <- .er_samples(input$x, input$metadata, target, reference, design, incomplete_pairs)
-    x <- as.matrix(samples$x); storage.mode(x) <- "double"
+    x <- .er_realize(samples$x, max_dense_bytes, block_rows); storage.mode(x) <- "double"
     original_features <- rownames(x)
     if (any(is.infinite(x))) stop("infinite input values are not allowed", call. = FALSE)
     if (anyNA(x)) {

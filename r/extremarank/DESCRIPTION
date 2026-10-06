@@ -1,7 +1,7 @@
 Package: extremarank
 Type: Package
 Title: Exact Sample Deletion Robustness for Omics Rankings
-Version: 0.4.0
+Version: 0.5.0
 Authors@R: person("ExtremaRank", "Contributors", email = "207506224+heise3@users.noreply.github.com", role = c("aut", "cre"))
 Description: Audits omics candidate rankings after shared sample or donor
     deletion using native R and C++ computations. Arbitrary precision dyadic
@@ -12,9 +12,10 @@ Description: Audits omics candidate rankings after shared sample or donor
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.1.0)
-Imports: Rcpp, Matrix, digest
+Imports: Rcpp, Matrix, digest, parallel, graphics
 LinkingTo: Rcpp, BH (>= 1.75.0)
-Suggests: SummarizedExperiment, SingleCellExperiment, limma, edgeR, DESeq2
+Suggests: SummarizedExperiment, SingleCellExperiment, limma, edgeR, DESeq2, DelayedArray, HDF5Array, knitr, markdown
 SystemRequirements: C++17
 URL: https://github.com/heise3/ExtremaRank
 BugReports: https://github.com/heise3/ExtremaRank/issues
+VignetteBuilder: knitr

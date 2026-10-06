@@ -1,0 +1,372 @@
+{
+  "native": {
+    "golub-up": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 1.215,
+      "influence_seconds": 1.232,
+      "input_nodes": 730,
+      "influence_nodes": 730,
+      "input_scenarios": 741,
+      "influence_scenarios": 741,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "golub-down": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 1.235,
+      "influence_seconds": 1.233,
+      "input_nodes": 730,
+      "influence_nodes": 730,
+      "input_scenarios": 741,
+      "influence_scenarios": 741,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "golub-absolute": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 1.321,
+      "influence_seconds": 1.327,
+      "input_nodes": 730,
+      "influence_nodes": 730,
+      "input_scenarios": 741,
+      "influence_scenarios": 741,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "kang-b-up": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.416,
+      "influence_seconds": 0.369,
+      "input_nodes": 22,
+      "influence_nodes": 23,
+      "input_scenarios": 36,
+      "influence_scenarios": 36,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "kang-b-down": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.440999999999995,
+      "influence_seconds": 0.414999999999999,
+      "input_nodes": 22,
+      "influence_nodes": 24,
+      "input_scenarios": 36,
+      "influence_scenarios": 36,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "kang-b-absolute": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.476999999999997,
+      "influence_seconds": 0.459000000000003,
+      "input_nodes": 22,
+      "influence_nodes": 23,
+      "input_scenarios": 36,
+      "influence_scenarios": 36,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "cptac-up": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.0200000000000031,
+      "influence_seconds": 0.0220000000000056,
+      "input_nodes": 4,
+      "influence_nodes": 4,
+      "input_scenarios": 15,
+      "influence_scenarios": 15,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "cptac-down": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.0189999999999984,
+      "influence_seconds": 0.0189999999999984,
+      "input_nodes": 3,
+      "influence_nodes": 3,
+      "input_scenarios": 14,
+      "influence_scenarios": 14,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "cptac-absolute": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.0220000000000056,
+      "influence_seconds": 0.0240000000000009,
+      "input_nodes": 4,
+      "influence_nodes": 4,
+      "input_scenarios": 15,
+      "influence_scenarios": 15,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "nutrimouse-up": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.00999999999999801,
+      "influence_seconds": 0.0110000000000028,
+      "input_nodes": 809,
+      "influence_nodes": 809,
+      "input_scenarios": 820,
+      "influence_scenarios": 820,
+      "minimum_change": {
+        "lower_bound": 2,
+        "upper_bound": 2,
+        "exact": 2
+      }
+    },
+    "nutrimouse-down": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.0110000000000028,
+      "influence_seconds": 0.0100000000000051,
+      "input_nodes": 777,
+      "influence_nodes": 777,
+      "input_scenarios": 788,
+      "influence_scenarios": 788,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    },
+    "nutrimouse-absolute": {
+      "properties": "matched v0.4 and both search orders",
+      "input_seconds": 0.0110000000000028,
+      "influence_seconds": 0.0110000000000028,
+      "input_nodes": 809,
+      "influence_nodes": 809,
+      "input_scenarios": 820,
+      "influence_scenarios": 820,
+      "minimum_change": {
+        "lower_bound": 1,
+        "upper_bound": 1,
+        "exact": 1
+      }
+    }
+  },
+  "models": {
+    "golub-limma": {
+      "status": "OBSERVED_CHANGED",
+      "coverage": {
+        "planned": "38",
+        "evaluated": 38,
+        "valid": 38,
+        "failed": 0,
+        "not_run": "0",
+        "baseline_status": "OK"
+      },
+      "failed_features": {
+        "baseline": [],
+        "delete_1": [],
+        "delete_2": [],
+        "delete_3": [],
+        "delete_4": [],
+        "delete_5": [],
+        "delete_6": [],
+        "delete_7": [],
+        "delete_8": [],
+        "delete_9": [],
+        "delete_10": [],
+        "delete_11": [],
+        "delete_12": [],
+        "delete_13": [],
+        "delete_14": [],
+        "delete_15": [],
+        "delete_16": [],
+        "delete_17": [],
+        "delete_18": [],
+        "delete_19": [],
+        "delete_20": [],
+        "delete_21": [],
+        "delete_22": [],
+        "delete_23": [],
+        "delete_24": [],
+        "delete_25": [],
+        "delete_26": [],
+        "delete_27": [],
+        "delete_28": [],
+        "delete_29": [],
+        "delete_30": [],
+        "delete_31": [],
+        "delete_32": [],
+        "delete_33": [],
+        "delete_34": [],
+        "delete_35": [],
+        "delete_36": [],
+        "delete_37": [],
+        "delete_38": []
+      },
+      "result_bytes": 177240,
+      "v04_memory_result_bytes": 22376512,
+      "store_scores": "none",
+      "comparison": "same baseline, failed/valid scenarios and every observed Top-K as v0.4",
+      "seconds": 0.186999999999998
+    },
+    "nutrimouse-limma": {
+      "status": "OBSERVED_CHANGED",
+      "coverage": {
+        "planned": "40",
+        "evaluated": 40,
+        "valid": 40,
+        "failed": 0,
+        "not_run": "0",
+        "baseline_status": "OK"
+      },
+      "failed_features": {
+        "baseline": [],
+        "delete_1": [],
+        "delete_2": [],
+        "delete_3": [],
+        "delete_4": [],
+        "delete_5": [],
+        "delete_6": [],
+        "delete_7": [],
+        "delete_8": [],
+        "delete_9": [],
+        "delete_10": [],
+        "delete_11": [],
+        "delete_12": [],
+        "delete_13": [],
+        "delete_14": [],
+        "delete_15": [],
+        "delete_16": [],
+        "delete_17": [],
+        "delete_18": [],
+        "delete_19": [],
+        "delete_20": [],
+        "delete_21": [],
+        "delete_22": [],
+        "delete_23": [],
+        "delete_24": [],
+        "delete_25": [],
+        "delete_26": [],
+        "delete_27": [],
+        "delete_28": [],
+        "delete_29": [],
+        "delete_30": [],
+        "delete_31": [],
+        "delete_32": [],
+        "delete_33": [],
+        "delete_34": [],
+        "delete_35": [],
+        "delete_36": [],
+        "delete_37": [],
+        "delete_38": [],
+        "delete_39": [],
+        "delete_40": []
+      },
+      "result_bytes": 135304,
+      "v04_memory_result_bytes": 302000,
+      "store_scores": "none",
+      "comparison": "same baseline, failed/valid scenarios and every observed Top-K as v0.4",
+      "seconds": 0.0570000000000022
+    },
+    "kang-b-limma-voom": {
+      "status": "OBSERVED_CHANGED",
+      "coverage": {
+        "planned": "8",
+        "evaluated": 8,
+        "valid": 8,
+        "failed": 0,
+        "not_run": "0",
+        "baseline_status": "OK"
+      },
+      "failed_features": {
+        "baseline": [],
+        "delete_1": [],
+        "delete_2": [],
+        "delete_3": [],
+        "delete_4": [],
+        "delete_5": [],
+        "delete_6": [],
+        "delete_7": [],
+        "delete_8": []
+      },
+      "result_bytes": 1979640,
+      "v04_memory_result_bytes": 15678200,
+      "store_scores": "none",
+      "comparison": "same baseline, failed/valid scenarios and every observed Top-K as v0.4",
+      "seconds": 2.435
+    },
+    "kang-b-edgeR": {
+      "status": "NOT_EVALUABLE",
+      "coverage": {
+        "planned": "8",
+        "evaluated": 8,
+        "valid": 2,
+        "failed": 6,
+        "not_run": "0",
+        "baseline_status": "NOT_EVALUABLE"
+      },
+      "failed_features": {
+        "baseline": ["ZNF273", "TCP11L1"],
+        "delete_1": [],
+        "delete_2": ["NUS1", "POP1"],
+        "delete_3": "YY1AP1",
+        "delete_4": "TCP11L1",
+        "delete_5": "RP11-145M9.4",
+        "delete_6": ["WRN", "TCP11L1", "ARFRP1"],
+        "delete_7": ["CBX5", "STK11"],
+        "delete_8": []
+      },
+      "result_bytes": 1960840,
+      "v04_memory_result_bytes": 10406864,
+      "store_scores": "none",
+      "comparison": "same baseline, failed/valid scenarios and every observed Top-K as v0.4",
+      "seconds": 20.029
+    },
+    "kang-b-DESeq2": {
+      "status": "OBSERVED_CHANGED",
+      "coverage": {
+        "planned": "8",
+        "evaluated": 8,
+        "valid": 7,
+        "failed": 1,
+        "not_run": "0",
+        "baseline_status": "OK"
+      },
+      "failed_features": {
+        "baseline": [],
+        "delete_1": [],
+        "delete_2": [],
+        "delete_3": [],
+        "delete_4": "UBE2C",
+        "delete_5": [],
+        "delete_6": [],
+        "delete_7": [],
+        "delete_8": []
+      },
+      "result_bytes": 1978080,
+      "v04_memory_result_bytes": 10416104,
+      "store_scores": "none",
+      "comparison": "same baseline, failed/valid scenarios and every observed Top-K as v0.4",
+      "seconds": 24.448
+    }
+  },
+  "scope": "Unchanged frozen real analyses; model score storage disabled by explicit setting. Failed feature IDs retained. Timings are measured on this host, not universal speed claims."
+}

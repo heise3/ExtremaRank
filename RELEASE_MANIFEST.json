@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.5.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/native-r.yml",
-      "bytes": 1957,
-      "sha256": "3913339d99d9f85a636d40d43387ee359d9dd204fa9ab1a834eb6a5a84916b9a"
+      "bytes": 3714,
+      "sha256": "98f4b697c9972fcadcb708d6b93ea4932e8ebb7731c53c2457927f840927fde0"
     },
     {
       "path": ".github/workflows/tests.yml",
@@ -23,13 +23,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2239,
-      "sha256": "0d0a6e33b456b1abc4673b85399e0f5e6faee43421b781b7d2acea5aa385067f"
+      "bytes": 3124,
+      "sha256": "de3a22cdbd07e7a3c82021d8f9d837f69c9be3daa61061ec8021d863618646db"
     },
     {
       "path": "CITATION.cff",
       "bytes": 434,
-      "sha256": "2a7efecc9fa20f3089ef845c08e18a8480cec6c956813aab92e0f8cb889a8de4"
+      "sha256": "09d4f5c48603edcda189c7935eec104d3c246faa67c5fe1b67f55c330e897550"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 15993,
-      "sha256": "8750348a99f10a0d7e906557616bb1a07d2dd40c308004c4cc38bac09fbd8c6d"
+      "bytes": 16376,
+      "sha256": "ca5aea65a874666b20d1392ce6bb09d87521110682e3de94e042411b5132dc53"
     },
     {
       "path": "benchmarks/archive_outputs.py",
@@ -190,6 +190,11 @@
       "path": "benchmarks/validate_v03.py",
       "bytes": 7727,
       "sha256": "e4d193ca25b427e82ae64cda55b8e976d1ed7a324f69d53d5af4eb63ff4b0574"
+    },
+    {
+      "path": "benchmarks/validate_v05.R",
+      "bytes": 4889,
+      "sha256": "4237929dad3d12abbe0d662a42c3ef60700d803db282b89dbedb8295f08773fc"
     },
     {
       "path": "benchmarks/verify_golub_roundtrip.py",
@@ -713,8 +718,8 @@
     },
     {
       "path": "docs/R_NATIVE_CN.md",
-      "bytes": 6186,
-      "sha256": "85f08168ac0fbb38251f4c2e10d29e3c766d2c34d10d9a56a1759bf75f5e22d0"
+      "bytes": 6333,
+      "sha256": "21dcde6412d1b788c550896927105df6f44b021d8a7059b02ed08d4aeaea1558"
     },
     {
       "path": "docs/STUDY.md",
@@ -747,6 +752,16 @@
       "sha256": "dd8e156f488ca3c3278051675076af1e3eb93bf823f4ff6b675cd7d5b8e572e2"
     },
     {
+      "path": "docs/V05_BOUNDS.md",
+      "bytes": 1365,
+      "sha256": "8a69d176f2edeed95b2f0b4088550217c22edf5a54940275d274c039005cdb65"
+    },
+    {
+      "path": "docs/V05_CN.md",
+      "bytes": 6246,
+      "sha256": "56fd4970ac1b5ddcb54fcf9a4fc73989838b695e2eff8f8bd42c767859656877"
+    },
+    {
       "path": "examples/paired_effects.tsv",
       "bytes": 241,
       "sha256": "192256e40fb625c10257996c75db065f2818eb059979d2f034716b9557dde44d"
@@ -759,7 +774,7 @@
     {
       "path": "pyproject.toml",
       "bytes": 913,
-      "sha256": "ed2c3a3a80671ccc83d7ca26a5d8c2181b93d50c11b111915875715d5cb6fca9"
+      "sha256": "38a55da1311437b2b04e8badd6ed8c4d5de6409d9e9f2f2e8089d040ef0107e4"
     },
     {
       "path": "r/extremarank/.Rbuildignore",
@@ -768,8 +783,8 @@
     },
     {
       "path": "r/extremarank/DESCRIPTION",
-      "bytes": 1018,
-      "sha256": "c60ed1cdcc2489b4dadcd8598764933499f72a94f87e6ff03079704b70204b44"
+      "bytes": 1103,
+      "sha256": "b2d8871e792ed1a45bd0df1aca85e220e98d9e188d576a7a2d1031e72698aa15"
     },
     {
       "path": "r/extremarank/LICENSE",
@@ -778,43 +793,73 @@
     },
     {
       "path": "r/extremarank/NAMESPACE",
-      "bytes": 332,
-      "sha256": "7838e2e25403f29a3eb474f8d380b6ca122e7ab2f2fa79d64127009e21a7c4f1"
+      "bytes": 636,
+      "sha256": "ee1b1deb1fcf91659e0040621915e5968caff17c9eddfd4d3d0d2e96fe0988a3"
     },
     {
       "path": "r/extremarank/R/RcppExports.R",
-      "bytes": 1113,
-      "sha256": "705d29e82ca17dcd2220ef1e91c6afac80b58a72814a8cf886f1eafab4cba16b"
+      "bytes": 1565,
+      "sha256": "99e83cd77c0c4b82e51e35878d96e3fee5b3585b4122ccd7b521536da3598466"
     },
     {
       "path": "r/extremarank/R/audit.R",
-      "bytes": 5686,
-      "sha256": "ee16ac6713f5362408b36ad934daadc2542760abb2ee73c33d37c85a8d1b1e86"
+      "bytes": 6598,
+      "sha256": "686e8cc873f5992797ba48ceb76b3df63553fc64654e6d606d57c940e6e1cab8"
+    },
+    {
+      "path": "r/extremarank/R/control.R",
+      "bytes": 2742,
+      "sha256": "f2de4ee6f082dc612f181629a486f3b7e5820eb9c2679fd181315d123b4e5a0a"
     },
     {
       "path": "r/extremarank/R/export.R",
-      "bytes": 2011,
-      "sha256": "50d871477bfe0bc5c17069b7632c65bc4b80a3e84dd7b2c7e49cea1ae9cd2615"
+      "bytes": 4224,
+      "sha256": "893be35fe78b175c44e99a8fd124ae55b55b064059e1afd305430a4e9685be03"
     },
     {
       "path": "r/extremarank/R/input.R",
-      "bytes": 8870,
-      "sha256": "c0f6b5d92bb6f00bc2143af57ac3499d396b6eeb64594eae84648014b5c32d61"
+      "bytes": 9439,
+      "sha256": "dccacec15cecce3efb3c2bfee5d0e52f1f74013e872535846dac6065a8452883"
     },
     {
       "path": "r/extremarank/R/pseudobulk.R",
-      "bytes": 5555,
-      "sha256": "6f563e9883d576081d49803ff9bb26a280c9443d27541c0f25b027833e0c72a2"
+      "bytes": 6090,
+      "sha256": "dfff0258ba2ae7b07e4c34266ec7bea35c670410cc3f193252c7c523749eda55"
     },
     {
       "path": "r/extremarank/R/refit.R",
-      "bytes": 11385,
-      "sha256": "71d4dab17df103f3f30f3ba05f1d857d65ba727f4a6f79850987afda5d03cdbc"
+      "bytes": 11434,
+      "sha256": "17ad8e5298b894009ad92cc9dac08275b45bff7b43daf646465edddfcbb0afb8"
+    },
+    {
+      "path": "r/extremarank/R/refit_engine.R",
+      "bytes": 16135,
+      "sha256": "db33ecff54f63cf5808f9a06afe89fc0bbe11853903dda10dbdee6ebd4b14d43"
+    },
+    {
+      "path": "r/extremarank/R/summary.R",
+      "bytes": 4626,
+      "sha256": "7278265e8102f020a44623acc4c526a95248d9a230fd3b7a8cbd60a958c930c6"
     },
     {
       "path": "r/extremarank/README.md",
-      "bytes": 4639,
-      "sha256": "83dc26c321ab1551cdde5a4a7c18613aefea2c4ba111abde1841d48a4592b713"
+      "bytes": 6632,
+      "sha256": "5221454b4e16d3bf9b22458cb7dae3bd97cdc8c80834e46ce43ae1601daefbef"
+    },
+    {
+      "path": "r/extremarank/inst/doc/native-workflows.R",
+      "bytes": 1308,
+      "sha256": "0608e53fbbf1f14d8f03748c18e2aab315cf902b72fd60b3ff160b793a20d6d6"
+    },
+    {
+      "path": "r/extremarank/inst/doc/native-workflows.Rmd",
+      "bytes": 3799,
+      "sha256": "4a0d190e513c2e6bc7549de54950b1c70ea80acdb8cbcfab7c09639970e863b0"
+    },
+    {
+      "path": "r/extremarank/inst/doc/native-workflows.html",
+      "bytes": 99804,
+      "sha256": "b89eeef127be42dcab25a8d810ba123eb91b549504ac5d55c98ddc52282c3d80"
     },
     {
       "path": "r/extremarank/inst/validation/README.txt",
@@ -833,8 +878,13 @@
     },
     {
       "path": "r/extremarank/man/extremarank.Rd",
-      "bytes": 10155,
-      "sha256": "e9d01f8620806c6c1fc6c7c6b6fde8e2a843a853df88733139f40060f7eca42d"
+      "bytes": 15276,
+      "sha256": "3a8ef519b1dfc6cc50e35fa251243ac96568a73c556b950543c1a06d93e0a875"
+    },
+    {
+      "path": "r/extremarank/man/methods.Rd",
+      "bytes": 1409,
+      "sha256": "ca7949c3c91a9132682be5a58a686f09be4801348ae1fa1254f0e68e8892efb1"
     },
     {
       "path": "r/extremarank/src/Makevars",
@@ -848,13 +898,13 @@
     },
     {
       "path": "r/extremarank/src/RcppExports.cpp",
-      "bytes": 6562,
-      "sha256": "dbe43b0a695223ee2147c6b4bb67a44c0c91c2d6cb843b03567ff57efc75f1d9"
+      "bytes": 8897,
+      "sha256": "6dc0a213d1b33d142248b3a35b9146ccd75ebcfd264b99c30b3a21265b1835c9"
     },
     {
       "path": "r/extremarank/src/native.cpp",
-      "bytes": 25898,
-      "sha256": "1e911c52d20af32937158d03e5ab37edbff35392a38c9d0c0297933a4a5b3491"
+      "bytes": 29716,
+      "sha256": "5cbe68f7490fa560c746acc0f30f401b6e88bce7b53fa5ba562497d8a362101f"
     },
     {
       "path": "r/extremarank/tests/golden.R",
@@ -863,13 +913,28 @@
     },
     {
       "path": "r/extremarank/tests/models.R",
-      "bytes": 2827,
-      "sha256": "092433326eaa7f70041ac8566543fec6f2a87526012c9aef5d40df2b51bd2ce5"
+      "bytes": 3124,
+      "sha256": "baace503f1d2153592641b6f04b04f7a8a1e9fb7b7c0c670a8a31829eab3ef46"
     },
     {
       "path": "r/extremarank/tests/native.R",
       "bytes": 8290,
       "sha256": "4f4e58957e40eddf2aa092dc3232946264fde25fea9d9ed9e0b806c5aed6364d"
+    },
+    {
+      "path": "r/extremarank/tests/workflows.R",
+      "bytes": 8727,
+      "sha256": "573982bb15ea385dcb36978a18b2564c9707bbafff950b1bf36be2e48e97cc5e"
+    },
+    {
+      "path": "r/extremarank/vignettes/native-workflows.Rmd",
+      "bytes": 3799,
+      "sha256": "4a0d190e513c2e6bc7549de54950b1c70ea80acdb8cbcfab7c09639970e863b0"
+    },
+    {
+      "path": "r/install_extremarank.R",
+      "bytes": 2548,
+      "sha256": "cc330605a32bd2f28c82a738cf9b78f83aa4a1980e01dd256ebce68321251fbd"
     },
     {
       "path": "results/GSE50760_cli/audit.json",
@@ -3607,6 +3672,191 @@
       "sha256": "15f93856645454a34a48272a3676434997e4975db610adacff38d0c3c8300d42"
     },
     {
+      "path": "results/v05/README.md",
+      "bytes": 5410,
+      "sha256": "249fb46664b423c8b5aaa8940465cde9da763f198bb1391b9d5822e804d8ccce"
+    },
+    {
+      "path": "results/v05/R_CMD_check.log",
+      "bytes": 3414,
+      "sha256": "743d7eb88dffccc1a5a5e8e01315b2255aa264a8e69110481ed51cf52402d09b"
+    },
+    {
+      "path": "results/v05/golub-limma/README.txt",
+      "bytes": 310,
+      "sha256": "e7fa80fbbb7db49e8d3f2221fb90b57845d83e4fc07b5eed1abd64561f556924"
+    },
+    {
+      "path": "results/v05/golub-limma/coverage.tsv",
+      "bytes": 89,
+      "sha256": "7a2fe80e950cb14dc281b1bf2487353fbe48fa484be3355db2cda4c329563e0d"
+    },
+    {
+      "path": "results/v05/golub-limma/deletion_units.tsv",
+      "bytes": 1320,
+      "sha256": "a2776ebb8bb884d785b7112398ecffa26e37a2afb251ee0998a6f5f285339b77"
+    },
+    {
+      "path": "results/v05/golub-limma/features.tsv",
+      "bytes": 2021,
+      "sha256": "2a2f860ec20eb13f26fd58909e48bbcc0386d75beff9dcd95d0eb703f65b059f"
+    },
+    {
+      "path": "results/v05/golub-limma/fit_status.tsv",
+      "bytes": 2384,
+      "sha256": "0b05e3ece1eff6fc1c9810a4ff51e23f02e011830c46617f30e12b500093413e"
+    },
+    {
+      "path": "results/v05/golub-limma/result.rds",
+      "bytes": 4230,
+      "sha256": "1ebe8502e8e8d4d4bc7e62643d36371739af39f022ee7b608172519bc2ffa0c6"
+    },
+    {
+      "path": "results/v05/golub-limma/witnesses.tsv",
+      "bytes": 344,
+      "sha256": "2aeafd967070faa2875207b84ac509c33114d779a5a3d9d2897df239c3a9dd02"
+    },
+    {
+      "path": "results/v05/kang-b-DESeq2/README.txt",
+      "bytes": 311,
+      "sha256": "8cda620a6c39d5f8285244470bbbf638bc8bc6025c60b91f1f528f85acf61ccb"
+    },
+    {
+      "path": "results/v05/kang-b-DESeq2/coverage.tsv",
+      "bytes": 86,
+      "sha256": "617463546b455d562925ecb4d9eb446ad36ab455e09cdf5d697ff9133fa7afea"
+    },
+    {
+      "path": "results/v05/kang-b-DESeq2/deletion_units.tsv",
+      "bytes": 312,
+      "sha256": "b8ddbb482063f2f82527adf0a48b7369b2a673f3cd183de697ae8d89700d16f3"
+    },
+    {
+      "path": "results/v05/kang-b-DESeq2/features.tsv",
+      "bytes": 2030,
+      "sha256": "597d3baeeaeb5cb875d1eff22894521ec51a2054aa727f015093bef66a121b40"
+    },
+    {
+      "path": "results/v05/kang-b-DESeq2/fit_status.tsv",
+      "bytes": 611,
+      "sha256": "3409ca2d879bd8f2963c596923122975e3d060fbf30106e8878990cb07b893bb"
+    },
+    {
+      "path": "results/v05/kang-b-DESeq2/result.rds",
+      "bytes": 146384,
+      "sha256": "e0526e69068208c13af76234227aa5c1b44a53b2a66d5e8bc296d3ec5c09c44e"
+    },
+    {
+      "path": "results/v05/kang-b-DESeq2/witnesses.tsv",
+      "bytes": 166,
+      "sha256": "fcbdb4758d86098d2c1352a0eab6fe5f4638411e3d5996f8e35309bf74db9ec6"
+    },
+    {
+      "path": "results/v05/kang-b-edgeR/README.txt",
+      "bytes": 307,
+      "sha256": "1bf8cb6e21519dd297b8f8e12370d9ec5dfb2509fdcc734d8e93ab62be658bbe"
+    },
+    {
+      "path": "results/v05/kang-b-edgeR/coverage.tsv",
+      "bytes": 97,
+      "sha256": "9d9e78c8baf103f1f68d8744517a017a6c8517763fd9caa8b67fa2d22cd95e0a"
+    },
+    {
+      "path": "results/v05/kang-b-edgeR/deletion_units.tsv",
+      "bytes": 312,
+      "sha256": "b8ddbb482063f2f82527adf0a48b7369b2a673f3cd183de697ae8d89700d16f3"
+    },
+    {
+      "path": "results/v05/kang-b-edgeR/fit_status.tsv",
+      "bytes": 1299,
+      "sha256": "91af8d6f3bb2eac6fedf0419960bc0b1ca6727d73ef5eccdad992462fab00b09"
+    },
+    {
+      "path": "results/v05/kang-b-edgeR/result.rds",
+      "bytes": 145891,
+      "sha256": "ae7a954ff8a5fb99f15722be9643aa0fe834a45265c9607d026f3f124a3171ac"
+    },
+    {
+      "path": "results/v05/kang-b-limma-voom/README.txt",
+      "bytes": 315,
+      "sha256": "992751be5c6723135a85c1adcce80b666c62dec241406b53df841ef998cf0e46"
+    },
+    {
+      "path": "results/v05/kang-b-limma-voom/coverage.tsv",
+      "bytes": 86,
+      "sha256": "a183e753b9ee70cfa53338f2028420b4a5cd92606b8b225436bbc7284db9121e"
+    },
+    {
+      "path": "results/v05/kang-b-limma-voom/deletion_units.tsv",
+      "bytes": 312,
+      "sha256": "b8ddbb482063f2f82527adf0a48b7369b2a673f3cd183de697ae8d89700d16f3"
+    },
+    {
+      "path": "results/v05/kang-b-limma-voom/features.tsv",
+      "bytes": 1838,
+      "sha256": "d4f90ca403007afbf27f33edbe279574cb318e97b558597a206e4fc5aad7329d"
+    },
+    {
+      "path": "results/v05/kang-b-limma-voom/fit_status.tsv",
+      "bytes": 1026,
+      "sha256": "8c795f8d1e4ca10c7d73e426910287213273e74b2a3d0b583aee093db0d3ee78"
+    },
+    {
+      "path": "results/v05/kang-b-limma-voom/result.rds",
+      "bytes": 146382,
+      "sha256": "56aa188e445d8ba8368188bc10a88f0b4acc77eb1b57d0079fa9a62bd5f0fb28"
+    },
+    {
+      "path": "results/v05/kang-b-limma-voom/witnesses.tsv",
+      "bytes": 178,
+      "sha256": "2658d05ec078c40ac813835679bdca6c27fda0639442ed1be4ad0d55e53a4dfd"
+    },
+    {
+      "path": "results/v05/native_fraction_validation.json",
+      "bytes": 379,
+      "sha256": "50611473289725d4d58697fff08ec3b3f0870145bb71913be17563a7699f2a8f"
+    },
+    {
+      "path": "results/v05/nutrimouse-limma/README.txt",
+      "bytes": 310,
+      "sha256": "e7fa80fbbb7db49e8d3f2221fb90b57845d83e4fc07b5eed1abd64561f556924"
+    },
+    {
+      "path": "results/v05/nutrimouse-limma/coverage.tsv",
+      "bytes": 89,
+      "sha256": "4db0021675a72829687615ef029c239280e30c9fe49a3c9b153c8208ad72f719"
+    },
+    {
+      "path": "results/v05/nutrimouse-limma/deletion_units.tsv",
+      "bytes": 890,
+      "sha256": "8e2f23b66e62ecb0a03e86f7160f01833404b09fb6fc4ae0a1930b24f10038d0"
+    },
+    {
+      "path": "results/v05/nutrimouse-limma/features.tsv",
+      "bytes": 714,
+      "sha256": "e0e55be06cee590d1061034d9b2b71e001c841365b9210c1bb71abd992a30fd6"
+    },
+    {
+      "path": "results/v05/nutrimouse-limma/fit_status.tsv",
+      "bytes": 2504,
+      "sha256": "9f9ed41517556ccd5e935f6f0c8c87cd3dbe8788f8bb36f28d0df7cebc9ab90b"
+    },
+    {
+      "path": "results/v05/nutrimouse-limma/result.rds",
+      "bytes": 2860,
+      "sha256": "821febd9d9c320983e33e87cdd75dadb303d69f2b11cd7999d13a37ce05c9c82"
+    },
+    {
+      "path": "results/v05/nutrimouse-limma/witnesses.tsv",
+      "bytes": 71,
+      "sha256": "c8fd97955d7752d9d17a2208d3c28548155c742f418e1d70ebf40c8879e0a27c"
+    },
+    {
+      "path": "results/v05/real_validation.json",
+      "bytes": 10181,
+      "sha256": "65b8879edfeb24be035785866585543f39afcf9fa6d01aa39d76370b4c85380c"
+    },
+    {
       "path": "results/validation_v03_real.json",
       "bytes": 9374,
       "sha256": "e322e652822e5ffaf66f1458fa04e48a4373197266e00c8df2474ea81c3f4e1d"
@@ -3644,7 +3894,7 @@
     {
       "path": "src/extremarank/__init__.py",
       "bytes": 734,
-      "sha256": "bc5ba7e14437624a0359964366e08ca4a4d416f74a8fca5c431fad0904da121e"
+      "sha256": "dfd3dad831f354ce29da5022c4096e081259e485b7c33e6c927989dc75ad76f1"
     },
     {
       "path": "src/extremarank/__main__.py",

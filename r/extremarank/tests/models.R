@@ -18,6 +18,10 @@ for (model in models) {
     cap <- refit_extremarank(x,meta,"T","R",model=model,design="welch",k=5,budget=2,max_refits=1)
     stopifnot(cap$enumeration_capped,nrow(cap$fit_status)==2L)
     cat(model, "baseline, eight covariate-adjusted deletions and streamed cap passed\n")
+    old_coding <- getOption("contrasts"); options(contrasts=c("contr.sum","contr.poly"))
+    fixed <- refit_extremarank(x,meta,"T","R",model=model,design="welch",k=5,budget=0,categorical="batch")
+    options(contrasts=old_coding)
+    stopifnot(identical(z$scores$baseline, fixed$scores$baseline))
 }
 if (requireNamespace("limma",quietly=TRUE)) {
     confounded <- meta; confounded$batch <- confounded$group
