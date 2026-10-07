@@ -87,6 +87,7 @@
 }
 
 .er_counts <- function(x) {
+    if (.er_native_counts(x)) { cpp_validate_counts(x); return(invisible(TRUE)) }
     if (inherits(x, "DelayedMatrix")) {
         step <- .er_block_rows(x, 1000L)
         for (start in seq.int(1L, nrow(x), by = step)) .er_counts(as.matrix(x[seq.int(start, min(nrow(x), start + step - 1L)), , drop = FALSE]))

@@ -7,7 +7,7 @@ sample deletion. The exact kernel is compiled C++ called directly from R.
 ```r
 install.packages(c("Rcpp", "BH", "Matrix", "digest"))
 install.packages(
-  "https://github.com/heise3/ExtremaRank/releases/download/v0.5.0/extremarank_0.5.0.tar.gz",
+  "https://github.com/heise3/ExtremaRank/releases/download/v0.6.0/extremarank_0.6.0.tar.gz",
   repos = NULL, type = "source")
 library(extremarank)
 
@@ -24,7 +24,7 @@ macOS users need the Xcode command line tools. A small standard R source archive
 is also attached to the GitHub release; it does not bundle the large benchmark
 datasets from the repository.
 Alternatively, `remotes::install_github("heise3/ExtremaRank", subdir = "r/extremarank",
-ref = "v0.5.0", upgrade = "never")` installs from the tagged repository and
+ref = "v0.6.0", upgrade = "never")` installs from the tagged repository and
 resolves dependencies. The small release archive is preferable if you only need
 the R package.
 
@@ -90,7 +90,7 @@ Tests run entirely in R, including frozen exact rational expected results:
 
 ```sh
 R CMD build r/extremarank
-R CMD check --no-manual extremarank_0.5.0.tar.gz
+R CMD check --no-manual extremarank_0.6.0.tar.gz
 ```
 
 The independent development oracle is `benchmarks/validate_native_r.py`; Python
@@ -129,3 +129,23 @@ R 4.6 Windows x86_64 and both macOS architectures have version-specific release
 binaries. The R-only installer at `r/install_extremarank.R` verifies SHA-256;
 other R versions use the source archive. Restart R before updating a loaded
 native package.
+
+## v0.6 Mac pseudobulk
+
+`backend="native"` (also selected by `"auto"`) scans borrowed dense/CSC/CSR/triplet
+count views once. `backend="metal"` requests exact integer Metal aggregation on
+macOS, with `max_gpu_bytes` bounding requested output and staging buffers.
+`extremarank_backend_info()` reports device availability. Other platforms retain
+the native CPU path; CUDA is not implemented. Apple unified memory is shared.
+The cap excludes R objects, framework allocation and allocator rounding.
+
+```r
+extremarank_backend_info()
+pb <- pseudobulk_extremarank(counts, cells, backend="native")
+# On a Mac with Metal access:
+# pb_gpu <- pseudobulk_extremarank(counts, cells, backend="metal", max_gpu_bytes=64*1024^2)
+# stopifnot(identical(pb$data, pb_gpu$data))
+```
+
+See [the Mac/Windows guide](../../docs/MAC_CN.md) and
+[measured validation](../../results/v06/README.md).

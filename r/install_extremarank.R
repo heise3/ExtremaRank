@@ -1,5 +1,5 @@
 # Run in R. Binary archives are for R 4.6; other versions use the source package.
-install_extremarank <- function(version = "0.5.0", lib = .libPaths()[1L], prefer_binary = TRUE) {
+install_extremarank <- function(version = "0.6.0", lib = .libPaths()[1L], prefer_binary = TRUE) {
     if (length(version) != 1L || !grepl("^[0-9]+\\.[0-9]+\\.[0-9]+$", version)) stop("Declare a release version")
     if (isNamespaceLoaded("extremarank")) stop("Restart R before updating the loaded native package")
     if (getRversion() < "4.1") stop("R >= 4.1 is required")

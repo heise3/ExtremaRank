@@ -10,6 +10,65 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
+// cpp_validate_counts
+bool cpp_validate_counts(SEXP x);
+RcppExport SEXP _extremarank_cpp_validate_counts(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_validate_counts(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_pseudobulk_native
+List cpp_pseudobulk_native(SEXP x, IntegerVector unit, int n_units);
+RcppExport SEXP _extremarank_cpp_pseudobulk_native(SEXP xSEXP, SEXP unitSEXP, SEXP n_unitsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type x(xSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type unit(unitSEXP);
+    Rcpp::traits::input_parameter< int >::type n_units(n_unitsSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_pseudobulk_native(x, unit, n_units));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_group_codes
+List cpp_group_codes(List codes);
+RcppExport SEXP _extremarank_cpp_group_codes(SEXP codesSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< List >::type codes(codesSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_group_codes(codes));
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_backend_info
+List cpp_backend_info();
+RcppExport SEXP _extremarank_cpp_backend_info() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(cpp_backend_info());
+    return rcpp_result_gen;
+END_RCPP
+}
+// cpp_pseudobulk_metal
+List cpp_pseudobulk_metal(SEXP x, IntegerVector unit, int n_units, double max_gpu_bytes);
+RcppExport SEXP _extremarank_cpp_pseudobulk_metal(SEXP xSEXP, SEXP unitSEXP, SEXP n_unitsSEXP, SEXP max_gpu_bytesSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< SEXP >::type x(xSEXP);
+    Rcpp::traits::input_parameter< IntegerVector >::type unit(unitSEXP);
+    Rcpp::traits::input_parameter< int >::type n_units(n_unitsSEXP);
+    Rcpp::traits::input_parameter< double >::type max_gpu_bytes(max_gpu_bytesSEXP);
+    rcpp_result_gen = Rcpp::wrap(cpp_pseudobulk_metal(x, unit, n_units, max_gpu_bytes));
+    return rcpp_result_gen;
+END_RCPP
+}
 // cpp_audit
 List cpp_audit(NumericMatrix x, CharacterVector ids, CharacterVector unit_ids, IntegerVector labels, bool paired_design, int k, int budget, std::string direction, IntegerVector selected, int max_nodes, int max_scenarios, int witness_trials, bool use_bounds, bool influence_order);
 RcppExport SEXP _extremarank_cpp_audit(SEXP xSEXP, SEXP idsSEXP, SEXP unit_idsSEXP, SEXP labelsSEXP, SEXP paired_designSEXP, SEXP kSEXP, SEXP budgetSEXP, SEXP directionSEXP, SEXP selectedSEXP, SEXP max_nodesSEXP, SEXP max_scenariosSEXP, SEXP witness_trialsSEXP, SEXP use_boundsSEXP, SEXP influence_orderSEXP) {
@@ -139,6 +198,11 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
+    {"_extremarank_cpp_validate_counts", (DL_FUNC) &_extremarank_cpp_validate_counts, 1},
+    {"_extremarank_cpp_pseudobulk_native", (DL_FUNC) &_extremarank_cpp_pseudobulk_native, 3},
+    {"_extremarank_cpp_group_codes", (DL_FUNC) &_extremarank_cpp_group_codes, 1},
+    {"_extremarank_cpp_backend_info", (DL_FUNC) &_extremarank_cpp_backend_info, 0},
+    {"_extremarank_cpp_pseudobulk_metal", (DL_FUNC) &_extremarank_cpp_pseudobulk_metal, 4},
     {"_extremarank_cpp_audit", (DL_FUNC) &_extremarank_cpp_audit, 14},
     {"_extremarank_cpp_extrema", (DL_FUNC) &_extremarank_cpp_extrema, 3},
     {"_extremarank_cpp_evaluate", (DL_FUNC) &_extremarank_cpp_evaluate, 6},

@@ -19,3 +19,5 @@ S3method(print,summary.extremarank_result)
 S3method(plot,extremarank_result)
 S3method(plot,extremarank_curve)
 export(read_extremarank)
+
+export(extremarank_backend_info)

@@ -7,12 +7,15 @@
 **Which of your omics candidates survive removing a few biological samples?**
 
 ExtremaRank audits whether omics candidates survive shared sample deletion.
-v0.5 ships a **native R package**: exact R/C++ computation, direct Bioconductor
+v0.6 ships a **native R package**: exact R/C++ computation, direct Bioconductor
 model refits, sparse donor pseudobulk and experiment-object interfaces.
 v0.5 adds explicit coverage, candidate refit witnesses, grouped deletions,
 disk scores, resumable model fits, reproducible parallel workers, delayed
 input, preflight storage estimates, plots and a tighter conditional Welch floor.
-It runs entirely in R without Python, reticulate or a subprocess bridge.
+v0.6 adds one-pass native CPU pseudobulk and optional exact integer Metal aggregation
+on macOS, with bounded staging buffers and measured provenance. CPU remains the
+default. CUDA execution is not implemented. It runs entirely in R without Python,
+reticulate or a subprocess bridge.
 The existing Python implementation also provides **individual membership/sign certificates**, **minimum deletion
 change bounds**, **safe Welch pruning**, **automatic limma/voom/edgeR/DESeq2
 refits**, and **donor-level single-cell pseudobulk**.
@@ -23,7 +26,7 @@ Real examples cover paired bulk RNA-seq, independent microarrays, an 8-donor
 single-cell study, technical protein measurements, and biological lipid data.
 Native certificates and observed external-model refits have different guarantees.
 
-[v0.5 新功能](docs/V05_CN.md) · [原生 R 包中文指南](docs/R_NATIVE_CN.md) · [R package](r/extremarank) ·
+[Mac 优化 / Windows 复现](docs/MAC_CN.md) · [v0.6 measurements](results/v06/README.md) · [v0.5 新功能](docs/V05_CN.md) · [原生 R 包中文指南](docs/R_NATIVE_CN.md) · [R package](r/extremarank) ·
 [中文 v0.3 说明](docs/V03_CN.md) · [Individual certificates](docs/ROBUSTNESS.md) ·
 [Model refits / single cell](docs/REFITS.md) · [Study inputs](docs/STUDY.md) ·
 [Proof](docs/THEOREM.md) · [Prior art](docs/PRIOR_ART.md) ·
@@ -34,7 +37,7 @@ Native certificates and observed external-model refits have different guarantees
 ### Native R
 
 ```r
-source("https://raw.githubusercontent.com/heise3/ExtremaRank/v0.5.0/r/install_extremarank.R")
+source("https://raw.githubusercontent.com/heise3/ExtremaRank/v0.6.0/r/install_extremarank.R")
 install_extremarank()
 library(extremarank)
 
@@ -61,7 +64,7 @@ line tools on macOS). There is no Python installation step. See the
 [native R validation](results/v05/README.md) for actual verification results.
 The small R source archive installs without downloading the full benchmark
 repository. Alternatively, use `remotes::install_github("heise3/ExtremaRank",
-subdir = "r/extremarank", ref = "v0.5.0", upgrade = "never")`.
+subdir = "r/extremarank", ref = "v0.6.0", upgrade = "never")`.
 
 ### Python
 

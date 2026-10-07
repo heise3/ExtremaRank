@@ -11,3 +11,4 @@ dist/
 *.Rcheck/
 r/extremarank/*.tar.gz
 extremarank_*.tar.gz
+results/windows-local/

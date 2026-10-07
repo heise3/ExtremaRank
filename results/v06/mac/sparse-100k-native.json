@@ -1,0 +1,41 @@
+{
+  "case": "sparse-100k",
+  "method": "native",
+  "version": "0.6.0",
+  "platform": "aarch64-apple-darwin24.6.0",
+  "R": "R version 4.6.1 (2026-06-24)",
+  "Matrix": "1.7.5",
+  "cells": 100000,
+  "features": 4000,
+  "units": 64,
+  "stored_values": 2000000,
+  "input_sha256": "003cfdb868195be389b5416d3cf027e6723a8208f16670745c5390a10397d3b9",
+  "expected_hash": "8c031e372d8c3ae915f63af824d3b94faa97e2e516128537fb2a881fbc7d7569",
+  "expected_pipeline_hash": "fb27d41397e95620fbbea6f523878b438eabb1588a05c6455d214c5306d6c8b4",
+  "exact_match": true,
+  "operator_cold_seconds": 0.011,
+  "operator_seconds": [
+    0.015,
+    0.011,
+    0.01
+  ],
+  "operator_median_seconds": 0.011,
+  "pipeline_seconds": [
+    0.169,
+    0.167,
+    0.169
+  ],
+  "pipeline_median_seconds": 0.169,
+  "gpu_budget_bytes": 0,
+  "computation": {
+    "backend": "native",
+    "gpu_buffer_bytes": 0,
+    "gpu_command_seconds": 0,
+    "gpu_commands": 0,
+    "stored_values_scanned": 2000000,
+    "elapsed_seconds": 0.0110000000000001
+  },
+  "peak_rss_scope": "Fresh process including R, libraries, input, three warm runs, validation hashes and output. External time/OS measurement; not sum of allocations.",
+  "peak_rss_bytes": 302039040,
+  "memory_measurement": "macOS /usr/bin/time -l maximum resident set size, bytes; one fresh process per case/method"
+}

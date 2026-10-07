@@ -1,0 +1,12 @@
+{
+  "version": "0.6.0",
+  "frozen_at": "2026-10-07 Asia/Shanghai before benchmark timing",
+  "task": "exact donor/group/cell-type integer pseudobulk, all eligible original cells and all original features",
+  "invariants": ["no cell or gene subsampling", "same metadata and missing-cell-type policy", "same exact counts, unit IDs and source samples", "reject counts or sums beyond 2^53-1", "no mixed precision or model replacement"],
+  "cases": [{"name":"sparse-100k", "cells":100000,"features":4000,"density":0.005,"units":64}, {"name":"sparse-250k", "cells":250000,"features":8000,"density":0.002,"units":128}],
+  "seed": 61007,
+  "baselines": ["frozen released native R v0.5.0 pipeline", "Matrix full sparse multiplication operator", "new native one-pass operator", "Metal whole-input staging ablation", "Metal bounded staging"],
+  "gpu_buffer_budgets": [8388608, 67108864, 1073741824],
+  "measurements": ["isolated-process peak resident memory including input", "warm operator median seconds across 3 runs", "end-to-end median seconds across 3 runs", "exact output hash", "explicit requested Metal working buffer bytes", "Metal command time (not system GPU utilization)"],
+  "acceptance": "Only publish measured comparisons against the stated baseline; keep auto on native unless Metal demonstrably wins the tested workload. Windows CPU compatibility remains tested; CUDA performance is deferred to a future backend and hardware validation. Apple unified memory must not be counted twice."
+}

@@ -1,0 +1,15 @@
+{
+  "measured_date": "2026-10-07",
+  "device": "Apple M4 Max",
+  "hardware_model": "Mac16,6",
+  "cpu_cores": 16,
+  "gpu_cores": 40,
+  "unified_memory_bytes": 137438953472,
+  "os": "macOS Tahoe 26.6.2",
+  "R": "4.6.1",
+  "Matrix": "1.7-5",
+  "source_compiler": "Apple clang 17.0.0 (clang-1700.0.13.5)",
+  "macOS_SDK": "15.5",
+  "device_access": "Metal enabled in normal host execution; desktop sandbox device access was unavailable",
+  "scope": "pseudobulk exact integer counts; no system GPU utilization measurement"
+}

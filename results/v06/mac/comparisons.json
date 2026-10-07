@@ -1,0 +1,20 @@
+[
+  {
+    "case": "sparse-100k",
+    "pipeline_speedup_vs_released_v05": 3.029585798816568,
+    "peak_rss_reduction_vs_released_v05": 0.22123183507941868,
+    "metal_buffer_reduction_vs_whole": 0.7536249114632387
+  },
+  {
+    "case": "sparse-250k",
+    "pipeline_speedup_vs_released_v05": 7.1008771929824555,
+    "peak_rss_reduction_vs_released_v05": 0.2450502221363724,
+    "metal_buffer_reduction_vs_whole": 0.8838018127326124
+  },
+  {
+    "case": "kang-real",
+    "pipeline_speedup_vs_released_v05": 9.743589743589743,
+    "peak_rss_reduction_vs_released_v05": 0.3288253366640824,
+    "metal_buffer_reduction_vs_whole": 0.7453231742170743
+  }
+]

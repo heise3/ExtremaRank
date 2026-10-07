@@ -1,0 +1,30 @@
+{
+  "case": "kang-real",
+  "method": "released-0.5",
+  "version": "0.5.0",
+  "platform": "aarch64-apple-darwin24.6.0",
+  "R": "R version 4.6.1 (2026-06-24)",
+  "Matrix": "1.7.5",
+  "cells": 24679,
+  "features": 35635,
+  "units": 128,
+  "stored_values": 14188476,
+  "input_sha256": "94254ff82d85c0706ca09dbaaadd16c5b2ebb97a0c68ade9fbd57de89db3fb48",
+  "expected_hash": "05def8d740830ca253dd1c4d399b7b588e7b1b94693d53422231408d7945414c",
+  "expected_pipeline_hash": "19cf31bd885398ca9d267168b421ef1808502c42740ad74ce827f029649d667c",
+  "exact_match": true,
+  "operator_cold_seconds": null,
+  "operator_seconds": [],
+  "operator_median_seconds": null,
+  "pipeline_seconds": [
+    2.805,
+    2.653,
+    2.66
+  ],
+  "pipeline_median_seconds": 2.66,
+  "gpu_budget_bytes": 0,
+  "computation": null,
+  "peak_rss_scope": "Fresh process including R, libraries, input, three warm runs, validation hashes and output. External time/OS measurement; not sum of allocations.",
+  "peak_rss_bytes": 1141211136,
+  "memory_measurement": "macOS /usr/bin/time -l maximum resident set size, bytes; one fresh process per case/method"
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.0 — 2026-10-07
+
+- Added one-pass native R/C++ raw-count validation and pseudobulk without whole sparse-value copies or repeated sparse row slicing. Stable integer tuple grouping replaces per-cell composite strings.
+- Added optional macOS Metal integer pseudobulk with two-limb atomics, carry/overflow checks, cached runtime shaders and bounded shared staging buffers.
+- Added backend availability and per-call buffer/command metrics. Auto uses native CPU; CUDA remains unimplemented. Exact ranking certificates and observed refit scope are unchanged.
+- Added independent dense/CSC/CSR/triplet/HDF5 backend comparisons, high-limb and overflow tests, frozen Mac benchmarks and a Windows CPU reproduction script.
+
 ## 0.5.0 — 2026-10-07
 
 - Fixed zero-refit stability reporting; exposed exact planned coverage and partial/capped states.

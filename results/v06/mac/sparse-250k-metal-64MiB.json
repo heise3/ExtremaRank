@@ -1,0 +1,43 @@
+{
+  "case": "sparse-250k",
+  "method": "metal-64MiB",
+  "version": "0.6.0",
+  "platform": "aarch64-apple-darwin24.6.0",
+  "R": "R version 4.6.1 (2026-06-24)",
+  "Matrix": "1.7.5",
+  "cells": 250000,
+  "features": 8000,
+  "units": 128,
+  "stored_values": 4000000,
+  "input_sha256": "f6f689356d1c272fb185c8e085f208b2504b5c703f2c4ac59fa54e527bb0848b",
+  "expected_hash": "9bbec444e6b9b2fcd0e06b61ecb5f5eb86f2e3892ca05c88d25a5b52a7de5e23",
+  "expected_pipeline_hash": "80a6d8239f0a0f3a65268e13a959690f3a71ac21b847d25c45937284d00e6b59",
+  "exact_match": true,
+  "operator_cold_seconds": 0.026,
+  "operator_seconds": [
+    0.026,
+    0.024,
+    0.0229999999999999
+  ],
+  "operator_median_seconds": 0.024,
+  "pipeline_seconds": [
+    0.454,
+    0.439,
+    0.438
+  ],
+  "pipeline_median_seconds": 0.439,
+  "gpu_budget_bytes": 67108864,
+  "computation": {
+    "backend": "metal",
+    "device": "Apple M4 Max",
+    "gpu_buffer_bytes": 67108836,
+    "gpu_command_seconds": 0.000829458236694336,
+    "gpu_commands": 3,
+    "stored_values_scanned": 4000000,
+    "unified_memory": true,
+    "elapsed_seconds": 0.0249999999999999
+  },
+  "peak_rss_scope": "Fresh process including R, libraries, input, three warm runs, validation hashes and output. External time/OS measurement; not sum of allocations.",
+  "peak_rss_bytes": 583237632,
+  "memory_measurement": "macOS /usr/bin/time -l maximum resident set size, bytes; one fresh process per case/method"
+}

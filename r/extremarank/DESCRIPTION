@@ -1,7 +1,7 @@
 Package: extremarank
 Type: Package
 Title: Exact Sample Deletion Robustness for Omics Rankings
-Version: 0.5.0
+Version: 0.6.0
 Authors@R: person("ExtremaRank", "Contributors", email = "207506224+heise3@users.noreply.github.com", role = c("aut", "cre"))
 Description: Audits omics candidate rankings after shared sample or donor
     deletion using native R and C++ computations. Arbitrary precision dyadic

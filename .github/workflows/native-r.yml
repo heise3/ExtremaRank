@@ -25,7 +25,7 @@ jobs:
       - name: Build standard R source package
         run: R CMD build r/extremarank --no-manual --no-build-vignettes
       - name: Check native package and R-only oracle tests
-        run: R CMD check --no-manual --no-vignettes extremarank_0.5.0.tar.gz
+        run: R CMD check --no-manual --no-vignettes extremarank_0.6.0.tar.gz
       - name: Require zero errors and warnings
         shell: Rscript {0}
         run: |
@@ -33,12 +33,12 @@ jobs:
           stopifnot(!any(grepl("\\b(ERROR|WARNING)\\b", log, perl = TRUE)))
       - name: Build installable platform binary
         if: runner.os != 'Linux'
-        run: R CMD INSTALL --build --strip extremarank_0.5.0.tar.gz
+        run: R CMD INSTALL --build --strip extremarank_0.6.0.tar.gz
       - name: Reinstall binary in an isolated library
         if: runner.os != 'Linux'
         shell: Rscript {0}
         run: |
-          file <- list.files(pattern = "^extremarank_0[.]5[.]0[.](zip|tgz)$")
+          file <- list.files(pattern = "^extremarank_0[.]6[.]0[.](zip|tgz)$")
           stopifnot(length(file) == 1L)
           lib <- tempfile(); dir.create(lib)
           install.packages(file, lib = lib, repos = NULL, type = "binary")
@@ -51,8 +51,8 @@ jobs:
           name: native-r-${{ matrix.os }}
           path: |
             extremarank.Rcheck/00check.log
-            extremarank_0.5.0.zip
-            extremarank_0.5.0.tgz
+            extremarank_0.6.0.zip
+            extremarank_0.6.0.tgz
   bioconductor:
     runs-on: ubuntu-latest
     env:
@@ -80,6 +80,7 @@ jobs:
           source("r/extremarank/tests/models.R")
           source("r/extremarank/tests/native.R")
           source("r/extremarank/tests/workflows.R")
+          source("r/extremarank/tests/backends.R")
 
   compatibility:
     runs-on: ubuntu-latest
@@ -105,3 +106,4 @@ jobs:
           source("r/extremarank/tests/native.R")
           source("r/extremarank/tests/golden.R")
           source("r/extremarank/tests/workflows.R")
+          source("r/extremarank/tests/backends.R")

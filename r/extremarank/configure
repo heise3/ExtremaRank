@@ -1,0 +1,13 @@
+#!/bin/sh
+set -eu
+if test "$(uname -s)" = Darwin; then
+cat >src/Makevars <<'MAKE'
+CXX_STD = CXX17
+PKG_LIBS = -framework Metal -framework Foundation
+all: $(SHLIB)
+macos_backend.o: macos_backend.cpp
+	$(CXX17) $(CXX17STD) $(ALL_CPPFLAGS) $(CXX17FLAGS) $(CXX17PICFLAGS) -fobjc-arc -x objective-c++ -c macos_backend.cpp -o macos_backend.o
+MAKE
+else
+printf '%s\n' 'CXX_STD = CXX17' >src/Makevars
+fi

@@ -38,7 +38,7 @@ def main():
         for path in sorted(paths):
             info=zipfile.ZipInfo('extremarank/'+str(path.relative_to(ROOT)),(2026,10,3,0,0,0))
             info.compress_type=zipfile.ZIP_DEFLATED
-            info.external_attr=0o644 << 16
+            info.external_attr=(0o755 if path.stat().st_mode & 0o111 else 0o644) << 16
             archive.writestr(info,path.read_bytes())
     with zipfile.ZipFile(args.output) as archive:
         assert archive.testzip() is None

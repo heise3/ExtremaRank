@@ -1,50 +1,44 @@
 pseudobulk_extremarank <- function(x, metadata = NULL, assay = NULL, min_cells = 10L,
                                  covariates = character(), merge_technical = FALSE,
                                  missing_cell_type = c("error", "drop"),
-                                 max_dense_bytes = 512 * 1024^2, block_rows = 1000L) {
+                                 max_dense_bytes = 512 * 1024^2, block_rows = 1000L,
+                                 backend = c("auto", "native", "metal", "reference"),
+                                 max_gpu_bytes = 64 * 1024^2) {
     input <- .er_input(x, metadata, assay, cells = TRUE)
     x <- input$x; meta <- input$metadata
     min_cells <- .er_int(min_cells, "min_cells", 1)
+    block_rows <- .er_int(block_rows, "block_rows", 1)
     required <- c("sample_id", "donor_id", "group", "cell_type")
     if (is.null(meta) || !all(required %in% names(meta))) stop("cell metadata needs cell_id, sample_id, donor_id, group and cell_type", call. = FALSE)
     if (!all(covariates %in% names(meta)) || anyDuplicated(covariates) || any(covariates %in% c(required, "cell_id", "n_cells")))
         stop("covariates must be distinct nonreserved metadata columns", call. = FALSE)
     input_cells <- ncol(x); original_metadata_hash <- digest::digest(meta, algo = "sha256")
-    .er_counts(x)
     missing_cell_type <- match.arg(missing_cell_type)
     bad <- is.na(meta$cell_type) | !nzchar(as.character(meta$cell_type))
     if (any(bad) && missing_cell_type == "error") stop("missing cell-type annotations; declare missing_cell_type='drop' to exclude and record these cells", call. = FALSE)
     excluded_cells <- data.frame(cell_id = meta$cell_id[bad], reason = rep("missing cell_type", sum(bad)), stringsAsFactors = FALSE)
-    if (any(bad)) { x <- x[, !bad, drop = FALSE]; meta <- meta[!bad, , drop = FALSE] }
-    if (!ncol(x)) stop("no annotated cells remain", call. = FALSE)
+    if (any(bad)) meta <- meta[!bad, , drop = FALSE]
+    if (!nrow(meta)) stop("no annotated cells remain", call. = FALSE)
     for (name in required) meta[[name]] <- .er_ids(meta[[name]], name, FALSE)
     for (name in covariates) if (anyNA(meta[[name]])) stop("covariates cannot contain missing values", call. = FALSE)
-    # Integer codes avoid delimiter collisions in arbitrary biological IDs.
-    key <- do.call(paste, c(lapply(meta[c("cell_type", "donor_id", "group")], function(z) match(z, unique(z))), sep = ":"))
-    keys <- unique(key); unit <- match(key, keys); first <- match(keys, key)
+    # Stable tuple grouping avoids one composite string per cell.
+    codes <- lapply(meta[c("cell_type", "donor_id", "group")], function(z) match(z, unique(z)))
+    grouping <- cpp_group_codes(codes)
+    unit <- grouping$unit; first <- grouping$first; keys <- seq_along(first)
+    unit_full <- integer(ncol(x)); unit_full[!bad] <- unit
+    members <- split(seq_along(unit), factor(unit, levels = keys))
     n_cells <- tabulate(unit, nbins = length(keys))
-    sample_members <- lapply(seq_along(keys), function(i) unique(meta$sample_id[unit == i]))
+    sample_members <- lapply(members, function(i) unique(meta$sample_id[i]))
     if (!merge_technical && any(lengths(sample_members) > 1L))
         stop("multiple sample IDs in a donor/group/cell-type unit; declare merge_technical=TRUE only for technical replicates", call. = FALSE)
     for (name in covariates) {
-        ok <- vapply(seq_along(keys), function(i) length(unique(meta[[name]][unit == i])) == 1L, logical(1))
+        ok <- vapply(members, function(i) length(unique(meta[[name]][i])) == 1L, logical(1))
         if (!all(ok)) stop("covariate varies within a pseudobulk unit: ", name, call. = FALSE)
     }
-    membership <- Matrix::sparseMatrix(i = seq_len(ncol(x)), j = unit, x = 1,
-                                        dims = c(ncol(x), length(keys)))
-    # With nonnegative integer summands every intermediate sum is <= its final
-    # sum. Reject totals outside the exact integer range of binary64.
-     .er_memory(nrow(x), length(keys), max_dense_bytes)
-    counts <- matrix(0, nrow(x), length(keys), dimnames = list(rownames(x), NULL))
-    step <- .er_block_rows(x, block_rows)
-    for (start in seq.int(1L, nrow(x), by = step)) {
-        take <- seq.int(start, min(nrow(x), start + step - 1L))
-        block <- x[take, , drop = FALSE]
-        if (inherits(block, "DelayedMatrix")) block <- as.matrix(block)
-        aggregate <- block %*% membership
-        .er_counts(aggregate)
-        counts[take, ] <- as.matrix(aggregate)
-    }
+    .er_memory(nrow(x), length(keys), max_dense_bytes)
+    calculation <- .er_pseudobulk_compute(x, unit_full, length(keys), match.arg(backend), block_rows, max_gpu_bytes)
+    counts <- calculation$counts
+    calculation$counts <- NULL
     ids <- sprintf("pb_%06d", seq_along(keys))
     colnames(counts) <- ids
     units <- meta[first, c("donor_id", "group", "cell_type", covariates), drop = FALSE]
@@ -60,13 +54,14 @@ pseudobulk_extremarank <- function(x, metadata = NULL, assay = NULL, min_cells =
     names(data) <- unique(units$cell_type[keep])
     structure(list(data = data, excluded_units = units[!keep, , drop = FALSE], excluded_cells = excluded_cells,
         provenance = list(assay = if (is.null(assay)) "explicit input count matrix" else assay,
-            input_cells = input_cells, annotated_cells = ncol(x), excluded_missing_cell_type = nrow(excluded_cells),
+            input_cells = input_cells, annotated_cells = nrow(meta), excluded_missing_cell_type = nrow(excluded_cells),
             input_features = nrow(x), retained_units = sum(keep), missing_cell_type = missing_cell_type,
             min_cells = min_cells, merge_technical = merge_technical,
             source_samples = stats::setNames(sample_members, ids),
             counts_sha256 = digest::digest(counts, algo = "sha256"),
             metadata_sha256 = original_metadata_hash,
             arithmetic = "exact nonnegative integer sums within binary64 range",
+            computation = calculation,
             deletion_unit = "donor in paired analysis; independent donor/sample in Welch")),
         class = "extremarank_pseudobulk")
 }

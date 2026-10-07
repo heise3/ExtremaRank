@@ -4,6 +4,7 @@
 \alias{extremarank_extrema}
 \alias{refit_extremarank}
 \alias{pseudobulk_extremarank}
+\alias{extremarank_backend_info}
 \alias{pseudobulk_experiment}
 \alias{write_extremarank}
 \alias{read_extremarank}
@@ -37,7 +38,10 @@ refit_extremarank(x, metadata = NULL, target, reference, model = c("limma", "lim
 
 pseudobulk_extremarank(x, metadata = NULL, assay = NULL, min_cells = 10L, covariates = character(),
     merge_technical = FALSE, missing_cell_type = c("error", "drop"), max_dense_bytes = 512 *
-        1024^2, block_rows = 1000L)
+        1024^2, block_rows = 1000L, backend = c("auto", "native", "metal", "reference"),
+    max_gpu_bytes = 64 * 1024^2)
+
+extremarank_backend_info()
 
 pseudobulk_experiment(x, cell_type)
 
@@ -90,6 +94,8 @@ robustness_curve(x, budgets = 0:2, ...)
 \item{search_order}{Input or influence-guided branch and witness order. Heuristics do not change exact proof comparisons.}
 \item{max_dense_bytes}{Maximum bytes of a dense prepared matrix or pseudobulk output, default 512 MiB. Model worker copies are also bounded. Excludes model objects and exact-integer storage.}
 \item{block_rows}{Maximum rows per input/aggregation block; automatically reduced to keep input blocks near 64 MiB. DelayedArray and HDF5Array are optional input backends. The smaller biological-unit output is materialized.}
+\item{backend}{Pseudobulk computation: auto selects the portable native CPU kernel; native scans dense or sparse stored values once; metal explicitly uses the macOS Metal integer kernel; reference uses blocked Matrix multiplication. Metal availability is reported by extremarank_backend_info. Explicit Metal requests fail if unavailable rather than silently falling back. Other functions retain their existing computation paths.}
+\item{max_gpu_bytes}{Maximum requested Metal data buffer bytes per aggregation block, default 64 MiB. Includes two integer output limbs, an overflow flag and one or two staging buffers. Must cover at least 8 times features times pseudobulk units plus 36 bytes for a direct matrix. Does not bound total process RAM, R output copies, framework memory or allocator rounding. Apple unified memory is shared by CPU and GPU.}
 \item{contrast}{Optional finite named coefficient vector. Model-matrix coefficient names are used (grouptarget, cv1, cv2, donor indicators). Treatment coding is explicit and independent of global contrasts options. Missing nonzero coefficients or a changed reference level for a contrast term make that fit unevaluable. NULL tests target minus reference.}
 \item{delete_by}{Optional metadata column for whole-block deletion, such as site. A donor cannot span deletion blocks. Budget counts blocks; native two-observation constraints remain.}
 \item{store_scores}{Keep scores in memory, save each to disk, or retain only summaries. Default memory.}
@@ -115,11 +121,15 @@ Overall status describes whole Top-K membership; per-candidate direction statuse
 Model refits return NOT_EVALUATED if no deletion was executed. Capped or failed stable-looking runs return PARTIALLY_EVALUATED. Complete evaluable unchanged runs return OBSERVED_STABLE; actual changes return OBSERVED_CHANGED. A failed baseline returns NOT_EVALUABLE. They never claim an exact certificate for unseen deletions. Failed scenarios and their invalid feature IDs remain available. Raw scores are retained when memory or disk storage is selected; none explicitly discards them. The ranking universe is not repaired after observing failures. This package audits ranking sensitivity; it does not establish differential-expression validity, FDR, causality or clinical utility.
 
 Pseudobulk aggregation accepts sparse matrices without making a dense cell-by-gene copy. Nonnegative integer inputs and every aggregated entry must lie within the exact binary64 integer range. The smaller feature-by-unit output is materialized for subsequent analysis.
+
+On macOS the optional Metal backend uses two atomic 32-bit integer limbs with carry propagation and overflow detection, preserving exact nonnegative count sums. Sparse staging is bounded and borrowed CPU views avoid copying the whole stored-value vector. Metal shader compilation occurs once per R session. GPU command seconds describe completed commands, not system utilization. The portable native CPU backend is the default; device acceleration and speed depend on workload. CUDA execution is not implemented in this release. Backend information and timing/buffer measurements are stored in pseudobulk provenance$computation.
 }
 \value{
 Audit and refit functions return an extremarank_result list. Native results contain features (a data.frame with per-property statuses, bounds and list-column witnesses), audit, diagnostics, preparation and elapsed_seconds. Refit results contain fit_status, scores, scenarios, versions, enumeration_capped and minimum_observed_change. Printing gives a compact summary. Model results include per-candidate observed changes/witnesses, exact planned coverage, disk score paths and checkpoint contracts. preflight_extremarank returns deletion-count and approximate storage estimates without fitting. robustness_curve returns budget-by-status counts and full results.
 
 extremarank_extrema returns exact minimum and maximum descriptions, optional witness indices, exact moment strings, candidate counts and total subset counts. pseudobulk_extremarank returns an extremarank_pseudobulk with named data entries (counts and metadata), excluded_units and provenance. pseudobulk_experiment returns a SummarizedExperiment. write_extremarank returns the normalized directory invisibly. Disk scores are copied into a self-contained export with checksums. read_extremarank reloads and validates the disk paths relative to the moved export directory.
+
+extremarank_backend_info returns native/Metal/CUDA availability, the default CPU backend, scope descriptions and, when available, Metal device and memory capabilities.
 }
 \examples{
 effects <- matrix(c(5, 4, 6, 5, 1, 2, 1, 2, -2, -1, -3, -2),

@@ -1,0 +1,17 @@
+{
+  "version": "0.6.0",
+  "r_source_sha256": "e42e468246bbe9a39f8bfd2823e71c923df395014ac470a6e362a28cd88bd86c",
+  "R_CMD_check": "OK: zero errors, warnings and notes",
+  "native_count_comparisons": 45880,
+  "actual_Metal_count_comparisons": 91760,
+  "Metal_executed": true,
+  "Metal_device": "Apple M4 Max",
+  "dense_CSC_CSR_triplet": true,
+  "HDF5_row_blocks": true,
+  "carry_and_53_64_bit_overflow_tests": true,
+  "Python_tests": 59,
+  "Python_skips": 4,
+  "Windows_GPU_hardware": "not run; user follow-up",
+  "CUDA_backend": "not implemented",
+  "scope": "exact integer pseudobulk and existing ranking/refit regression tests"
+}

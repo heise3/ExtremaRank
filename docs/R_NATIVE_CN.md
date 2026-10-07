@@ -1,6 +1,8 @@
 # 原生 R 包：直接在 R 中运行 ExtremaRank
 
-v0.5.0 提供独立的标准 R 包，源码位于 `r/extremarank`。算法在 R 会话中
+Mac 单遍 CPU/Metal 优化与后续 Windows 复现见 [专用指南](MAC_CN.md)。
+
+v0.6.0 提供独立的标准 R 包，源码位于 `r/extremarank`。算法在 R 会话中
 直接调用编译后的 C++，没有 Python、reticulate、Rscript 子进程或命令行转接。
 这是 R 中直接可调用的算法实现。原有 Python 版本继续保留。
 
@@ -12,7 +14,7 @@ v0.5 的预编译安装、覆盖率、逐候选重拟合、磁盘输入、恢复
 ```r
 install.packages(c("Rcpp", "BH", "Matrix", "digest"))
 install.packages(
-  "https://github.com/heise3/ExtremaRank/releases/download/v0.5.0/extremarank_0.5.0.tar.gz",
+  "https://github.com/heise3/ExtremaRank/releases/download/v0.6.0/extremarank_0.6.0.tar.gz",
   repos = NULL, type = "source")
 library(extremarank)
 
@@ -28,10 +30,10 @@ write_extremarank(result, "r-audit-output")
 运行不需要 Python。R 包依赖 Rcpp、BH、Matrix 和 digest。
 从源码安装需要 C++17 编译器：Windows 安装与 R 版本对应的 Rtools；
 macOS 安装 Xcode 命令行工具。GitHub Release 还提供小型标准 R 源码包
-`extremarank_0.5.0.tar.gz`，可用 `install.packages(..., repos = NULL, type = "source")`
+`extremarank_0.6.0.tar.gz`，可用 `install.packages(..., repos = NULL, type = "source")`
 安装。大型公共示例数据位于完整仓库归档，不放进 R 安装包。
 上面的安装方法只下载小型 R 包。也可以安装 `remotes` 后使用
-`remotes::install_github("heise3/ExtremaRank", subdir = "r/extremarank", ref = "v0.5.0")`。
+`remotes::install_github("heise3/ExtremaRank", subdir = "r/extremarank", ref = "v0.6.0")`。
 
 目前发布渠道是 GitHub；本版本没有宣称已经进入 CRAN 或 Bioconductor。
 

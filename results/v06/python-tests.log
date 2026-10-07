@@ -1,0 +1,64 @@
+test_absolute_opposite_sign_ties_and_crossing_zero (test_audit.AuditTests.test_absolute_opposite_sign_ties_and_crossing_zero) ... ok
+test_all_zero_exact_gene_id_ties (test_audit.AuditTests.test_all_zero_exact_gene_id_ties) ... ok
+test_down_and_absolute_match_common_subset_exhaustive_truth (test_audit.AuditTests.test_down_and_absolute_match_common_subset_exhaustive_truth) ... ok
+test_invalid_inputs (test_audit.AuditTests.test_invalid_inputs) ... ok
+test_offset_cancellation_subnormal_and_high_dynamic_range (test_audit.AuditTests.test_offset_cancellation_subnormal_and_high_dynamic_range) ... ok
+test_proportional_columns_overlap_is_not_refutation (test_audit.AuditTests.test_proportional_columns_overlap_is_not_refutation) ... ok
+test_search_limit_reports_unresolved_without_witness (test_audit.AuditTests.test_search_limit_reports_unresolved_without_witness) ... ok
+test_small_matrices_exhaustive_common_subset_truth (test_audit.AuditTests.test_small_matrices_exhaustive_common_subset_truth) ... ok
+test_variance_reversal_with_all_rowwise_mean_margins_positive (test_audit.AuditTests.test_variance_reversal_with_all_rowwise_mean_margins_positive) ... ok
+test_witness_proposals_require_actual_common_subset (test_audit.AuditTests.test_witness_proposals_require_actual_common_subset) ... ok
+test_zero_budget_and_all_features_selected (test_audit.AuditTests.test_zero_budget_and_all_features_selected) ... ok
+test_compare_t_exact_across_counts_signs_and_infinities (test_cli.CLITests.test_compare_t_exact_across_counts_signs_and_infinities) ... ok
+test_cross_cardinality_summary_and_exhaustive_witnesses (test_cli.CLITests.test_cross_cardinality_summary_and_exhaustive_witnesses) ... ok
+test_csv_quoted_ids_constants_and_nonfinite_json_display (test_cli.CLITests.test_csv_quoted_ids_constants_and_nonfinite_json_display) ... ok
+test_default_topk_reduction_and_explicit_large_topk_rejected (test_cli.CLITests.test_default_topk_reduction_and_explicit_large_topk_rejected) ... ok
+test_directions_and_lexical_absolute_ties (test_cli.CLITests.test_directions_and_lexical_absolute_ties) ... ok
+test_gzip_roundtrip_and_original_file_hash (test_cli.CLITests.test_gzip_roundtrip_and_original_file_hash) ... ok
+test_invalid_and_truncated_gzip (test_cli.CLITests.test_invalid_and_truncated_gzip) ... ok
+test_invalid_input_and_parameters (test_cli.CLITests.test_invalid_input_and_parameters) ... ok
+test_node_limit_does_not_change_exact_scalar_outputs (test_cli.CLITests.test_node_limit_does_not_change_exact_scalar_outputs) ... ok
+test_python_module_entrypoint (test_cli.CLITests.test_python_module_entrypoint) ... ok
+test_refutation_is_an_actual_shared_deletion (test_cli.CLITests.test_refutation_is_an_actual_shared_deletion) ... ok
+test_all_zero_and_nonzero_constant_vectors (test_extrema.ExtremaTests.test_all_zero_and_nonzero_constant_vectors) ... ok
+test_arbitrary_positive_and_negative_forced_offsets (test_extrema.ExtremaTests.test_arbitrary_positive_and_negative_forced_offsets) ... ok
+test_cancellation_subnormals_and_disparate_scales (test_extrema.ExtremaTests.test_cancellation_subnormals_and_disparate_scales) ... ok
+test_exact_binary64_normal_cases_with_forced_inclusion (test_extrema.ExtremaTests.test_exact_binary64_normal_cases_with_forced_inclusion) ... ok
+test_invalid_inputs_are_rejected (test_extrema.ExtremaTests.test_invalid_inputs_are_rejected) ... ok
+test_mixed_sign_zero_sum_and_duplicate_ties (test_extrema.ExtremaTests.test_mixed_sign_zero_sum_and_duplicate_ties) ... ok
+test_score_comparison_matches_independent_cross_products (test_extrema.ExtremaTests.test_score_comparison_matches_independent_cross_products) ... ok
+test_small_integer_cases_all_feasible_cardinalities (test_extrema.ExtremaTests.test_small_integer_cases_all_feasible_cardinalities) ... ok
+test_dense_and_sparse_layers_preserve_exact_sums (test_h5ad.H5ADTests.test_dense_and_sparse_layers_preserve_exact_sums) ... skipped 'optional AnnData dependency'
+test_metadata_cell_metrics_are_ignored_unless_declared_covariates (test_h5ad.H5ADTests.test_metadata_cell_metrics_are_ignored_unless_declared_covariates) ... skipped 'optional AnnData dependency'
+test_tpm_and_repeated_donors_rejected_before_fitting (test_pseudobulk_models.ModelInputTests.test_tpm_and_repeated_donors_rejected_before_fitting) ... ok
+test_10x_duplicate_coordinates_are_additive_and_non_gene_excluded (test_pseudobulk_models.PseudobulkTests.test_10x_duplicate_coordinates_are_additive_and_non_gene_excluded) ... ok
+test_exact_sums_and_technical_library_aggregation (test_pseudobulk_models.PseudobulkTests.test_exact_sums_and_technical_library_aggregation) ... ok
+test_low_cell_exclusions_are_explicit (test_pseudobulk_models.PseudobulkTests.test_low_cell_exclusions_are_explicit) ... ok
+test_missing_cells_fractional_counts_and_inconsistent_metadata_rejected (test_pseudobulk_models.PseudobulkTests.test_missing_cells_fractional_counts_and_inconsistent_metadata_rejected) ... ok
+test_multiple_biological_samples_are_not_merged_implicitly (test_pseudobulk_models.PseudobulkTests.test_multiple_biological_samples_are_not_merged_implicitly) ... ok
+test_all_four_models_and_R_topk_export (test_pseudobulk_models.RModelTests.test_all_four_models_and_R_topk_export) ... skipped 'optional installed R/Bioconductor integration'
+test_confounded_covariate_keeps_non_evaluable_state (test_pseudobulk_models.RModelTests.test_confounded_covariate_keeps_non_evaluable_state) ... skipped 'optional installed R/Bioconductor integration'
+test_extreme_scales_cancellation_and_subnormals (test_robustness.RobustnessTests.test_extreme_scales_cancellation_and_subnormals) ... ok
+test_incomplete_search_bounds_and_zero_budget (test_robustness.RobustnessTests.test_incomplete_search_bounds_and_zero_budget) ... ok
+test_independent_complete_small_problems (test_robustness.RobustnessTests.test_independent_complete_small_problems) ... ok
+test_indexed_many_feature_bounds_match_direct_counts (test_robustness.RobustnessTests.test_indexed_many_feature_bounds_match_direct_counts) ... ok
+test_stable_welch_uses_bounds (test_robustness.RobustnessTests.test_stable_welch_uses_bounds) ... ok
+test_external_cli_escapes_labels_and_records_method (test_study.ExternalTests.test_external_cli_escapes_labels_and_records_method) ... ok
+test_supplied_tables_never_yield_certificate (test_study.ExternalTests.test_supplied_tables_never_yield_certificate) ... ok
+test_explicit_missing_policy_and_cpm_totals (test_study.StudyTests.test_explicit_missing_policy_and_cpm_totals) ... ok
+test_paired_contrast_incomplete_and_repeated_samples (test_study.StudyTests.test_paired_contrast_incomplete_and_repeated_samples) ... ok
+test_prepare_refuses_to_overwrite_source_input (test_study.StudyTests.test_prepare_refuses_to_overwrite_source_input) ... ok
+test_sample_orientation (test_study.StudyTests.test_sample_orientation) ... ok
+test_strict_join_reorders_and_direction_is_explicit (test_study.StudyTests.test_strict_join_reorders_and_direction_is_explicit) ... ok
+test_study_cli_paired_and_small_group_diagnostics (test_study.StudyTests.test_study_cli_paired_and_small_group_diagnostics) ... ok
+test_study_cli_welch_report_and_prepare_only (test_study.StudyTests.test_study_cli_welch_report_and_prepare_only) ... ok
+test_display_handles_mixed_extreme_scales_within_one_feature (test_unpaired.WelchTests.test_display_handles_mixed_extreme_scales_within_one_feature) ... ok
+test_extreme_scales_cancellation_zero_variance (test_unpaired.WelchTests.test_extreme_scales_cancellation_zero_variance) ... ok
+test_invalid_designs_and_budget (test_unpaired.WelchTests.test_invalid_designs_and_budget) ... ok
+test_random_exact_ranks_complete_status_and_witness (test_unpaired.WelchTests.test_random_exact_ranks_complete_status_and_witness) ... ok
+test_unresolved_does_not_claim_stable (test_unpaired.WelchTests.test_unresolved_does_not_claim_stable) ... ok
+
+----------------------------------------------------------------------
+Ran 59 tests in 2.592s
+
+OK (skipped=4)
