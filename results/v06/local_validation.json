@@ -1,9 +1,7 @@
 {
   "version": "0.6.0",
-  "r_source_sha256": "e42e468246bbe9a39f8bfd2823e71c923df395014ac470a6e362a28cd88bd86c",
+  "r_source_sha256": "acb3eb19b0bfefe68510d8d3e3064cf96ed0086f984985100144794aed2c776e",
   "R_CMD_check": "OK: zero errors, warnings and notes",
-  "native_count_comparisons": 45880,
-  "actual_Metal_count_comparisons": 91760,
   "Metal_executed": true,
   "Metal_device": "Apple M4 Max",
   "dense_CSC_CSR_triplet": true,
@@ -13,5 +11,10 @@
   "Python_skips": 4,
   "Windows_GPU_hardware": "not run; user follow-up",
   "CUDA_backend": "not implemented",
-  "scope": "exact integer pseudobulk and existing ranking/refit regression tests"
+  "scope": "exact integer pseudobulk and existing ranking/refit regression tests",
+  "native_aggregated_count_comparisons": 6784,
+  "native_input_positions_represented": 45880,
+  "native_plus_Metal_aggregated_count_comparisons": 13568,
+  "native_plus_Metal_input_positions_represented": 91760,
+  "CI_Mac_arm_binary_Metal_executed": true
 }

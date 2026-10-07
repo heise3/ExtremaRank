@@ -61,8 +61,9 @@ are recorded, but system GPU utilization was not measured.
 
 ## Correctness and measurement protocol
 
-- 91,760 independent count-value comparisons on dense/CSC/CSR/triplet inputs,
-  with native and **actually executed** Metal kernels on this Mac.
+- 13,568 aggregated count-value comparisons across native and **actually
+  executed** Metal outputs on this Mac. The repeated dense/CSC/CSR/triplet cases
+  represent 91,760 input matrix positions; these are two distinct counters.
 - Explicit tests for high integer limbs, simultaneous carries, multiple chunks,
   `2^53-1` acceptance, values/sums above the exact range and accumulator overflow
   past 64 bits; invalid counts in excluded annotation cells are also rejected.

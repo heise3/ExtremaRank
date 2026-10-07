@@ -1,1 +1,1 @@
-45880 dense/CSC/CSR/triplet independent count comparisons passed; Metal executed: FALSE 
+6784 aggregated count values compared across dense/CSC/CSR/triplet outputs; 45880 input matrix positions represented; Metal executed: FALSE

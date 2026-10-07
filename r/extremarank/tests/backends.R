@@ -3,6 +3,7 @@ set.seed(61007)
 metal <- isTRUE(extremarank_backend_info()$metal_available)
 if (identical(Sys.getenv("EXTREMARANK_REQUIRE_METAL"),"true")) stopifnot(metal)
 checks <- 0L
+input_positions <- 0L
 for (iteration in 1:30) {
     genes <- sample(3:25,1); cells <- sample(10:40,1)
     x <- matrix(sample(c(0L,0L,0L,1:100),genes*cells,TRUE),genes,
@@ -16,11 +17,13 @@ for (iteration in 1:30) {
     for (z in representations) {
         a <- pseudobulk_extremarank(z,m,min_cells=1,backend="native")
         stopifnot(identical(a$data,reference$data),identical(a$provenance$counts_sha256,reference$provenance$counts_sha256))
-        checks <- checks+length(x)
+        checks <- checks+sum(vapply(a$data,function(z) length(z$counts),integer(1)))
+        input_positions <- input_positions+length(x)
         if (metal) {
             b <- pseudobulk_extremarank(z,m,min_cells=1,backend="metal",max_gpu_bytes=8*genes*length(unique(group))+4+256)
             stopifnot(identical(b$data,reference$data),b$provenance$computation$gpu_buffer_bytes<=8*genes*length(unique(group))+4+256)
-            checks <- checks+length(x)
+            checks <- checks+sum(vapply(b$data,function(z) length(z$counts),integer(1)))
+            input_positions <- input_positions+length(x)
         }
     }
     # Dropped annotation cells remain subject to input validation and retain IDs.
@@ -66,4 +69,5 @@ if(requireNamespace("HDF5Array",quietly=TRUE)) {
     }
     unlink(path)
 }
-cat(checks,"dense/CSC/CSR/triplet independent count comparisons passed; Metal executed:",metal,"\n")
+cat(checks,"aggregated count values compared across dense/CSC/CSR/triplet outputs;",input_positions,
+    "input matrix positions represented; Metal executed:",metal,"\n")

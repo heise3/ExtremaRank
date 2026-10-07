@@ -958,8 +958,8 @@
     },
     {
       "path": "r/extremarank/tests/backends.R",
-      "bytes": 4321,
-      "sha256": "df8ce612498bfa81759a502009276a6f55105ec3b425524d686c24e2524c6c56"
+      "bytes": 4623,
+      "sha256": "f1dae9e1ce9a1e1b05f04a1459b2b2476994cfa36db4bf9713fc722268667bc6"
     },
     {
       "path": "r/extremarank/tests/golden.R",
@@ -3914,27 +3914,27 @@
     {
       "path": "results/v06/R-CMD-check-mac.log",
       "bytes": 3449,
-      "sha256": "b436ea2f684779ce6059a74d5a12af5fd76af97c366b7cc696aac2925647548b"
+      "sha256": "d704501654cd07d14114e4788166d3b45723f3a1f933e9b0dfef905a6f4f9db4"
     },
     {
       "path": "results/v06/README.md",
-      "bytes": 5984,
-      "sha256": "658e202710797e38bf22385599fe867d67f9720570245379764920ff03ae42da"
+      "bytes": 6069,
+      "sha256": "57f5d1ff621ab0acd81be2126bdc3894677705b8c7440c5d636cb0976d596ff9"
     },
     {
       "path": "results/v06/backends-cpu.log",
-      "bytes": 89,
-      "sha256": "669811000eef328e9ad22a5671a693757100333f3f65017f077607c490dc58d1"
+      "bytes": 140,
+      "sha256": "10bb5f6201998f61153b7ade409d0035c33b37e5671932dda2c3c369622e6715"
     },
     {
       "path": "results/v06/backends-metal.log",
-      "bytes": 88,
-      "sha256": "efa3af23b4d82a8cef98c97ffbf717852e88c1742a3a07d17895bd9fd15881e2"
+      "bytes": 140,
+      "sha256": "65776ba01d487971552fdc80302440503f6aa059a85f16dd07995dd0bc597fd8"
     },
     {
       "path": "results/v06/local_validation.json",
-      "bytes": 632,
-      "sha256": "606cc999db7b5de19f02e63fa6a1210445a8f2611e4018a86571c1aba0b9eb62"
+      "bytes": 807,
+      "sha256": "9cb1f16d96b3c6f09541ed9f72e086d76ac22274e8c3a592ea1d0b686327c4c7"
     },
     {
       "path": "results/v06/mac/comparisons.json",
@@ -4123,8 +4123,8 @@
     },
     {
       "path": "results/v06/workflows.log",
-      "bytes": 203,
-      "sha256": "1494120d87276eeb9ee8b35b7922f5cb62cc6e12a594eaa5ef89dd6f4a44e325"
+      "bytes": 201,
+      "sha256": "fc8034823629984ddda42834d790849c352094a242e895643b009920a154f14b"
     },
     {
       "path": "results/validation_v03_real.json",
