@@ -1,5 +1,5 @@
 {
-  "version": "0.5.0",
+  "version": "0.6.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/native-r.yml",
-      "bytes": 3986,
-      "sha256": "c050eee23c75e11856de70318d47ff6e0f72160450d8ab6eda2978e9fc7ddf78"
+      "bytes": 4088,
+      "sha256": "186db7645a8b3ab39e14d621034805416699f4e1c253ab0a942093054f529949"
     },
     {
       "path": ".github/workflows/tests.yml",
@@ -18,18 +18,18 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 134,
-      "sha256": "07f72d7a2a0b4b3c12ae0be1d522ed912c16ccca949dd416bf7bfca7bfe1c924"
+      "bytes": 157,
+      "sha256": "47afe0f6181b95c69273af1c7d4ea6ed2c07a2a7bdd3b95e4712cf7f59601afe"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 3124,
-      "sha256": "de3a22cdbd07e7a3c82021d8f9d837f69c9be3daa61061ec8021d863618646db"
+      "bytes": 3844,
+      "sha256": "a3582bdf92b290e8e2fd2d05399d108bc811b007f83e9998a3a4c37b01ffca04"
     },
     {
       "path": "CITATION.cff",
       "bytes": 434,
-      "sha256": "09d4f5c48603edcda189c7935eec104d3c246faa67c5fe1b67f55c330e897550"
+      "sha256": "a883337a56e8184b2bff747af02eb494948e2cae9d853f75b69b5ea2cbd13f4e"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -48,13 +48,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 16376,
-      "sha256": "ca5aea65a874666b20d1392ce6bb09d87521110682e3de94e042411b5132dc53"
+      "bytes": 16681,
+      "sha256": "13a01e3e2d32f29a25f3d85ed9006f637e8c67028d21dbbaf5c91f99ce8b9cee"
     },
     {
       "path": "benchmarks/archive_outputs.py",
       "bytes": 1901,
       "sha256": "a3c22590841ff3887551050891018ad423b0fd5682e83d96aa78e6451933fb61"
+    },
+    {
+      "path": "benchmarks/compact_mac.py",
+      "bytes": 2297,
+      "sha256": "a86e4f1c5995940a25ea5eabbe1f22206a8150563af7b2da82896a52a9726103"
     },
     {
       "path": "benchmarks/compact_native_r.py",
@@ -92,14 +97,24 @@
       "sha256": "00914079ee726843b4a9be95d8587985fd9b78df7dc48cb0617c2bb2b1c89b08"
     },
     {
+      "path": "benchmarks/mac_gpu_contract.json",
+      "bytes": 1495,
+      "sha256": "5edd43771d22550cb8fb46f38c214f26e47dff38338d098edc4953ef5b738d9b"
+    },
+    {
+      "path": "benchmarks/mac_pseudobulk.R",
+      "bytes": 6998,
+      "sha256": "8c17c818aea11c2ac0d8112130cf2b6d35444d22ef1fac45eca19a187221cc60"
+    },
+    {
       "path": "benchmarks/native_r_real.R",
       "bytes": 7665,
       "sha256": "8aee3f6b318c48ce8663f0ad6cf42083ca626360ee0183ae305b21920cb11def"
     },
     {
       "path": "benchmarks/package_release.py",
-      "bytes": 2453,
-      "sha256": "2af148fc2d1fb31b57fa057a2294f4097dbcb867d7522eeb81c78ffe08d64476"
+      "bytes": 2497,
+      "sha256": "fd9aa771697fc5ef20e5efa9e91c8b5726e5b83a2d7b21b017b9ea5c93d46661"
     },
     {
       "path": "benchmarks/prepare_golub.R",
@@ -205,6 +220,11 @@
       "path": "benchmarks/welch_pruning_v03.py",
       "bytes": 1872,
       "sha256": "b35afda6ae16af503ef93beffeda0bf168c838b557d3fb02ff45f49b252986c5"
+    },
+    {
+      "path": "benchmarks/windows_pseudobulk.ps1",
+      "bytes": 3124,
+      "sha256": "4036c154c48ca695d5ea4f0ff207a18da279f91e4660f33578893da6717731a7"
     },
     {
       "path": "data/DATA_LICENSE.md",
@@ -682,6 +702,11 @@
       "sha256": "9ec7f6f3ddded470bcb3c24f7484c28c477453b54984409f49b131640bc04656"
     },
     {
+      "path": "docs/MAC_CN.md",
+      "bytes": 5324,
+      "sha256": "7a7ada201bb85ffe8f3fb28305e0eb7efb5f2bc7db2adf07a8257cea95f41ff4"
+    },
+    {
       "path": "docs/NOVELTY.md",
       "bytes": 12530,
       "sha256": "f0d44e14b99ecf35cd4d8a4c77f42025875e4b4f6782d9ce5633895b6c8a4cec"
@@ -718,8 +743,8 @@
     },
     {
       "path": "docs/R_NATIVE_CN.md",
-      "bytes": 6333,
-      "sha256": "21dcde6412d1b788c550896927105df6f44b021d8a7059b02ed08d4aeaea1558"
+      "bytes": 6418,
+      "sha256": "b1c93c6e685a363dbd15744168e01d810a1568b1d38fec3d45fa26986a546717"
     },
     {
       "path": "docs/STUDY.md",
@@ -774,7 +799,7 @@
     {
       "path": "pyproject.toml",
       "bytes": 913,
-      "sha256": "38a55da1311437b2b04e8badd6ed8c4d5de6409d9e9f2f2e8089d040ef0107e4"
+      "sha256": "0ae768add90737d63044a4246b920bc9882523971e1d39f9fa84b88e588aadb3"
     },
     {
       "path": "r/extremarank/.Rbuildignore",
@@ -784,7 +809,7 @@
     {
       "path": "r/extremarank/DESCRIPTION",
       "bytes": 1103,
-      "sha256": "b2d8871e792ed1a45bd0df1aca85e220e98d9e188d576a7a2d1031e72698aa15"
+      "sha256": "c4575fe73d40fa83667679485c341149976d23143a8515a0831ddf9237be7704"
     },
     {
       "path": "r/extremarank/LICENSE",
@@ -793,18 +818,23 @@
     },
     {
       "path": "r/extremarank/NAMESPACE",
-      "bytes": 636,
-      "sha256": "ee1b1deb1fcf91659e0040621915e5968caff17c9eddfd4d3d0d2e96fe0988a3"
+      "bytes": 670,
+      "sha256": "6e11679eb618e5b8abc7bd9e1f5ff8ada62bf97bf1fb644a175e1ccd4c3b916c"
     },
     {
       "path": "r/extremarank/R/RcppExports.R",
-      "bytes": 1565,
-      "sha256": "99e83cd77c0c4b82e51e35878d96e3fee5b3585b4122ccd7b521536da3598466"
+      "bytes": 2096,
+      "sha256": "4375414c01ad7a09297243b2bf554ac337e755715ec245d0af2278203deed148"
     },
     {
       "path": "r/extremarank/R/audit.R",
       "bytes": 6598,
       "sha256": "686e8cc873f5992797ba48ceb76b3df63553fc64654e6d606d57c940e6e1cab8"
+    },
+    {
+      "path": "r/extremarank/R/backend.R",
+      "bytes": 3090,
+      "sha256": "3aeca92dd66883c8697f1de58af60ca3acb431d8f857a414529e3371ba43aabc"
     },
     {
       "path": "r/extremarank/R/control.R",
@@ -818,13 +848,13 @@
     },
     {
       "path": "r/extremarank/R/input.R",
-      "bytes": 9439,
-      "sha256": "dccacec15cecce3efb3c2bfee5d0e52f1f74013e872535846dac6065a8452883"
+      "bytes": 9521,
+      "sha256": "cc4b3127dc7dfd60d21bae5f187c08314cd72ae27a28bd7b83769537f7f25b52"
     },
     {
       "path": "r/extremarank/R/pseudobulk.R",
-      "bytes": 6090,
-      "sha256": "dfff0258ba2ae7b07e4c34266ec7bea35c670410cc3f193252c7c523749eda55"
+      "bytes": 5781,
+      "sha256": "c6bf3d4bebfd0412aa1ba097d56dc3d63cba6b06c88c8f8f2a1a33bd7923184e"
     },
     {
       "path": "r/extremarank/R/refit.R",
@@ -843,8 +873,13 @@
     },
     {
       "path": "r/extremarank/README.md",
-      "bytes": 6632,
-      "sha256": "5221454b4e16d3bf9b22458cb7dae3bd97cdc8c80834e46ce43ae1601daefbef"
+      "bytes": 7501,
+      "sha256": "92324e6a3177b58048f8996f14e8dcc696f1e9cb082571dad9241e7756ba8a5d"
+    },
+    {
+      "path": "r/extremarank/configure",
+      "bytes": 393,
+      "sha256": "33245750b0dbcbb4ed500a0dfb2a5b987b832dacbf71f33785861498d01af51a"
     },
     {
       "path": "r/extremarank/inst/doc/native-workflows.R",
@@ -878,8 +913,8 @@
     },
     {
       "path": "r/extremarank/man/extremarank.Rd",
-      "bytes": 15276,
-      "sha256": "3a8ef519b1dfc6cc50e35fa251243ac96568a73c556b950543c1a06d93e0a875"
+      "bytes": 17072,
+      "sha256": "37ac34555abebfeaa337d613644f0ab6d007bc074b3138a98f1128a1d59b9398"
     },
     {
       "path": "r/extremarank/man/methods.Rd",
@@ -898,13 +933,33 @@
     },
     {
       "path": "r/extremarank/src/RcppExports.cpp",
-      "bytes": 8897,
-      "sha256": "6dc0a213d1b33d142248b3a35b9146ccd75ebcfd264b99c30b3a21265b1835c9"
+      "bytes": 11654,
+      "sha256": "b23adda02c3544a301b43d01c43f64c0bdef2cce3bfaaebf43e09d1246ae8fd0"
+    },
+    {
+      "path": "r/extremarank/src/count_reader.h",
+      "bytes": 3678,
+      "sha256": "3621db75c2e28f160d37a6564038a07658e2e57b8585227480354796ce38c903"
+    },
+    {
+      "path": "r/extremarank/src/counts_native.cpp",
+      "bytes": 2071,
+      "sha256": "6e5c388761cc48b02ed6562ffe4b30c17d6fabebdfec30b7c5babee872a76dab"
+    },
+    {
+      "path": "r/extremarank/src/macos_backend.cpp",
+      "bytes": 8159,
+      "sha256": "e843bb4f800ada5e2ae6f152faa032bb10aeacf49804f10b786b40de52d4dbe4"
     },
     {
       "path": "r/extremarank/src/native.cpp",
       "bytes": 29716,
       "sha256": "5cbe68f7490fa560c746acc0f30f401b6e88bce7b53fa5ba562497d8a362101f"
+    },
+    {
+      "path": "r/extremarank/tests/backends.R",
+      "bytes": 4321,
+      "sha256": "df8ce612498bfa81759a502009276a6f55105ec3b425524d686c24e2524c6c56"
     },
     {
       "path": "r/extremarank/tests/golden.R",
@@ -934,7 +989,7 @@
     {
       "path": "r/install_extremarank.R",
       "bytes": 2548,
-      "sha256": "cc330605a32bd2f28c82a738cf9b78f83aa4a1980e01dd256ebce68321251fbd"
+      "sha256": "529313ab599d63efdcee32d5d6889940b4f2a4f60ea0f79676f07ab70f22182a"
     },
     {
       "path": "results/GSE50760_cli/audit.json",
@@ -3857,6 +3912,221 @@
       "sha256": "65b8879edfeb24be035785866585543f39afcf9fa6d01aa39d76370b4c85380c"
     },
     {
+      "path": "results/v06/R-CMD-check-mac.log",
+      "bytes": 3449,
+      "sha256": "b436ea2f684779ce6059a74d5a12af5fd76af97c366b7cc696aac2925647548b"
+    },
+    {
+      "path": "results/v06/README.md",
+      "bytes": 5984,
+      "sha256": "658e202710797e38bf22385599fe867d67f9720570245379764920ff03ae42da"
+    },
+    {
+      "path": "results/v06/backends-cpu.log",
+      "bytes": 89,
+      "sha256": "669811000eef328e9ad22a5671a693757100333f3f65017f077607c490dc58d1"
+    },
+    {
+      "path": "results/v06/backends-metal.log",
+      "bytes": 88,
+      "sha256": "efa3af23b4d82a8cef98c97ffbf717852e88c1742a3a07d17895bd9fd15881e2"
+    },
+    {
+      "path": "results/v06/local_validation.json",
+      "bytes": 632,
+      "sha256": "606cc999db7b5de19f02e63fa6a1210445a8f2611e4018a86571c1aba0b9eb62"
+    },
+    {
+      "path": "results/v06/mac/comparisons.json",
+      "bytes": 648,
+      "sha256": "1fb918f4d8c8abd3d6caf33f6dd12ee18e2819e5a2451db6f87361255d2d40ca"
+    },
+    {
+      "path": "results/v06/mac/hardware.json",
+      "bytes": 519,
+      "sha256": "8d259449036c71c82c05e2736df305fefc97458a5b6110604a538f5779fb2f02"
+    },
+    {
+      "path": "results/v06/mac/kang-real-matrix-operator.json",
+      "bytes": 1222,
+      "sha256": "131b327c659610f2e78bdc3d65b9e7e521258a5a586f04076e98f1f82c48457e"
+    },
+    {
+      "path": "results/v06/mac/kang-real-matrix-operator.time.txt",
+      "bytes": 777,
+      "sha256": "e2dda37394e6f98fa819cad3d6140d97764fe1cba4a02b854d10acd9cd325ac2"
+    },
+    {
+      "path": "results/v06/mac/kang-real-metal-64MiB.json",
+      "bytes": 1464,
+      "sha256": "faaa3e5e9c5ce0e7160eb45f1de7507302a0553a5bd7a0bbd711e5497dbff0c5"
+    },
+    {
+      "path": "results/v06/mac/kang-real-metal-64MiB.time.txt",
+      "bytes": 777,
+      "sha256": "fe0f2cc447801762a9c9d37320c6a517fd08c6f42ba6936ea56bc4728b7cc4aa"
+    },
+    {
+      "path": "results/v06/mac/kang-real-metal-whole.json",
+      "bytes": 1455,
+      "sha256": "dfc8d110d37a0942462da3f5af97b5e2ec6d6a183363b7f72ac7db9f7501618b"
+    },
+    {
+      "path": "results/v06/mac/kang-real-metal-whole.time.txt",
+      "bytes": 777,
+      "sha256": "6812424b69d569cef440db526ef5da450c1a0b32309dc8d80d54ef05edfdb2e0"
+    },
+    {
+      "path": "results/v06/mac/kang-real-native.json",
+      "bytes": 1343,
+      "sha256": "2292fa00befa3ae84e9929c8baec19ee05ab5b08c76016959cbb576b96b9ee8d"
+    },
+    {
+      "path": "results/v06/mac/kang-real-native.time.txt",
+      "bytes": 777,
+      "sha256": "86bb522545c43847cc43fbcf8ef764ca2f1636c75a82eb4614a8de483ddda241"
+    },
+    {
+      "path": "results/v06/mac/kang-real-released-0.5.json",
+      "bytes": 1112,
+      "sha256": "930db681796b9e6c766800b78ced160c2800210288444664a3907a92b26e8a1c"
+    },
+    {
+      "path": "results/v06/mac/kang-real-released-0.5.time.txt",
+      "bytes": 777,
+      "sha256": "f83eb06cb99d953595859fd7280f33c6c768b4f807ac8380ca1b9e865e5917b0"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-matrix-operator.json",
+      "bytes": 1221,
+      "sha256": "e09660333649eebe929374a75958860649fbd1ce33b01f093a2eb3a3b4ed98e5"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-matrix-operator.time.txt",
+      "bytes": 777,
+      "sha256": "1eba3b95b534a3e274ece4efe9ad45ce1af27752014b67a9cbc833055925bb27"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-metal-64MiB.json",
+      "bytes": 1425,
+      "sha256": "ca219743b4bdd6f53d8cc77ba147d2a188bfb161b004f69bf15c611040055be1"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-metal-64MiB.time.txt",
+      "bytes": 777,
+      "sha256": "5667bd5e083c6f1067a90038cbc0dcd97585905d35d39dcd3f0b7847a1e95931"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-metal-8MiB.json",
+      "bytes": 1410,
+      "sha256": "c44352bed81df6094f5bc32b637db7b2a5b10636038bbbb6cf137254261bc5b2"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-metal-8MiB.time.txt",
+      "bytes": 777,
+      "sha256": "595d9416a277e5f78d2c035734b9fac197572bc25d892fd8bcf1f1a7b4371e14"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-metal-whole.json",
+      "bytes": 1425,
+      "sha256": "67229bf2984b2ee146e4a84ddcd803312c5628be21ee8fa7ed59485249d16fd1"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-metal-whole.time.txt",
+      "bytes": 777,
+      "sha256": "d992c58d88ec051ae3542f72747eb038e3cd1d3fddd07a14d3d8344c17b35f88"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-native.json",
+      "bytes": 1329,
+      "sha256": "cec95a2c04660cde1c8c9ae99e239c710746ded705cbeb176ecf936eee1b5854"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-native.time.txt",
+      "bytes": 777,
+      "sha256": "9b8b7392aea948c33c3c326163624888148e523c2d0a7be70cf71ee6104473ba"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-released-0.5.json",
+      "bytes": 1113,
+      "sha256": "73d09b7439eca103b2294b2415647bdc4a60eccf3010af5f7aea8bf3650c6f7e"
+    },
+    {
+      "path": "results/v06/mac/sparse-100k-released-0.5.time.txt",
+      "bytes": 777,
+      "sha256": "bba99a29a3c36e7fac88b35c2acc5fa6c69798e98b0096e1ab4ceb0fbe293e10"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-matrix-operator.json",
+      "bytes": 1249,
+      "sha256": "09695c2e1b56a3f9911999ebe4a8e61eb323b9cdcc74ea27978d8660db1dc89f"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-matrix-operator.time.txt",
+      "bytes": 777,
+      "sha256": "b3085e9e7407d858006edfda6d0c5fb367dc3d9bc3a6fd6e9c498cc5918fc209"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-metal-64MiB.json",
+      "bytes": 1439,
+      "sha256": "d286fde2790c04845fc2367d867d93bf5e3e3b76bc94bd559cd54978e9b08d0d"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-metal-64MiB.time.txt",
+      "bytes": 777,
+      "sha256": "990b47b896ed63c5ad7a6eab1e0c6028e81500c3eb13df0d4a6dd38a5a28b5a0"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-metal-8MiB.json",
+      "bytes": 1489,
+      "sha256": "895f179fbf410b1b61bb4647dd25d9318c0939c4d0647a93b6f5b05b4485a72f"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-metal-8MiB.time.txt",
+      "bytes": 777,
+      "sha256": "153e1618e513655c7b2fc329363f56268771306e5961848afe6f1c65af31fa3f"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-metal-whole.json",
+      "bytes": 1441,
+      "sha256": "e51b1551e14f5fe6f60a55307c253e59a5b55810cc10e786c8ea38e83dc96d4e"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-metal-whole.time.txt",
+      "bytes": 777,
+      "sha256": "1bee13cd6c8909f55e7ddb28a1f1853db463db79fbc2bd731f0b3299e2da96f2"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-native.json",
+      "bytes": 1370,
+      "sha256": "fe7ebfb4546a179ae05a67edda43c5c2da6431c7c51ab55e0524490eb46c0a43"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-native.time.txt",
+      "bytes": 777,
+      "sha256": "b1c4896214e9b3b12737fef2dc989017bdd204a52bc8183c19eb21e1bf61cf23"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-released-0.5.json",
+      "bytes": 1113,
+      "sha256": "454cd73ef05f4c0763c257017e6d5965d6a20307eb154c74af3b407cb946c7dc"
+    },
+    {
+      "path": "results/v06/mac/sparse-250k-released-0.5.time.txt",
+      "bytes": 777,
+      "sha256": "38ceee707c1e26ec5fc1540600420c44fb0a5aaacc5672857ed2dff6c709afcd"
+    },
+    {
+      "path": "results/v06/python-tests.log",
+      "bytes": 7967,
+      "sha256": "13aaf944e7a0aaec9aecdd92a47b1a3bcba0bdd7572f6d98a8ef6ab9aa5fffe6"
+    },
+    {
+      "path": "results/v06/workflows.log",
+      "bytes": 203,
+      "sha256": "1494120d87276eeb9ee8b35b7922f5cb62cc6e12a594eaa5ef89dd6f4a44e325"
+    },
+    {
       "path": "results/validation_v03_real.json",
       "bytes": 9374,
       "sha256": "e322e652822e5ffaf66f1458fa04e48a4373197266e00c8df2474ea81c3f4e1d"
@@ -3894,7 +4164,7 @@
     {
       "path": "src/extremarank/__init__.py",
       "bytes": 734,
-      "sha256": "dfd3dad831f354ce29da5022c4096e081259e485b7c33e6c927989dc75ad76f1"
+      "sha256": "aac72c301e7c1979430091aa9c02e7eb6a8d229a25809a6bad440beba1fd63a5"
     },
     {
       "path": "src/extremarank/__main__.py",
